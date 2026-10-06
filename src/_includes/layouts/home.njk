@@ -6,16 +6,18 @@
 
 {% block content %}
 
-<div class="banner home">
-	<div class="container p-0 p-sm-3">
-		<div class="well header-rwd brdr-0 brdr-rds-0 text-white bg-gctheme">
-			<gcds-heading tag="h1" property="name" heading-role="light">
-				{{ title | safe }}
-			</gcds-heading>
-			<p>{{ description | safe }}</p>
-		</div>
-	</div>
-</div>
+<gcds-container layout="full" class="banner">
+  <gcds-container layout="page" padding="300">
+    <gcds-grid columns="1fr" columns-desktop="4fr 1fr" class="py-250">
+      <div class="banner__box">
+        <gcds-heading tag="h1" property="name" heading-role="light" margin-top="0" margin-bottom="200">
+          {{ title | safe }}
+        </gcds-heading>
+        <p>{{ description | safe }}</p>
+      </div>
+    </gcds-grid>
+  </gcds-container>
+</gcds-container>
 
 {% include "partials/alerts.njk" %}
 
