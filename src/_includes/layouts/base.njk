@@ -18,34 +18,36 @@
 		<main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement" id="main">
 
 		{% block content %}
-			<div class="banner">
-				<div class="container p-0 p-sm-3">
-					<div class="well header-rwd brdr-0 brdr-rds-0 text-white bg-gctheme">
-						<gcds-heading tag="h1" property="name" heading-role="light">
-							{%- if archived -%}
-								{{ archiveStrings[locale].archivedTitle }}
-							{%- endif -%}
-							{{ title | safe }}
-						</gcds-heading>
-						{% if description %}
-						<p>{{ description | safe }}</p>
-						{% else %}
-						<p><strong>{{ landingPage[locale].descriptionNoneText }}</strong></p>
-						{% endif %}
-						{%- if role -%}
-						<hr />
-						<h2 class="h6">Related roles:</h2>
-						<ul class="list-inline">
-							{% for key in role %}
-							<li class="label label-success">
-								{{ roles.labels[locale][key] or key }}
-							</li>
-							{% endfor %}
-						</ul>
+			<gcds-container layout="full" class="banner">
+			  <gcds-container layout="page" padding="200">
+				<gcds-grid columns="1fr" columns-desktop="4fr 1fr" class="py-150">
+				  <div class="banner__box">
+					<gcds-heading tag="h1" property="name" heading-role="light">
+						{%- if archived -%}
+							{{ archiveStrings[locale].archivedTitle }}
 						{%- endif -%}
-					</div>
-				</div>
-			</div>
+						{{ title | safe }}
+					</gcds-heading>
+					{% if description %}
+					<p>{{ description | safe }}</p>
+					{% else %}
+					<p><strong>{{ landingPage[locale].descriptionNoneText }}</strong></p>
+					{% endif %}
+					{%- if role -%}
+					<hr />
+					<h2 class="h6">Related roles:</h2>
+					<ul class="list-inline">
+						{% for key in role %}
+						<li class="label label-success">
+							{{ roles.labels[locale][key] or key }}
+						</li>
+						{% endfor %}
+					</ul>
+					{%- endif -%}
+				  </div>
+				</gcds-grid>
+			  </gcds-container>
+			</gcds-container>
 
 			{% include "partials/alerts.njk" %}
 
