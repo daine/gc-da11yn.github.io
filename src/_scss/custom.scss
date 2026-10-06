@@ -73,3 +73,27 @@
 		width: 600px
 	}
 }
+
+/* GCDS: skip-to-nav styles (temporary until supported in GCDS) */
+gcds-header > nav[slot="skip-to-nav"] {
+	position: absolute;
+	inset-block-start: var(--gcds-header-skiptonav-top);
+	inline-size: 100%;
+	margin-inline: auto;
+	text-align: center;
+
+	gcds-link {
+		position: absolute;
+		inset-block-start: var(--gcds-spacing-0);
+		inset-inline-start: var(--gcds-spacing-0);
+		inline-size: inherit;
+		z-index: 3;
+
+		&:not(:focus-within) {
+			block-size: var(--gcds-spacing-0);
+			inline-size: var(--gcds-spacing-0);
+			overflow: hidden;
+			clip-path: inset(50%);
+		}
+	}
+}
