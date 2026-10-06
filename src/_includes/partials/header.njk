@@ -3,15 +3,16 @@
 {% set otherLanguage = "Français" if locale == "en" else
 	"English" %}
 <header>
-	<gcds-header lang="{{ locale }}" lang-href="">
+	<gcds-header lang="{{ locale }}" lang-href="" skip-to-href="#main">
+		{% include "partials/skipnav.njk" %}
 	    {% include "partials/lang.njk" %}
 		<gcds-search search-id="search" slot="search" action="https://canada.ca/{{ locale }}/sr/srb.html"
 			method="get"
 		 	action="{{ search[locale].action}}"
 		 	name="cse-search-box"
 		 	data-placeholder-long="{{ header[locale].searchCanadaCa }}"
-		 	data-placeholder-short="{{ header[locale].searchCanadaCa }}">
-		 	placeholder="{{ header[locale].searchCanadaCa }}"
+		 	data-placeholder-short="{{ header[locale].searchCanadaCa }}"
+		 	placeholder="{{ header[locale].searchCanadaCa }}">
         </gcds-search>
         <gcds-topic-menu slot="menu"></gcds-topic-menu>
 
