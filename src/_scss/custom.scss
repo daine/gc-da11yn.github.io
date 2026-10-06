@@ -11,6 +11,11 @@
 	}
 }
 
+/* Page list link (pageListLink.njk): grey background */
+.page-list-link {
+	background-color: var(--gcds-bg-light);
+}
+
 
 // Added because GCWeb doesn't cover h2, blockquotes and li in the doormat styles
 .gc-drmt,
