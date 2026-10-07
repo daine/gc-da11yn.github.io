@@ -99,7 +99,7 @@ gcds-header > nav[slot="skip-to-nav"] {
 }
 
 /* GCDS: light notice on dark background */
-.dev-tags{
+.dev-tags {
 	p {
 		margin-block: var(--gcds-spacing-0) var(--gcds-spacing-100);
 	}
@@ -107,6 +107,7 @@ gcds-header > nav[slot="skip-to-nav"] {
 	gcds-notice {
 		--gcds-notice-text: var(--gcds-text-light);
 		--gcds-heading-role-primary: var(--gcds-text-light);
+		--gcds-heading-default-text: var(--gcds-text-light);
 	}
 }
 
