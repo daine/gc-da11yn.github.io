@@ -126,4 +126,74 @@ gcds-header > nav[slot="skip-to-nav"] {
 		border-inline-start-color: var(--gcds-color-blue-600);
 	}
 
+	&.dev-tag--role {
+		background-color: var(--gcds-color-yellow-100);
+		border-inline-start-color: var(--gcds-color-yellow-700);
+	}
+
+	&.dev-tag--missing {
+		background-color: var(--gcds-color-red-100);
+		border-inline-start-color: var(--gcds-color-red-700);
+	}
+
 	font-size: var(--gcds-font-sizes-text-small-mobile);}
+
+/* GCDS: page list (pageList.njk) */
+.page-list-item[hidden] {
+	display: none;
+}
+
+.page-list-search gcds-input {
+	flex: 1 1 var(--gcds-container-xs);
+	max-inline-size: var(--gcds-container-sm);
+}
+
+/* Dialog (macros/dialog.njk): temporary until GCDS releases its modal dialog.
+   Reuses the gcds-table "Filter and sort" dialog tokens so both dialogs match. */
+.site-dialog {
+	inline-size: calc(100% - var(--gcds-spacing-400));
+	max-inline-size: var(--gcds-table-modal-max-width);
+	min-block-size: var(--gcds-table-modal-min-height);
+	max-block-size: var(--gcds-table-modal-max-height-desktop);
+	margin: auto;
+	padding: var(--gcds-spacing-0);
+	overflow: hidden auto;
+	border: 0;
+	box-shadow: var(--gcds-table-modal-box-shadow);
+	color: var(--gcds-text-primary);
+	background-color: var(--gcds-table-modal-background);
+
+	&::backdrop {
+		background-color: var(--gcds-table-modal-backdrop-background);
+	}
+
+	@media only screen and (width < 48em) {
+		max-block-size: var(--gcds-table-modal-height-mobile);
+	}
+}
+
+.site-dialog__header {
+	position: sticky;
+	inset-block-start: var(--gcds-spacing-0);
+	z-index: 2;
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--gcds-table-modal-spacing);
+	align-items: center;
+	justify-content: space-between;
+	padding: var(--gcds-table-modal-spacing);
+	border-block-end: var(--gcds-table-modal-border);
+	background-color: var(--gcds-table-modal-background);
+
+	h2 {
+		font: var(--gcds-table-modal-header-heading);
+	}
+
+	gcds-button {
+		--gcds-button-font-desktop: var(--gcds-button-font-mobile);
+	}
+}
+
+.site-dialog__body {
+	padding: var(--gcds-table-modal-spacing);
+}

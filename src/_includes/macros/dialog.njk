@@ -1,0 +1,32 @@
+{#
+  Dialog macro (temporary, until GCDS releases its modal dialog component).
+
+  Usage:
+    {% from "macros/dialog.njk" import dialogButton, dialog with context %}
+    {{ dialogButton("my-dialog", "Open label") }}
+    {% call dialog("my-dialog", "Dialog title", locale) %}
+      ...content...
+    {% endcall %}
+
+  - Native <dialog> opened with showModal(): focus is trapped, Escape closes it,
+    and focus returns to the button that opened it (see src/_scripts/dialog.js).
+  - Requires JavaScript. Only use it for content that is optional or also
+    available another way.
+  - Styled to match the "Filter and sort" dialog inside gcds-table.
+#}
+
+{% macro dialogButton(id, label, role="secondary") %}
+<gcds-button type="button" button-role="{{ role }}" data-dialog-open="{{ id }}">{{ label }}</gcds-button>
+{% endmacro %}
+
+{% macro dialog(id, title, locale) %}
+<dialog id="{{ id }}" class="site-dialog" aria-labelledby="{{ id }}-title">
+	<div class="site-dialog__header">
+		<h2 id="{{ id }}-title" class="m-0">{{ title }}</h2>
+		<gcds-button type="button" button-role="secondary" data-dialog-close>{{ dialogText[locale].close if dialogText else "Close" }}</gcds-button>
+	</div>
+	<div class="site-dialog__body">
+		{{ caller() }}
+	</div>
+</dialog>
+{% endmacro %}

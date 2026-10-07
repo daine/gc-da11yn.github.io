@@ -1,144 +1,125 @@
 {% set branch = "main" %}
+{% set isLocal = settings.env == "local" %}
+{% from "macros/dialog.njk" import dialogButton, dialog with context %}
 
-{% if settings.env == "local" %}
-<p><a href="#full-screen" aria-controls="full-screen" class="overlay-lnk btn btn-primary btn-block" role="button">{{ pageList[locale].definitionButtonText }}</a></p>
+{#
+  Page list (GCDS)
+  - WET overlays (wb-overlay) replaced by buttons that open dialogs (macros/dialog.njk).
+  - WET tag filter and search (wb-tagfilter, wb-filter) replaced by gcds-input,
+    gcds-checkboxes and src/_scripts/page-list-filter.js.
+  - Without JavaScript, the filters stay hidden and the complete list is shown.
+#}
 
-<section id="full-screen" class="wb-overlay modal-content overlay-def wb-popup-full">
-	<header class="modal-header">
-		<h2>{{ pageList[locale].definitionButtonText }}</h2>
-	</header>
-	<div class="row modal-body">
-		<section class="col-md-6">
-			<h3>{{ pageList[locale].subjectsText }}</h3>
-			{% for item, tag in tagList.subjects[locale] %}
-			<dl>
-				<dt><span class="label label-success">{{ item }}</span></dt>
-				<dd>{{ tag }}</dd>
-			</dl>
-			{% endfor %}
-		</section>
-		<section class="col-md-6">
-			<h3>{{ pageList[locale].tagsText }}</h3>
-			{% for item, tag in tagList.tags[locale] %}
-			<dl>
-				<dt><span class="label label-info">{{ item }}</span></dt>
-				<dd>{{ tag }}</dd>
-			</dl>
-			{% endfor %}
-		</section>
-	</div>
-</section>
-
-	<p><a href="#left-panel" aria-controls="left-panel" class="overlay-lnk btn btn-primary btn-block" role="button">{{ pageList[locale].filterButtonText }}</a></p>
-
-	<section id="left-panel" class="form-group wb-overlay modal-content overlay-def wb-panel-l">
-		<header class="modal-header">
-			<h3 class="modal-title">Filter</h3>
-		</header>
-		<div class="modal-body">
-			<fieldset class="brdr-0">
-				<legend><span class="field-name">{% if settings.env == "local" %}subjet{% else %}{{ pageList[locale].subjectsText }}{% endif %}</span></legend>
-				<ul>
-					{% for item, tag in tagList.subjects[locale] %}
-					<li class="checkbox">
-						<label>
-							<input type="checkbox" name="platform" class="wb-tagfilter-ctrl" value="{{ item }}"> {{ tag }}
-						</label>
-					</li>
-					{% endfor %}
-				</ul>
-			</fieldset>
-			<fieldset class="brdr-0">
-				<legend><span class="field-name">{% if settings.env == "local" %}tags{% else %}{{ pageList[locale].tagsText }}{% endif %}</span></legend>
-				<ul class="">
-					{% for item, tag in tagList.tags[locale] %}
-					<li class="checkbox">
-						<label>
-							<input type="checkbox" name="platform" class="wb-tagfilter-ctrl" value="{{ item }}"> {{ tag }}
-						</label>
-					</li>
-					{% endfor %}
-				</ul>
-			</fieldset>
-		</div>
-	</section>
-
+{# ---------- Checkbox options for the subject and topic filters (local only) ---------- #}
+{% set subjectOptions = [] %}
+{% set tagOptions = [] %}
+{% if isLocal %}
+	{% for item, tag in tagList.subjects[locale] %}
+		{% set subjectOptions = (subjectOptions.push({ id: "filter-subject-" + item, label: tag, value: item }), subjectOptions) %}
+	{% endfor %}
+	{% for item, tag in tagList.tags[locale] %}
+		{% set tagOptions = (tagOptions.push({ id: "filter-tag-" + item, label: tag, value: item }), tagOptions) %}
+	{% endfor %}
 {% endif %}
+{% set hideTopicsOptions = [{ id: "filter-hide-topics", label: pageList[locale].hideTopicsText, value: "notLanding", checked: true }] %}
 
-<div class="alert alert-warning">
-	{% if locale === "en" %}
-		<p>The list of pages below <strong>does not list</strong> the topic pages. To add those disable the "Hide topic pages" checkbox.</p>
-	{% else %}
-		<p>La liste des pages ci-dessous <strong>ne contient pas</strong> les pages thématiques. Pour les ajouter, désactivez la case à cocher "Cacher des pages de thèmes".</p>
+{# ---------- Filters: revealed by page-list-filter.js ---------- #}
+<div id="page-list-filters" hidden>
+	{% if isLocal %}
+	<div class="d-flex flex-wrap gap-200 mb-300">
+		{{ dialogButton("page-list-definitions", pageList[locale].definitionButtonText) }}
+		{{ dialogButton("page-list-filter-dialog", pageList[locale].filterButtonText) }}
+	</div>
+
+	{% call dialog("page-list-definitions", pageList[locale].definitionButtonText, locale) %}
+		{% set showRoles = false %}
+		{% include "partials/labelDefinitions.njk" %}
+	{% endcall %}
+
+	{% call dialog("page-list-filter-dialog", pageList[locale].filterButtonText, locale) %}
+		<gcds-checkboxes
+			class="page-list-tag-filter mb-300"
+			name="page-list-subjects"
+			legend="{{ pageList[locale].subjectsText }}"
+			options="{{ subjectOptions | dump | escape }}"
+		></gcds-checkboxes>
+		<gcds-checkboxes
+			class="page-list-tag-filter"
+			name="page-list-tags"
+			legend="{{ pageList[locale].tagsText }}"
+			options="{{ tagOptions | dump | escape }}"
+		></gcds-checkboxes>
+	{% endcall %}
 	{% endif %}
+
+	<gcds-notice notice-role="warning" notice-title-tag="h2" notice-title="{{ pageList[locale].noticeTitle }}" class="mb-300">
+		<p class="m-0">{{ pageList[locale].noticeText | safe }}</p>
+	</gcds-notice>
+
+	{# The checkbox is offset by the input label height (spacing-500) so both controls line up on wider screens. #}
+	<div class="page-list-search d-flex flex-wrap align-items-start gap-x-500">
+		<gcds-input
+			input-id="page-list-search"
+			name="page-list-search"
+			type="search"
+			label="{{ pageList[locale].searchText }}"
+		></gcds-input>
+
+		<gcds-checkboxes
+			id="page-list-hide-topics"
+			class="mt-0 md:mt-500"
+			name="page-list-hide-topics"
+			legend="{{ pageList[locale].optionsLegend }}"
+			options="{{ hideTopicsOptions | dump | escape }}"
+			value='["notLanding"]'
+		></gcds-checkboxes>
+	</div>
+
+	<p class="font-size-h4 font-bold mt-300 mb-300" aria-live="polite">
+		<span data-count></span> {{ pageList[locale].resultsText }} <span data-total></span>
+	</p>
 </div>
 
-<div id="filteredAppsList" class="wb-tagfilter provisional wb-filter" data-wb-filter='{
-		"selector": "section",
-		"section": ".wb-tagfilter-items",
-		"uiTemplate": "#searchFilter"
-	}'>
+{# ---------- Page list ---------- #}
+<gcds-grid columns="1fr" columns-desktop="1fr 1fr" gap="400" class="mt-300">
+	{% for entry in entries | sort(false, false, 'page.url') %}
+		{% set newPath = entry.inputPath | replace("\./", "/") %}
+		{% set otherLang = "fr" if locale == "en" else "en" %}
+		{% set notLanding = (entry.inputPath | replace("/", ","))[6] != "m" %}
+		{% if not entry.data.subject %}{% set subjects = [] %}{% elif entry.data.subject is string %}{% set subjects = [entry.data.subject] %}{% else %}{% set subjects = entry.data.subject %}{% endif %}
+		{% if entry.data.locale == locale and not entry.data.redirect and entry.data.tags %}
+		<section class="page-list-item" data-tags="{{ subjects | join(' ') }} {{ entry.data.tags | join(' ') }}{% if notLanding %} notLanding{% endif %}">
+			<h2 class="font-size-h4 mt-0 mb-150"><gcds-link href="{{ entry.url }}">{{ entry.data.title | striptags(true) | escape | nl2br }}</gcds-link></h2>
 
-	<div id="searchFilter" class="row mrgn-tp-lg">
-		<div class="col-sm-4 col-md-5 col-lg-4">
-			<div class="form-group">
-				<label for="customSearchUI">{{ pageList[locale].searchText }}</label>
-				<input type="search" class="form-control full-width" id="customSearchUI">
-			</div>
-		</div>
-		<div class="col-sm-8 col-md-7 col-lg-8">
-			<div class="form-group">
-				<fieldset class="p-0">
-					<legend class="h5 mrgn-tp-0"><span class="field-name">Options</span></legend>
-					<ul class="list-unstyled list-inline">
-						<li class="checkbox">
-							<label>
-								<input type="checkbox" name="subject" class="wb-tagfilter-ctrl" value="notLanding" checked> {% if locale === "en" %}
-									Hide topic pages
-									{% else %}
-									Cacher des pages de thèmes
-								{% endif %}
-							</label>
-						</li>
-					</ul>
-				</fieldset>
-			</div>
-		</div>
-		<div class="col-sm-12">
-			<p class="h3 wb-fltr-info mrgn-tp-0"><span data-nbitem></span> {{ pageList[locale].resultsText }} <span data-total></span></p>
-		</div>
-	</div>
-	<div class="wb-eqht-grd row wb-tagfilter-items">
-		{% for entry in entries | sort(false, false, 'page.url') %}
-			{% set newPath = entry.inputPath | replace("\./", "/") %}
-			{% set otherLang = "fr" if locale == "en" else "en" %}
-			{% set isLanding = entry.inputPath | replace("/", ",") %}
-			{% if entry.data.locale == locale %}
-				{% if entry.data.redirect %}
-				{% else %}
-					{% if entry.data.tags %}
-						<section class="col-md-6" data-wb-tags="{{ entry.data.subject }} {{ entry.data.tags }}{% for items in isLanding[6] %}{% if items != "m" %} notLanding{% endif %}{% endfor %}">
-							<h2 class="h4"><a href="{{ entry.url }}">{{ entry.data.title | striptags(true) | escape | nl2br }}</a></h2>
-							{% if settings.env == "local" %}
-								{% if entry.data.subject %}
-									<p><strong>subject{% if locale === "fr" %} {% endif %}:</strong> <span class="label label-success">{{ entry.data.subject }}</span></p>
-								{% endif %}
-								{% if entry.data.tags %}
-								<p><strong>tags{% if locale === "fr" %} {% endif %}:</strong>
-									{% for item in entry.data.tags %}
-									<span class="label label-info">{{ item }}</span>
-									{% endfor %}
-								</p>
-								{% endif %}
-							{% endif %}
-							<p>{% if settings.env == "local" %}<strong>{{ pageList[locale].descriptionText }}{% if locale === "fr" %} {% endif %}: </strong>{% endif %}{% if entry.data.description %}{{ entry.data.description | striptags(true) | escape | nl2br }}{% else %} <span class="label label-danger">{{ landingPage[locale].descriptionNoneText }}</span>{% endif %}</p>
-							{% if settings.env == "local" %}<p><strong>{{ pageList[locale].pathText }}{% if locale === "fr" %} {% endif %}:</strong> <code>{{ entry.url }}</code></p>{% endif %}
-							{% if settings.env == "local" %}<p><strong>{{ pageList[locale].filePathText }}{% if locale === "fr" %} {% endif %}:</strong> <code><a href="https://github.com/gc-da11yn/gc-da11yn.github.io/tree/{{ branch }}{{ newPath }}">{{ newPath }}</a></code></p>{% endif %}
-							{% if settings.env == "local" %}<p><strong>toggle{% if locale === "fr" %} {% endif %}:</strong> <code><a href="{{ pathPrefix }}/{{ otherLang }}/{% if entry.data.tags != "home"%}{{ entry.data.toggle | stripTagsSlugify }}/{% endif %}">{{ entry.data.toggle }}</a></code></p>{% endif %}
-						</section>
-					{% endif %}
+			{% if isLocal %}
+				{% if subjects | length %}
+				<p class="mb-100"><strong>subject{% if locale === "fr" %} {% endif %}:</strong>
+					{% for item in subjects %}<span class="dev-tag dev-tag--subject d-inline-block px-100 bs-lg font-bold me-50">{{ item }}</span>{% endfor %}
+				</p>
 				{% endif %}
+				<p class="mb-100"><strong>tags{% if locale === "fr" %} {% endif %}:</strong>
+					{% for item in entry.data.tags %}<span class="dev-tag dev-tag--tag d-inline-block px-100 bs-lg font-bold me-50">{{ item }}</span>{% endfor %}
+				</p>
 			{% endif %}
-		{% endfor %}
-	</div>
-</div>
+
+			<p class="mb-100">
+				{% if isLocal %}<strong>{{ pageList[locale].descriptionText }}{% if locale === "fr" %} {% endif %}:</strong> {% endif %}
+				{% if entry.data.description %}
+					{{ entry.data.description | striptags(true) | escape | nl2br }}
+				{% else %}
+					<span class="dev-tag dev-tag--missing d-inline-block px-100 bs-lg font-bold">{{ landingPage[locale].descriptionNoneText }}</span>
+				{% endif %}
+			</p>
+
+			{% if isLocal %}
+				<p class="mb-100"><strong>{{ pageList[locale].pathText }}{% if locale === "fr" %} {% endif %}:</strong> <code>{{ entry.url }}</code></p>
+				<p class="mb-100"><strong>{{ pageList[locale].filePathText }}{% if locale === "fr" %} {% endif %}:</strong> <code><gcds-link href="https://github.com/gc-da11yn/gc-da11yn.github.io/tree/{{ branch }}{{ newPath }}">{{ newPath }}</gcds-link></code></p>
+				<p class="mb-100"><strong>toggle{% if locale === "fr" %} {% endif %}:</strong> <code><gcds-link href="{{ pathPrefix }}/{{ otherLang }}/{% if entry.data.tags != "home" %}{{ entry.data.toggle | stripTagsSlugify }}/{% endif %}">{{ entry.data.toggle }}</gcds-link></code></p>
+			{% endif %}
+		</section>
+		{% endif %}
+	{% endfor %}
+</gcds-grid>
+
+<script src="{{ pathPrefix }}/js/dialog.js" defer></script>
+<script src="{{ pathPrefix }}/js/page-list-filter.js" defer></script>

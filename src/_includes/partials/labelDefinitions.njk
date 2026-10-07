@@ -1,0 +1,36 @@
+{#
+  Definitions of the subject, topic (tag) and, optionally, role labels.
+  Used inside the "Definitions of labels" dialog on the page list and page list table.
+  Set showRoles = true before including to add the roles column.
+#}
+<gcds-grid columns="1fr" columns-tablet="{{ '1fr 1fr 1fr' if showRoles else '1fr 1fr' }}" gap="400">
+	<section>
+		<h3 class="font-size-h5 mt-0">{{ pageList[locale].subjectsText }}</h3>
+		<dl>
+			{% for item, tag in tagList.subjects[locale] %}
+			<dt><span class="dev-tag dev-tag--subject d-inline-block px-100 bs-lg font-bold">{{ item }}</span></dt>
+			<dd class="mb-150">{{ tag }}</dd>
+			{% endfor %}
+		</dl>
+	</section>
+	<section>
+		<h3 class="font-size-h5 mt-0">{{ pageList[locale].tagsText }}</h3>
+		<dl>
+			{% for item, tag in tagList.tags[locale] %}
+			<dt><span class="dev-tag dev-tag--tag d-inline-block px-100 bs-lg font-bold">{{ item }}</span></dt>
+			<dd class="mb-150">{{ tag }}</dd>
+			{% endfor %}
+		</dl>
+	</section>
+	{% if showRoles and roles and roles.labels and roles.labels[locale] %}
+	<section>
+		<h3 class="font-size-h5 mt-0">{{ pageList[locale].rolesText }}</h3>
+		<dl>
+			{% for roleKey, roleLabel in roles.labels[locale] %}
+			<dt><span class="dev-tag dev-tag--role d-inline-block px-100 bs-lg font-bold">{{ roleKey }}</span></dt>
+			<dd class="mb-150">{{ roleLabel }}</dd>
+			{% endfor %}
+		</dl>
+	</section>
+	{% endif %}
+</gcds-grid>
