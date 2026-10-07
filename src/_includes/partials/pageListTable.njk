@@ -1,7 +1,7 @@
 {% set branch = "main" %}
 {% from "macros/contentType.njk" import getContentType %}
 
-</div>
+</gcds-container>
 <div class="container-fluid">
 	<p><a href="#full-screen" aria-controls="full-screen" class="overlay-lnk btn btn-primary btn-block" role="button">{{ pageList[locale].definitionButtonText }}</a></p>
 
@@ -172,4 +172,4 @@
 		</table>
 	</div>
 </div>
-<div class="container">
+<gcds-container layout="page" padding="300">

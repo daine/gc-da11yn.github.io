@@ -116,12 +116,12 @@ gcds-header > nav[slot="skip-to-nav"] {
 	padding-block: var(--gcds-spacing-25);
 	color: var(--gcds-text-primary);
 
-	&--subject {
+	&.dev-tag--subject {
 		background-color: var(--gcds-color-green-100);
 		border-inline-start-color: var(--gcds-color-green-700);
 	}
 
-	&--tag {
+	&.dev-tag--tag {
 		background-color: var(--gcds-color-blue-100);
 		border-inline-start-color: var(--gcds-color-blue-600);
 	}
