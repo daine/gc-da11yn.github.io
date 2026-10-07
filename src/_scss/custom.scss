@@ -97,3 +97,32 @@ gcds-header > nav[slot="skip-to-nav"] {
 		}
 	}
 }
+
+/* GCDS: light notice on dark background */
+.dev-tags{
+	p {
+		margin-block: var(--gcds-spacing-0) var(--gcds-spacing-100);
+	}
+
+	gcds-notice {
+		--gcds-notice-text: var(--gcds-text-light);
+		--gcds-heading-role-primary: var(--gcds-text-light);
+	}
+}
+
+/* GCDS: tags */
+.dev-tag {
+	padding-block: var(--gcds-spacing-25);
+	color: var(--gcds-text-primary);
+
+	&--subject {
+		background-color: var(--gcds-color-green-100);
+		border-inline-start-color: var(--gcds-color-green-700);
+	}
+
+	&--tag {
+		background-color: var(--gcds-color-blue-100);
+		border-inline-start-color: var(--gcds-color-blue-600);
+	}
+
+	font-size: var(--gcds-font-sizes-text-small-mobile);}
