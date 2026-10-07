@@ -5,7 +5,7 @@
 {% endif %}
 
 {% if isDraft or needsTranslation or internalLinks %}
-<div class="container">
+<gcds-container layout="page" padding="300">
 	<section class="alert alert-warning mrgn-tp-lg">
 		<h2>{{ alerts[locale].alertHeading }}</h2>
 		<ul>
@@ -20,5 +20,5 @@
 			{% endif %}
 		</ul>
 	</section>
-</div>
+</gcds-container>
 {% endif %}
