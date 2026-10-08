@@ -2,7 +2,7 @@
 {% from "macros/contentType.njk" import getContentType %}
 
 	{#- TRANSITION-ONLY: WET overlay link, until GCDS has a dialog. -#}
-	<p><a href="#full-screen" aria-controls="full-screen" class="overlay-lnk btn btn-primary btn-block" role="button">{{ pageList[locale].definitionButtonText }}</a></p>
+	<a href="#full-screen" aria-controls="full-screen" class="overlay-lnk btn btn-primary btn-block mb-200" role="button">{{ pageList[locale].definitionButtonText }}</a>
 
 	<!-- CSV Download Button -->
 	<gcds-button type="link" button-role="secondary" href="{{ pathPrefix }}/docs/pages-{{ locale }}.csv" download="pages-{{ locale }}.csv" class="mb-300">
