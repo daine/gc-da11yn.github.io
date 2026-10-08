@@ -126,4 +126,36 @@ gcds-header > nav[slot="skip-to-nav"] {
 		border-inline-start-color: var(--gcds-color-blue-600);
 	}
 
+	&.dev-tag--role {
+		background-color: var(--gcds-color-yellow-100);
+		border-inline-start-color: var(--gcds-color-yellow-700);
+	}
+
 	font-size: var(--gcds-font-sizes-text-small-mobile);}
+
+/* Page list table: keep dates on one line (no GCDS shortcut for white-space) */
+.page-list-date {
+	white-space: nowrap;
+}
+
+/* Page list table: native fieldset matching gcds-checkboxes, spacing handled by gcds-grid gap */
+.page-list-fieldset {
+	--gcds-checkbox-margin: var(--gcds-spacing-0);
+	border: 0;
+	padding: 0;
+	margin: 0;
+	min-inline-size: auto;
+
+	legend {
+		float: none; // TRANSITION-ONLY: undoes WET's floated legend, remove with wetboewRuntime
+		inline-size: auto;
+		padding: 0;
+		margin-block-end: var(--gcds-spacing-150);
+		font: var(--gcds-checkbox-legend-font-mobile);
+
+		@media only screen and (width >= 48em) {
+			font: var(--gcds-checkbox-legend-font-desktop);
+		}
+	}
+}
+

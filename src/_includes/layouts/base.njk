@@ -51,7 +51,8 @@
 
 			{% include "partials/alerts.njk" %}
 
-			<gcds-container layout="page" padding="300">
+			{#- "fullWidth: true" in front matter lets wide content (e.g. the page list table) use the full width. -#}
+			<gcds-container layout="{{ 'full' if fullWidth else 'page' }}" padding="300">
 				{% if officeTOC === true %}
 				{% include "partials/office-toc.njk" %}
 				{% include "partials/office365Notice.njk" %}
