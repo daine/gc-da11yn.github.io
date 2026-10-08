@@ -1,0 +1,129 @@
+.a11y-standards-list {
+	list-style: none;
+
+	&>li {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	span {
+		margin-right: 15px;
+	}
+}
+
+/* Page list link (pageListLink.njk): grey background */
+.page-list-link {
+	background-color: var(--gcds-bg-light);
+}
+
+
+// Added because GCWeb doesn't cover h2, blockquotes and li in the doormat styles
+.gc-drmt,
+.gc-srvinfo {
+
+	h2 {
+		font-size: 1em;
+		margin-bottom: 5px;
+		margin-top: 23px
+	}
+
+	li {
+		font-size: 17px;
+		line-height: 1.5em;
+	}
+
+	blockquote {
+		font-size: 17px;
+	}
+
+	footer {
+		font-size: 17px;
+	}
+
+}
+
+// Added because GCWeb doesn't cover links in well.header-rwd
+.well.header-rwd {
+	a {
+		color: #fff;
+
+		&:hover,
+		&:focus {
+			text-decoration: none;
+			color: #A0CCF8;
+		}
+	}
+
+}
+
+// Splash page styles
+
+.splash .sp-hb {
+	width: 500px
+}
+
+@media (min-width: 768px) {
+	.splash .sp-hb {
+		width: 500px
+	}
+}
+
+@media (min-width: 992px) {
+	.splash .sp-hb {
+		width: 600px
+	}
+}
+
+/* GCDS: skip-to-nav styles (temporary until supported in GCDS) */
+gcds-header > nav[slot="skip-to-nav"] {
+	position: absolute;
+	inset-block-start: var(--gcds-header-skiptonav-top);
+	inline-size: 100%;
+	margin-inline: auto;
+	text-align: center;
+
+	gcds-link {
+		position: absolute;
+		inset-block-start: var(--gcds-spacing-0);
+		inset-inline-start: var(--gcds-spacing-0);
+		inline-size: inherit;
+		z-index: 3;
+
+		&:not(:focus-within) {
+			block-size: var(--gcds-spacing-0);
+			inline-size: var(--gcds-spacing-0);
+			overflow: hidden;
+			clip-path: inset(50%);
+		}
+	}
+}
+
+/* GCDS: light notice on dark background */
+.dev-tags {
+	p {
+		margin-block: var(--gcds-spacing-0) var(--gcds-spacing-100);
+	}
+
+	gcds-notice {
+		--gcds-notice-text: var(--gcds-text-light);
+		--gcds-heading-role-primary: var(--gcds-text-light);
+		--gcds-heading-default-text: var(--gcds-text-light);
+	}
+}
+
+/* GCDS: tags */
+.dev-tag {
+	padding-block: var(--gcds-spacing-25);
+	color: var(--gcds-text-primary);
+
+	&.dev-tag--subject {
+		background-color: var(--gcds-color-green-100);
+		border-inline-start-color: var(--gcds-color-green-700);
+	}
+
+	&.dev-tag--tag {
+		background-color: var(--gcds-color-blue-100);
+		border-inline-start-color: var(--gcds-color-blue-600);
+	}
+
+	font-size: var(--gcds-font-sizes-text-small-mobile);}

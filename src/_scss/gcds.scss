@@ -1,0 +1,7 @@
+// GCDS styles, loaded only by layouts/gcds-base.njk (partials/gcds/head.njk).
+// WET pages keep using base.scss (da11yn.css). Remove this split at the
+// default-layout cutover (Work Package 15).
+
+@use "gcds/contribute";
+@use "gcds/banner";
+@use "gcds/custom";

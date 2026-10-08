@@ -1,4 +1,11 @@
-		<nav slot="skip-to-nav" label="{{ skipnav[locale].label }}">
-			<gcds-link href="#main">{{ skipnav[locale].mainContent }}</gcds-link>
-			<gcds-link href="#wb-cont">{{ skipnav[locale].aboutGovernment }}</gcds-link>
-		</nav>
+
+<nav>
+	<ul id="wb-tphp">
+		<li class="wb-slc">
+			<a class="wb-sl" href="#wb-cont">{{ skipnav[locale].mainContent }}</a>
+		</li>
+		<li class="wb-slc visible-sm visible-md visible-lg">
+			<a class="wb-sl" href="#wb-info">{{ skipnav[locale].aboutGovernment }}</a>
+		</li>
+	</ul>
+</nav>

@@ -1,11 +1,11 @@
 {% set otherLang = "fr" if locale == "en" else "en" %}
 
 {% if settings.env === "local" %}
-	{% include "partials/pageLabel.njk" %}
+	{% include "partials/gcds/pageLabel.njk" %}
 {% endif %}
 
 {% if isDraft or needsTranslation or internalLinks %}
-<div class="container">
+<gcds-container layout="page" padding="300">
 	<section class="alert alert-warning mrgn-tp-lg">
 		<h2>{{ alerts[locale].alertHeading }}</h2>
 		<ul>
@@ -20,5 +20,5 @@
 			{% endif %}
 		</ul>
 	</section>
-</div>
+</gcds-container>
 {% endif %}

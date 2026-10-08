@@ -3,33 +3,19 @@
 
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
 		<title>{% if title %}{{ title }}{% else %}{% if locale === "fr" %}La page{% else %}Page{% endif %}{% endif %}{% if locale === "en" %} has been moved{% else %} a été déplacée{% endif %} - {{ settings[locale].metaTitle }}</title>
 
 		<meta http-equiv="refresh" content="0; URL={{ redirect }}" />
-
-		<!-- GC Design System CSS Shortcuts -->
-		<link
-		  rel="stylesheet"
-		  href="https://cdn.design-system.canada.ca/@gcds-core/css-shortcuts@1.2.0/dist/gcds-css-shortcuts.min.css"
-		/>
-
-		<!-- GC Design System -->
-		<link
-		  rel="stylesheet"
-		  href="https://cdn.design-system.canada.ca/@gcds-core/components@1.6.0/dist/gcds/gcds.css"
-		/>
-		<script
-		  type="module"
-		  src="https://cdn.design-system.canada.ca/@gcds-core/components@1.6.0/dist/gcds/gcds.esm.js"
-		></script>
 	</head>
 
 	<body>
-		<main style="padding: 2rem;">
-			{% if title %}
-			<gcds-heading tag="h1">{{ title }}</gcds-heading>
-			{% endif %}
+		{% if title %}
+
+		<h1>{{ title }}</h1>
+
+		{% endif %}
 		{% if locale === "en" %}
 
 		<p>This page has moved to a <a href="{{ redirect }}">new location</a>.</p>
@@ -39,7 +25,6 @@
 		<p>Cette page a été déplacée vers un <a href="{{ redirect }}">nouvel emplacement</a>.</p>
 
 		{% endif %}
-		</main>
 	</body>
 
 </html>

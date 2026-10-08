@@ -1,0 +1,24 @@
+{%- set idUpdates = "updates" if locale === "en" else
+"actualites" -%}
+
+{% if collections.updatesMain === undefined %}
+
+{% else %}
+<gcds-container tag="section" layout="full" class="bg-light mt-500">
+	<gcds-container layout="page" padding="300">
+		<gcds-heading tag="h2" id="{{ idUpdates }}" margin-top="0">{% if locale === "en" %}Latest updates{% else %}Dernières mises à jour{% endif %}</gcds-heading>
+		<p>
+			{% if locale === "en" %}
+			Explore our latest content
+			{% else %}
+			Explorez notre contenu le plus récent.
+			{% endif %}
+		</p>
+		<ul class="list-none p-0 m-0 d-grid gap-200 md:grid-cols-2">
+		{% for item in collections.updatesMain | sort(attribute='date', reverse=true) | localeMatch(locale) %}
+			<li><gcds-link href="{{ pathPrefix }}{{ item.url }}">{{ item.data.title }}</gcds-link> <small class="d-block"><time>{{ item.date | postDate }}</time></small></li>
+		{% endfor %}
+		</ul>
+	</gcds-container>
+</gcds-container>
+{% endif %}

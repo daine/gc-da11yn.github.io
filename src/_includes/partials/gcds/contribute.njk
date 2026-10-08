@@ -1,0 +1,49 @@
+{% set newPath = page.inputPath | replace("\./", "/") %}
+
+<aside>
+  {% include "./pageListLink.njk" %}
+
+ <gcds-container layout="page" padding="300" class="contribute">
+   <gcds-grid columns="1fr" columns-tablet="5fr 7fr" gap="300">
+     <div>
+       <gcds-heading tag="h2" margin-top="0" margin-bottom="0" heading-role="light">
+         <i class="fab fa-github fa-fw" aria-hidden="true"></i>
+         {{ contribute[locale].contribute }}
+       </gcds-heading>
+       <p class="contribute-subtitle">{{ contribute[locale].small }}</p>
+     </div>
+
+     <div>
+		<ul class="contribute-links d-flex flex-wrap gap-300 list-none p-0 mt-0 mb-200">
+         <li class="d-flex align-items-center gap-100">
+           <i class="fas fa-code fa-fw" aria-hidden="true"></i>
+           <gcds-link link-role="light" href="https://github.com/gc-da11yn/gc-da11yn.github.io">{{ contribute[locale].see }}</gcds-link>
+         </li>
+         <li class="d-flex align-items-center gap-100">
+           <gcds-icon name="exclamation-circle"></gcds-icon>
+           <gcds-link link-role="light" href="https://github.com/gc-da11yn/gc-da11yn.github.io/issues/">{{ contribute[locale].report }}</gcds-link>
+         </li>
+         <li class="d-flex align-items-center gap-100">
+           <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+           <gcds-link link-role="light" href="https://github.com/gc-da11yn/gc-da11yn.github.io/discussions">{{ contribute[locale].join }}</gcds-link>
+         </li>
+       </ul>
+       <span>
+         <gcds-icon name="email" margin-right="100"></gcds-icon>
+         <a href="mailto:{{ contribute.email }}?subject={{ contribute[locale].emailSubject }}">{{ contribute[locale].emailText }}</a>
+       </span>
+     </div>
+   </gcds-grid>
+
+   {% if settings.env == "dev" %}
+     <gcds-text margin-top="300">
+       {{ contribute[locale].netlify }} <gcds-link href="https://www.netlify.com">Netlify</gcds-link>
+     </gcds-text>
+     <gcds-text>
+       <gcds-link href="https://github.com/gc-da11yn/gc-da11yn.github.io/edit/main{{ newPath }}">
+         {% if locale == "en" %}Edit code for the <strong>{{ title | safe }}</strong> page{% else %}Modifier le code de la page <strong>{{ title | safe }}</strong>{% endif %}
+       </gcds-link>.
+     </gcds-text>
+   {% endif %}
+ </gcds-container>
+</aside>

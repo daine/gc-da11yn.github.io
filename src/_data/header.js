@@ -7,6 +7,8 @@ module.exports = {
 		governmentOfCanada: "Gouvernement du Canada",
 		governmentOfCanadaURL: "https://www.canada.ca/fr.html",
 		searchCanadaCa: "Rechercher dans Canada.ca",
+		// gcds-search adds "Rechercher" itself, so it only needs the scope
+		searchScope: "Canada.ca",
 		search: "Recherche",
 
 		// Menu
@@ -53,7 +55,9 @@ module.exports = {
 		// Brand
 		governmentOfCanada: "Government of Canada",
 		governmentOfCanadaURL: "https://www.canada.ca/en.html",
-		searchCanadaCa: "Canada.ca",
+		searchCanadaCa: "Search Canada.ca",
+		// gcds-search adds "Search" itself, so it only needs the scope
+		searchScope: "Canada.ca",
 		search: "Search",
 
 		// Menu

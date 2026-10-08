@@ -1,0 +1,23 @@
+{% set otherLang = "fr" if locale == "en" else
+	"en" %}
+{% set otherLanguage = "Français" if locale == "en" else
+	"English" %}
+<header>
+	<gcds-header lang="{{ locale }}" lang-href="" skip-to-href="#main">
+		{% include "partials/gcds/skipnav.njk" %}
+	    {% include "partials/gcds/lang.njk" %}
+		<gcds-search search-id="search" slot="search" action="https://canada.ca/{{ locale }}/sr/srb.html"
+			method="get"
+		 	action="{{ search[locale].action}}"
+		 	name="cse-search-box"
+		 	data-placeholder-long="{{ header[locale].searchScope }}"
+		 	data-placeholder-short="{{ header[locale].searchScope }}"
+		 	placeholder="{{ header[locale].searchScope }}">
+        </gcds-search>
+        <gcds-topic-menu slot="menu"></gcds-topic-menu>
+
+        {% include "partials/gcds/breadcrumbs.njk" %}
+
+	</gcds-header>
+</header>
+

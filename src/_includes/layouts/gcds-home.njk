@@ -1,0 +1,36 @@
+{% if redirect %}
+	{% include "partials/gcds/redirect.njk" %}
+{% else %}
+
+{% extends "layouts/gcds-base.njk" %}
+
+{% block content %}
+
+<gcds-container layout="full" class="banner">
+  <gcds-container layout="page" padding="200">
+    <gcds-grid columns="1fr" columns-desktop="4fr 1fr" class="py-250">
+      <div class="banner__box">
+        <gcds-heading tag="h1" property="name" heading-role="light" margin-top="0" margin-bottom="200">
+          {{ title | safe }}
+        </gcds-heading>
+        <p>{{ description | safe }}</p>
+      </div>
+    </gcds-grid>
+  </gcds-container>
+</gcds-container>
+
+{% include "partials/gcds/alerts.njk" %}
+
+<gcds-container tag="section" layout="page" padding="300">
+	<gcds-heading tag="h2" margin-top="0">{{ home[locale].explore }}</gcds-heading>
+	{{ content | safe }}
+	{% include "partials/gcds/collectionsMain.njk" %}
+</gcds-container>
+
+{% include "partials/gcds/updatesMain.njk" %}
+{% include "partials/gcds/about.njk" %}
+{% include "partials/gcds/pagedetails.njk" %}
+
+{% endblock %}
+
+{% endif %}

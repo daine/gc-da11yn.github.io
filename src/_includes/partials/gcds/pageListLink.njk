@@ -1,0 +1,18 @@
+{#
+  Page List Link Component
+
+  This global bilingual component displays a call-to-action for users to view the complete list of pages.
+  - Text and URLs are sourced from `src/_data/pageList.js` using the current `locale`.
+  - Uses `{{ pathPrefix }}` and `{{ locale }}` for proper URL construction and deployment compatibility.
+  - Included on every page to improve site navigation and discoverability.
+#}
+<gcds-container layout="page" padding="300" class="page-list-link">
+  <gcds-heading tag="h3" margin-top="0" margin-bottom="200">
+    {{ pageList[locale].linkHeading }}
+  </gcds-heading>
+  <span>
+    <gcds-icon name="search" margin-right="100"></gcds-icon>
+    {{ pageList[locale].linkPrefix }}
+    <gcds-link href="{{ pathPrefix }}/{{ locale }}{{ pageList[locale].linkUrl }}">{{ pageList[locale].linkText }}</gcds-link>.
+  </span>
+</gcds-container>

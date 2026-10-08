@@ -1,0 +1,16 @@
+// Banner styles
+
+.banner {
+	background: url("../img/banner.png") center / cover no-repeat;
+	margin-block-end: var(--gcds-spacing-300);
+
+	.banner__box {
+		background-color: var(--gcds-bg-dark);
+		color: var(--gcds-text-light);
+		padding: var(--gcds-spacing-250);
+
+		p {
+			margin-block: var(--gcds-spacing-0);
+		}
+	}
+}
