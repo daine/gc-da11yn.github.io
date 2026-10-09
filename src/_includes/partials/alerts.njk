@@ -7,7 +7,7 @@
 {% if isDraft or needsTranslation or internalLinks %}
 <gcds-container layout="page" padding="300">
 	<gcds-notice notice-role="warning" notice-title-tag="h2" notice-title="{{ alerts[locale].alertHeading }}" class="mt-400">
-		<ul class="mb-0">
+		<ul class="list-disc ps-500 mb-0">
 			{% if isDraft == true %}
 			<li>{{ alerts[locale].draftText }}</li>
 			{% endif %}

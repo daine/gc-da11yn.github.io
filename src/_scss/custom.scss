@@ -273,3 +273,53 @@ main table:not(.wb-charts) {
 		font: var(--gcds-button-font-mobile);
 	}
 }
+
+/* Content defaults for page content (Markdown and CMS): the CSS shortcuts reset every margin,
+   padding and list style. Scoped to .page-content in the layouts; :where() keeps it at element
+   specificity so shortcut classes (mb-0, list-none, ps-0) still win. */
+:where(.page-content) {
+	p,
+	ul,
+	ol,
+	dl,
+	blockquote,
+	figure,
+	pre {
+		margin-block-end: var(--gcds-spacing-300);
+	}
+
+	ul,
+	ol {
+		padding-inline-start: var(--gcds-spacing-500);
+	}
+
+	ul {
+		list-style: disc;
+	}
+
+	ol {
+		list-style: decimal;
+	}
+
+	ul ul {
+		list-style: circle;
+	}
+
+	li {
+		margin-block-end: var(--gcds-spacing-100);
+	}
+
+	li > ul,
+	li > ol {
+		margin-block: var(--gcds-spacing-100) var(--gcds-spacing-0);
+	}
+
+	dd {
+		margin-inline-start: var(--gcds-spacing-300);
+	}
+
+	blockquote {
+		padding-inline-start: var(--gcds-spacing-300);
+		border-inline-start: var(--gcds-border-width-lg) solid var(--gcds-border-default);
+	}
+}

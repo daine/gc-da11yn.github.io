@@ -23,7 +23,9 @@
 
 <gcds-container tag="section" layout="page" padding="300">
 	<h2 class="mt-0 mb-300">{{ home[locale].explore }}</h2>
+	<div class="page-content">
 	{{ content | safe }}
+	</div>
 	{% include "partials/collectionsMain.njk" %}
 </gcds-container>
 

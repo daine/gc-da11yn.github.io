@@ -66,7 +66,9 @@
 				{% include "partials/onThisPage.njk" %}
 				{% endif %}
 
+				<div class="page-content">
 				{{ content | safe }}
+				</div>
 				{% if officeTOC === true %}
 				{% include "partials/office-toc.njk" %}
 				{% endif %}
