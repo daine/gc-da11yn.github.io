@@ -2,14 +2,14 @@
 
 {% else %}
 <gcds-container tag="section" layout="page" padding="300">
-	<gcds-heading tag="h2" margin-top="300">{{ about[locale].about }}</gcds-heading>
+	<h2 class="mt-300 mb-300">{{ about[locale].about }}</h2>
 	<p>{{ about[locale].aboutPara }}</p>
 	<gcds-grid columns="1fr" columns-desktop="1fr 1fr 1fr" gap="400" class="mt-300">
 		{% for item in collections.aboutUs | sort(false, false, 'data.title') | localeMatch(locale) %}
 		{# Only show pages with mainAbout: true #}
 		{% if item.data.mainAbout === true %}
 		<section>
-			<gcds-heading tag="h3" margin-top="0" margin-bottom="100"><gcds-link href="{{ pathPrefix }}{{ item.url }}">{{ item.data.title }}</gcds-link></gcds-heading>
+			<h3 class="mt-0 mb-100"><a href="{{ pathPrefix }}{{ item.url }}">{{ item.data.title }}</a></h3>
 			<p class="font-size-text-small">
 			{% if item.data.description %}
 			{{ item.data.description }}

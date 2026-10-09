@@ -1,5 +1,5 @@
 {# Date modified: https://design-system.canada.ca/en/components/date-modified/ #}
 <gcds-container tag="section" layout="page" class="pagedetails">
-  <gcds-sr-only tag="h2">{{ pagedetails[locale].pageDetailsHeading }}</gcds-sr-only>
+  <h2 class="visibility-sr-only">{{ pagedetails[locale].pageDetailsHeading }}</h2>
   <gcds-date-modified>{{ page.date | postDate }}</gcds-date-modified>
 </gcds-container>

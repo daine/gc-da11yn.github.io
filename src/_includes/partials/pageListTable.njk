@@ -5,10 +5,12 @@
 	<a href="#full-screen" aria-controls="full-screen" class="overlay-lnk btn btn-primary btn-block mb-200" role="button">{{ pageList[locale].definitionButtonText }}</a>
 
 	<!-- CSV Download Button -->
-	<gcds-button type="link" button-role="secondary" href="{{ pathPrefix }}/docs/pages-{{ locale }}.csv" download="pages-{{ locale }}.csv" class="mb-300">
-		<gcds-icon name="download" margin-right="100"></gcds-icon>
-		{% if locale === "en" %}Download CSV Export{% else %}Télécharger l'export CSV{% endif %}
-	</gcds-button>
+	<p class="mb-300">
+		<a class="button-link" href="{{ pathPrefix }}/docs/pages-{{ locale }}.csv" download="pages-{{ locale }}.csv">
+			<gcds-icon name="download"></gcds-icon>
+			{% if locale === "en" %}Download CSV Export{% else %}Télécharger l'export CSV{% endif %}
+		</a>
+	</p>
 
 	<section id="full-screen" class="wb-overlay modal-content overlay-def wb-popup-full">
 		<header class="modal-header">

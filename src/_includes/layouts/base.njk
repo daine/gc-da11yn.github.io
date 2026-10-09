@@ -9,10 +9,6 @@
 
 	<body vocab="http://schema.org/" typeof="WebPage">
 
-		{%- if archived -%}
-			{%- include "partials/archived.njk" -%}
-		{%- endif -%}
-
 		{% include "partials/header.njk" %}
 
 		<main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement" id="main">
@@ -22,12 +18,12 @@
 			  <gcds-container layout="page" padding="200">
 				<gcds-grid columns="1fr" columns-desktop="4fr 1fr" class="py-150">
 				  <div class="banner__box">
-					<gcds-heading tag="h1" property="name" heading-role="light">
+					<h1 class="mt-0 mb-300 text-light" property="name">
 						{%- if archived -%}
 							{{ archiveStrings[locale].archivedTitle }}
 						{%- endif -%}
 						{{ title | safe }}
-					</gcds-heading>
+					</h1>
 					{% if description %}
 					<p>{{ description | safe }}</p>
 					{% else %}
@@ -35,10 +31,10 @@
 					{% endif %}
 					{%- if role -%}
 					<hr />
-					<h2 class="h6">Related roles:</h2>
-					<ul class="list-inline">
+					<h2 class="font-size-h6">Related roles:</h2>
+					<ul class="list-none ps-0 d-flex flex-wrap gap-100">
 						{% for key in role %}
-						<li class="label label-success">
+						<li class="dev-tag dev-tag--subject d-inline-block px-100 bs-lg font-bold">
 							{{ roles.labels[locale][key] or key }}
 						</li>
 						{% endfor %}
@@ -48,6 +44,10 @@
 				</gcds-grid>
 			  </gcds-container>
 			</gcds-container>
+
+			{%- if archived -%}
+			{%- include "partials/archived.njk" -%}
+			{%- endif %}
 
 			{% include "partials/alerts.njk" %}
 

@@ -63,10 +63,27 @@
       rel="stylesheet"
       href="https://cdn.design-system.canada.ca/@gcds-core/components@1.6.0/dist/gcds/gcds.css"
     />
-    <script
-      type="module"
-      src="https://cdn.design-system.canada.ca/@gcds-core/components@1.6.0/dist/gcds/gcds.esm.js"
-    ></script>
+    {#- Basic HTML version: "?wbdisable=true" skips the GCDS scripts (same parameter as WET), "?wbdisable=false" turns them back on. -#}
+    <script>
+      (function () {
+        var key = "basicHtml";
+        var match = location.search.match(/[?&]wbdisable=(true|false)/);
+        var basic = !!match && match[1] === "true";
+        try {
+          if (match) {
+            if (basic) { localStorage.setItem(key, "1"); } else { localStorage.removeItem(key); }
+          }
+          basic = localStorage.getItem(key) === "1";
+        } catch (e) {}
+        document.documentElement.classList.add(basic ? "basic-html" : "standard-html");
+        if (!basic) {
+          var gcds = document.createElement("script");
+          gcds.type = "module";
+          gcds.src = "https://cdn.design-system.canada.ca/@gcds-core/components@1.6.0/dist/gcds/gcds.esm.js";
+          document.head.appendChild(gcds);
+        }
+      })();
+    </script>
 
 	<!-- Meta tags -->
 

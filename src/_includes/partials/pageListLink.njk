@@ -7,12 +7,12 @@
   - Included on every page to improve site navigation and discoverability.
 #}
 <gcds-container layout="page" padding="300" class="page-list-link">
-  <gcds-heading tag="h3" margin-top="0" margin-bottom="200">
+  <h3 class="mt-0 mb-200">
     {{ pageList[locale].linkHeading }}
-  </gcds-heading>
+  </h3>
   <span>
     <gcds-icon name="search" margin-right="100"></gcds-icon>
     {{ pageList[locale].linkPrefix }}
-    <gcds-link href="{{ pathPrefix }}/{{ locale }}{{ pageList[locale].linkUrl }}">{{ pageList[locale].linkText }}</gcds-link>.
+    <a href="{{ pathPrefix }}/{{ locale }}{{ pageList[locale].linkUrl }}">{{ pageList[locale].linkText }}</a>.
   </span>
 </gcds-container>

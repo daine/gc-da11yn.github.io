@@ -82,20 +82,27 @@ gcds-header > nav[slot="skip-to-nav"] {
 	margin-inline: auto;
 	text-align: center;
 
-	gcds-link {
+	a {
 		position: absolute;
 		inset-block-start: var(--gcds-spacing-0);
-		inset-inline-start: var(--gcds-spacing-0);
-		inline-size: inherit;
+		inset-inline: var(--gcds-spacing-0);
+		inline-size: fit-content;
+		margin-inline: auto;
 		z-index: 3;
 
-		&:not(:focus-within) {
+		&:not(:focus) {
 			block-size: var(--gcds-spacing-0);
 			inline-size: var(--gcds-spacing-0);
 			overflow: hidden;
 			clip-path: inset(50%);
 		}
 	}
+}
+
+/* Basic HTML version: only offer the switch that applies */
+.basic-html .skip-to-basic,
+:root:not(.basic-html) .skip-to-standard {
+	display: none;
 }
 
 /* GCDS: light notice on dark background */
@@ -159,3 +166,110 @@ gcds-header > nav[slot="skip-to-nav"] {
 	}
 }
 
+
+/* Images scale down to fit their container (replaces WET img-responsive) */
+img {
+	max-inline-size: 100%;
+	block-size: auto;
+}
+
+/* Office tip sheets navigation (replaces WET list-group) */
+.office-toc__item {
+	display: block;
+	block-size: 100%;
+	padding: var(--gcds-spacing-200);
+	border: var(--gcds-border-width-sm) solid var(--gcds-border-default);
+
+	&[aria-current="page"] {
+		color: var(--gcds-text-light);
+		background-color: var(--gcds-bg-primary);
+		border-color: var(--gcds-bg-primary);
+	}
+}
+
+/* Content tables (replaces WET table, table-bordered, table-striped) */
+main table:not(.wb-charts) {
+	inline-size: 100%;
+	margin-block-end: var(--gcds-spacing-400);
+	border-collapse: collapse;
+
+	th,
+	td {
+		padding: var(--gcds-spacing-150);
+		text-align: start;
+		vertical-align: top;
+		border: var(--gcds-border-width-sm) solid var(--gcds-border-default);
+	}
+
+	thead th {
+		background-color: var(--gcds-bg-light);
+	}
+
+	tbody tr:nth-child(even) {
+		background-color: var(--gcds-bg-light);
+	}
+
+	caption {
+		margin-block-end: var(--gcds-spacing-150);
+		font-weight: bold;
+		text-align: start;
+	}
+}
+
+/* Description list with terms beside definitions on wider screens (replaces WET dl-horizontal) */
+.dl-columns {
+	dt {
+		font-weight: bold;
+	}
+
+	dd {
+		margin-inline-start: 0;
+		margin-block-end: var(--gcds-spacing-150);
+	}
+
+	@media only screen and (width >= 48em) {
+		display: grid;
+		grid-template-columns: minmax(0, 1fr) minmax(0, 3fr);
+		column-gap: var(--gcds-spacing-300);
+	}
+}
+
+/* Link styled as a GCDS secondary button (native, so it works without JavaScript) */
+.button-link {
+	display: inline-flex;
+	align-items: center;
+	gap: var(--gcds-spacing-100);
+	inline-size: var(--gcds-button-width);
+	padding: var(--gcds-button-padding);
+	font: var(--gcds-button-font-desktop);
+	text-decoration: none;
+	color: var(--gcds-button-secondary-default-text);
+	background-color: var(--gcds-button-secondary-default-background);
+	border: var(--gcds-button-border-width) solid currentColor;
+	border-radius: var(--gcds-button-border-radius);
+
+	&:visited:not(:focus) {
+		color: var(--gcds-button-secondary-default-text);
+	}
+
+	&:hover {
+		background-color: var(--gcds-button-secondary-hover-background);
+	}
+
+	&:active {
+		color: var(--gcds-button-shared-active-text);
+		background-color: var(--gcds-button-shared-active-background);
+	}
+
+	&:focus {
+		color: var(--gcds-button-shared-focus-text);
+		background-color: var(--gcds-button-shared-focus-background);
+		border-color: var(--gcds-button-shared-focus-background);
+		box-shadow: var(--gcds-button-shared-focus-box-shadow);
+		outline: var(--gcds-button-shared-focus-outline-width) solid var(--gcds-button-shared-focus-background);
+	}
+
+	@media only screen and (width < 48em) {
+		font: var(--gcds-button-font-mobile);
+	}
+}
