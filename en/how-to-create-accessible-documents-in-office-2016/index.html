@@ -1,0 +1,548 @@
+
+
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+
+	
+<head>
+	<meta charset="utf-8">
+
+	<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+	
+	<title>How to create accessible documents in Office 2016- Digital Accessibility Toolkit</title>
+	<meta content="width=device-width,initial-scale=1" name="viewport">
+	<meta name="description" content="Accessible practices for digital document creation in Office 2016.">
+
+	
+
+	<meta name="source-file" content="./src/main/en/how-tos/microsoft-office/how-to-create-accessible-documents-in-office-2016.njk">
+
+
+	
+	
+	
+	
+		
+	
+		<link rel="alternate" hreflang="fr" href="/gc-da11yn.github.io/fr/comment-creer-des-documents-accessibles-dans-office-2016/index.html" />
+	
+
+
+	<link href="https://www.canada.ca/etc/designs/canada/wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+
+	<!-- GC Design System CSS Shortcuts -->
+	<link
+	  rel="stylesheet"
+	  href="https://cdn.design-system.canada.ca/@gcds-core/css-shortcuts@1.2.0/dist/gcds-css-shortcuts.min.css"
+	/>
+
+	<!-- GC Design System -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.design-system.canada.ca/@gcds-core/components@1.6.0/dist/gcds/gcds.css"
+    />
+
+	<!-- Site styles: after GCDS so they can build on it -->
+	<link rel="stylesheet" href="/gc-da11yn.github.io/css/da11yn.css"><script>
+      (function () {
+        var key = "basicHtml";
+        var match = location.search.match(/[?&]wbdisable=(true|false)/);
+        var basic = !!match && match[1] === "true";
+        try {
+          if (match) {
+            if (basic) { localStorage.setItem(key, "1"); } else { localStorage.removeItem(key); }
+          }
+          basic = localStorage.getItem(key) === "1";
+        } catch (e) {}
+        document.documentElement.classList.add(basic ? "basic-html" : "standard-html");
+        if (!basic) {
+          var gcds = document.createElement("script");
+          gcds.type = "module";
+          gcds.src = "https://cdn.design-system.canada.ca/@gcds-core/components@1.6.0/dist/gcds/gcds.esm.js";
+          document.head.appendChild(gcds);
+        }
+      })();
+    </script>
+
+	<!-- Meta tags -->
+
+	<meta name="author" content="Government of Canada" />
+	<meta name="dcterms.title" content="How to create accessible documents in Office 2016" />
+	<meta name="dcterms.description" content="Accessible practices for digital document creation in Office 2016." />
+	<meta name="dcterms.creator" content="Government of Canada">
+	<meta name="dcterms.language" content="en" />
+	<meta name="dcterms.created" content="2023-08-01">
+	<meta name="dcterms.modified" content="2024-07-17" >
+	<meta name="dcterms.subject" content="How-tos;Create document; " />
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SM9MSHWDVN"></script>
+	<script>
+		(function (w) {
+			"use strict";
+			if (w.location.hostname === "a11y.canada.ca") {
+				w.dataLayer = w.dataLayer || [];
+				w.gtag = function () {
+					w.dataLayer.push(arguments);
+				};
+				w.gtag('js', new Date());
+				w.gtag('config', 'G-SM9MSHWDVN');
+			}
+		})(window);
+	</script>
+</head>
+
+
+	<body vocab="http://schema.org/" typeof="WebPage">
+
+		
+
+<header>
+	<gcds-header lang="en" lang-href="" skip-to-href="#main">
+				<nav slot="skip-to-nav" label="Skip to">
+			<a href="#main">Skip to main content</a>
+			<a href="#footer">Skip to &quot;About government&quot;</a>
+			<a class="skip-to-basic" href="?wbdisable=true">Switch to basic HTML version</a>
+			<a class="skip-to-standard" href="?wbdisable=false">Switch to standard version</a>
+		</nav>
+
+	    
+
+
+
+
+	
+
+
+  <gcds-lang-toggle slot="toggle" href="/gc-da11yn.github.io/fr/comment-creer-des-documents-accessibles-dans-office-2016/">
+  </gcds-lang-toggle>
+
+
+
+		<gcds-search search-id="search" slot="search" action="https://canada.ca/en/sr/srb.html"
+			method="get"
+		 	action=""
+		 	name="cse-search-box"
+		 	data-placeholder-long="Canada.ca"
+		 	data-placeholder-short="Canada.ca"
+		 	placeholder="Canada.ca">
+        </gcds-search>
+        <gcds-topic-menu slot="menu"></gcds-topic-menu>
+
+        
+
+<gcds-breadcrumbs slot="breadcrumb">
+		<!-- First breadcrumb: Canada.ca - already set by default on GcdsHeader -->
+		<!-- Second breadcrumb: Locale-based home link -->
+		
+		
+			<gcds-breadcrumbs-item href="/gc-da11yn.github.io/en/">Digital Accessibility Toolkit</gcds-breadcrumbs-item>
+		
+
+		<!-- Additional breadcrumbs based on tags and subjects -->
+		
+			 
+
+			<!-- Special handling for role-based pages -->
+			
+				<!-- Existing breadcrumbs logic for non-role pages -->
+				<!-- Breadcrumbs based on 'subject' -->
+				
+					
+						<gcds-breadcrumbs-item href="/gc-da11yn.github.io/en/how-tos">
+							How-tos
+						</gcds-breadcrumbs-item>
+						
+					
+				
+
+				<!-- Breadcrumbs based on 'tags' -->
+				
+					
+						
+							<gcds-breadcrumbs-item href="/gc-da11yn.github.io/en/create-document">
+								Create document
+							</gcds-breadcrumbs-item>
+							
+						
+					
+				
+			
+		
+      </gcds-breadcrumbs>
+
+
+	</gcds-header>
+</header>
+
+
+
+		<main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement" id="main">
+
+		
+			<gcds-container layout="full" class="banner">
+			  <gcds-container layout="page" padding="200">
+				<gcds-grid columns="1fr" columns-desktop="4fr 1fr" class="py-150">
+				  <div class="banner__box">
+					<h1 class="mt-0 mb-300 text-light" property="name">How to create accessible documents in Office 2016
+					</h1>
+					
+					<p>Accessible practices for digital document creation in Office 2016.</p>
+					</div>
+				</gcds-grid>
+			  </gcds-container>
+			</gcds-container>
+
+			
+
+
+
+
+<gcds-container layout="page" padding="300">
+				
+				
+    
+    
+    
+
+
+
+    
+    
+    
+
+
+
+
+    
+    
+    
+        
+    
+    <nav aria-label="How to create accessible documents in Office 2016" class="mt-400 mb-400">
+        <ul class="office-toc d-grid sm:grid-cols-2 lg:grid-cols-3 gap-200 list-none ps-0 mb-0">
+            <li><span class="office-toc__item" aria-current="page">How to create accessible documents <small class="d-block">in Office 2016</small></span></li>
+            
+                
+                <li><a class="office-toc__item" href="/gc-da11yn.github.io/en/accessible-excel-workbooks-in-office-2016/">
+                    <i class="fas fa-lg fa-file-excel me-50" aria-hidden="true"></i>
+                    Accessible Excel workbooks  <small class="d-block">in Office 2016</small></a></li>
+            
+                
+                <li><a class="office-toc__item" href="/gc-da11yn.github.io/en/accessible-pdf-documents-in-office-2016/">
+                    <i class="fas fa-lg fa-file-pdf me-50" aria-hidden="true"></i>
+                    Accessible PDF documents  <small class="d-block">in Office 2016</small></a></li>
+            
+                
+                <li><a class="office-toc__item" href="/gc-da11yn.github.io/en/accessible-powerpoint-presentations-in-office-2016/">
+                    <i class="fas fa-lg fa-file-powerpoint me-50" aria-hidden="true"></i>
+                    Accessible PowerPoint presentations  <small class="d-block">in Office 2016</small></a></li>
+            
+                
+                <li><a class="office-toc__item" href="/gc-da11yn.github.io/en/accessible-visio-drawings-in-office-2016/">
+                    <i class="fas fa-lg fa-project-diagram me-50" aria-hidden="true"></i>
+                    Accessible Visio drawings  <small class="d-block">in Office 2016</small></a></li>
+            
+                
+                <li><a class="office-toc__item" href="/gc-da11yn.github.io/en/accessible-word-documents-in-office-2016/">
+                    <i class="fas fa-lg fa-file-word me-50" aria-hidden="true"></i>
+                    Accessible Word documents  <small class="d-block">in Office 2016</small></a></li>
+            
+        </ul>
+    </nav>
+
+    <div class="bg-light p-300">
+        
+        
+        <p class="mb-0">Looking for the Microsoft 365 version? Try <a href="/gc-da11yn.github.io/en/how-to-create-accessible-documents-in-microsoft-365/">How to create accessible documents <small><strong> in Microsoft 365</strong></small></a></p>
+    </div>
+
+
+
+				
+	
+	
+
+
+
+				
+
+				
+
+				
+
+				<div class="page-content">
+				
+
+
+<h2 id="what-is-an-accessible-document" tabindex="-1">What is an accessible document?</h2>
+<p>An accessible document is fully usable by persons with and without disabilities. Making your documents accessible allows users to navigate them in different ways.</p>
+<p>For example, a blind user may use a screen reader or a braille display. A person with a motor impairment may use a keyboard rather than a mouse. Other users may need to adjust the font size or spacing to compensate for vision loss or cognitive disabilities.</p>
+<h3 id="meeting-accessibility-standards" tabindex="-1">Meeting accessibility standards</h3>
+<p>Accessibility of digital content (including web pages and documents) is evaluated according to the Web Content Accessibility Guidelines (WCAG). Following this guide does not ensure full compliance with these guidelines, but it is a good start!</p>
+<h2 id="writing-content" tabindex="-1">Writing content</h2>
+<p>Using plain language ensures that everyone, including persons with cognitive disabilities, can understand the content of documents and use the information effectively. Documents should be clear, concise, and well organized.</p>
+<ul>
+<li>Use short sentences and plain language</li>
+<li>Measure to a Grade 8 reading level</li>
+<li>Avoid jargon and unusual words</li>
+<li>Define acronyms when first used</li>
+<li>Follow best practices for the subject matter and intended audience</li>
+</ul>
+<h2 id="document-structure" tabindex="-1">Document structure</h2>
+<h3 id="headings" tabindex="-1">Headings</h3>
+<p>A good heading structure makes it easier to navigate and locate content, especially for users of screen readers. It is crucial to use built-in heading styles for all headings.</p>
+<p>Apply a consecutive, logical heading order where higher level headings provide context to lower level headings. Do not skip heading levels. For example:</p>
+<ul>
+<li>Subsections of a level 1 heading should be heading level 2, not 3 or 4</li>
+<li>Subsections of a level 2 heading should be heading level 3, etc.</li>
+</ul>
+<p>Avoid these <strong>common heading errors</strong>:</p>
+<ul>
+<li>Formatting the text (bold, larger size) instead of using heading styles</li>
+<li>Using heading styles to format text (bold, larger size) when the text isn’t a heading</li>
+<li>Using different colours, sizes, or fonts for headings of the same level</li>
+</ul>
+<h3 id="tables" tabindex="-1">Tables</h3>
+<p>Tables may be difficult to navigate or edit for users of screen readers. Design tables to be as simple as possible.</p>
+<ul>
+<li>Do not use tables for layout / styling</li>
+<li>Use built-in software features to create tables</li>
+<li>Define column headings and row headings</li>
+<li>Add alt-text to tables with a short summary of the content</li>
+<li>Avoid nested tables, merged cells, split cells, or blank rows / columns</li>
+</ul>
+<h3 id="links-to-websites" tabindex="-1">Links to websites</h3>
+<p>Link text should make sense even when read out of context, for example in a list of links.</p>
+<ul>
+<li>Use the name of the website or organization as link text</li>
+<li>Don’t use the URL as the link text, unless the full URL needs to appear in print</li>
+<li>Avoid generic wording like “Click here” or “Read more”</li>
+<li>Make link text as short as possible while still making it clear where the link goes</li>
+</ul>
+<h3 id="other-special-elements" tabindex="-1">Other special elements</h3>
+<p>Use the software’s built-in functions to create elements which should be treated differently from normal body text. These include:</p>
+<ul>
+<li>Bulleted and numbered lists</li>
+<li>Table of contents</li>
+<li>Headers, footers, and page numbers</li>
+</ul>
+<p><strong>Avoid using text boxes</strong>. These are typically ignored by screen readers and are inaccessible to keyboard users.</p>
+<h2 id="formatting" tabindex="-1">Formatting</h2>
+<h3 id="colours" tabindex="-1">Colours</h3>
+<p>Text must have a contrast ratio of at least 4.5:1 against the background. Black text on a white background is always a safe choice.</p>
+<ul>
+<li>Check contrast with the <a href="https://developer.paciellogroup.com/resources/contrastanalyser/">Colour Contrast Analyser</a> or <a href="https://webaim.org/resources/contrastchecker/">WebAIM Contrast Checker</a></li>
+<li>Avoid complex background images. If you must use a background image, use the <a href="https://www.brandwood.com/a11y/">Text on Background image a11y check</a></li>
+<li>Include a contrasting outline/stroke around the text when the background cannot be changed to meet contrast requirements</li>
+</ul>
+<p>The same principles apply to meaningful non-text elements such as icons and charts, but the requirement is relaxed to 3:1. For example, adjacent slices in a pie chart should be easy to distinguish from each other.</p>
+<h3 id="fonts" tabindex="-1">Fonts</h3>
+<p>Choose fonts and styles that are easy to read rather than decorative.</p>
+<ul>
+<li>Use sans-serif fonts with sufficient spacing between letters and lines
+<ul>
+<li>Arial, Verdana, and Calibri are all sans-serif fonts</li>
+</ul>
+</li>
+<li>Body text size should be 11 to 14 points for a print-style document like this one
+<ul>
+<li>Some fonts appear larger than others. Compare with 12 point Arial.</li>
+</ul>
+</li>
+<li>Larger fonts should be used for presentations (18 point minimum)</li>
+<li>Avoid using italics for more than a few words</li>
+</ul>
+<p>Do not rely solely on visual formatting to convey information. For example, avoid phrases like “priority tasks in bold”, “changes highlighted in yellow”, or “see the left sidebar for details”.</p>
+<h2 id="non-text-elements" tabindex="-1">Non-text elements</h2>
+<p>Visual elements such as photos, icons, diagrams, and tables should include alternative text (“alt text”) that briefly answers the question “What information is the image conveying?”.</p>
+<p>A good starting point for writing alt text is to imagine that you are describing the image to a person over the phone.</p>
+<h3 id="short-alternative-text" tabindex="-1">Short alternative text</h3>
+<p>Keep your descriptions as brief as possible (at most 65 characters). Ignore details that don’t relate to the document. For example, a picture of a group of students appears in a document about hiring summer students.</p>
+<ul>
+<li>Good: “Students being trained in a boardroom”</li>
+<li>Too long: “Five students in business attire sit in a boardroom looking at a projector screen while the presenter gestures towards the leftmost student”</li>
+</ul>
+<p>Avoid these <strong>common alt text errors</strong>:</p>
+<ul>
+<li>Putting text inside an image
+<ul>
+<li>If images of text can’t be avoided, include all visible text in the alt text</li>
+</ul>
+</li>
+<li>Starting each description with “Image of…”
+<ul>
+<li>Do begin with “Screenshot of…” if the image is a screenshot</li>
+</ul>
+</li>
+<li>Repeating the text of an adjacent caption</li>
+<li>Describing decorative images (which don’t convey any meaningful information)
+<ul>
+<li>Instead, set <code>alt=&quot;&quot;</code> for the web, or set description as “decorative” in Word</li>
+</ul>
+</li>
+</ul>
+<h3 id="long-text-description" tabindex="-1">Long text description</h3>
+<p>Sometimes the short alt-text isn’t enough to describe the visual element. In these cases, you should also provide a long description. Include this in the visible text if possible.</p>
+<p>Examples:</p>
+<ul>
+<li>Road map with directions: Describe each step needed to follow the directions</li>
+<li>Flow chart: Use numbered components to fully describe the process</li>
+<li>Line graph: Describe trends, then include the data points in a table</li>
+</ul>
+<p>For more examples, see the W3C’s tutorial on <a href="https://www.w3.org/WAI/tutorials/images/complex/">Complex Images</a>.</p>
+<h3 id="video-audio-and-multimedia" tabindex="-1">Video, audio, and multimedia</h3>
+<p>Embedded audio or video requires a transcript. Videos should be captioned and audio-described. The player controls — start, pause and stop — must be accessible.</p>
+<h2 id="additional-resources" tabindex="-1">Additional resources</h2>
+<ul>
+<li><a href="https://support.google.com/docs/answer/6199477?hl=en&amp;ref_topic=6039805">Google Docs – “Make your document or presentation accessible”</a></li>
+<li><a href="https://support.microsoft.com/en-us/office/make-your-content-accessible-to-everyone-ecab0fcf-d143-4fe8-a2ff-6cd596bddc6d">Microsoft – “Make your content accessible to everyone”</a></li>
+<li><a href="https://www.canada.ca/en/treasury-board-secretariat/services/government-communications/canada-content-style-guide.html#toc5">Government of Canada “Canada.ca Content Style Guide”</a></li>
+<li><a href="https://support.office.com/en-us/article/test-your-document-s-readability-85b4969e-e80a-4777-8dd3-f7fc3c8b3fd2#__toc342546557">Flesch-Kincaid Reading-Ease Test</a> for English and <a href="http://www.scolarius.com/">Scolarius</a> for French</li>
+<li><a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html">Understanding non-text contrast</a></li>
+<li><a href="https://support.office.com/en-ie/article/add-alternative-text-to-a-shape-picture-chart-smartart-graphic-or-other-object-44989b2a-903c-4d9a-b742-6a75b451c669">Add alternative text – Microsoft Office Support</a></li>
+</ul>
+
+
+				</div>
+				
+				
+    
+    
+    
+
+
+
+    
+    
+    
+
+
+
+
+    
+    
+    
+        
+    
+    <nav aria-label="How to create accessible documents in Office 2016" class="mt-400 mb-400">
+        <ul class="office-toc d-grid sm:grid-cols-2 lg:grid-cols-3 gap-200 list-none ps-0 mb-0">
+            <li><span class="office-toc__item" aria-current="page">How to create accessible documents <small class="d-block">in Office 2016</small></span></li>
+            
+                
+                <li><a class="office-toc__item" href="/gc-da11yn.github.io/en/accessible-excel-workbooks-in-office-2016/">
+                    <i class="fas fa-lg fa-file-excel me-50" aria-hidden="true"></i>
+                    Accessible Excel workbooks  <small class="d-block">in Office 2016</small></a></li>
+            
+                
+                <li><a class="office-toc__item" href="/gc-da11yn.github.io/en/accessible-pdf-documents-in-office-2016/">
+                    <i class="fas fa-lg fa-file-pdf me-50" aria-hidden="true"></i>
+                    Accessible PDF documents  <small class="d-block">in Office 2016</small></a></li>
+            
+                
+                <li><a class="office-toc__item" href="/gc-da11yn.github.io/en/accessible-powerpoint-presentations-in-office-2016/">
+                    <i class="fas fa-lg fa-file-powerpoint me-50" aria-hidden="true"></i>
+                    Accessible PowerPoint presentations  <small class="d-block">in Office 2016</small></a></li>
+            
+                
+                <li><a class="office-toc__item" href="/gc-da11yn.github.io/en/accessible-visio-drawings-in-office-2016/">
+                    <i class="fas fa-lg fa-project-diagram me-50" aria-hidden="true"></i>
+                    Accessible Visio drawings  <small class="d-block">in Office 2016</small></a></li>
+            
+                
+                <li><a class="office-toc__item" href="/gc-da11yn.github.io/en/accessible-word-documents-in-office-2016/">
+                    <i class="fas fa-lg fa-file-word me-50" aria-hidden="true"></i>
+                    Accessible Word documents  <small class="d-block">in Office 2016</small></a></li>
+            
+        </ul>
+    </nav>
+
+    <div class="bg-light p-300">
+        
+        
+        <p class="mb-0">Looking for the Microsoft 365 version? Try <a href="/gc-da11yn.github.io/en/how-to-create-accessible-documents-in-microsoft-365/">How to create accessible documents <small><strong> in Microsoft 365</strong></small></a></p>
+    </div>
+
+
+
+				
+			</gcds-container>
+
+			
+<gcds-container tag="section" layout="page" class="pagedetails">
+  <h2 class="visibility-sr-only">Page details</h2>
+  <gcds-date-modified>2024-07-17</gcds-date-modified>
+</gcds-container>
+
+
+		
+		</main>
+
+		
+
+<aside>
+  
+<gcds-container layout="page" padding="300" class="page-list-link">
+  <h3 class="mt-0 mb-200">
+    Still can&#39;t find what you need?
+  </h3>
+  <span>
+    <gcds-icon name="search" margin-right="100"></gcds-icon>
+    See our
+    <a href="/gc-da11yn.github.io/en/page-list/">complete list of pages</a>.
+  </span>
+</gcds-container>
+
+
+ <gcds-container layout="page" padding="300" class="contribute">
+   <gcds-grid columns="1fr" columns-tablet="5fr 7fr" gap="300">
+     <div>
+       <h2 class="mt-0 mb-0 text-light">
+         <i class="fab fa-github fa-fw" aria-hidden="true"></i>
+         Contribute to this project
+       </h2>
+       <p class="contribute-subtitle">on Github.com</p>
+     </div>
+
+     <div>
+		<ul class="contribute-links d-flex flex-wrap gap-300 list-none p-0 mt-0 mb-200">
+         <li class="d-flex align-items-center gap-100">
+           <i class="fas fa-code fa-fw" aria-hidden="true"></i>
+           <a class="link-light" href="https://github.com/gc-da11yn/gc-da11yn.github.io">Source code</a>
+         </li>
+         <li class="d-flex align-items-center gap-100">
+           <gcds-icon name="exclamation-circle"></gcds-icon>
+           <a class="link-light" href="https://github.com/gc-da11yn/gc-da11yn.github.io/issues/">Issues</a>
+         </li>
+         <li class="d-flex align-items-center gap-100">
+           <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+           <a class="link-light" href="https://github.com/gc-da11yn/gc-da11yn.github.io/discussions">Discussions</a>
+         </li>
+       </ul>
+       <span>
+         <gcds-icon name="email" margin-right="100"></gcds-icon>
+         <a href="mailto:digitala11ytoolkit-boitedoutila11enumerique@ssc-spc.gc.ca?subject=Contribute%20to%20the%20Digital%20Accessibility%20Toolkit">Reach the Digital Accessibility Toolkit by email</a>
+       </span>
+     </div>
+   </gcds-grid>
+
+   
+ </gcds-container>
+</aside>
+
+
+		<gcds-footer
+  id="footer"
+  display="full"
+  lang="en"
+  sub-links='{ "Social media": "https://www.canada.ca/en/social.html", "Mobile applications": "https://www.canada.ca/en/mobile.html", "About Canada.ca": "https://www.canada.ca/en/government/about.html", "Terms and conditions": "https://www.canada.ca/en/transparency/terms.html", "Privacy": "https://www.canada.ca/en/transparency/privacy.html" }'
+></gcds-footer>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script></body>
+
+</html>
+
+

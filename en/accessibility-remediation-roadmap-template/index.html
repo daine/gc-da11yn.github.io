@@ -1,0 +1,744 @@
+
+
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+
+	
+<head>
+	<meta charset="utf-8">
+
+	<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+	
+	<title>Accessibility remediation roadmap template- Digital Accessibility Toolkit</title>
+	<meta content="width=device-width,initial-scale=1" name="viewport">
+	<meta name="description" content="This Accessibility Remediation Roadmap template is designed primarily for use in procurements or projects where accessibility conformance is required to be reached over time. The template outlines the essential information the Government of Canada would expect in an Accessibility Remediation Roadmap to understand and address deficiencies listed in an Accessibility Conformance Report (ACR).">
+
+	
+
+	<meta name="source-file" content="./src/pages/en/procurement/accessibility-remediation-roadmap-template-instructions.md">
+
+
+	
+	
+	
+	
+		
+	
+		<link rel="alternate" hreflang="fr" href="/gc-da11yn.github.io/fr/le-modele-de-feuille-de-route-pour-la-correction-des-problemes-daccessibilite/index.html" />
+	
+
+
+	<link href="https://www.canada.ca/etc/designs/canada/wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+
+	<!-- GC Design System CSS Shortcuts -->
+	<link
+	  rel="stylesheet"
+	  href="https://cdn.design-system.canada.ca/@gcds-core/css-shortcuts@1.2.0/dist/gcds-css-shortcuts.min.css"
+	/>
+
+	<!-- GC Design System -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.design-system.canada.ca/@gcds-core/components@1.6.0/dist/gcds/gcds.css"
+    />
+
+	<!-- Site styles: after GCDS so they can build on it -->
+	<link rel="stylesheet" href="/gc-da11yn.github.io/css/da11yn.css"><script>
+      (function () {
+        var key = "basicHtml";
+        var match = location.search.match(/[?&]wbdisable=(true|false)/);
+        var basic = !!match && match[1] === "true";
+        try {
+          if (match) {
+            if (basic) { localStorage.setItem(key, "1"); } else { localStorage.removeItem(key); }
+          }
+          basic = localStorage.getItem(key) === "1";
+        } catch (e) {}
+        document.documentElement.classList.add(basic ? "basic-html" : "standard-html");
+        if (!basic) {
+          var gcds = document.createElement("script");
+          gcds.type = "module";
+          gcds.src = "https://cdn.design-system.canada.ca/@gcds-core/components@1.6.0/dist/gcds/gcds.esm.js";
+          document.head.appendChild(gcds);
+        }
+      })();
+    </script>
+
+	<!-- Meta tags -->
+
+	<meta name="author" content="Government of Canada" />
+	<meta name="dcterms.title" content="Accessibility remediation roadmap template" />
+	<meta name="dcterms.description" content="This Accessibility Remediation Roadmap template is designed primarily for use in procurements or projects where accessibility conformance is required to be reached over time. The template outlines the essential information the Government of Canada would expect in an Accessibility Remediation Roadmap to understand and address deficiencies listed in an Accessibility Conformance Report (ACR)." />
+	<meta name="dcterms.creator" content="Government of Canada">
+	<meta name="dcterms.language" content="en" />
+	<meta name="dcterms.created" content="2023-08-01">
+	<meta name="dcterms.modified" content="2026-10-09" >
+	<meta name="dcterms.subject" content="Digital accessibility in the Government of Canada;Procurement; " />
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SM9MSHWDVN"></script>
+	<script>
+		(function (w) {
+			"use strict";
+			if (w.location.hostname === "a11y.canada.ca") {
+				w.dataLayer = w.dataLayer || [];
+				w.gtag = function () {
+					w.dataLayer.push(arguments);
+				};
+				w.gtag('js', new Date());
+				w.gtag('config', 'G-SM9MSHWDVN');
+			}
+		})(window);
+	</script>
+</head>
+
+
+	<body vocab="http://schema.org/" typeof="WebPage">
+
+		
+
+<header>
+	<gcds-header lang="en" lang-href="" skip-to-href="#main">
+				<nav slot="skip-to-nav" label="Skip to">
+			<a href="#main">Skip to main content</a>
+			<a href="#footer">Skip to &quot;About government&quot;</a>
+			<a class="skip-to-basic" href="?wbdisable=true">Switch to basic HTML version</a>
+			<a class="skip-to-standard" href="?wbdisable=false">Switch to standard version</a>
+		</nav>
+
+	    
+
+
+
+
+	
+
+
+  <gcds-lang-toggle slot="toggle" href="/gc-da11yn.github.io/fr/le-modele-de-feuille-de-route-pour-la-correction-des-problemes-daccessibilite/">
+  </gcds-lang-toggle>
+
+
+
+		<gcds-search search-id="search" slot="search" action="https://canada.ca/en/sr/srb.html"
+			method="get"
+		 	action=""
+		 	name="cse-search-box"
+		 	data-placeholder-long="Canada.ca"
+		 	data-placeholder-short="Canada.ca"
+		 	placeholder="Canada.ca">
+        </gcds-search>
+        <gcds-topic-menu slot="menu"></gcds-topic-menu>
+
+        
+
+<gcds-breadcrumbs slot="breadcrumb">
+		<!-- First breadcrumb: Canada.ca - already set by default on GcdsHeader -->
+		<!-- Second breadcrumb: Locale-based home link -->
+		
+		
+			<gcds-breadcrumbs-item href="/gc-da11yn.github.io/en/">Digital Accessibility Toolkit</gcds-breadcrumbs-item>
+		
+
+		<!-- Additional breadcrumbs based on tags and subjects -->
+		
+			 
+
+			<!-- Special handling for role-based pages -->
+			
+				<!-- Existing breadcrumbs logic for non-role pages -->
+				<!-- Breadcrumbs based on 'subject' -->
+				
+					
+						<gcds-breadcrumbs-item href="/gc-da11yn.github.io/en/digital-accessibility-in-the-government-of-canada">
+							Digital accessibility in the Government of Canada
+						</gcds-breadcrumbs-item>
+						
+					
+				
+
+				<!-- Breadcrumbs based on 'tags' -->
+				
+					
+						
+							<gcds-breadcrumbs-item href="/gc-da11yn.github.io/en/procurement">
+								Procurement
+							</gcds-breadcrumbs-item>
+							
+						
+					
+				
+			
+		
+      </gcds-breadcrumbs>
+
+
+	</gcds-header>
+</header>
+
+
+
+		<main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement" id="main">
+
+		
+			<gcds-container layout="full" class="banner">
+			  <gcds-container layout="page" padding="200">
+				<gcds-grid columns="1fr" columns-desktop="4fr 1fr" class="py-150">
+				  <div class="banner__box">
+					<h1 class="mt-0 mb-300 text-light" property="name">Accessibility remediation roadmap template
+					</h1>
+					
+					<p>This Accessibility Remediation Roadmap template is designed primarily for use in procurements or projects where accessibility conformance is required to be reached over time. The template outlines the essential information the Government of Canada would expect in an Accessibility Remediation Roadmap to understand and address deficiencies listed in an Accessibility Conformance Report (ACR).</p>
+					</div>
+				</gcds-grid>
+			  </gcds-container>
+			</gcds-container>
+
+			
+
+
+
+
+<gcds-container layout="page" padding="300">
+				
+
+				
+				
+
+<div class="container-sm d-flex align-items-center gap-300 bg-light p-300 mb-400">
+	<img src="/gc-da11yn.github.io/img/doc.png" alt="" width="58" height="68">
+	<p class="mb-0">
+		<a href="/gc-da11yn.github.io/docs/procurement-remediation-roadmap-template.docx" download="accessibility-remediation-roadmap-template">Accessibility remediation roadmap template</a>
+		<span class="d-block font-size-text-small">
+			(<i class="fas fa-file-word me-50" aria-hidden="true"></i><span class="visibility-sr-only">Microsoft Word document</span>
+			54
+			<abbr title="KiloByte">KB</abbr>)
+		</span>
+	</p>
+</div>
+
+				
+
+				
+				
+<aside>
+	<h2>On this page</h2>
+	<ul class="list-disc ps-500">
+		
+		
+		
+		
+	<li><a href="#purpose-of-the-accessibility-remediation-roadmap-template">Purpose of the accessibility remediation roadmap template</a>
+		
+		
+	
+		
+		
+	
+	  <ul class="list-circle ps-500">
+		
+		
+		<li><a href="#important-notes">Important notes</a></li>
+		
+		
+		
+		
+		</ul>
+	</li>
+	<li><a href="#how-to-use-the-accessibility-remediation-roadmap-template">How to use the accessibility remediation roadmap template</a>
+		
+		
+	
+		
+		
+		</li>
+	<li><a href="#refer-to-annex-1-sample-accessibility-remediation-roadmap-details-table">Refer to Annex 1 - Sample Accessibility remediation roadmap details table</a>
+		
+		
+	
+		
+		
+		</li>
+	<li><a href="#final-reminder-steps-quick-checklist">Final reminder steps (quick checklist)</a>
+		
+		
+	
+		
+		
+		</li>
+	<li><a href="#accessibility-remediation-roadmap-roadmap-action-item-good-service-name-and-version-action-item-company-name">Accessibility remediation roadmap (roadmap) [action item – good / service name and version] – [action item – company name]</a>
+		
+		
+	
+		
+		
+	
+	  <ul class="list-circle ps-500">
+		
+		
+		<li><a href="#roadmap-timeline">Roadmap timeline</a></li>
+		
+		
+		
+		
+	
+		<li><a href="#good-service-description">Good / service description</a></li>
+		
+		
+		
+		
+	
+		<li><a href="#contact-information">Contact information</a></li>
+		
+		
+		
+		
+	
+		<li><a href="#target-accessibility-standard">Target accessibility standard</a></li>
+		
+		
+		
+		
+	
+		<li><a href="#good-service-accessibility-conformance-overview">Good / service accessibility conformance overview</a></li>
+		
+		
+		
+		
+	
+		<li><a href="#accessibility-inclusion-plan">Accessibility inclusion plan</a></li>
+		
+		
+		
+		
+	
+		<li><a href="#known-technical-limitations">Known technical limitations</a></li>
+		
+		
+		
+		
+	
+		<li><a href="#accessibility-issues-details">Accessibility issues details</a></li>
+		
+		
+		
+		
+	
+		<li><a href="#accessibility-remediation-roadmap-details">Accessibility remediation roadmap details</a></li>
+		
+		
+		
+		
+	
+		<li><a href="#approvals-and-signatures">Approvals and signatures</a></li>
+		
+		
+		
+		
+		</ul>
+	</li>
+	<li><a href="#annex-1-sample-accessibility-remediation-roadmap-details-table">Annex 1 – Sample accessibility remediation roadmap details table</a>
+		
+		
+	
+		
+		
+	
+	  <ul class="list-circle ps-500">
+		
+		
+		<li><a href="#notes">Notes</a></li>
+		</ul>
+		</li>
+		
+		
+		</ul>
+		</li>
+		</ul>
+</aside>
+
+
+				
+
+				<div class="page-content">
+				<h2 id="purpose-of-the-accessibility-remediation-roadmap-template" tabindex="-1">Purpose of the accessibility remediation roadmap template</h2>
+<p>This Accessibility Remediation Roadmap (Roadmap) template has been developed by SSC to address known Information and Communication Technology (ICT) accessibility deficiencies. Government of Canada Technical Authorities / Business Owners can use this template as is, modify it, or decide not to use it.</p>
+<p>The template outlines the essential information the Government of Canada would expect in an Accessibility Remediation Roadmap to understand and address deficiencies listed in an Accessibility Conformance Report (ACR). It serves as a guide for understanding:</p>
+<ul>
+<li>The current accessibility issues and</li>
+<li>The timelines and plans for resolving these issues.</li>
+</ul>
+<p>This Accessibility Remediation Roadmap template is designed primarily for use in procurements or projects where accessibility conformance is required. Use the template to complete all necessary sections, adding any additional details or relevant sections to the Accessibility Remediation Roadmap, as needed.</p>
+<h3 id="important-notes" tabindex="-1">Important notes</h3>
+<ul>
+<li>Testing for Conformance: Before creating an Accessibility Remediation Roadmap, the Good or Service must be tested for conformance to the target accessibility standard to identify areas of nonconformance. The results are recorded in the Accessibility Conformance Report.</li>
+<li>Requirements for Conformance: The requirement for conformance to the target accessibility standard and level of detail for the Accessibility Remediation Roadmap will be outlined in the solicitation and/or contract.</li>
+<li>Accessible Format: Both the Accessibility Conformance Report and the Accessibility Remediation Roadmap must be created in an accessible format.</li>
+<li>Contractual Obligations: If this template is used to fulfill contractual requirements, ensure it is adapted to provide all required information as per the contract terms.</li>
+</ul>
+<h2 id="how-to-use-the-accessibility-remediation-roadmap-template" tabindex="-1">How to use the accessibility remediation roadmap template</h2>
+<p>Inline Instructions</p>
+<ul>
+<li>Rather than providing detailed instructions here, guidance has been integrated directly into the template. Inline instructions are marked with [Action Item - square brackets].</li>
+<li>Follow these instructions to complete each section of the Accessibility Remediation Roadmap.</li>
+<li>Remove the [instructions] once the section is complete.</li>
+</ul>
+<h2 id="refer-to-annex-1-sample-accessibility-remediation-roadmap-details-table" tabindex="-1">Refer to Annex 1 - Sample Accessibility remediation roadmap details table</h2>
+<p>Refer to the provided sample <a href="#annex-1-sample-accessibility-remediation-roadmap-details-table">Annex 1 – Sample Accessibility Remediation Roadmap Details Table</a> for guidance on how to structure and present known accessibility issues.</p>
+<h2 id="final-reminder-steps-quick-checklist" tabindex="-1">Final reminder steps (quick checklist)</h2>
+<ol>
+<li>Complete the ACR - Identify all accessibility deficiencies through conformance testing.</li>
+<li>Use this Template - Populate the Accessibility Remediation Roadmap with details from the Accessibility Conformance Report.</li>
+<li>Customize as Needed - Add or adjust sections to meet specific contractual or organizational requirements.</li>
+<li>Finalizing the Accessibility Remediation Roadmap - Replace all placeholder text marked as “Action Item” and ensure all the information is completed accurately.</li>
+<li>Make it Accessible - Ensure this Accessibility Remediation Roadmap and its associated Accessibility Conformance Report are provided in an accessible format for all stakeholders.</li>
+<li>Approvals and Signatures - Submit for review and obtain signatures from all key stakeholders.</li>
+</ol>
+<p>[Action Item: Delete the Accessibility Remediation Roadmap Template Instructions section, including this line, once your document is complete.]</p>
+<h2 id="accessibility-remediation-roadmap-roadmap-action-item-good-service-name-and-version-action-item-company-name" tabindex="-1">Accessibility remediation roadmap (roadmap) [action item – good / service name and version] – [action item – company name]</h2>
+<h3 id="roadmap-timeline" tabindex="-1">Roadmap timeline</h3>
+<p>Roadmap Date - [Action Item - Enter the date the Roadmap was created on, e.g. July 01, 2024]</p>
+<p>Remediation Timeframe - [Action Item - Enter the date by which full accessibility conformance is expected, e.g. July 2026]</p>
+<h3 id="good-service-description" tabindex="-1">Good / service description</h3>
+<p>[Action Item - Provide a brief description of the Good / Service. If any portions of the Good / Service are being excluded from this Roadmap, please make sure to indicate them and provide a justification.]</p>
+<h3 id="contact-information" tabindex="-1">Contact information</h3>
+<p>[Action Item - Include the contact information (name, email and phone number) of the person who can speak to the content of the Roadmap. Listing the name and email is ideal. If no specific individual can be identified, provide a generic email address monitored by someone who can address questions related to this roadmap.]</p>
+<p>Name:</p>
+<p>Title:</p>
+<p>Email:</p>
+<p>Phone Number:</p>
+<h3 id="target-accessibility-standard" tabindex="-1">Target accessibility standard</h3>
+<p>As of January 2025, the Government of Canada is implementing the <a href="https://accessible.canada.ca/en-301-549-accessibility-requirements-ict-products-and-services-1">CAN/ASC – EN 301 549:2024</a> / <a href="https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf">EN 301 549 V3.2.1 (2021-03)<small> (<abbr title="Portable Document Format">PDF</abbr>, 2.3 <abbr title="Megabite">MB</abbr>)</small></a>.</p>
+<p>The <a href="https://accessible.canada.ca/en-301-549-accessibility-requirements-ict-products-and-services-1">CAN/ASC - EN 301 549:2024</a> standard is Accessible Standards Canada’s adoption of the <a href="https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf">EN 301 549 - V3.2.1 (2021-03)<small> (<abbr title="Portable Document Format">PDF</abbr>, 2.3 <abbr title="Megabite">MB</abbr>)</small></a> as a national standard of Canada and is identical to the official version released by the European Telecommunications Standards Institute (ETSI). The CAN/ASC - EN 301 549:2024 accessibility standard is available in HTML format in both English and French.</p>
+<p>This template can be used for subsequent versions of the EN 301 549 and/or other ICT accessibility standards. The Government of Canada will advise the applicable ICT accessibility standard that conformance is requested for.</p>
+<h3 id="good-service-accessibility-conformance-overview" tabindex="-1">Good / service accessibility conformance overview</h3>
+<p>[Action Item - Provide a brief summary of the current accessibility status of the Good / Service. Indicate if there are any known groups of users who may experience some barriers, e.g. screen reader users.]</p>
+<h3 id="accessibility-inclusion-plan" tabindex="-1">Accessibility inclusion plan</h3>
+<p>[Action Item - Outline your organization’s approach to improving the accessibility of the Good / Service. This generally should include:</p>
+<ul>
+<li>Plans for regular accessibility testing.</li>
+<li>Accessibility integration into the design and development of any new Good / Service features.</li>
+<li>Integration of accessibility testing into development processes.</li>
+<li>Any initiatives to test with users, or to facilitate gathering accessibility specific feedback from end users.</li>
+<li>Outline how accommodations and workarounds will be provided to users until full remediation is achieved.</li>
+</ul>
+<p>The intention for this section is to clearly communicate strategies to address the conformance of the Good / Service on an ongoing basis.]</p>
+<h3 id="known-technical-limitations" tabindex="-1">Known technical limitations</h3>
+<p>[Action Item - If applicable, indicate any key technical limitations of the current solutions implementation, such as frameworks, platforms, integrations or technologies which may limit the current solution from reaching full conformance to the target accessibility standard. Please also provide, if any, plans to address these limitations.]</p>
+<h4 id="notes" tabindex="-1">Notes</h4>
+<p>[Action Item - Add any other notes or comments which the reader (the GC Functional Product Owner) should be aware of. For example:</p>
+<ul>
+<li>software upgrade options that would resolve accessibility issues;</li>
+<li>plans to subcontract accessibility audits and remediation.]</li>
+</ul>
+<h3 id="accessibility-issues-details" tabindex="-1">Accessibility issues details</h3>
+<h4 id="issue-status-definitions" tabindex="-1">Issue status definitions</h4>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Open</td>
+<td>Work has not yet started on resolving this issue.</td>
+</tr>
+<tr>
+<td>Resolved</td>
+<td>Issue has been successfully remediated.</td>
+</tr>
+<tr>
+<td>In Progress</td>
+<td>Work has started but is not yet complete.</td>
+</tr>
+<tr>
+<td>Will Not Fix</td>
+<td>Issue will not be fixed; a justification must be provided in the Remarks and Explanations column of the <a href="#accessibility-remediation-roadmap-details">Accessibility Remediation Roadmap Details</a> table.</td>
+</tr>
+<tr>
+<td>Blocked</td>
+<td>Remediation is delayed by dependencies; explain why in the Remarks and Explanations column of the <a href="#accessibility-remediation-roadmap-details">Accessibility Remediation Roadmap Details</a> table.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="priority-definitions" tabindex="-1">Priority definitions</h4>
+<p>[Action Item - If this Roadmap is going to be providing priorities to determine remediation timeframes, consider using the below definition as a starting point and adjust as needed. If the Roadmap does not use a priority rating to define timelines, then this column of the Accessibility Remediation Roadmap Details table can be removed.]</p>
+<table>
+<thead>
+<tr>
+<th>Priority</th>
+<th>Description</th>
+<th>Timeframe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Critical</td>
+<td>This accessibility issue results in inaccessible content or substantial barriers for individuals with disabilities. Until a solution is implemented, content will be completely inaccessible. Requires immediate remediation.</td>
+<td>[Action Item - Remediation should be a top priority.]</td>
+</tr>
+<tr>
+<td>High</td>
+<td>This accessibility issue results in serious barriers for individuals with disabilities. Until a solution is implemented, some content will be inaccessible. Users relying on Assistive Technology will experience significant frustration when attempting to access content.</td>
+<td>[Action Item - Remediation should be a priority.]</td>
+</tr>
+<tr>
+<td>Moderate</td>
+<td>This accessibility issue results in some barriers for individuals with disabilities but would not prevent them from accessing fundamental functionalities, elements or content. This issue must be resolved before the solution can be considered fully compliant.</td>
+<td>[Action Item - Remediation should be a reasonable priority.]</td>
+</tr>
+<tr>
+<td>Low</td>
+<td>This is considered an accessibility issue that yields less impact for users than a moderate issue. For a solution to be considered fully compliant, this accessibility issue must be resolved, but can be dealt with last.</td>
+<td>[Action Item - Remediation should be the lowest priority.]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="known-issues" tabindex="-1">Known issues</h4>
+<p>[Action Item - Fill out the Roadmap Details table with as much information as you can to help the reader understand the nature of each known issue and how and when it will be remediated. You can also list user issues / barriers that are not related to conformance. Depending on the number of issues that you are recording, you can consider representing this data in a separate spreadsheet as it is not uncommon for some larger products to have hundreds to thousands of known issues.]</p>
+<h4 id="roadmap-details-table-column-definitions" tabindex="-1">Roadmap details table column definitions</h4>
+<ul>
+<li>Related Non-conformant clause(s) - Provide the related clause from the target accessibility standard.</li>
+<li>Issue Title - Provide a short issue title.</li>
+<li>Issue Description - Provide clear details regarding the accessibility issue.</li>
+<li>Remediation Priority - Provide the priority as defined in the <a href="#priority-definitions">Priority Definitions</a>.</li>
+<li>Remediation Timeline - Provide the anticipated date when the issue will be resolved.</li>
+<li>Status - Provide the status as defined in the <a href="#issue-status-definitions">Issue Status Definitions</a>.</li>
+<li><strong>Remarks and Explanations – List all details and information applicable for the issue listed. Enter the required</strong> justification for any issue with a status marked as “Will Not Fix” or “Blocked”.</li>
+<li><strong>Temporary Workarounds - List any methods you know of that can help affected users temporarily work around the problem.</strong></li>
+</ul>
+<h3 id="accessibility-remediation-roadmap-details" tabindex="-1">Accessibility remediation roadmap details</h3>
+<table>
+<thead>
+<tr>
+<th>Related Non-conformant clause(s)</th>
+<th>Issue Title</th>
+<th>Issue Description</th>
+<th>Remediation Priority</th>
+<th>Remediation Timeline</th>
+<th>Status</th>
+<th>Remarks and Explanations</th>
+<th>Temporary Workarounds</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>Refer to <a href="#annex-1-sample-accessibility-remediation-roadmap-details-table">Annex 1 – Sample Accessibility Remediation Roadmap Details Table</a>.</p>
+<h3 id="approvals-and-signatures" tabindex="-1">Approvals and signatures</h3>
+<p>[Action Item - Fill out accordingly to formalize the commitment to the Roadmap and ensure accountability. Add a quick note regarding the contractual obligations. Example Contractual Clause:</p>
+<p>The Vendor agrees to remediate all identified ICT accessibility deficiencies outlined in this Accessibility Remediation Roadmap by the specified deadlines. Failure to meet these deadlines may result in contractual penalties or adjustments as deemed necessary by the GC Functional Product Owner. Regular status updates must be provided, and the Vendor will ensure all updates comply with the target accessibility standard.]</p>
+<table>
+<thead>
+<tr>
+<th>Stakeholder Name</th>
+<th>Role</th>
+<th>Digital Signature</th>
+<th>Date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[Name]</td>
+<td>GC Functional Product Owner</td>
+<td>&nbsp;</td>
+<td>[Month DD, YYYY]</td>
+</tr>
+<tr>
+<td>[Name]</td>
+<td>GC Contracting Authority</td>
+<td>&nbsp;</td>
+<td>[Month DD, YYYY]</td>
+</tr>
+<tr>
+<td>[Name]</td>
+<td>Vendor Representative</td>
+<td>&nbsp;</td>
+<td>[Month DD, YYYY]</td>
+</tr>
+<tr>
+<td>[Name]</td>
+<td>Vendor Accessibility Auditor</td>
+<td>&nbsp;</td>
+<td>[Month DD, YYYY]</td>
+</tr>
+</tbody>
+</table>
+<h2 id="annex-1-sample-accessibility-remediation-roadmap-details-table" tabindex="-1">Annex 1 – Sample accessibility remediation roadmap details table</h2>
+<p>[Action Item - Annex 1 – Sample Accessibility Remediation Roadmap Details Table– (Delete before issuing your template)</p>
+<h3 id="notes-1" tabindex="-1">Notes</h3>
+<ul>
+<li>The Sample Accessibility Remediation Roadmap Details Table has been prefilled with three sample issues which must be removed when you provide your Roadmap.</li>
+<li>EN indicates the EN 301 549 - V3.2.1 (2021-03) clause. It is recommended to link it to the proper clause in the standard. Roadmap creators can use either the reference to the EN 301 549 - V3.2.1 (2021-03) clause (e.g. EN 9.1.4.3 Contrast (Minimum)) or the equivalent reference to the CAN/ASC - EN 301 549:2024 clause (e.g. CAN/ASC 9.1.4.3 Contrast (Minimum)).</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><span id="_Annex_1_–" class="anchor"></span>Related Non-conformant clause(s)</th>
+<th>Issue Title</th>
+<th>Issue Description</th>
+<th>Remediation Priority</th>
+<th>Remediation Timeline</th>
+<th>Status</th>
+<th>Remarks and Explanations</th>
+<th>Temporary Workarounds</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf#page=46">EN 9.1.4.3 Contrast (Minimum)<small> (<abbr title="Portable Document Format">PDF</abbr>, 2.3 <abbr title="Megabite">MB</abbr>)</small></a></td>
+<td>Main menu lacks sufficient contrast.</td>
+<td>Labels in main menu fail 4.5:1 contrast ratio.</td>
+<td>Low</td>
+<td>Q4 FY2025-26</td>
+<td>Open</td>
+<td>Text labels have a contrast ratio of 3.1:1. A new background colour selection will be made to address this issue.</td>
+<td>High contrast scheme can be used. Instructions will be provided to users.</td>
+</tr>
+<tr>
+<td><a href="https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf#page=47">EN 9.2.1.1 Keyboard<small> (<abbr title="Portable Document Format">PDF</abbr>, 2.3 <abbr title="Megabite">MB</abbr>)</small></a></td>
+<td>Main menu not keyboard accessible.</td>
+<td>The main menu on the page is not focusable using a keyboard.</td>
+<td>High</td>
+<td>Q1 FY2025-26</td>
+<td>Open</td>
+<td>Main menu is currently only accessible when using a mouse. It does not receive keyboard focus.</td>
+<td>Direct links to each page found in the main menu will be provided to all users.</td>
+</tr>
+<tr>
+<td><a href="https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf#page=47">EN 9.2.1.1 Keyboard<small> (<abbr title="Portable Document Format">PDF</abbr>, 2.3 <abbr title="Megabite">MB</abbr>)</small></a></td>
+<td>Combo box not keyboard accessible.</td>
+<td>23 combo boxes fail keyboard accessibility and cannot be accessed by keyboard-only access users.</td>
+<td>High</td>
+<td>Q1 FY2025-26</td>
+<td>In Progress</td>
+<td>This is a priority issue and is being address ASAP. When addressed, this will resolve the 23 combo boxes failing this criterion.</td>
+<td>No known workaround.</td>
+</tr>
+</tbody>
+</table>
+<p>[End of sample.]</p>
+
+				</div>
+				
+			</gcds-container>
+
+			
+<gcds-container tag="section" layout="page" class="pagedetails">
+  <h2 class="visibility-sr-only">Page details</h2>
+  <gcds-date-modified>2026-10-09</gcds-date-modified>
+</gcds-container>
+
+
+		
+		</main>
+
+		
+
+<aside>
+  
+<gcds-container layout="page" padding="300" class="page-list-link">
+  <h3 class="mt-0 mb-200">
+    Still can&#39;t find what you need?
+  </h3>
+  <span>
+    <gcds-icon name="search" margin-right="100"></gcds-icon>
+    See our
+    <a href="/gc-da11yn.github.io/en/page-list/">complete list of pages</a>.
+  </span>
+</gcds-container>
+
+
+ <gcds-container layout="page" padding="300" class="contribute">
+   <gcds-grid columns="1fr" columns-tablet="5fr 7fr" gap="300">
+     <div>
+       <h2 class="mt-0 mb-0 text-light">
+         <i class="fab fa-github fa-fw" aria-hidden="true"></i>
+         Contribute to this project
+       </h2>
+       <p class="contribute-subtitle">on Github.com</p>
+     </div>
+
+     <div>
+		<ul class="contribute-links d-flex flex-wrap gap-300 list-none p-0 mt-0 mb-200">
+         <li class="d-flex align-items-center gap-100">
+           <i class="fas fa-code fa-fw" aria-hidden="true"></i>
+           <a class="link-light" href="https://github.com/gc-da11yn/gc-da11yn.github.io">Source code</a>
+         </li>
+         <li class="d-flex align-items-center gap-100">
+           <gcds-icon name="exclamation-circle"></gcds-icon>
+           <a class="link-light" href="https://github.com/gc-da11yn/gc-da11yn.github.io/issues/">Issues</a>
+         </li>
+         <li class="d-flex align-items-center gap-100">
+           <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+           <a class="link-light" href="https://github.com/gc-da11yn/gc-da11yn.github.io/discussions">Discussions</a>
+         </li>
+       </ul>
+       <span>
+         <gcds-icon name="email" margin-right="100"></gcds-icon>
+         <a href="mailto:digitala11ytoolkit-boitedoutila11enumerique@ssc-spc.gc.ca?subject=Contribute%20to%20the%20Digital%20Accessibility%20Toolkit">Reach the Digital Accessibility Toolkit by email</a>
+       </span>
+     </div>
+   </gcds-grid>
+
+   
+ </gcds-container>
+</aside>
+
+
+		<gcds-footer
+  id="footer"
+  display="full"
+  lang="en"
+  sub-links='{ "Social media": "https://www.canada.ca/en/social.html", "Mobile applications": "https://www.canada.ca/en/mobile.html", "About Canada.ca": "https://www.canada.ca/en/government/about.html", "Terms and conditions": "https://www.canada.ca/en/transparency/terms.html", "Privacy": "https://www.canada.ca/en/transparency/privacy.html" }'
+></gcds-footer>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script></body>
+
+</html>
+
+

@@ -1,0 +1,411 @@
+
+
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+
+	
+<head>
+	<meta charset="utf-8">
+
+	<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+	
+	<title>Audio Description Guidelines- Digital Accessibility Toolkit</title>
+	<meta content="width=device-width,initial-scale=1" name="viewport">
+	<meta name="description" content="Audio description allows any user with a visual disability or cognitive disability to receive a very detailed and descriptive experience of what is happening on the screen for every aspect of the video.">
+
+	
+
+	<meta name="source-file" content="./src/pages/en/audio-description-guidelines.md">
+
+
+	
+	
+	
+	
+		
+	
+		<link rel="alternate" hreflang="fr" href="/gc-da11yn.github.io/fr/directives-pour-la-description-sonore/index.html" />
+	
+
+
+	<link href="https://www.canada.ca/etc/designs/canada/wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+
+	<!-- GC Design System CSS Shortcuts -->
+	<link
+	  rel="stylesheet"
+	  href="https://cdn.design-system.canada.ca/@gcds-core/css-shortcuts@1.2.0/dist/gcds-css-shortcuts.min.css"
+	/>
+
+	<!-- GC Design System -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.design-system.canada.ca/@gcds-core/components@1.6.0/dist/gcds/gcds.css"
+    />
+
+	<!-- Site styles: after GCDS so they can build on it -->
+	<link rel="stylesheet" href="/gc-da11yn.github.io/css/da11yn.css"><script>
+      (function () {
+        var key = "basicHtml";
+        var match = location.search.match(/[?&]wbdisable=(true|false)/);
+        var basic = !!match && match[1] === "true";
+        try {
+          if (match) {
+            if (basic) { localStorage.setItem(key, "1"); } else { localStorage.removeItem(key); }
+          }
+          basic = localStorage.getItem(key) === "1";
+        } catch (e) {}
+        document.documentElement.classList.add(basic ? "basic-html" : "standard-html");
+        if (!basic) {
+          var gcds = document.createElement("script");
+          gcds.type = "module";
+          gcds.src = "https://cdn.design-system.canada.ca/@gcds-core/components@1.6.0/dist/gcds/gcds.esm.js";
+          document.head.appendChild(gcds);
+        }
+      })();
+    </script>
+
+	<!-- Meta tags -->
+
+	<meta name="author" content="Government of Canada" />
+	<meta name="dcterms.title" content="Audio Description Guidelines" />
+	<meta name="dcterms.description" content="Audio description allows any user with a visual disability or cognitive disability to receive a very detailed and descriptive experience of what is happening on the screen for every aspect of the video." />
+	<meta name="dcterms.creator" content="Government of Canada">
+	<meta name="dcterms.language" content="en" />
+	<meta name="dcterms.created" content="2023-08-01">
+	<meta name="dcterms.modified" content="2025-09-19" >
+	<meta name="dcterms.subject" content="How-tos;Create web content; " />
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SM9MSHWDVN"></script>
+	<script>
+		(function (w) {
+			"use strict";
+			if (w.location.hostname === "a11y.canada.ca") {
+				w.dataLayer = w.dataLayer || [];
+				w.gtag = function () {
+					w.dataLayer.push(arguments);
+				};
+				w.gtag('js', new Date());
+				w.gtag('config', 'G-SM9MSHWDVN');
+			}
+		})(window);
+	</script>
+</head>
+
+
+	<body vocab="http://schema.org/" typeof="WebPage">
+
+		
+
+<header>
+	<gcds-header lang="en" lang-href="" skip-to-href="#main">
+				<nav slot="skip-to-nav" label="Skip to">
+			<a href="#main">Skip to main content</a>
+			<a href="#footer">Skip to &quot;About government&quot;</a>
+			<a class="skip-to-basic" href="?wbdisable=true">Switch to basic HTML version</a>
+			<a class="skip-to-standard" href="?wbdisable=false">Switch to standard version</a>
+		</nav>
+
+	    
+
+
+
+
+	
+
+
+  <gcds-lang-toggle slot="toggle" href="/gc-da11yn.github.io/fr/directives-pour-la-description-sonore/">
+  </gcds-lang-toggle>
+
+
+
+		<gcds-search search-id="search" slot="search" action="https://canada.ca/en/sr/srb.html"
+			method="get"
+		 	action=""
+		 	name="cse-search-box"
+		 	data-placeholder-long="Canada.ca"
+		 	data-placeholder-short="Canada.ca"
+		 	placeholder="Canada.ca">
+        </gcds-search>
+        <gcds-topic-menu slot="menu"></gcds-topic-menu>
+
+        
+
+<gcds-breadcrumbs slot="breadcrumb">
+		<!-- First breadcrumb: Canada.ca - already set by default on GcdsHeader -->
+		<!-- Second breadcrumb: Locale-based home link -->
+		
+		
+			<gcds-breadcrumbs-item href="/gc-da11yn.github.io/en/">Digital Accessibility Toolkit</gcds-breadcrumbs-item>
+		
+
+		<!-- Additional breadcrumbs based on tags and subjects -->
+		
+			 
+
+			<!-- Special handling for role-based pages -->
+			
+				<!-- Existing breadcrumbs logic for non-role pages -->
+				<!-- Breadcrumbs based on 'subject' -->
+				
+					
+						<gcds-breadcrumbs-item href="/gc-da11yn.github.io/en/how-tos">
+							How-tos
+						</gcds-breadcrumbs-item>
+						
+					
+				
+
+				<!-- Breadcrumbs based on 'tags' -->
+				
+					
+						
+							<gcds-breadcrumbs-item href="/gc-da11yn.github.io/en/create-web-content">
+								Create web content
+							</gcds-breadcrumbs-item>
+							
+						
+					
+				
+			
+		
+      </gcds-breadcrumbs>
+
+
+	</gcds-header>
+</header>
+
+
+
+		<main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement" id="main">
+
+		
+			<gcds-container layout="full" class="banner">
+			  <gcds-container layout="page" padding="200">
+				<gcds-grid columns="1fr" columns-desktop="4fr 1fr" class="py-150">
+				  <div class="banner__box">
+					<h1 class="mt-0 mb-300 text-light" property="name">Audio Description Guidelines
+					</h1>
+					
+					<p>Audio description allows any user with a visual disability or cognitive disability to receive a very detailed and descriptive experience of what is happening on the screen for every aspect of the video.</p>
+					</div>
+				</gcds-grid>
+			  </gcds-container>
+			</gcds-container>
+
+			
+
+
+
+
+<gcds-container layout="page" padding="300">
+				
+
+				
+
+				
+
+				<div class="page-content">
+				<p>Audio description is sometimes known as described video, video description, or visual interpretation.</p>
+<p>Audio description allows any user with a visual disability or cognitive disability to receive a very detailed and descriptive experience of what is happening on the screen for every aspect of the video. A number of organizations require Audio description (<abbr>AD</abbr>) and Described video (<abbr>DV</abbr>), or video description in video, such as the <a href="http://www.crtc.gc.ca/eng/info_sht/b322.htm">Canadian Radio-television and Telecommunications Commission</a> (<abbr>CRTC&lt;/abbr)).</p>
+<p>Audio description is also used by sighted individuals, so both audio and video elements are needed (for example, someone with some vision loss who can not read the text but wants to see the rest).</p>
+<p>Audio description and described video make TV programs accessible for people who are blind or who have visual impairments:</p>
+<dl>
+<dt>Audio description (<abbr>AD</abbr>):</dt>
+<dd>Relies on a program host or announcer to provide a voice-over by reading aloud or describing key elements of programming, such as text and graphics that appear on the screen. It is often used for information-based programming, including newscasts, weather reports, sports scores, and financial data. Most broadcasters are required to provide audio description.</dd>
+<dt>Described video (<abbr>DV</abbr>), or video description:</dt>
+<dd>A narrated description of a program's main visual elements, such as settings, costumes, and body language. The description is added during pauses in dialogue and enables people to form a mental picture of what is happening in the program. Described video typically uses a separate audio track.</dd>
+</dl>
+<p>Source: <a href="https://crtc.gc.ca/eng/info_sht/b322.htm">TV access for people who are blind or partially sighted: Described video and audio description | CRTC</a></p>
+<p>Note: If audio description is being used for a video, then the descriptions need to be included in the transcript.</p>
+<h2 id="audio-description-checklist" tabindex="-1">Audio Description Checklist</h2>
+<p>Does the audio description:</p>
+<ul>
+<li>Describe what the viewer needs to know?
+<ul>
+<li>Prioritize important content?</li>
+<li>Describe actions and details that add to the understanding of personal appearance, setting, atmosphere, and mise-en-scène (scenery).</li>
+</ul>
+</li>
+<li>Describe only what is seen?
+<ul>
+<li>Exclude motivations or intentions?</li>
+<li>Narrate the main visual elements observed (settings, costumes, and body language).</li>
+<li>Obvious emotional states (exclude invisible perceptions such as mental state, reasoning, or motivation).</li>
+</ul>
+</li>
+<li>Describe where unidentified sounds are coming from? (phone ringing)</li>
+<li>Include credits, subtitles, and captions?</li>
+<li>Have a clear voice distinction between the description and the video’s audio?</li>
+<li>Not interfere with the important elements in the video’s original audio?</li>
+<li>Include tone and manner of voice, as needed (whispering).</li>
+<li>Titles and credits wherever possible.</li>
+</ul>
+<p>Is the audio description:</p>
+<ul>
+<li>Accurate?</li>
+<li>Good word choice?</li>
+<li>Good pronunciation?</li>
+<li>Good diction?</li>
+<li>Good enunciation?</li>
+<li>Consistent use of names and terms.</li>
+<li>Consistent?
+<ul>
+<li>Content and voicing match the style, tone, and pace of video.</li>
+<li>Synchronized and occurring at approximately the same time as it is appearing in the video.</li>
+</ul>
+</li>
+<li>Prioritized?
+<ul>
+<li>Content is essential for comprehension?</li>
+</ul>
+</li>
+<li>Appropriate for intended audience?
+<ul>
+<li>Described in the language of the audience
+<ul>
+<li>Is it objective?</li>
+<li>Is it simple?</li>
+<li>Is it succinct?</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Equal?
+<ul>
+<li>The meaning and intention of the material is preserved and conveyed?</li>
+<li>Uncensored?</li>
+</ul>
+</li>
+</ul>
+<h2 id="keyboard-access-guidelines" tabindex="-1">Keyboard Access Guidelines</h2>
+<p>Accessible media players provide a user interface that works without a mouse, through speech interface, when the page is zoomed larger, and with screen readers. For example, media players need to:</p>
+<ul>
+<li>Provide keyboard support (<a href="https://www.w3.org/WAI/WCAG21/Understanding/keyboard-accessible">in Understanding WCAG: Keyboard Accessible</a>)</li>
+<li>Make the keyboard focus indicator visible (<a href="https://www.w3.org/WAI/WCAG21/Understanding/focus-visible">in Understanding WCAG: Focus Visible</a>)</li>
+<li>Provide clear labels (<a href="https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions">in Understanding WCAG: Labels or Instructions</a>, <a href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships">Info and Relationships</a>)</li>
+<li>Have sufficient contrast between colors for text, controls, and backgrounds (<a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum">in Understanding WCAG: Contrast (Minimum)</a>, <a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced">Contrast (Enhanced)</a>, <a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html">Non-text Contrast</a>)</li>
+</ul>
+<p>Some media players provide additional accessibility functionality to users such as:</p>
+<ul>
+<li>Changing the speed of the video.</li>
+<li>Setting how captions are displayed (for example text style, text size, colors, and position of the captions).</li>
+<li>Reading the captions with a screen reader and braille device.</li>
+<li>Interactive transcripts.</li>
+</ul>
+<h2 id="keyboard-access-checklist" tabindex="-1">Keyboard Access Checklist</h2>
+<ul>
+<li>Can the user use a keyboard to operate the media player (<a href="https://www.w3.org/WAI/WCAG21/Understanding/keyboard.html">WCAG 2.1.1</a>)?</li>
+<li>Is the media player free from keyboard traps? (<a href="https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html">WCAG 2.1.2</a>)</li>
+<li>Is the time-based media free from content that flashes more than three times per second? (<a href="https://www.w3.org/WAI/WCAG21/Understanding/three-flashes-or-below-threshold.html">WCAG 2.3.1</a>)</li>
+</ul>
+<p>Using a keyboard, does the media player:</p>
+<ul>
+<li>Have a mechanism to pause or stop video? (<a href="https://www.w3.org/WAI/WCAG21/Understanding/pause-stop-hide.html">WCAG 2.2.2</a>)</li>
+<li>Start at the user’s request (does not automatically start playing)?</li>
+<li>If it does start automatically, is there a mechanism to pause or stop the player within 3 focus points? (<a href="https://www.w3.org/WAI/WCAG21/Understanding/audio-control.html">WCAG 1.4.2</a>)</li>
+<li>Have a mechanism to adjust the volume?</li>
+<li>Have accurate button labels (<a href="https://www.w3.org/WAI/WCAG21/Understanding/headings-and-labels.html">WCAG 2.4.6</a>)?</li>
+</ul>
+<p>Does the time-based media player support (have an icon/link for)?</p>
+<ul>
+<li>Captions:
+<ul>
+<li>Can they be turned on and off (if open captions are not presented)?</li>
+</ul>
+</li>
+<li>Audio descriptions:
+<ul>
+<li>Can they be turned on and off?</li>
+</ul>
+</li>
+<li>Transcripts:
+<ul>
+<li>Is the link to the transcripts descriptive?</li>
+<li>Is the link immediately following or preceding the media player?</li>
+</ul>
+</li>
+</ul>
+
+				</div>
+				
+			</gcds-container>
+
+			
+<gcds-container tag="section" layout="page" class="pagedetails">
+  <h2 class="visibility-sr-only">Page details</h2>
+  <gcds-date-modified>2025-09-19</gcds-date-modified>
+</gcds-container>
+
+
+		
+		</main>
+
+		
+
+<aside>
+  
+<gcds-container layout="page" padding="300" class="page-list-link">
+  <h3 class="mt-0 mb-200">
+    Still can&#39;t find what you need?
+  </h3>
+  <span>
+    <gcds-icon name="search" margin-right="100"></gcds-icon>
+    See our
+    <a href="/gc-da11yn.github.io/en/page-list/">complete list of pages</a>.
+  </span>
+</gcds-container>
+
+
+ <gcds-container layout="page" padding="300" class="contribute">
+   <gcds-grid columns="1fr" columns-tablet="5fr 7fr" gap="300">
+     <div>
+       <h2 class="mt-0 mb-0 text-light">
+         <i class="fab fa-github fa-fw" aria-hidden="true"></i>
+         Contribute to this project
+       </h2>
+       <p class="contribute-subtitle">on Github.com</p>
+     </div>
+
+     <div>
+		<ul class="contribute-links d-flex flex-wrap gap-300 list-none p-0 mt-0 mb-200">
+         <li class="d-flex align-items-center gap-100">
+           <i class="fas fa-code fa-fw" aria-hidden="true"></i>
+           <a class="link-light" href="https://github.com/gc-da11yn/gc-da11yn.github.io">Source code</a>
+         </li>
+         <li class="d-flex align-items-center gap-100">
+           <gcds-icon name="exclamation-circle"></gcds-icon>
+           <a class="link-light" href="https://github.com/gc-da11yn/gc-da11yn.github.io/issues/">Issues</a>
+         </li>
+         <li class="d-flex align-items-center gap-100">
+           <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+           <a class="link-light" href="https://github.com/gc-da11yn/gc-da11yn.github.io/discussions">Discussions</a>
+         </li>
+       </ul>
+       <span>
+         <gcds-icon name="email" margin-right="100"></gcds-icon>
+         <a href="mailto:digitala11ytoolkit-boitedoutila11enumerique@ssc-spc.gc.ca?subject=Contribute%20to%20the%20Digital%20Accessibility%20Toolkit">Reach the Digital Accessibility Toolkit by email</a>
+       </span>
+     </div>
+   </gcds-grid>
+
+   
+ </gcds-container>
+</aside>
+
+
+		<gcds-footer
+  id="footer"
+  display="full"
+  lang="en"
+  sub-links='{ "Social media": "https://www.canada.ca/en/social.html", "Mobile applications": "https://www.canada.ca/en/mobile.html", "About Canada.ca": "https://www.canada.ca/en/government/about.html", "Terms and conditions": "https://www.canada.ca/en/transparency/terms.html", "Privacy": "https://www.canada.ca/en/transparency/privacy.html" }'
+></gcds-footer>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script></body>
+
+</html>
+
+

@@ -1,0 +1,330 @@
+
+
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+
+	
+<head>
+	<meta charset="utf-8">
+
+	<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+	
+	<title>Tips for creating online courses- Digital Accessibility Toolkit</title>
+	<meta content="width=device-width,initial-scale=1" name="viewport">
+	<meta name="description" content="Tips and tricks for writing, designing and developing online courses.">
+
+	
+
+	<meta name="source-file" content="./src/pages/en/tips-for-creating-online-courses.md">
+
+
+	
+	
+	
+	
+		
+	
+		<link rel="alternate" hreflang="fr" href="/gc-da11yn.github.io/fr/conseils-pour-la-conception-de-cours-en-ligne/index.html" />
+	
+
+
+	<link href="https://www.canada.ca/etc/designs/canada/wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+
+	<!-- GC Design System CSS Shortcuts -->
+	<link
+	  rel="stylesheet"
+	  href="https://cdn.design-system.canada.ca/@gcds-core/css-shortcuts@1.2.0/dist/gcds-css-shortcuts.min.css"
+	/>
+
+	<!-- GC Design System -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.design-system.canada.ca/@gcds-core/components@1.6.0/dist/gcds/gcds.css"
+    />
+
+	<!-- Site styles: after GCDS so they can build on it -->
+	<link rel="stylesheet" href="/gc-da11yn.github.io/css/da11yn.css"><script>
+      (function () {
+        var key = "basicHtml";
+        var match = location.search.match(/[?&]wbdisable=(true|false)/);
+        var basic = !!match && match[1] === "true";
+        try {
+          if (match) {
+            if (basic) { localStorage.setItem(key, "1"); } else { localStorage.removeItem(key); }
+          }
+          basic = localStorage.getItem(key) === "1";
+        } catch (e) {}
+        document.documentElement.classList.add(basic ? "basic-html" : "standard-html");
+        if (!basic) {
+          var gcds = document.createElement("script");
+          gcds.type = "module";
+          gcds.src = "https://cdn.design-system.canada.ca/@gcds-core/components@1.6.0/dist/gcds/gcds.esm.js";
+          document.head.appendChild(gcds);
+        }
+      })();
+    </script>
+
+	<!-- Meta tags -->
+
+	<meta name="author" content="Government of Canada" />
+	<meta name="dcterms.title" content="Tips for creating online courses" />
+	<meta name="dcterms.description" content="Tips and tricks for writing, designing and developing online courses." />
+	<meta name="dcterms.creator" content="Government of Canada">
+	<meta name="dcterms.language" content="en" />
+	<meta name="dcterms.created" content="2023-08-01">
+	<meta name="dcterms.modified" content="2025-09-19" >
+	<meta name="dcterms.subject" content="How-tos;Design a course; " />
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SM9MSHWDVN"></script>
+	<script>
+		(function (w) {
+			"use strict";
+			if (w.location.hostname === "a11y.canada.ca") {
+				w.dataLayer = w.dataLayer || [];
+				w.gtag = function () {
+					w.dataLayer.push(arguments);
+				};
+				w.gtag('js', new Date());
+				w.gtag('config', 'G-SM9MSHWDVN');
+			}
+		})(window);
+	</script>
+</head>
+
+
+	<body vocab="http://schema.org/" typeof="WebPage">
+
+		
+
+<header>
+	<gcds-header lang="en" lang-href="" skip-to-href="#main">
+				<nav slot="skip-to-nav" label="Skip to">
+			<a href="#main">Skip to main content</a>
+			<a href="#footer">Skip to &quot;About government&quot;</a>
+			<a class="skip-to-basic" href="?wbdisable=true">Switch to basic HTML version</a>
+			<a class="skip-to-standard" href="?wbdisable=false">Switch to standard version</a>
+		</nav>
+
+	    
+
+
+
+
+	
+
+
+  <gcds-lang-toggle slot="toggle" href="/gc-da11yn.github.io/fr/conseils-pour-la-conception-de-cours-en-ligne/">
+  </gcds-lang-toggle>
+
+
+
+		<gcds-search search-id="search" slot="search" action="https://canada.ca/en/sr/srb.html"
+			method="get"
+		 	action=""
+		 	name="cse-search-box"
+		 	data-placeholder-long="Canada.ca"
+		 	data-placeholder-short="Canada.ca"
+		 	placeholder="Canada.ca">
+        </gcds-search>
+        <gcds-topic-menu slot="menu"></gcds-topic-menu>
+
+        
+
+<gcds-breadcrumbs slot="breadcrumb">
+		<!-- First breadcrumb: Canada.ca - already set by default on GcdsHeader -->
+		<!-- Second breadcrumb: Locale-based home link -->
+		
+		
+			<gcds-breadcrumbs-item href="/gc-da11yn.github.io/en/">Digital Accessibility Toolkit</gcds-breadcrumbs-item>
+		
+
+		<!-- Additional breadcrumbs based on tags and subjects -->
+		
+			 
+
+			<!-- Special handling for role-based pages -->
+			
+				<!-- Existing breadcrumbs logic for non-role pages -->
+				<!-- Breadcrumbs based on 'subject' -->
+				
+					
+						<gcds-breadcrumbs-item href="/gc-da11yn.github.io/en/how-tos">
+							How-tos
+						</gcds-breadcrumbs-item>
+						
+					
+				
+
+				<!-- Breadcrumbs based on 'tags' -->
+				
+					
+						
+							<gcds-breadcrumbs-item href="/gc-da11yn.github.io/en/design-a-course">
+								Design a course
+							</gcds-breadcrumbs-item>
+							
+						
+					
+				
+			
+		
+      </gcds-breadcrumbs>
+
+
+	</gcds-header>
+</header>
+
+
+
+		<main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement" id="main">
+
+		
+			<gcds-container layout="full" class="banner">
+			  <gcds-container layout="page" padding="200">
+				<gcds-grid columns="1fr" columns-desktop="4fr 1fr" class="py-150">
+				  <div class="banner__box">
+					<h1 class="mt-0 mb-300 text-light" property="name">Tips for creating online courses
+					</h1>
+					
+					<p>Tips and tricks for writing, designing and developing online courses.</p>
+					</div>
+				</gcds-grid>
+			  </gcds-container>
+			</gcds-container>
+
+			
+
+
+
+
+<gcds-container layout="page" padding="300">
+				
+
+				
+
+				
+
+				<div class="page-content">
+				<h2 id="tips-for-writing" tabindex="-1">Tips for writing</h2>
+<ul>
+<li>Page titles are informative and unique</li>
+<li>Headings are used to convey meaning and structure</li>
+<li>Hyperlink text is meaningful</li>
+<li>Alternative descriptions for images are meaningful</li>
+<li>Transcripts and captions for multimedia elements are available</li>
+<li>Instructions for interactive elements are clear</li>
+<li>Instructions are provided to help users prevent and correct errors</li>
+<li>Content is clear, concise and in plain language</li>
+<li>Reading order is clearly identified (for the graphic designer and developer)</li>
+</ul>
+<h2 id="design-tips" tabindex="-1">Design tips</h2>
+<ul>
+<li>Colour is not used as the only visual means of conveying information</li>
+<li>Interactive elements are easy to identify visually and when focus is placed on the elements</li>
+<li>Navigation options are clear and consistently presented throughout all sections.</li>
+<li>Videos do not start automatically, and all video controls are visible at all times and properly labelled</li>
+<li>All form elements have clearly associated labels</li>
+<li>Easily identifiable feedback is provided</li>
+<li>Headings and spacing are used to group related content</li>
+<li>Instructions and required fields are clearly identified to help users prevent errors.</li>
+<li>Error messages are short, clear and specific for users to understand and fix errors.</li>
+<li>Alternative descriptions for images and media are presented to users</li>
+</ul>
+<h2 id="tips-for-development" tabindex="-1">Tips for development</h2>
+<ul>
+<li>Use the right size for the text; commonly 12px for web and PDF content, and 18px for PPT documents</li>
+<li>Sufficient contrast between the foreground and background is provided</li>
+<li>Labels for each form control are well associated</li>
+<li>Alternative descriptions for images are using proper mark-up; decorative image alt text is set to empty quotations like <code>&lt;alt= &quot;&quot;&gt;</code></li>
+<li>Proper language attributes are used for the page language and for any language change within the page (for example French content on an English page)</li>
+<li>Help users avoid and correct errors by provide clear instructions</li>
+<li>Mark-up is used to convey meaning and structure</li>
+<li>The code order reflects the reading order of the content</li>
+<li>The design is responsive and mobile first</li>
+<li>The code used adapts to the user’s technology</li>
+<li>All interactive elements are accessible using the keyboard</li>
+</ul>
+
+				</div>
+				
+			</gcds-container>
+
+			
+<gcds-container tag="section" layout="page" class="pagedetails">
+  <h2 class="visibility-sr-only">Page details</h2>
+  <gcds-date-modified>2025-09-19</gcds-date-modified>
+</gcds-container>
+
+
+		
+		</main>
+
+		
+
+<aside>
+  
+<gcds-container layout="page" padding="300" class="page-list-link">
+  <h3 class="mt-0 mb-200">
+    Still can&#39;t find what you need?
+  </h3>
+  <span>
+    <gcds-icon name="search" margin-right="100"></gcds-icon>
+    See our
+    <a href="/gc-da11yn.github.io/en/page-list/">complete list of pages</a>.
+  </span>
+</gcds-container>
+
+
+ <gcds-container layout="page" padding="300" class="contribute">
+   <gcds-grid columns="1fr" columns-tablet="5fr 7fr" gap="300">
+     <div>
+       <h2 class="mt-0 mb-0 text-light">
+         <i class="fab fa-github fa-fw" aria-hidden="true"></i>
+         Contribute to this project
+       </h2>
+       <p class="contribute-subtitle">on Github.com</p>
+     </div>
+
+     <div>
+		<ul class="contribute-links d-flex flex-wrap gap-300 list-none p-0 mt-0 mb-200">
+         <li class="d-flex align-items-center gap-100">
+           <i class="fas fa-code fa-fw" aria-hidden="true"></i>
+           <a class="link-light" href="https://github.com/gc-da11yn/gc-da11yn.github.io">Source code</a>
+         </li>
+         <li class="d-flex align-items-center gap-100">
+           <gcds-icon name="exclamation-circle"></gcds-icon>
+           <a class="link-light" href="https://github.com/gc-da11yn/gc-da11yn.github.io/issues/">Issues</a>
+         </li>
+         <li class="d-flex align-items-center gap-100">
+           <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+           <a class="link-light" href="https://github.com/gc-da11yn/gc-da11yn.github.io/discussions">Discussions</a>
+         </li>
+       </ul>
+       <span>
+         <gcds-icon name="email" margin-right="100"></gcds-icon>
+         <a href="mailto:digitala11ytoolkit-boitedoutila11enumerique@ssc-spc.gc.ca?subject=Contribute%20to%20the%20Digital%20Accessibility%20Toolkit">Reach the Digital Accessibility Toolkit by email</a>
+       </span>
+     </div>
+   </gcds-grid>
+
+   
+ </gcds-container>
+</aside>
+
+
+		<gcds-footer
+  id="footer"
+  display="full"
+  lang="en"
+  sub-links='{ "Social media": "https://www.canada.ca/en/social.html", "Mobile applications": "https://www.canada.ca/en/mobile.html", "About Canada.ca": "https://www.canada.ca/en/government/about.html", "Terms and conditions": "https://www.canada.ca/en/transparency/terms.html", "Privacy": "https://www.canada.ca/en/transparency/privacy.html" }'
+></gcds-footer>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script></body>
+
+</html>
+
+

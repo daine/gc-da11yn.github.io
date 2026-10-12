@@ -1,0 +1,338 @@
+
+
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+
+	
+<head>
+	<meta charset="utf-8">
+
+	<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+	
+	<title>Universal Design for Learning (UDL)- Digital Accessibility Toolkit</title>
+	<meta content="width=device-width,initial-scale=1" name="viewport">
+	<meta name="description" content="Universal Design for Learning (UDL) is a framework that avoids a ‘one-size fits all approach’ to learning materials. It encourages using multiple ways of engagement, representation and action and expression can meet the needs of a larger number of learners. Learn about the three main UDL principles, advantages, benefits and tips.">
+
+	
+
+	<meta name="source-file" content="./src/pages/en/universal-design-for-learning-udl.md">
+
+
+	
+	
+	
+	
+		
+	
+		<link rel="alternate" hreflang="fr" href="/gc-da11yn.github.io/fr/conception-universelle-pour-lapprentissage-cua/index.html" />
+	
+
+
+	<link href="https://www.canada.ca/etc/designs/canada/wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+
+	<!-- GC Design System CSS Shortcuts -->
+	<link
+	  rel="stylesheet"
+	  href="https://cdn.design-system.canada.ca/@gcds-core/css-shortcuts@1.2.0/dist/gcds-css-shortcuts.min.css"
+	/>
+
+	<!-- GC Design System -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.design-system.canada.ca/@gcds-core/components@1.6.0/dist/gcds/gcds.css"
+    />
+
+	<!-- Site styles: after GCDS so they can build on it -->
+	<link rel="stylesheet" href="/gc-da11yn.github.io/css/da11yn.css"><script>
+      (function () {
+        var key = "basicHtml";
+        var match = location.search.match(/[?&]wbdisable=(true|false)/);
+        var basic = !!match && match[1] === "true";
+        try {
+          if (match) {
+            if (basic) { localStorage.setItem(key, "1"); } else { localStorage.removeItem(key); }
+          }
+          basic = localStorage.getItem(key) === "1";
+        } catch (e) {}
+        document.documentElement.classList.add(basic ? "basic-html" : "standard-html");
+        if (!basic) {
+          var gcds = document.createElement("script");
+          gcds.type = "module";
+          gcds.src = "https://cdn.design-system.canada.ca/@gcds-core/components@1.6.0/dist/gcds/gcds.esm.js";
+          document.head.appendChild(gcds);
+        }
+      })();
+    </script>
+
+	<!-- Meta tags -->
+
+	<meta name="author" content="Government of Canada" />
+	<meta name="dcterms.title" content="Universal Design for Learning (UDL)" />
+	<meta name="dcterms.description" content="Universal Design for Learning (&lt;abbr&gt;UDL&lt;/abbr&gt;) is a framework that avoids a ‘one-size fits all approach’ to learning materials. It encourages using multiple ways of engagement, representation and action and expression can meet the needs of a larger number of learners. Learn about the three main UDL principles, advantages, benefits and tips." />
+	<meta name="dcterms.creator" content="Government of Canada">
+	<meta name="dcterms.language" content="en" />
+	<meta name="dcterms.created" content="2023-08-01">
+	<meta name="dcterms.modified" content="2025-09-19" >
+	<meta name="dcterms.subject" content="How-tos;Design a course; " />
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SM9MSHWDVN"></script>
+	<script>
+		(function (w) {
+			"use strict";
+			if (w.location.hostname === "a11y.canada.ca") {
+				w.dataLayer = w.dataLayer || [];
+				w.gtag = function () {
+					w.dataLayer.push(arguments);
+				};
+				w.gtag('js', new Date());
+				w.gtag('config', 'G-SM9MSHWDVN');
+			}
+		})(window);
+	</script>
+</head>
+
+
+	<body vocab="http://schema.org/" typeof="WebPage">
+
+		
+
+<header>
+	<gcds-header lang="en" lang-href="" skip-to-href="#main">
+				<nav slot="skip-to-nav" label="Skip to">
+			<a href="#main">Skip to main content</a>
+			<a href="#footer">Skip to &quot;About government&quot;</a>
+			<a class="skip-to-basic" href="?wbdisable=true">Switch to basic HTML version</a>
+			<a class="skip-to-standard" href="?wbdisable=false">Switch to standard version</a>
+		</nav>
+
+	    
+
+
+
+
+	
+
+
+  <gcds-lang-toggle slot="toggle" href="/gc-da11yn.github.io/fr/conception-universelle-pour-lapprentissage-cua/">
+  </gcds-lang-toggle>
+
+
+
+		<gcds-search search-id="search" slot="search" action="https://canada.ca/en/sr/srb.html"
+			method="get"
+		 	action=""
+		 	name="cse-search-box"
+		 	data-placeholder-long="Canada.ca"
+		 	data-placeholder-short="Canada.ca"
+		 	placeholder="Canada.ca">
+        </gcds-search>
+        <gcds-topic-menu slot="menu"></gcds-topic-menu>
+
+        
+
+<gcds-breadcrumbs slot="breadcrumb">
+		<!-- First breadcrumb: Canada.ca - already set by default on GcdsHeader -->
+		<!-- Second breadcrumb: Locale-based home link -->
+		
+		
+			<gcds-breadcrumbs-item href="/gc-da11yn.github.io/en/">Digital Accessibility Toolkit</gcds-breadcrumbs-item>
+		
+
+		<!-- Additional breadcrumbs based on tags and subjects -->
+		
+			 
+
+			<!-- Special handling for role-based pages -->
+			
+				<!-- Existing breadcrumbs logic for non-role pages -->
+				<!-- Breadcrumbs based on 'subject' -->
+				
+					
+						<gcds-breadcrumbs-item href="/gc-da11yn.github.io/en/how-tos">
+							How-tos
+						</gcds-breadcrumbs-item>
+						
+					
+				
+
+				<!-- Breadcrumbs based on 'tags' -->
+				
+					
+						
+							<gcds-breadcrumbs-item href="/gc-da11yn.github.io/en/design-a-course">
+								Design a course
+							</gcds-breadcrumbs-item>
+							
+						
+					
+				
+			
+		
+      </gcds-breadcrumbs>
+
+
+	</gcds-header>
+</header>
+
+
+
+		<main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement" id="main">
+
+		
+			<gcds-container layout="full" class="banner">
+			  <gcds-container layout="page" padding="200">
+				<gcds-grid columns="1fr" columns-desktop="4fr 1fr" class="py-150">
+				  <div class="banner__box">
+					<h1 class="mt-0 mb-300 text-light" property="name">Universal Design for Learning (<abbr>UDL</abbr>)
+					</h1>
+					
+					<p>Universal Design for Learning (<abbr>UDL</abbr>) is a framework that avoids a ‘one-size fits all approach’ to learning materials. It encourages using multiple ways of engagement, representation and action and expression can meet the needs of a larger number of learners. Learn about the three main UDL principles, advantages, benefits and tips.</p>
+					</div>
+				</gcds-grid>
+			  </gcds-container>
+			</gcds-container>
+
+			
+
+
+
+
+<gcds-container layout="page" padding="300">
+				
+
+				
+
+				
+
+				<div class="page-content">
+				<h2 id="introduction-to-universal-design-for-learning-udl" tabindex="-1">Introduction to Universal Design for Learning (<abbr>UDL</abbr>)</h2>
+<p>It is important to design courses and adopt a teaching style that meets the needs of people with different backgrounds, abilities and learning styles. Everyone learns differently, so there is no one-size-fits-all teaching method. By using different teaching methods, we can meet the needs of a larger number of learners. Rather than using a ‘one-size fits all approach’, providing multiple ways of engagement, representation and action and expression can meet the needs of a larger number of learners.</p>
+<p>Universal Design for Learning (<abbr>UDL</abbr>) is a framework that comes from the concept of Universal Design (<abbr>UD</abbr>). You’ve probably seen examples of universal design in your daily life, such as closed captions, automatic doors, ramps and accessibility features of smart phones. These things help people with disabilities, but they can also be helpful for people who don’t have a disability.</p>
+<p>Universal Design for Learning (<abbr>UDL</abbr>) helps all leaners succeed. It encourages teaching and learning professionals to provide multiple ways for learners. It helps remove barriers that may prevent some people from learning and gives all students an equal chance of success. It is flexible and can be adapted to meet the needs of each student. UDL is useful for everyone.</p>
+<p>Using UDL principles, teachers can effectively educate a diverse group of learners by making access to information and the demonstration of knowledge more flexible. This means they can adapt to each learner’s individual strengths and needs, removing barriers to learning and providing equal opportunities for success for all. UDL therefore benefits not only learners with disabilities, but all learners.</p>
+<h2 id="there-are-three-main-principles-of-udl" tabindex="-1">There are three main principles of UDL:</h2>
+<h3 id="multiple-means-of-representation" tabindex="-1">Multiple means of representation</h3>
+<p>Providing learners with multiple ways to access information and content. This includes presenting information in different formats such as text, audio, and video, and offering different modes of interaction such as visuals, audio, and text.</p>
+<h3 id="multiple-means-of-action-and-expression" tabindex="-1">Multiple means of action and expression</h3>
+<p>Allowing learners to demonstrate what they know in different ways. This includes providing options for students to express themselves through writing, speech, or other forms of communication.</p>
+<h3 id="multiple-means-of-engagement" tabindex="-1">Multiple means of engagement</h3>
+<p>Providing learners with multiple ways to engage with content, activities, and assessments. This includes offering choices in how they approach and interact with learning materials, as well as creating opportunities for motivation and self-reflection.</p>
+<h2 id="the-advantages" tabindex="-1">The advantages</h2>
+<h3 id="benefits-for-educators" tabindex="-1">Benefits for educators</h3>
+<p>Such as facilitators, coaches, course instructors, and developers</p>
+<ul>
+<li>Inclusive teaching can enhance student learning.</li>
+<li>It reduces the workload of arranging individual and specialized accommodations.</li>
+<li>It can improve learner engagement, reaching a wider audience, which could lead to better course evaluations.</li>
+</ul>
+<h3 id="benefits-for-learners" tabindex="-1">Benefits for learners</h3>
+<ul>
+<li>Less time is spent finding individual accommodations and more time focusing on course content.</li>
+<li>Greater inclusion of learners from diverse backgrounds and abilities can lead to increased retention and motivation.</li>
+<li>Learners are not seen as different, which can help reduce stigma and foster a positive learning environment.</li>
+</ul>
+<h2 id="tips-and-tricks-for-creating-accessible-course-content" tabindex="-1">Tips and tricks for creating accessible course content</h2>
+<p>It’s important to make learning accessible for everyone, regardless of their abilities.</p>
+<p>Ask yourself some questions to figure out how you can make your course accessible.</p>
+<ul>
+<li>Start with some questions:</li>
+<li>Can the course format and content either help or hinder accessibility for all learners?</li>
+<li>What technological abilities are required for learners to be successful in the course?</li>
+</ul>
+<p>Which topics might pose difficulties for students with visual, hearing, cognitive, motor disabilities or for those learning French as a second language?</p>
+<p>By considering these questions, you can improve the experience for all students, including those who use adaptive technologies to support their learning.</p>
+<p>Creating an accessible and universal learning experience is possible by following those simple tips:</p>
+<ul>
+<li>Use contrasting colors and readable fonts for students with vision problems.</li>
+<li>Use transcripts or subtitles for students with hearing problems.</li>
+<li>Simplify language and structure for students with cognitive issues.</li>
+<li>Offer alternatives to activities that require fine motor skills for students with motor problems.</li>
+<li>Pay attention to the language used for students learning in their second language.</li>
+</ul>
+<p>Overall, by following these tips and considering the needs of different students, you can create an accessible and enjoyable learning experience for everyone.</p>
+<h2 id="the-importance-of-words" tabindex="-1">The importance of words</h2>
+<p>It is important to use the right words when talking about people with disabilities, to show them respect. We need to use positive, non-discriminatory language that evolves over time to reflect the increasing equality and independence of people with disabilities. As educators, we have a role to play in using the right vocabulary and changing the way we deal with topics that concern them. The Government of Canada has created a booklet, <a href="https://www.canada.ca/en/employment-social-development/programs/disability/arc/words-images.html">A way with words and images</a>, to help achieve this goal.</p>
+
+				</div>
+				
+			</gcds-container>
+
+			
+<gcds-container tag="section" layout="page" class="pagedetails">
+  <h2 class="visibility-sr-only">Page details</h2>
+  <gcds-date-modified>2025-09-19</gcds-date-modified>
+</gcds-container>
+
+
+		
+		</main>
+
+		
+
+<aside>
+  
+<gcds-container layout="page" padding="300" class="page-list-link">
+  <h3 class="mt-0 mb-200">
+    Still can&#39;t find what you need?
+  </h3>
+  <span>
+    <gcds-icon name="search" margin-right="100"></gcds-icon>
+    See our
+    <a href="/gc-da11yn.github.io/en/page-list/">complete list of pages</a>.
+  </span>
+</gcds-container>
+
+
+ <gcds-container layout="page" padding="300" class="contribute">
+   <gcds-grid columns="1fr" columns-tablet="5fr 7fr" gap="300">
+     <div>
+       <h2 class="mt-0 mb-0 text-light">
+         <i class="fab fa-github fa-fw" aria-hidden="true"></i>
+         Contribute to this project
+       </h2>
+       <p class="contribute-subtitle">on Github.com</p>
+     </div>
+
+     <div>
+		<ul class="contribute-links d-flex flex-wrap gap-300 list-none p-0 mt-0 mb-200">
+         <li class="d-flex align-items-center gap-100">
+           <i class="fas fa-code fa-fw" aria-hidden="true"></i>
+           <a class="link-light" href="https://github.com/gc-da11yn/gc-da11yn.github.io">Source code</a>
+         </li>
+         <li class="d-flex align-items-center gap-100">
+           <gcds-icon name="exclamation-circle"></gcds-icon>
+           <a class="link-light" href="https://github.com/gc-da11yn/gc-da11yn.github.io/issues/">Issues</a>
+         </li>
+         <li class="d-flex align-items-center gap-100">
+           <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+           <a class="link-light" href="https://github.com/gc-da11yn/gc-da11yn.github.io/discussions">Discussions</a>
+         </li>
+       </ul>
+       <span>
+         <gcds-icon name="email" margin-right="100"></gcds-icon>
+         <a href="mailto:digitala11ytoolkit-boitedoutila11enumerique@ssc-spc.gc.ca?subject=Contribute%20to%20the%20Digital%20Accessibility%20Toolkit">Reach the Digital Accessibility Toolkit by email</a>
+       </span>
+     </div>
+   </gcds-grid>
+
+   
+ </gcds-container>
+</aside>
+
+
+		<gcds-footer
+  id="footer"
+  display="full"
+  lang="en"
+  sub-links='{ "Social media": "https://www.canada.ca/en/social.html", "Mobile applications": "https://www.canada.ca/en/mobile.html", "About Canada.ca": "https://www.canada.ca/en/government/about.html", "Terms and conditions": "https://www.canada.ca/en/transparency/terms.html", "Privacy": "https://www.canada.ca/en/transparency/privacy.html" }'
+></gcds-footer>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script></body>
+
+</html>
+
+

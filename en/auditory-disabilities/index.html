@@ -1,0 +1,384 @@
+
+
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+
+	
+<head>
+	<meta charset="utf-8">
+
+	<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+	
+	<title>Auditory Disabilities- Digital Accessibility Toolkit</title>
+	<meta content="width=device-width,initial-scale=1" name="viewport">
+	<meta name="description" content="Auditory disabilities are sensory disabilities that range from partial to complete hearing loss.">
+
+	
+
+	<meta name="source-file" content="./src/pages/en/auditory-disabilities.md">
+
+
+	
+	
+	
+	
+		
+	
+		<link rel="alternate" hreflang="fr" href="/gc-da11yn.github.io/fr/deficiences-auditives/index.html" />
+	
+
+
+	<link href="https://www.canada.ca/etc/designs/canada/wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+
+	<!-- GC Design System CSS Shortcuts -->
+	<link
+	  rel="stylesheet"
+	  href="https://cdn.design-system.canada.ca/@gcds-core/css-shortcuts@1.2.0/dist/gcds-css-shortcuts.min.css"
+	/>
+
+	<!-- GC Design System -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.design-system.canada.ca/@gcds-core/components@1.6.0/dist/gcds/gcds.css"
+    />
+
+	<!-- Site styles: after GCDS so they can build on it -->
+	<link rel="stylesheet" href="/gc-da11yn.github.io/css/da11yn.css"><script>
+      (function () {
+        var key = "basicHtml";
+        var match = location.search.match(/[?&]wbdisable=(true|false)/);
+        var basic = !!match && match[1] === "true";
+        try {
+          if (match) {
+            if (basic) { localStorage.setItem(key, "1"); } else { localStorage.removeItem(key); }
+          }
+          basic = localStorage.getItem(key) === "1";
+        } catch (e) {}
+        document.documentElement.classList.add(basic ? "basic-html" : "standard-html");
+        if (!basic) {
+          var gcds = document.createElement("script");
+          gcds.type = "module";
+          gcds.src = "https://cdn.design-system.canada.ca/@gcds-core/components@1.6.0/dist/gcds/gcds.esm.js";
+          document.head.appendChild(gcds);
+        }
+      })();
+    </script>
+
+	<!-- Meta tags -->
+
+	<meta name="author" content="Government of Canada" />
+	<meta name="dcterms.title" content="Auditory Disabilities" />
+	<meta name="dcterms.description" content="Auditory disabilities are sensory disabilities that range from partial to complete hearing loss." />
+	<meta name="dcterms.creator" content="Government of Canada">
+	<meta name="dcterms.language" content="en" />
+	<meta name="dcterms.created" content="2023-08-01">
+	<meta name="dcterms.modified" content="2025-09-19" >
+	<meta name="dcterms.subject" content="Accessibility Fundamentals;Most Common Types of Disability; " />
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SM9MSHWDVN"></script>
+	<script>
+		(function (w) {
+			"use strict";
+			if (w.location.hostname === "a11y.canada.ca") {
+				w.dataLayer = w.dataLayer || [];
+				w.gtag = function () {
+					w.dataLayer.push(arguments);
+				};
+				w.gtag('js', new Date());
+				w.gtag('config', 'G-SM9MSHWDVN');
+			}
+		})(window);
+	</script>
+</head>
+
+
+	<body vocab="http://schema.org/" typeof="WebPage">
+
+		
+
+<header>
+	<gcds-header lang="en" lang-href="" skip-to-href="#main">
+				<nav slot="skip-to-nav" label="Skip to">
+			<a href="#main">Skip to main content</a>
+			<a href="#footer">Skip to &quot;About government&quot;</a>
+			<a class="skip-to-basic" href="?wbdisable=true">Switch to basic HTML version</a>
+			<a class="skip-to-standard" href="?wbdisable=false">Switch to standard version</a>
+		</nav>
+
+	    
+
+
+
+
+	
+
+
+  <gcds-lang-toggle slot="toggle" href="/gc-da11yn.github.io/fr/deficiences-auditives/">
+  </gcds-lang-toggle>
+
+
+
+		<gcds-search search-id="search" slot="search" action="https://canada.ca/en/sr/srb.html"
+			method="get"
+		 	action=""
+		 	name="cse-search-box"
+		 	data-placeholder-long="Canada.ca"
+		 	data-placeholder-short="Canada.ca"
+		 	placeholder="Canada.ca">
+        </gcds-search>
+        <gcds-topic-menu slot="menu"></gcds-topic-menu>
+
+        
+
+<gcds-breadcrumbs slot="breadcrumb">
+		<!-- First breadcrumb: Canada.ca - already set by default on GcdsHeader -->
+		<!-- Second breadcrumb: Locale-based home link -->
+		
+		
+			<gcds-breadcrumbs-item href="/gc-da11yn.github.io/en/">Digital Accessibility Toolkit</gcds-breadcrumbs-item>
+		
+
+		<!-- Additional breadcrumbs based on tags and subjects -->
+		
+			 
+
+			<!-- Special handling for role-based pages -->
+			
+				<!-- Existing breadcrumbs logic for non-role pages -->
+				<!-- Breadcrumbs based on 'subject' -->
+				
+					
+						<gcds-breadcrumbs-item href="/gc-da11yn.github.io/en/accessibility-fundamentals">
+							Accessibility Fundamentals
+						</gcds-breadcrumbs-item>
+						
+					
+				
+
+				<!-- Breadcrumbs based on 'tags' -->
+				
+					
+						
+							<gcds-breadcrumbs-item href="/gc-da11yn.github.io/en/most-common-types-of-disability">
+								Most Common Types of Disability
+							</gcds-breadcrumbs-item>
+							
+						
+					
+				
+			
+		
+      </gcds-breadcrumbs>
+
+
+	</gcds-header>
+</header>
+
+
+
+		<main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement" id="main">
+
+		
+			<gcds-container layout="full" class="banner">
+			  <gcds-container layout="page" padding="200">
+				<gcds-grid columns="1fr" columns-desktop="4fr 1fr" class="py-150">
+				  <div class="banner__box">
+					<h1 class="mt-0 mb-300 text-light" property="name">Auditory Disabilities
+					</h1>
+					
+					<p>Auditory disabilities are sensory disabilities that range from partial to complete hearing loss.</p>
+					</div>
+				</gcds-grid>
+			  </gcds-container>
+			</gcds-container>
+
+			
+
+
+
+
+<gcds-container layout="page" padding="300">
+				
+
+				
+
+				
+
+				<div class="page-content">
+				<ul>
+<li><a href="/gc-da11yn.github.io/docs/posters/Hearing-en_2023.pdf" download>Designing for users who are deaf or hard of hearing (<abbr title="Portable Document Format">PDF</abbr>, 53 <abbr title="KiloByte">KB</abbr>)</a></li>
+<li><a href="/gc-da11yn.github.io/en/designing-for-users-who-are-deaf-or-hard-of-hearing/">Designing for users who are deaf or hard of hearing (HTML)</a></li>
+<li><a href="/gc-da11yn.github.io/docs/posters/ScreenReader-en_2023.pdf" download>Designing for users of screen readers (<abbr title="Portable Document Format">PDF</abbr>, 51 <abbr title="KiloByte">KB</abbr>)</a></li>
+<li><a href="/gc-da11yn.github.io/en/designing-for-users-of-screen-readers/">Designing for users of screen readers (HTML)</a></li>
+</ul>
+<h2 id="deafness" tabindex="-1">Deafness</h2>
+<dl>
+<dt>Definition:</dt>
+<dd>Deafness is the total or near total loss of hearing.</dd>
+<dt>Characteristics:</dt>
+<dd>A person who is deaf or hard of hearing has difficulty with sounds, including the audio part of multimedia materials. Many, but not all, people who are deaf know sign language. For people who were born deaf, sign language is often their first language and so their preferred native language. They may feel less comfortable reading printed or digital text because it is a foreign language for them, and the phonetic notation does not help their comprehension. By way of contrast, those who lose their hearing later in life (deafened) may never learn sign language, or if they learn it, they may not feel as comfortable speaking in sign, and may prefer text.</dd>
+</dl>
+<h2 id="hard-of-hearing" tabindex="-1">Hard of Hearing</h2>
+<dl>
+<dt>Definition:</dt>
+<dd>Hard of hearing (<abbr>HOH</abbr>) refers to people with hearing loss ranging from mild to severe, who still have some useful hearing, and may communicate through sign language, spoken language, or both, understand spoken language in some situations, with or without amplification. Most HOH people can use the phone and use hearing aids.</dd>
+<dt>Characteristics:</dt>
+<dd>Individuals who are hard of hearing have partially-impaired hearing in one or both ears, resulting in a mild-to-moderate hearing loss. There may be enough residual hearing that an auditory device, such as a hearing aid or frequency modulation (<abbr>FM</abbr>) system, provides sufficient assistance to process speech. A person who hard of hearing has difficulty with sounds, including the audio part of multimedia materials.</dd>
+</dl>
+<h2 id="central-auditory-processing-disorder" tabindex="-1">Central Auditory Processing Disorder</h2>
+<dl>
+<dt>Definition:</dt>
+<dd>
+<p>According to the American Speech-Language-Hearing Association:</p>
+<ul>
+<li>Auditory processing disorder (<abbr>APD</abbr>) is often described as greater than expected difficulty hearing and understanding speech even though no measurable hearing loss exists. Individuals with auditory processing disorders may act as though a hearing loss is present when in fact, hearing sensitivity is often within normal limits. APD is often confused with other disorders such as as Attention-Deficit Hyperactivity Disorder (<abbr>ADHD</abbr>), language impairment, learning disabilities, social and emotional delays or cognitive deficits.</li>
+<li><abbr title="Auditory processing disorder">APD</abbr> isn’t the inability to hear. It is the inability to interpret, organize, or analyze what is heard. All the parts of the hearing pathway are working well. But parts of the brain are not.</li>
+</ul>
+</dd>
+<dt>Characteristics:</dt>
+<dd>
+<p>Behaviors can vary depending on the individual and the presence of other disorders. People with Central Auditory Processing Disorder can have difficulty with, among other things:</p>
+<ul>
+<li>Finding the source of a sound</li>
+<li>Understanding what someone is saying in noisy environments or with competing sounds</li>
+<li>Following spoken directions</li>
+<li>Learning songs or instruments</li>
+<li>Paying attention</li>
+<li>Responding in a timely way</li>
+<li>Learning a new language</li>
+</ul>
+</dd>
+</dl>
+<h2 id="barriers-for-people-with-auditory-disabilities" tabindex="-1">Barriers for People with Auditory Disabilities</h2>
+<p>From the W3C’s Web Accessibility Initiative and other sources:</p>
+<ul>
+<li>People speaking softly, or in large spaces without amplification such as through microphones</li>
+<li>Unavailability of sign language interpretation.</li>
+<li>Environments that are loud or present competing sounds</li>
+<li>Websites and other technologies that require voice for interaction or listening for understanding.</li>
+<li>Audio in videos and films that are presented without captions or transcripts.</li>
+<li>Media players that do not support caption, or options to control the volume, or the size and colors of captions.</li>
+</ul>
+<h3 id="deafness-and-hard-of-hearing-challenges-and-solutions" tabindex="-1">Deafness and Hard of Hearing Challenges and Solutions</h3>
+<p>Cannot hear talks, presentations, and performances:</p>
+<ul>
+<li>Provide sign language interpretation</li>
+<li>Provide live captions on a monitor during the speech.</li>
+</ul>
+<p>Cannot hear the audio part of videos:</p>
+<ul>
+<li>Provide synchronized captions with videos</li>
+<li>Provide sign language interpretation</li>
+<li>Provide a transcript</li>
+</ul>
+<p>Cannot hear doorbells, alarms, and other alerts:</p>
+<ul>
+<li>Provide alternative visual alerts, such as lights that flash, pulse, dim, or turn on and off.</li>
+</ul>
+<h2 id="adaptive-technologies-and-adaptive-strategies" tabindex="-1">Adaptive Technologies and Adaptive Strategies</h2>
+<p>Here are some commonly used products and strategies:</p>
+<ul>
+<li>UbiDuo</li>
+<li>A solution to help face-to-face communication between deaf/hard-of-hearing and hearing people. This device can help to eliminate feigning, frustration and Communiphobia, as well as promote communication equality. It allows people to share their thoughts and emotions seamlessly in real time.</li>
+<li>Video conferencing for signing</li>
+<li>Sign language interpretation</li>
+<li>Teletype</li>
+<li>Live captions during meetings and phone calls</li>
+<li>For example, Communication Access Real-Time Transcription (<abbr>CART</abbr>)</li>
+<li>Captions for videos</li>
+<li>Transcripts for video or audio</li>
+<li>Audio controls</li>
+<li>Assistive listening devices</li>
+<li>Haptic alerts / feedback</li>
+<li>Visual labels / notifications / alerts</li>
+<li>Hearing aids</li>
+<li>Cochlear implants</li>
+<li>Voice carryover</li>
+<li>Frequency Modulation (<abbr>FM</abbr>) systems</li>
+<li>Infrared systems</li>
+<li>Audio Induction Loop systems</li>
+</ul>
+
+				</div>
+				
+			</gcds-container>
+
+			
+<gcds-container tag="section" layout="page" class="pagedetails">
+  <h2 class="visibility-sr-only">Page details</h2>
+  <gcds-date-modified>2025-09-19</gcds-date-modified>
+</gcds-container>
+
+
+		
+		</main>
+
+		
+
+<aside>
+  
+<gcds-container layout="page" padding="300" class="page-list-link">
+  <h3 class="mt-0 mb-200">
+    Still can&#39;t find what you need?
+  </h3>
+  <span>
+    <gcds-icon name="search" margin-right="100"></gcds-icon>
+    See our
+    <a href="/gc-da11yn.github.io/en/page-list/">complete list of pages</a>.
+  </span>
+</gcds-container>
+
+
+ <gcds-container layout="page" padding="300" class="contribute">
+   <gcds-grid columns="1fr" columns-tablet="5fr 7fr" gap="300">
+     <div>
+       <h2 class="mt-0 mb-0 text-light">
+         <i class="fab fa-github fa-fw" aria-hidden="true"></i>
+         Contribute to this project
+       </h2>
+       <p class="contribute-subtitle">on Github.com</p>
+     </div>
+
+     <div>
+		<ul class="contribute-links d-flex flex-wrap gap-300 list-none p-0 mt-0 mb-200">
+         <li class="d-flex align-items-center gap-100">
+           <i class="fas fa-code fa-fw" aria-hidden="true"></i>
+           <a class="link-light" href="https://github.com/gc-da11yn/gc-da11yn.github.io">Source code</a>
+         </li>
+         <li class="d-flex align-items-center gap-100">
+           <gcds-icon name="exclamation-circle"></gcds-icon>
+           <a class="link-light" href="https://github.com/gc-da11yn/gc-da11yn.github.io/issues/">Issues</a>
+         </li>
+         <li class="d-flex align-items-center gap-100">
+           <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+           <a class="link-light" href="https://github.com/gc-da11yn/gc-da11yn.github.io/discussions">Discussions</a>
+         </li>
+       </ul>
+       <span>
+         <gcds-icon name="email" margin-right="100"></gcds-icon>
+         <a href="mailto:digitala11ytoolkit-boitedoutila11enumerique@ssc-spc.gc.ca?subject=Contribute%20to%20the%20Digital%20Accessibility%20Toolkit">Reach the Digital Accessibility Toolkit by email</a>
+       </span>
+     </div>
+   </gcds-grid>
+
+   
+ </gcds-container>
+</aside>
+
+
+		<gcds-footer
+  id="footer"
+  display="full"
+  lang="en"
+  sub-links='{ "Social media": "https://www.canada.ca/en/social.html", "Mobile applications": "https://www.canada.ca/en/mobile.html", "About Canada.ca": "https://www.canada.ca/en/government/about.html", "Terms and conditions": "https://www.canada.ca/en/transparency/terms.html", "Privacy": "https://www.canada.ca/en/transparency/privacy.html" }'
+></gcds-footer>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script></body>
+
+</html>
+
+

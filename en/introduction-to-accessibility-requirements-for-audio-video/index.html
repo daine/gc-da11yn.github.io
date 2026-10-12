@@ -1,0 +1,356 @@
+
+
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+
+	
+<head>
+	<meta charset="utf-8">
+
+	<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+	
+	<title>Introduction to accessibility requirements for audio-video- Digital Accessibility Toolkit</title>
+	<meta content="width=device-width,initial-scale=1" name="viewport">
+	<meta name="description" content="This document is a great introduction on how to make accessible video for a communication advisor audience which are in between the web author and the content expert.">
+
+	
+
+	<meta name="source-file" content="./src/pages/en/introduction-to-accessibility-requirements-for-audio-video.md">
+
+
+	
+	
+	
+	
+		
+	
+		<link rel="alternate" hreflang="fr" href="/gc-da11yn.github.io/fr/introduction-aux-exigences-daccessibilite-pour-laudio-video/index.html" />
+	
+
+
+	<link href="https://www.canada.ca/etc/designs/canada/wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+
+	<!-- GC Design System CSS Shortcuts -->
+	<link
+	  rel="stylesheet"
+	  href="https://cdn.design-system.canada.ca/@gcds-core/css-shortcuts@1.2.0/dist/gcds-css-shortcuts.min.css"
+	/>
+
+	<!-- GC Design System -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.design-system.canada.ca/@gcds-core/components@1.6.0/dist/gcds/gcds.css"
+    />
+
+	<!-- Site styles: after GCDS so they can build on it -->
+	<link rel="stylesheet" href="/gc-da11yn.github.io/css/da11yn.css"><script>
+      (function () {
+        var key = "basicHtml";
+        var match = location.search.match(/[?&]wbdisable=(true|false)/);
+        var basic = !!match && match[1] === "true";
+        try {
+          if (match) {
+            if (basic) { localStorage.setItem(key, "1"); } else { localStorage.removeItem(key); }
+          }
+          basic = localStorage.getItem(key) === "1";
+        } catch (e) {}
+        document.documentElement.classList.add(basic ? "basic-html" : "standard-html");
+        if (!basic) {
+          var gcds = document.createElement("script");
+          gcds.type = "module";
+          gcds.src = "https://cdn.design-system.canada.ca/@gcds-core/components@1.6.0/dist/gcds/gcds.esm.js";
+          document.head.appendChild(gcds);
+        }
+      })();
+    </script>
+
+	<!-- Meta tags -->
+
+	<meta name="author" content="Government of Canada" />
+	<meta name="dcterms.title" content="Introduction to accessibility requirements for audio-video" />
+	<meta name="dcterms.description" content="This document is a great introduction on how to make accessible video for a communication advisor audience which are in between the web author and the content expert." />
+	<meta name="dcterms.creator" content="Government of Canada">
+	<meta name="dcterms.language" content="en" />
+	<meta name="dcterms.created" content="2023-08-01">
+	<meta name="dcterms.modified" content="2025-09-19" >
+	<meta name="dcterms.subject" content="How-tos;Create web content; " />
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SM9MSHWDVN"></script>
+	<script>
+		(function (w) {
+			"use strict";
+			if (w.location.hostname === "a11y.canada.ca") {
+				w.dataLayer = w.dataLayer || [];
+				w.gtag = function () {
+					w.dataLayer.push(arguments);
+				};
+				w.gtag('js', new Date());
+				w.gtag('config', 'G-SM9MSHWDVN');
+			}
+		})(window);
+	</script>
+</head>
+
+
+	<body vocab="http://schema.org/" typeof="WebPage">
+
+		
+
+<header>
+	<gcds-header lang="en" lang-href="" skip-to-href="#main">
+				<nav slot="skip-to-nav" label="Skip to">
+			<a href="#main">Skip to main content</a>
+			<a href="#footer">Skip to &quot;About government&quot;</a>
+			<a class="skip-to-basic" href="?wbdisable=true">Switch to basic HTML version</a>
+			<a class="skip-to-standard" href="?wbdisable=false">Switch to standard version</a>
+		</nav>
+
+	    
+
+
+
+
+	
+
+
+  <gcds-lang-toggle slot="toggle" href="/gc-da11yn.github.io/fr/introduction-aux-exigences-daccessibilite-pour-laudio-video/">
+  </gcds-lang-toggle>
+
+
+
+		<gcds-search search-id="search" slot="search" action="https://canada.ca/en/sr/srb.html"
+			method="get"
+		 	action=""
+		 	name="cse-search-box"
+		 	data-placeholder-long="Canada.ca"
+		 	data-placeholder-short="Canada.ca"
+		 	placeholder="Canada.ca">
+        </gcds-search>
+        <gcds-topic-menu slot="menu"></gcds-topic-menu>
+
+        
+
+<gcds-breadcrumbs slot="breadcrumb">
+		<!-- First breadcrumb: Canada.ca - already set by default on GcdsHeader -->
+		<!-- Second breadcrumb: Locale-based home link -->
+		
+		
+			<gcds-breadcrumbs-item href="/gc-da11yn.github.io/en/">Digital Accessibility Toolkit</gcds-breadcrumbs-item>
+		
+
+		<!-- Additional breadcrumbs based on tags and subjects -->
+		
+			 
+
+			<!-- Special handling for role-based pages -->
+			
+				<!-- Existing breadcrumbs logic for non-role pages -->
+				<!-- Breadcrumbs based on 'subject' -->
+				
+					
+						<gcds-breadcrumbs-item href="/gc-da11yn.github.io/en/how-tos">
+							How-tos
+						</gcds-breadcrumbs-item>
+						
+					
+				
+
+				<!-- Breadcrumbs based on 'tags' -->
+				
+					
+						
+							<gcds-breadcrumbs-item href="/gc-da11yn.github.io/en/create-web-content">
+								Create web content
+							</gcds-breadcrumbs-item>
+							
+						
+					
+				
+			
+		
+      </gcds-breadcrumbs>
+
+
+	</gcds-header>
+</header>
+
+
+
+		<main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement" id="main">
+
+		
+			<gcds-container layout="full" class="banner">
+			  <gcds-container layout="page" padding="200">
+				<gcds-grid columns="1fr" columns-desktop="4fr 1fr" class="py-150">
+				  <div class="banner__box">
+					<h1 class="mt-0 mb-300 text-light" property="name">Introduction to accessibility requirements for audio-video
+					</h1>
+					
+					<p>This document is a great introduction on how to make accessible video for a communication advisor audience which are in between the web author and the content expert.</p>
+					</div>
+				</gcds-grid>
+			  </gcds-container>
+			</gcds-container>
+
+			
+
+
+
+
+<gcds-container layout="page" padding="300">
+				
+
+				
+
+				
+
+				<div class="page-content">
+				<h2 id="introduction" tabindex="-1">Introduction</h2>
+<p>The purpose of this guide is to teach you how to ensure all audio-video learning products are accessible for all learners. WCAG 2.1 and other accessibility guidelines refer to audio-video recordings, live or pre-recorded as Time-Based Media.</p>
+<p>Time-based media can be any of the following:</p>
+<ul>
+<li>Audio only</li>
+<li>Video only</li>
+<li>Audio and video</li>
+<li>Audio and/or video combined with interaction</li>
+</ul>
+<p>We often use audio and video to present information, facilitate courses and demo systems. By not including the appropriate information when developing a time-based media learning object, we are excluding many learners or at minimum, making it difficult for them to access the training they need to do their job.</p>
+<h2 id="general-requirements" tabindex="-1">General Requirements</h2>
+<p>Whether the time-based media is accessible largely depends on the following four factors being taken into consideration:</p>
+<ul>
+<li>Transcript</li>
+<li>Captioning</li>
+<li>Audio description</li>
+<li>Keyboard access.</li>
+</ul>
+<p>Summaries for each of the factors are presented here, while guidelines, checklists and samples follow later in the document.</p>
+<h2 id="transcript-summary" tabindex="-1">Transcript summary</h2>
+<p>Transcripts are the text equivalent of an audio or video file. They make it easier for people who need to access information in audio and visual media but can’t hear or see the content. Ensure that transcripts include all:</p>
+<ul>
+<li>on-screen text,</li>
+<li>dialogue and narration,</li>
+<li>important sounds (such as an explosion),</li>
+<li>important actions (for example, people running away from an explosion or characters wearing disguises), and</li>
+<li>audio description (additional audio track describing all visual information).</li>
+</ul>
+<p><a href="/gc-da11yn.github.io/en/transcript-guidelines/">Transcript Guidelines</a></p>
+<p><a href="/gc-da11yn.github.io/en/transcript-checklist">Transcript Checklist</a></p>
+<h2 id="captioning-summary" tabindex="-1">Captioning summary</h2>
+<p>Videos with audio require synchronized captioning (where the text aligns with the spoken words in the audio and when important actions are presented on the screen).</p>
+<p>Most “closed captions” can be hidden or shown by people watching the video. They can also be “open captions” that are always displayed and cannot be turned off.</p>
+<p>Open captions are recommended at the top of American Sign Language (<abbr>ASL</abbr>) and &lt;span =lang=“fr”&gt;Langue des Signes Québécoise (<abbr>LSQ</abbr>)</span> videos.</p>
+<p><strong>Anything said or heard in the video must be included in the captioning.</strong> It is important that captions are:</p>
+<ul>
+<li>synchronized and appear at approximately the same time as the audio is delivered,</li>
+<li>equivalent and equal in content to that of the audio, including speaker identification and important sound effects, and</li>
+<li>accessible and readily available to those who need or want them.</li>
+</ul>
+<p>Design teams or a contractor can provide the caption text.</p>
+<p><a href="/gc-da11yn.github.io/en/captioning-checklist">Captioning Checklist</a></p>
+<h2 id="audio-description-summary" tabindex="-1">Audio description summary</h2>
+<p>Audio description allows any user with a visual disability or cognitive disability to receive a very detailed and descriptive experience of what is happening on the screen. During existing pauses in dialogue, audio description provides information about actions, characters, scene changes, and on-screen text that are important and are not described or spoken in the main soundtrack.</p>
+<p>This can be done using:</p>
+<ul>
+<li>transcripts and adding descriptions of the extra visual information. (WCAG 1.2.3 level A).</li>
+<li>Adding a separate audio track that describes the visual content. (WCAG 1.2.5 level AA).
+<ul>
+<li>Note: If audio description additional audio track is being used for a video, then these descriptions need to be included in the transcript.</li>
+</ul>
+</li>
+</ul>
+<p><a href="/gc-da11yn.github.io/en/audio-description-guidelines">Audio Description Guidelines</a></p>
+<p><a href="/gc-da11yn.github.io/en/audio-description-guidelines#audio-description-checklist">Audio Description Checklist</a></p>
+<h2 id="keyboard-access" tabindex="-1">Keyboard Access</h2>
+<p>All video controls must be accessible and navigable via the keyboard. It is the responsibility of the developer to ensure that video players are accessible such as:</p>
+<ul>
+<li>Video player can be operated with a keyboard.</li>
+<li>Video player starts at the user’s request (does not automatically start playing).</li>
+<li>Video player has a mechanism to pause or stop video.</li>
+<li>Volume can be modified with a keyboard and a mouse.</li>
+<li>Proper button labels (alt text) are present.</li>
+</ul>
+<p>Keyboard access is tested by the developer, design teams or a contractor.</p>
+
+				</div>
+				
+			</gcds-container>
+
+			
+<gcds-container tag="section" layout="page" class="pagedetails">
+  <h2 class="visibility-sr-only">Page details</h2>
+  <gcds-date-modified>2025-09-19</gcds-date-modified>
+</gcds-container>
+
+
+		
+		</main>
+
+		
+
+<aside>
+  
+<gcds-container layout="page" padding="300" class="page-list-link">
+  <h3 class="mt-0 mb-200">
+    Still can&#39;t find what you need?
+  </h3>
+  <span>
+    <gcds-icon name="search" margin-right="100"></gcds-icon>
+    See our
+    <a href="/gc-da11yn.github.io/en/page-list/">complete list of pages</a>.
+  </span>
+</gcds-container>
+
+
+ <gcds-container layout="page" padding="300" class="contribute">
+   <gcds-grid columns="1fr" columns-tablet="5fr 7fr" gap="300">
+     <div>
+       <h2 class="mt-0 mb-0 text-light">
+         <i class="fab fa-github fa-fw" aria-hidden="true"></i>
+         Contribute to this project
+       </h2>
+       <p class="contribute-subtitle">on Github.com</p>
+     </div>
+
+     <div>
+		<ul class="contribute-links d-flex flex-wrap gap-300 list-none p-0 mt-0 mb-200">
+         <li class="d-flex align-items-center gap-100">
+           <i class="fas fa-code fa-fw" aria-hidden="true"></i>
+           <a class="link-light" href="https://github.com/gc-da11yn/gc-da11yn.github.io">Source code</a>
+         </li>
+         <li class="d-flex align-items-center gap-100">
+           <gcds-icon name="exclamation-circle"></gcds-icon>
+           <a class="link-light" href="https://github.com/gc-da11yn/gc-da11yn.github.io/issues/">Issues</a>
+         </li>
+         <li class="d-flex align-items-center gap-100">
+           <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+           <a class="link-light" href="https://github.com/gc-da11yn/gc-da11yn.github.io/discussions">Discussions</a>
+         </li>
+       </ul>
+       <span>
+         <gcds-icon name="email" margin-right="100"></gcds-icon>
+         <a href="mailto:digitala11ytoolkit-boitedoutila11enumerique@ssc-spc.gc.ca?subject=Contribute%20to%20the%20Digital%20Accessibility%20Toolkit">Reach the Digital Accessibility Toolkit by email</a>
+       </span>
+     </div>
+   </gcds-grid>
+
+   
+ </gcds-container>
+</aside>
+
+
+		<gcds-footer
+  id="footer"
+  display="full"
+  lang="en"
+  sub-links='{ "Social media": "https://www.canada.ca/en/social.html", "Mobile applications": "https://www.canada.ca/en/mobile.html", "About Canada.ca": "https://www.canada.ca/en/government/about.html", "Terms and conditions": "https://www.canada.ca/en/transparency/terms.html", "Privacy": "https://www.canada.ca/en/transparency/privacy.html" }'
+></gcds-footer>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script></body>
+
+</html>
+
+

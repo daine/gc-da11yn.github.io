@@ -1,0 +1,515 @@
+
+
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+
+	
+<head>
+	<meta charset="utf-8">
+
+	<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+	
+	<title>Accessible PDF documents in Office 2016- Digital Accessibility Toolkit</title>
+	<meta content="width=device-width,initial-scale=1" name="viewport">
+	<meta name="description" content="Accessible practices for PDF document creation.">
+
+	
+
+	<meta name="source-file" content="./src/pages/en/ms-office/2016/accessible-pdf-documents-in-office-2016.md">
+
+
+	
+	
+	
+	
+		
+	
+		<link rel="alternate" hreflang="fr" href="/gc-da11yn.github.io/fr/documents-pdf-accessibles-dans-office-2016/index.html" />
+	
+
+
+	<link href="https://www.canada.ca/etc/designs/canada/wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+
+	<!-- GC Design System CSS Shortcuts -->
+	<link
+	  rel="stylesheet"
+	  href="https://cdn.design-system.canada.ca/@gcds-core/css-shortcuts@1.2.0/dist/gcds-css-shortcuts.min.css"
+	/>
+
+	<!-- GC Design System -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.design-system.canada.ca/@gcds-core/components@1.6.0/dist/gcds/gcds.css"
+    />
+
+	<!-- Site styles: after GCDS so they can build on it -->
+	<link rel="stylesheet" href="/gc-da11yn.github.io/css/da11yn.css"><script>
+      (function () {
+        var key = "basicHtml";
+        var match = location.search.match(/[?&]wbdisable=(true|false)/);
+        var basic = !!match && match[1] === "true";
+        try {
+          if (match) {
+            if (basic) { localStorage.setItem(key, "1"); } else { localStorage.removeItem(key); }
+          }
+          basic = localStorage.getItem(key) === "1";
+        } catch (e) {}
+        document.documentElement.classList.add(basic ? "basic-html" : "standard-html");
+        if (!basic) {
+          var gcds = document.createElement("script");
+          gcds.type = "module";
+          gcds.src = "https://cdn.design-system.canada.ca/@gcds-core/components@1.6.0/dist/gcds/gcds.esm.js";
+          document.head.appendChild(gcds);
+        }
+      })();
+    </script>
+
+	<!-- Meta tags -->
+
+	<meta name="author" content="Government of Canada" />
+	<meta name="dcterms.title" content="Accessible PDF documents in Office 2016" />
+	<meta name="dcterms.description" content="Accessible practices for PDF document creation." />
+	<meta name="dcterms.creator" content="Government of Canada">
+	<meta name="dcterms.language" content="en" />
+	<meta name="dcterms.created" content="2023-08-01">
+	<meta name="dcterms.modified" content="2026-10-09" >
+	<meta name="dcterms.subject" content="How-tos;Create document; How to create accessible documents in Office 2016; " />
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SM9MSHWDVN"></script>
+	<script>
+		(function (w) {
+			"use strict";
+			if (w.location.hostname === "a11y.canada.ca") {
+				w.dataLayer = w.dataLayer || [];
+				w.gtag = function () {
+					w.dataLayer.push(arguments);
+				};
+				w.gtag('js', new Date());
+				w.gtag('config', 'G-SM9MSHWDVN');
+			}
+		})(window);
+	</script>
+</head>
+
+
+	<body vocab="http://schema.org/" typeof="WebPage">
+
+		
+
+<header>
+	<gcds-header lang="en" lang-href="" skip-to-href="#main">
+				<nav slot="skip-to-nav" label="Skip to">
+			<a href="#main">Skip to main content</a>
+			<a href="#footer">Skip to &quot;About government&quot;</a>
+			<a class="skip-to-basic" href="?wbdisable=true">Switch to basic HTML version</a>
+			<a class="skip-to-standard" href="?wbdisable=false">Switch to standard version</a>
+		</nav>
+
+	    
+
+
+
+
+	
+
+
+  <gcds-lang-toggle slot="toggle" href="/gc-da11yn.github.io/fr/documents-pdf-accessibles-dans-office-2016/">
+  </gcds-lang-toggle>
+
+
+
+		<gcds-search search-id="search" slot="search" action="https://canada.ca/en/sr/srb.html"
+			method="get"
+		 	action=""
+		 	name="cse-search-box"
+		 	data-placeholder-long="Canada.ca"
+		 	data-placeholder-short="Canada.ca"
+		 	placeholder="Canada.ca">
+        </gcds-search>
+        <gcds-topic-menu slot="menu"></gcds-topic-menu>
+
+        
+
+<gcds-breadcrumbs slot="breadcrumb">
+		<!-- First breadcrumb: Canada.ca - already set by default on GcdsHeader -->
+		<!-- Second breadcrumb: Locale-based home link -->
+		
+		
+			<gcds-breadcrumbs-item href="/gc-da11yn.github.io/en/">Digital Accessibility Toolkit</gcds-breadcrumbs-item>
+		
+
+		<!-- Additional breadcrumbs based on tags and subjects -->
+		
+			 
+
+			<!-- Special handling for role-based pages -->
+			
+				<!-- Existing breadcrumbs logic for non-role pages -->
+				<!-- Breadcrumbs based on 'subject' -->
+				
+					
+						<gcds-breadcrumbs-item href="/gc-da11yn.github.io/en/how-tos">
+							How-tos
+						</gcds-breadcrumbs-item>
+						
+					
+				
+
+				<!-- Breadcrumbs based on 'tags' -->
+				
+					
+						
+							<gcds-breadcrumbs-item href="/gc-da11yn.github.io/en/create-document">
+								Create document
+							</gcds-breadcrumbs-item>
+							
+						
+					
+						
+							<gcds-breadcrumbs-item href="/gc-da11yn.github.io/en/how-to-create-accessible-documents-in-office-2016">
+								How to create accessible documents in Office 2016
+							</gcds-breadcrumbs-item>
+							
+						
+					
+				
+			
+		
+      </gcds-breadcrumbs>
+
+
+	</gcds-header>
+</header>
+
+
+
+		<main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement" id="main">
+
+		
+			<gcds-container layout="full" class="banner">
+			  <gcds-container layout="page" padding="200">
+				<gcds-grid columns="1fr" columns-desktop="4fr 1fr" class="py-150">
+				  <div class="banner__box">
+					<h1 class="mt-0 mb-300 text-light" property="name">Accessible PDF documents in Office 2016
+					</h1>
+					
+					<p>Accessible practices for PDF document creation.</p>
+					</div>
+				</gcds-grid>
+			  </gcds-container>
+			</gcds-container>
+
+			
+
+
+
+
+<gcds-container layout="page" padding="300">
+				
+				
+    
+    
+    
+
+
+
+    
+    
+    
+
+
+
+
+    
+    
+    
+        
+    
+    <nav aria-label="How to create accessible documents in Office 2016" class="mt-400 mb-400">
+        <ul class="office-toc d-grid sm:grid-cols-2 lg:grid-cols-3 gap-200 list-none ps-0 mb-0">
+            <li><a class="office-toc__item" href="/gc-da11yn.github.io/en/how-to-create-accessible-documents-in-office-2016/">How to create accessible documents <small class="d-block">in Office 2016</small></a></li>
+            
+                
+                <li><a class="office-toc__item" href="/gc-da11yn.github.io/en/accessible-excel-workbooks-in-office-2016/">
+                    <i class="fas fa-lg fa-file-excel me-50" aria-hidden="true"></i>
+                    Accessible Excel workbooks  <small class="d-block">in Office 2016</small></a></li>
+            
+                
+                <li><span class="office-toc__item" aria-current="page">
+                    <i class="fas fa-lg fa-file-pdf me-50" aria-hidden="true"></i>
+                    Accessible PDF documents  <small class="d-block">in Office 2016</small></span></li>
+            
+                
+                <li><a class="office-toc__item" href="/gc-da11yn.github.io/en/accessible-powerpoint-presentations-in-office-2016/">
+                    <i class="fas fa-lg fa-file-powerpoint me-50" aria-hidden="true"></i>
+                    Accessible PowerPoint presentations  <small class="d-block">in Office 2016</small></a></li>
+            
+                
+                <li><a class="office-toc__item" href="/gc-da11yn.github.io/en/accessible-visio-drawings-in-office-2016/">
+                    <i class="fas fa-lg fa-project-diagram me-50" aria-hidden="true"></i>
+                    Accessible Visio drawings  <small class="d-block">in Office 2016</small></a></li>
+            
+                
+                <li><a class="office-toc__item" href="/gc-da11yn.github.io/en/accessible-word-documents-in-office-2016/">
+                    <i class="fas fa-lg fa-file-word me-50" aria-hidden="true"></i>
+                    Accessible Word documents  <small class="d-block">in Office 2016</small></a></li>
+            
+        </ul>
+    </nav>
+
+    <div class="bg-light p-300">
+        
+        
+        <p class="mb-0">Looking for the Microsoft 365 version? Try <a href="/gc-da11yn.github.io/en/accessible-pdf-documents-in-microsoft-365/">Accessible PDF documents <small><strong> in Microsoft 365</strong></small></a></p>
+    </div>
+
+
+
+				
+	
+	
+
+
+
+				
+
+				
+
+				
+
+				<div class="page-content">
+				<h2 id="introduction" tabindex="-1">Introduction</h2>
+<p>PDF (Portable Document Format) is a common format for distributing printable documents. This format was created by Adobe, and can be opened with Adobe Acrobat as well as many other tools and some web browsers.</p>
+<h2 id="what-makes-a-pdf-accessible" tabindex="-1">What makes a PDF accessible?</h2>
+<p>An accessible PDF is usable by persons with a variety of disabilities. For instance, a blind user may use a screen reader, a braille display, or even print the document in braille format. A person with a motor impairment may use a keyboard rather than a mouse to navigate between form fields. Other users may need to adjust the font size or spacing to compensate for vision loss or learning / cognitive disabilities.</p>
+<p>General document accessibility guidelines also apply to PDFs. That means that the document should be properly structured with headings, there is sufficient contrast, and images have alternate text. Make sure to read the general document accessibility guide before continuing.</p>
+<p>Since PDF documents often contain interactive components like forms, their accessibility should be evaluated based on the <a href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines</a>. Following this guide does not ensure compliance with these guidelines, but it is a good start.</p>
+<h2 id="recommended-authoring-tools" tabindex="-1">Recommended authoring tools</h2>
+<h3 id="microsoft-word" tabindex="-1">Microsoft Word</h3>
+<p>Note: These instructions apply to Word 2013 and 2016.</p>
+<p>The easiest way to create an accessible PDF is to begin with an accessible Word document. Once you have created an accessible document in Word, export it through <strong>File</strong> &gt; <strong>Export</strong> &gt; <strong>Create PDF/XPS Document</strong> &gt; <strong>Create PDF/XPS</strong> (do not use “print to PDF”!).</p>
+<div class="container-md">
+<img src="/gc-da11yn.github.io/img/en/office2016/pdf-01.jpg" alt="Screenshot of Export dialog in Word">
+</div>
+<p>In the dialog box, select <strong>Options</strong> and check these boxes:</p>
+<ul>
+<li>Create bookmarks using: Headings - (or bookmarks, if you have created them)</li>
+<li>Document properties</li>
+<li>Document structure tags</li>
+</ul>
+<p>The remaining boxes should be unchecked.</p>
+<div class="container-md">
+<img src="/gc-da11yn.github.io/img/en/office2016/pdf-02.jpg" alt="Screenshot of PDF export options in Word">
+</div>
+<h3 id="adobe-products" tabindex="-1">Adobe products</h3>
+<p>Adobe Acrobat Pro, InDesign, FrameMaker, and LiveCycle Designer will export to tagged PDF, and offer more control over visual styles than Word. (LiveCycle Designer is specifically tailored to creating forms.)</p>
+<h3 id="other-pdf-authoring-tools" tabindex="-1">Other PDF authoring tools</h3>
+<p>Outside of the Adobe family of products as mentioned above, there are several PDF authoring tools out there such as Foxit PDF Editor and Kofax Power PDF. This document, however, focuses on using Foxit PDF Editor.</p>
+<p>To create a PDF document using a professional version of Foxit PDF Editor, you can consult this tutorial about <a href="https://youtu.be/tQYtVLmf2Yo">Creating PDFs</a>.</p>
+<h2 id="validating-and-remediating-accessibility-with-phantompdf" tabindex="-1">Validating and remediating accessibility with PhantomPDF</h2>
+<p>Foxit PDF Editor is an essential tool for validating and remediating PDF accessibility. The current version as of December 2020 is PhantomPDF Business 10.1. The following information is specific to this version.</p>
+<h3 id="automated-validation" tabindex="-1">Automated validation</h3>
+<p>Foxit PDF Editor provides a built-in accessibility checker. The checker does not identify all issues, but looks for things such as: missing document title, tags, figures alternative text and other potential issues.</p>
+<p>To run the accessibility checker, open your PDF document and <strong>in the Ribbon</strong> select the <strong>Accessibility</strong> tab then select <strong>Full Check</strong>.</p>
+<div class="container-md">
+<img src="/gc-da11yn.github.io/img/en/office2016/pdf-03.png" alt="Screenshot of Accessibility Checker in Phantom PDF">
+</div>
+<p>Under <strong>Report Options</strong> uncheck “<strong>Create accessibility report</strong>” if you do not wish to export the issues, and select <strong>Start Checking</strong>.</p>
+<div class="container-md">
+<img src="/gc-da11yn.github.io/img/en/office2016/pdf-04.png" alt="Screenshot of the Accessibility Checker options menu in Phantom PDF">
+</div>
+<p>This will generate a list of issues similar to the one pictured above. Inspect each failure, issues will need to be either resolved or checked manually.</p>
+<h3 id="remediating-issues" tabindex="-1">Remediating issues</h3>
+<p>Some issues can be fixed simply by opening the <strong>context</strong> menu (right-clicking) for the issue and selecting <strong>Fix</strong>.</p>
+<h2 id="common-issues-and-solutions" tabindex="-1">Common issues and solutions</h2>
+<p>Besides general accessibility issues, pay special attention to the following areas of PDF accessibility.</p>
+<h3 id="document-structure-tags" tabindex="-1">Document structure (tags)</h3>
+<p>An important part of PDF accessibility is “tagging”. Using a recommended authoring tool, tags will be automatically created based on the existing document structure. For instance, a heading created in Microsoft Word will be tagged as a heading in the PDF when you export. These tags are similar to HTML.</p>
+<p>To check if a document is tagged, navigate to <strong>File</strong> &gt; <strong>Properties</strong> or press <strong>Control + D</strong> to bring up the document properties, or run the Accessibility Checker. If not tagged, return to your authoring tool (ie.g. Word) if possible, ensure you have structured the document correctly, and export again using the settings given above.</p>
+<p>To manually set tags, use the <a href="https://youtu.be/bi7HEfQj1AQ">Reading Order tool</a> (<strong>Accessibility</strong> &gt; <strong>Setup</strong> &gt; <strong>Reading Order</strong>)</p>
+<h3 id="alternative-text-alt-text-for-images" tabindex="-1">Alternative text (“alt text”) for Images</h3>
+<p>To set alt text in PhantomPDF, navigate to <strong>Accessibility</strong> &gt; <strong>Alternate Text</strong> &gt; <strong>Set Alternate Text</strong>. If your image does not show up in the list of figures, or the message “There is no figure information to display” appears, the images have not been correctly tagged as figures, and you will first have to tag them.</p>
+<p>Decorative images (which should be ignored by screen readers) should be tagged as “Background”.</p>
+<h3 id="language-and-title" tabindex="-1">Language and title</h3>
+<p>A meaningful title and the document’s language need to be specified. In PhantomPDF, navigate to <strong>File</strong> &gt; <strong>Properties</strong> or press <strong>Control + D</strong> to bring up the document’s properties. The language field can be found under the <strong>Advanced</strong> tab.</p>
+<p>Bilingual PDF documents present special issues and should be avoided, especially for forms. It is preferable to offer multiple versions of the same PDF, one for each language.</p>
+<p>A passage in a different language than the main language of the document must be tagged separately. For example, an English paragraph may appear in a French document indicating that the document is also available in English. For more information, visit the page about <a href="https://www.w3.org/TR/WCAG20-TECHS/PDF19.html">Specifying the language for a passage or phrase</a>. You can set the language for the text in a subtree of the tags tree in the Tags panel or in the Content panel located in the navigation pane. To do this, open the <strong>context</strong> menu (right-clicking) for an element, choose <strong>Properties…</strong>, and select a language in the Object Properties dialog box.</p>
+<h3 id="scanned-documents-images-of-text" tabindex="-1">Scanned documents: images of text</h3>
+<p>PDFs created from scanning in a paper document need, at minimum, to have the text recognized in order to be made accessible. This can be done automatically using Optical Character Recognition (OCR). Please note that OCR is not always 100% accurate, so be sure to review the text manually after conversion. See <a href="https://youtu.be/cZpmMMPhFbw">Learn how to Scan and OCR editable PDFs</a>.</p>
+<h3 id="bookmarks" tabindex="-1">Bookmarks</h3>
+<p>Any PDF longer than one page should include bookmarks. These may be automatically generated (such as when exporting from Word, provided the correct settings are used – see Microsoft Word section above) or you may have to <a href="https://youtu.be/Ron1tiWgDJQ">create bookmarks manually within PhantomPDF</a>.</p>
+<h3 id="forms" tabindex="-1">Forms</h3>
+<p>Creating an accessible PDF form is tricky, as form fields created in other programs are not directly exported into the PDF. See <a href="https://webaim.org/techniques/foxit/forms">WebAIM’s guide to creating accessible forms in PhantomPDF</a>.</p>
+<p>Some general tips:</p>
+<ul>
+<li><strong>Instructions</strong>: Put instructions at the beginning of the form, rather than in between form fields.</li>
+<li><strong>Labels</strong>: In PDF documents, there is no way to specify what label applies to what form field, so each form field must also have its label entered into the “Tooltip” field. Radio buttons and check boxes require additional steps.</li>
+<li><strong>Input format:</strong> Ensure that the correct format is suggested, if one is required. - Ex. Date of birth (YYYY-MM-DD). As with all labels, this should be repeated in the tooltip.</li>
+<li><strong>Required fields:</strong> Indicate which fields are required. Do not rely solely on colour. If an asterisk (*) is used to indicate required fields, include the following text at the start of the form (e.g. * indicates a required field).</li>
+<li><strong>Tab order</strong>: Test the form using only the keyboard (using the <strong>Tab</strong> key to move between fields).
+<ul>
+<li>Ensure that it is obvious (visually) which field is active at all times</li>
+<li>Ensure that the tab order follows the expected (visual) order</li>
+</ul>
+</li>
+</ul>
+<h3 id="reading-order" tabindex="-1">Reading order</h3>
+<p>Documents created in graphics software, rather than Word, may have issues with reading order. For instance, the elements might be read in the order they were created, rather than the visual order. Multiple columns of text can also cause reading order issues. This can be checked by navigating to <strong>Home</strong> &gt; <strong>Reflow</strong> or pressing <strong>Control + 4</strong> to reflow the document (See “Other PDF accessibility testing tools” below). See <a href="https://webaim.org/techniques/foxit/phantompdf#content_order">Review and repair the content order</a>.</p>
+<h3 id="missing-spaces-and-line-breaks" tabindex="-1">Missing spaces and line breaks</h3>
+<p>Improper characters used by the author for spaces or line breaks causes words to jam together with reflow. This authoring problem occurs frequently with PDF. To test for this, export to plain text in PhantomPDF by navigating to <strong>Convert</strong> &gt; <strong>Export</strong> &gt; <strong>To Other</strong> &gt; <strong>To Plain Text</strong>, or select all and copy / paste into a plain text editor like Notepad. In the plain text version, are there missing spaces and line breaks? If so, check your export settings in the authoring program. Next, try using a wider spaced font. If you have reduced the letter or word spacing, put this back to the default. If the issue persists, consider using a different authoring tool.</p>
+<h3 id="tables" tabindex="-1">Tables</h3>
+<p>Table cells must be associated with table headers. To make your life easier, begin with a simple table (one with no merged cells) in Microsoft Word. Ensure that it is correctly structured with table headers by checking with the aforementioned Reading Order tool. An example of a correctly structured table is shown here. See <a href="https://youtu.be/6V7vyKG6bKs">PDF Accessibility: Make tables more Accessible</a>.</p>
+<h2 id="other-pdf-accessibility-testing-tools" tabindex="-1">Other PDF accessibility testing tools</h2>
+<p>Enabling PhantomPDF’s built-in accessibility features, located in the Ribbon under the tab <strong>Accessibility</strong> &gt; <strong>Configuration</strong> &gt; <strong>Setup Assistant</strong>, allows you to manually test the reading order and other structural issues. WebAIM recommends that you <a href="https://webaim.org/techniques/foxit/phantompdf#other">should still manually review the accessibility of your PDF after using PhantomPDF’s other accessibility tools and features</a>.</p>
+<p>Testing a form with <a href="https://www.nvaccess.org/">NVDA (a free screen reader)</a> will quickly identify label and tab order issues. Try to fill out the form using nothing but your ears and your keyboard. This will give you an idea of what screen reader users will experience.</p>
+<p>An alternative to PhantomPDF’s inbuilt accessibility checker is <a href="https://pdfua.foundation/en/pdf-accessibility-checker-pac/">Free PDF Accessibility Checker (PAC) 2021 - PDF/UA Foundation (pdfua.foundation)</a>. While this program alone won’t allow you to remediate issues, you may be able to make your fixes upstream in the authoring tool (Word, InDesign, etc.). It may also identify issues that PhantomPDF does not.</p>
+<h2 id="additional-resources" tabindex="-1">Additional resources</h2>
+<ul>
+<li><a href="https://www.w3.org/TR/WCAG-TECHS/pdf.html" title="W3C WCAG 2.0 Accessibility Guidelines to Creating PDFs">W3C PDF Techniques for WCAG 2.0</a> - 23 techniques for solving specific WCAG violations, mostly forms and tables (100 pages, 2016)</li>
+<li><a href="https://webaim.org/techniques/foxit/">WebAIM: Foxit and PDF Accessibility</a> - An article by WebAIM that outlines how to make accessible PDFs with Foxit PDF Editor (4 pages, 2019)</li>
+<li><a href="https://www.foxitsoftware.com/support/tutorial/">Foxit PDF Editor Instructional Videos</a></li>
+</ul>
+
+				</div>
+				
+				
+    
+    
+    
+
+
+
+    
+    
+    
+
+
+
+
+    
+    
+    
+        
+    
+    <nav aria-label="How to create accessible documents in Office 2016" class="mt-400 mb-400">
+        <ul class="office-toc d-grid sm:grid-cols-2 lg:grid-cols-3 gap-200 list-none ps-0 mb-0">
+            <li><a class="office-toc__item" href="/gc-da11yn.github.io/en/how-to-create-accessible-documents-in-office-2016/">How to create accessible documents <small class="d-block">in Office 2016</small></a></li>
+            
+                
+                <li><a class="office-toc__item" href="/gc-da11yn.github.io/en/accessible-excel-workbooks-in-office-2016/">
+                    <i class="fas fa-lg fa-file-excel me-50" aria-hidden="true"></i>
+                    Accessible Excel workbooks  <small class="d-block">in Office 2016</small></a></li>
+            
+                
+                <li><span class="office-toc__item" aria-current="page">
+                    <i class="fas fa-lg fa-file-pdf me-50" aria-hidden="true"></i>
+                    Accessible PDF documents  <small class="d-block">in Office 2016</small></span></li>
+            
+                
+                <li><a class="office-toc__item" href="/gc-da11yn.github.io/en/accessible-powerpoint-presentations-in-office-2016/">
+                    <i class="fas fa-lg fa-file-powerpoint me-50" aria-hidden="true"></i>
+                    Accessible PowerPoint presentations  <small class="d-block">in Office 2016</small></a></li>
+            
+                
+                <li><a class="office-toc__item" href="/gc-da11yn.github.io/en/accessible-visio-drawings-in-office-2016/">
+                    <i class="fas fa-lg fa-project-diagram me-50" aria-hidden="true"></i>
+                    Accessible Visio drawings  <small class="d-block">in Office 2016</small></a></li>
+            
+                
+                <li><a class="office-toc__item" href="/gc-da11yn.github.io/en/accessible-word-documents-in-office-2016/">
+                    <i class="fas fa-lg fa-file-word me-50" aria-hidden="true"></i>
+                    Accessible Word documents  <small class="d-block">in Office 2016</small></a></li>
+            
+        </ul>
+    </nav>
+
+    <div class="bg-light p-300">
+        
+        
+        <p class="mb-0">Looking for the Microsoft 365 version? Try <a href="/gc-da11yn.github.io/en/accessible-pdf-documents-in-microsoft-365/">Accessible PDF documents <small><strong> in Microsoft 365</strong></small></a></p>
+    </div>
+
+
+
+				
+			</gcds-container>
+
+			
+<gcds-container tag="section" layout="page" class="pagedetails">
+  <h2 class="visibility-sr-only">Page details</h2>
+  <gcds-date-modified>2026-10-09</gcds-date-modified>
+</gcds-container>
+
+
+		
+		</main>
+
+		
+
+<aside>
+  
+<gcds-container layout="page" padding="300" class="page-list-link">
+  <h3 class="mt-0 mb-200">
+    Still can&#39;t find what you need?
+  </h3>
+  <span>
+    <gcds-icon name="search" margin-right="100"></gcds-icon>
+    See our
+    <a href="/gc-da11yn.github.io/en/page-list/">complete list of pages</a>.
+  </span>
+</gcds-container>
+
+
+ <gcds-container layout="page" padding="300" class="contribute">
+   <gcds-grid columns="1fr" columns-tablet="5fr 7fr" gap="300">
+     <div>
+       <h2 class="mt-0 mb-0 text-light">
+         <i class="fab fa-github fa-fw" aria-hidden="true"></i>
+         Contribute to this project
+       </h2>
+       <p class="contribute-subtitle">on Github.com</p>
+     </div>
+
+     <div>
+		<ul class="contribute-links d-flex flex-wrap gap-300 list-none p-0 mt-0 mb-200">
+         <li class="d-flex align-items-center gap-100">
+           <i class="fas fa-code fa-fw" aria-hidden="true"></i>
+           <a class="link-light" href="https://github.com/gc-da11yn/gc-da11yn.github.io">Source code</a>
+         </li>
+         <li class="d-flex align-items-center gap-100">
+           <gcds-icon name="exclamation-circle"></gcds-icon>
+           <a class="link-light" href="https://github.com/gc-da11yn/gc-da11yn.github.io/issues/">Issues</a>
+         </li>
+         <li class="d-flex align-items-center gap-100">
+           <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+           <a class="link-light" href="https://github.com/gc-da11yn/gc-da11yn.github.io/discussions">Discussions</a>
+         </li>
+       </ul>
+       <span>
+         <gcds-icon name="email" margin-right="100"></gcds-icon>
+         <a href="mailto:digitala11ytoolkit-boitedoutila11enumerique@ssc-spc.gc.ca?subject=Contribute%20to%20the%20Digital%20Accessibility%20Toolkit">Reach the Digital Accessibility Toolkit by email</a>
+       </span>
+     </div>
+   </gcds-grid>
+
+   
+ </gcds-container>
+</aside>
+
+
+		<gcds-footer
+  id="footer"
+  display="full"
+  lang="en"
+  sub-links='{ "Social media": "https://www.canada.ca/en/social.html", "Mobile applications": "https://www.canada.ca/en/mobile.html", "About Canada.ca": "https://www.canada.ca/en/government/about.html", "Terms and conditions": "https://www.canada.ca/en/transparency/terms.html", "Privacy": "https://www.canada.ca/en/transparency/privacy.html" }'
+></gcds-footer>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script></body>
+
+</html>
+
+

@@ -1,0 +1,378 @@
+
+
+<!DOCTYPE html>
+<html class="no-js" lang="fr" dir="ltr">
+
+	
+<head>
+	<meta charset="utf-8">
+
+	<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+	
+	<title>Liste de vérification de la conformité des documents Microsoft- Boîte à outils de l&#39;accessibilité numérique</title>
+	<meta content="width=device-width,initial-scale=1" name="viewport">
+	<meta name="description" content="Vous trouverez ici différentes questions qui vous aideront à savoir si votre document Microsoft 365 est accessible ou non.">
+
+	
+
+	<meta name="source-file" content="./src/pages/fr/liste-de-verification-de-la-conformite-des-documents-microsoft.md">
+
+
+	
+	
+	
+	
+		
+	
+		<link rel="alternate" hreflang="en" href="/gc-da11yn.github.io/en/microsoft-document-compliance-checklist/index.html" />
+	
+
+
+	<link href="https://www.canada.ca/etc/designs/canada/wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+
+	<!-- GC Design System CSS Shortcuts -->
+	<link
+	  rel="stylesheet"
+	  href="https://cdn.design-system.canada.ca/@gcds-core/css-shortcuts@1.2.0/dist/gcds-css-shortcuts.min.css"
+	/>
+
+	<!-- GC Design System -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.design-system.canada.ca/@gcds-core/components@1.6.0/dist/gcds/gcds.css"
+    />
+
+	<!-- Site styles: after GCDS so they can build on it -->
+	<link rel="stylesheet" href="/gc-da11yn.github.io/css/da11yn.css"><script>
+      (function () {
+        var key = "basicHtml";
+        var match = location.search.match(/[?&]wbdisable=(true|false)/);
+        var basic = !!match && match[1] === "true";
+        try {
+          if (match) {
+            if (basic) { localStorage.setItem(key, "1"); } else { localStorage.removeItem(key); }
+          }
+          basic = localStorage.getItem(key) === "1";
+        } catch (e) {}
+        document.documentElement.classList.add(basic ? "basic-html" : "standard-html");
+        if (!basic) {
+          var gcds = document.createElement("script");
+          gcds.type = "module";
+          gcds.src = "https://cdn.design-system.canada.ca/@gcds-core/components@1.6.0/dist/gcds/gcds.esm.js";
+          document.head.appendChild(gcds);
+        }
+      })();
+    </script>
+
+	<!-- Meta tags -->
+
+	<meta name="author" content="Gouvernement du Canada" />
+	<meta name="dcterms.title" content="Liste de vérification de la conformité des documents Microsoft" />
+	<meta name="dcterms.description" content="Vous trouverez ici différentes questions qui vous aideront à savoir si votre document Microsoft 365 est accessible ou non." />
+	<meta name="dcterms.creator" content="Gouvernement du Canada">
+	<meta name="dcterms.language" content="fr" />
+	<meta name="dcterms.created" content="2023-08-01">
+	<meta name="dcterms.modified" content="2026-10-09" >
+	<meta name="dcterms.subject" content="Comment faire;Créer un document; " />
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SM9MSHWDVN"></script>
+	<script>
+		(function (w) {
+			"use strict";
+			if (w.location.hostname === "a11y.canada.ca") {
+				w.dataLayer = w.dataLayer || [];
+				w.gtag = function () {
+					w.dataLayer.push(arguments);
+				};
+				w.gtag('js', new Date());
+				w.gtag('config', 'G-SM9MSHWDVN');
+			}
+		})(window);
+	</script>
+</head>
+
+
+	<body vocab="http://schema.org/" typeof="WebPage">
+
+		
+
+<header>
+	<gcds-header lang="fr" lang-href="" skip-to-href="#main">
+				<nav slot="skip-to-nav" label="Passer au">
+			<a href="#main">Passer au contenu principal</a>
+			<a href="#footer">Passer à « Au sujet du gouvernement »</a>
+			<a class="skip-to-basic" href="?wbdisable=true">Passer à la version HTML simplifiée</a>
+			<a class="skip-to-standard" href="?wbdisable=false">Passer à la version standard</a>
+		</nav>
+
+	    
+
+
+
+
+	
+
+
+  <gcds-lang-toggle slot="toggle" href="/gc-da11yn.github.io/en/microsoft-document-compliance-checklist/">
+  </gcds-lang-toggle>
+
+
+
+		<gcds-search search-id="search" slot="search" action="https://canada.ca/fr/sr/srb.html"
+			method="get"
+		 	action=""
+		 	name="cse-search-box"
+		 	data-placeholder-long="Rechercher dans Canada.ca"
+		 	data-placeholder-short="Rechercher dans Canada.ca"
+		 	placeholder="Rechercher dans Canada.ca">
+        </gcds-search>
+        <gcds-topic-menu slot="menu"></gcds-topic-menu>
+
+        
+
+<gcds-breadcrumbs slot="breadcrumb">
+		<!-- First breadcrumb: Canada.ca - already set by default on GcdsHeader -->
+		<!-- Second breadcrumb: Locale-based home link -->
+		
+		
+			<gcds-breadcrumbs-item href="/gc-da11yn.github.io/fr/">Boîte à outils de l&#39;accessibilité numérique</gcds-breadcrumbs-item>
+		
+
+		<!-- Additional breadcrumbs based on tags and subjects -->
+		
+			 
+
+			<!-- Special handling for role-based pages -->
+			
+				<!-- Existing breadcrumbs logic for non-role pages -->
+				<!-- Breadcrumbs based on 'subject' -->
+				
+					
+						<gcds-breadcrumbs-item href="/gc-da11yn.github.io/fr/comment-faire">
+							Comment faire
+						</gcds-breadcrumbs-item>
+						
+					
+				
+
+				<!-- Breadcrumbs based on 'tags' -->
+				
+					
+						
+							<gcds-breadcrumbs-item href="/gc-da11yn.github.io/fr/creer-un-document">
+								Créer un document
+							</gcds-breadcrumbs-item>
+							
+						
+					
+				
+			
+		
+      </gcds-breadcrumbs>
+
+
+	</gcds-header>
+</header>
+
+
+
+		<main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement" id="main">
+
+		
+			<gcds-container layout="full" class="banner">
+			  <gcds-container layout="page" padding="200">
+				<gcds-grid columns="1fr" columns-desktop="4fr 1fr" class="py-150">
+				  <div class="banner__box">
+					<h1 class="mt-0 mb-300 text-light" property="name">Liste de vérification de la conformité des documents Microsoft
+					</h1>
+					
+					<p>Vous trouverez ici différentes questions qui vous aideront à savoir si votre document Microsoft 365 est accessible ou non.</p>
+					</div>
+				</gcds-grid>
+			  </gcds-container>
+			</gcds-container>
+
+			
+
+
+
+
+<gcds-container layout="page" padding="300">
+				
+
+				
+				
+
+<div class="container-sm d-flex align-items-center gap-300 bg-light p-300 mb-400">
+	<img src="/gc-da11yn.github.io/img/doc.png" alt="" width="58" height="68">
+	<p class="mb-0">
+		<a href="/gc-da11yn.github.io/docs/MSDocument_COMPLIANCE_CHECKLIST_FR.docx" download="liste-de-verification-de-la-conformite-des-documents-microsoft">Liste de vérification de la conformité des documents Microsoft</a>
+		<span class="d-block font-size-text-small">
+			(<i class="fas fa-file-word me-50" aria-hidden="true"></i><span class="visibility-sr-only">Document Microsoft Word</span>
+			15.3
+			<abbr title="kilo-octet">ko</abbr>)
+		</span>
+	</p>
+</div>
+
+				
+
+				
+
+				<div class="page-content">
+				<p>Vous trouverez ci-dessous des questions pour vous aider à évaluer l’accessibilité de votre document Microsoft 365 : Word, Excel ou PowerPoint. Les critères de réussite renvoient aux Règles pour l’accessibilité des contenus Web (<abbr>WCAG</abbr>) 2.1 : <a href="http://www.w3.org/WAI/WCAG21/quickref/">How to Meet WCAG - Quick Reference<small> (en anglais seulement)</small></a> et le <a href="https://conception.canada.ca/guide-redaction/">Guide de rédaction du contenu du site Canada.ca</a>.</p>
+<p>Si une question ne s’applique pas à votre document, indiquez « S.O. » pour « Sans objet ». Par exemple, il n’y a pas de table des matières dans un document Excel.</p>
+<p>Si vous répondez « Non » à l’une des questions suivantes, votre document N’EST PAS accessible.</p>
+<h2 id="renseignements-dordre-general" tabindex="-1">Renseignements d’ordre général</h2>
+<ul class="list-none ps-0 mt-400 ms-400">
+<li class="mb-200"><span class="far fa-square me-200" aria-hidden="true"></span>Les propriétés du document sont-elles remplies de manière conforme (titre, auteur, sujet) ? (<a href="https://www.w3.org/Translations/WCAG21-fr/#page-titled">2.4.2 : Titre de page</a>)</li>
+<li class="mb-200"><span class="far fa-square me-200" aria-hidden="true"></span>La langue du document est-elle bien définie ? (<a href="https://www.w3.org/Translations/WCAG21-fr/#language-of-page">3.1.1 : Langue de la page</a>)</li>
+<li class="mb-200"><span class="far fa-square me-200" aria-hidden="true"></span>Le document est-il libre de commentaires, de suivi des modifications et de surligne ? (<a href="https://www.w3.org/Translations/WCAG21-fr/#info-and-relationships">1.3.1 : Information et relations</a>)</li>
+<li class="mb-200"><span class="far fa-square me-200" aria-hidden="true"></span>L’ordre de présentation du contenu est-il exact et logique? (<a href="https://www.w3.org/Translations/WCAG21-fr/#meaningful-sequence">1.3.2 : Ordre séquentiel logique</a>)</li>
+<li class="mb-200"><span class="far fa-square me-200" aria-hidden="true"></span>Le document est-il exempt de formulaires électroniques à remplir ? (<a href="https://www.w3.org/Translations/WCAG21-fr/#labels-or-instructions">3.3.2 : Étiquettes ou instructions</a>)</li>
+<li class="mb-200"><span class="far fa-square me-200" aria-hidden="true"></span>Est-il possible de redimensionner l’ensemble du texte et demeure-t-il lisible lorsqu’il est grossi à 200 % ? (<a href="https://www.w3.org/Translations/WCAG21-fr/#resize-text">1.4.4 : Redimensionnement du texte</a>)</li>
+<li class="mb-200"><span class="far fa-square me-200" aria-hidden="true"></span>Le niveau de lisibilité est-il compatible avec le public cible: maximum grade 8 pour publique générale et maximum grade 10 à l'interne de EDSC ?</li>
+<li class="mb-200"><span class="far fa-square me-200" aria-hidden="true"></span>Tous les acronymes sont-ils définis dès qu’ils sont mentionnés la première fois dans le document ? (<a href="https://www.w3.org/Translations/WCAG21-fr/#abbreviations">3.1.4 : Abréviations</a>)</li>
+<li class="mb-200"><span class="far fa-square me-200" aria-hidden="true"></span>L'espacement de contenu textuel est-il d'au moins 1.5 (interligne) ? (<a href="https://www.w3.org/Translations/WCAG21-fr/#text-spacing">1.4.12 : Espacement du texte</a>)</li>
+<li class="mb-200"><span class="far fa-square me-200" aria-hidden="true"></span>Le texte est-il exempt de tabulations ou d’espaces pour aligner ou centrer le texte ? Utilisez plutôt le retrait et l’espacement des caractéristiques du paragraphe.</li>
+<li class="mb-200"><span class="far fa-square me-200" aria-hidden="true"></span>Le texte est-il aligné à gauche ou à droite, et n’est-il jamais justifié (aligné des deux côtés) ?</li>
+<li class="mb-200"><span class="far fa-square me-200" aria-hidden="true"></span>Le texte est-il exempt de nouvelles lignes vides ou de retours forcés pour créer de l’espace entre les paragraphes ? Utilisez plutôt l’option de saut de page ou l’option de paragraphe avant et après.</li>
+<li class="mb-200"><span class="far fa-square me-200" aria-hidden="true"></span>N’utilisez l’italique que comme recommandé par le Guide de style du contenu Canada.ca.</li>
+<li class="mb-200"><span class="far fa-square me-200" aria-hidden="true"></span>Utilisez un texte de style paragraphe fort et uniquement pour certains mots et phrases courtes, pas pour des phrases complètes ou des paragraphes.</li>
+<li class="mb-200"><span class="far fa-square me-200" aria-hidden="true"></span>N’utilisez que des styles sans empattement comme Verdana, Tahoma, Arial, Helvetica</li>
+</ul>
+<h2 id="couleur" tabindex="-1">Couleur</h2>
+<ul class="list-none ps-0 mt-400 ms-400">
+<li class="mb-200"><span class="far fa-square me-200" aria-hidden="true"></span>Est-ce que tous les objets (tableaux et graphiques) de couleur sont assortis d’une méthode qui ne repose pas sur les couleurs pour assurer a compréhension (utilisation de figures ou *) ? (<a href="https://www.w3.org/Translations/WCAG21-fr/#use-of-color">1.4.1 : Utilisation de la couleur</a>)</li>
+<li class="mb-200"><span class="far fa-square me-200" aria-hidden="true"></span>Tous les objets non textuels tels que les graphiques ou les dessins (à l’exception des logos et des photographies) ont-ils un rapport de contraste de 3:1 ou plus ? (<a href="https://www.w3.org/Translations/WCAG21-fr/#contrast-minimum">1.4.3 : Contraste (minimum)</a>)</li>
+</ul>
+<h2 id="liens" tabindex="-1">Liens</h2>
+<ul class="list-none ps-0 mt-400 ms-400">
+<li class="mb-200"><span class="far fa-square me-200" aria-hidden="true"></span>Tous les liens sont-ils identifiés à l’aide du style de paragraphe de lien hypertexte ? (<a href="https://www.w3.org/Translations/WCAG21-fr/#use-of-color">1.4.1 : Utilisation de la couleur</a>)</li>
+<li class="mb-200"><span class="far fa-square me-200" aria-hidden="true"></span>Les hyperliens fournissent-ils un texte de lien qui identifie l’objectif du lien sans avoir besoin de contexte supplémentaire ? (<a href="https://www.w3.org/Translations/WCAG21-fr/#link-purpose-in-context">2.4.4 : Fonction du lien</a>)</li>
+<li class="mb-200"><span class="far fa-square me-200" aria-hidden="true"></span>Le texte générique des liens est-il suffisamment contextuel? (Vous n’utilisez pas le mot Lien ou la formule cliquez ici) ? (<a href="https://www.w3.org/Translations/WCAG21-fr/#link-purpose-in-context">2.4.4 : Fonction du lien (selon le contexte)</a>)</li>
+<li class="mb-200"><span class="far fa-square me-200" aria-hidden="true"></span>Tous les liens sont-ils correctement liés (pas de liens brisés) ?</li>
+</ul>
+<h2 id="images" tabindex="-1">Images</h2>
+<ul class="list-none ps-0 mt-400 ms-400">
+<li class="mb-200"><span class="far fa-square me-200" aria-hidden="true"></span>Toutes les images contenant de l’information comportent-elles du texte de remplacement qui fournit le même niveau de compréhension qu’un utilisateur visuel obtiendrait ? (<a href="https://www.w3.org/Translations/WCAG21-fr/#non-text-content">1.1.1 : Contenu non textuel</a>)</li>
+<li class="mb-200"><span class="far fa-square me-200" aria-hidden="true"></span>Toutes les images décoratives sont-elles marquées décoratives (contenant " " ou le mot « décoratif » dans le champ de texte alternatif) ? (<a href="https://www.w3.org/Translations/WCAG21-fr/#non-text-content">1.1.1 : Contenu non textuel</a>)</li>
+<li class="mb-200"><span class="far fa-square me-200" aria-hidden="true"></span>Les objets multicouches sont-ils regroupés en un seul objet ou aplanis et un texte de remplacement approprié est-il appliqué, si nécessaire ? (<a href="https://www.w3.org/Translations/WCAG21-fr/#non-text-content">1.1.1 : Contenu non textuel</a>)</li>
+<li class="mb-200"><span class="far fa-square me-200" aria-hidden="true"></span>Les images d’information complexes (non décoratives) sont-elles assorties d’un autre moyen de compréhension (habituellement une longue description) ? (<a href="https://www.w3.org/Translations/WCAG21-fr/#non-text-content">1.1.1 : Contenu non textuel</a>)</li>
+<li class="mb-200"><span class="far fa-square me-200" aria-hidden="true"></span>Le document est-il exempt de tout contenu qui ne devrait pas être inclus comme image ? (Image d’un tableau avec texte, image de texte) (<a href="https://www.w3.org/Translations/WCAG21-fr/#images-of-text">1.4.5 : Texte sous forme d’image</a>)</li>
+<li class="mb-200"><span class="far fa-square me-200" aria-hidden="true"></span>Le document est-il exempt de contenu qui clignote plus de 3 fois par seconde ? (<a href="https://www.w3.org/Translations/WCAG21-fr/#three-flashes-or-below-threshold">2.3.1 : Pas plus de trois flashs ou sous le seuil critique</a>)</li>
+</ul>
+<h2 id="tableaux" tabindex="-1">Tableaux</h2>
+<ul class="list-none ps-0 mt-400 ms-400">
+<li class="mb-200"><span class="far fa-square me-200" aria-hidden="true"></span>Le tableau a-t-il été créé à l’aide des styles de tableau intégrés (et non avec des espaces ou des tabulations) ? (<a href="https://www.w3.org/Translations/WCAG21-fr/#info-and-relationships">1.3.1 : Information et relations</a>)</li>
+<li class="mb-200"><span class="far fa-square me-200" aria-hidden="true"></span>La structure du tableau correspond-elle à la disposition visuelle du tableau (structure simple de disposition – aucune cellule fusionnée ou fractionnée) ? (<a href="https://www.w3.org/Translations/WCAG21-fr/#info-and-relationships">1.3.1 : Information et relations</a>)</li>
+<li class="mb-200"><span class="far fa-square me-200" aria-hidden="true"></span>•	Toutes les tables ont-elles des lignes d’en-tête et/ou des colonnes d’en-tête définies ? (<a href="https://www.w3.org/Translations/WCAG21-fr/#info-and-relationships">1.3.1 : Information et relations</a>)</li>
+<li class="mb-200"><span class="far fa-square me-200" aria-hidden="true"></span>Le document est-il exempt de tableaux utilisés pour du contenu qui n’est pas une donnée (tableaux utilisés pour la mise en page seulement) ? (<a href="https://www.w3.org/Translations/WCAG21-fr/#info-and-relationships">1.3.1 : Information et relations</a>)</li>
+<li class="mb-200"><span class="far fa-square me-200" aria-hidden="true"></span>Le document est-il exempt de tableaux de données contenant des cellules fusionnées, cellules d’en-tête de ligne et de colonne ? (<a href="https://www.w3.org/Translations/WCAG21-fr/#info-and-relationships">1.3.1 : Information et relations</a>)</li>
+</ul>
+<h2 id="listes" tabindex="-1">Listes</h2>
+<ul class="list-none ps-0 mt-400 ms-400">
+<li class="mb-200"><span class="far fa-square me-200" aria-hidden="true"></span>Le document contient-il uniquement des listes créées avec des styles de liste ? (<a href="https://www.w3.org/Translations/WCAG21-fr/#info-and-relationships">1.3.1 : Information et relations</a>)</li>
+<li class="mb-200"><span class="far fa-square me-200" aria-hidden="true"></span>Les listes multiples d’un même document sont-elles bien organisées (regroupées ou à divers niveaux) ? (<a href="https://www.w3.org/Translations/WCAG21-fr/#info-and-relationships">1.3.1 : Information et relations</a>)</li>
+</ul>
+<h2 id="en-tetes" tabindex="-1">En-têtes</h2>
+<ul class="list-none ps-0 mt-400 ms-400">
+<li class="mb-200"><span class="far fa-square me-200" aria-hidden="true"></span>Est-ce que tout le texte qui sert d’en-tête visuel est marqué par le style d’en-tête approprié ? (<a href="https://www.w3.org/Translations/WCAG21-fr/#info-and-relationships">1.3.1 : Information et relations</a>)</li>
+<li class="mb-200"><span class="far fa-square me-200" aria-hidden="true"></span>Les titres suivent-ils une progression hiérarchique logique? (H1-H2-H3) (<a href="https://www.w3.org/Translations/WCAG21-fr/#info-and-relationships">1.3.1 : Information et relations</a>)</li>
+<li class="mb-200"><span class="far fa-square me-200" aria-hidden="true"></span>Les changements apportés au style des titres ont-ils été effectués moyen de la fonction « modifier le style de l’en-tête » ? (<a href="https://www.w3.org/Translations/WCAG21-fr/#info-and-relationships">1.3.1 : Information et relations</a>)</li>
+<li class="mb-200"><span class="far fa-square me-200" aria-hidden="true"></span>Le texte de l’en-tête décrit-il correctement le contenu suivant ? (<a href="https://www.w3.org/Translations/WCAG21-fr/#headings-and-labels">2.4.6 : En-têtes et étiquettes</a>)</li>
+<li class="mb-200"><span class="far fa-square me-200" aria-hidden="true"></span>Le document contient-il un style d’en-tête pour chaque section identifiée ? (<a href="https://www.w3.org/Translations/WCAG21-fr/#headings-and-labels">2.4.6 : En-têtes et étiquettes</a>)</li>
+<li class="mb-200"><span class="far fa-square me-200" aria-hidden="true"></span>Le volet de navigation du menu Affichage affiche-t-il tous les en-têtes, et rien de plus (y compris aucune ligne vide) ?</li>
+</ul>
+</ul>
+<h2 id="autres-elements" tabindex="-1">Autres éléments</h2>
+<ul class="list-none ps-0 mt-400 ms-400">
+<li class="mb-200"><span class="far fa-square me-200" aria-hidden="true"></span>La table des matières est-elle produite à l’aide des styles Office intégrés ? (<a href="https://www.w3.org/Translations/WCAG21-fr/#info-and-relationships">1.3.1 : Information et relations</a>)</li>
+<li class="mb-200"><span class="far fa-square me-200" aria-hidden="true"></span>Les citations et les notes de bas de page/notes de fin de document sont-elles créées à l’aide des styles Office intégrés ? (<a href="https://www.w3.org/Translations/WCAG21-fr/#info-and-relationships">1.3.1 : Information et relations</a>)</li>
+<li class="mb-200"><span class="far fa-square me-200" aria-hidden="true"></span>La langue est-elle correctement réglée pour la langue correspondante des mots ou des phrases ? (<a href="https://www.w3.org/Translations/WCAG21-fr/#language-of-parts">3.1.2 : Langue d’un passage</a>)</li>
+<li class="mb-200"><span class="far fa-square me-200" aria-hidden="true"></span>L’information contenue l’en-tête, le pied de page, le filigrane, les notes du conférencier, etc. est-elle disponible dans le corps principal du document (sauf la numérotation des pages) ? (<a href="https://www.w3.org/Translations/WCAG21-fr/#info-and-relationships">1.3.1 : Information et relations</a>)</li>
+</ul>
+
+				</div>
+				
+			</gcds-container>
+
+			
+<gcds-container tag="section" layout="page" class="pagedetails">
+  <h2 class="visibility-sr-only">Détails de la page</h2>
+  <gcds-date-modified>2026-10-09</gcds-date-modified>
+</gcds-container>
+
+
+		
+		</main>
+
+		
+
+<aside>
+  
+<gcds-container layout="page" padding="300" class="page-list-link">
+  <h3 class="mt-0 mb-200">
+    Vous ne trouvez toujours pas ce dont vous avez besoin?
+  </h3>
+  <span>
+    <gcds-icon name="search" margin-right="100"></gcds-icon>
+    Consultez notre
+    <a href="/gc-da11yn.github.io/fr/liste-des-pages/">liste complète des pages</a>.
+  </span>
+</gcds-container>
+
+
+ <gcds-container layout="page" padding="300" class="contribute">
+   <gcds-grid columns="1fr" columns-tablet="5fr 7fr" gap="300">
+     <div>
+       <h2 class="mt-0 mb-0 text-light">
+         <i class="fab fa-github fa-fw" aria-hidden="true"></i>
+         Contribuez à ce projet
+       </h2>
+       <p class="contribute-subtitle">sur Github.com</p>
+     </div>
+
+     <div>
+		<ul class="contribute-links d-flex flex-wrap gap-300 list-none p-0 mt-0 mb-200">
+         <li class="d-flex align-items-center gap-100">
+           <i class="fas fa-code fa-fw" aria-hidden="true"></i>
+           <a class="link-light" href="https://github.com/gc-da11yn/gc-da11yn.github.io">Code source</a>
+         </li>
+         <li class="d-flex align-items-center gap-100">
+           <gcds-icon name="exclamation-circle"></gcds-icon>
+           <a class="link-light" href="https://github.com/gc-da11yn/gc-da11yn.github.io/issues/">Problèmes</a>
+         </li>
+         <li class="d-flex align-items-center gap-100">
+           <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+           <a class="link-light" href="https://github.com/gc-da11yn/gc-da11yn.github.io/discussions">Discussions</a>
+         </li>
+       </ul>
+       <span>
+         <gcds-icon name="email" margin-right="100"></gcds-icon>
+         <a href="mailto:digitala11ytoolkit-boitedoutila11enumerique@ssc-spc.gc.ca?subject=Contribuer%20%C3%A0%20la%20Bo%C3%AEte%20%C3%A0%20outils%20de%20l&#39;accessibilit%C3%A9%20num%C3%A9rique">Contactez la Boîte à outils de l&#39;accessibilité numérique par courriel</a>
+       </span>
+     </div>
+   </gcds-grid>
+
+   
+ </gcds-container>
+</aside>
+
+
+		<gcds-footer
+  id="footer"
+  display="full"
+  lang="fr"
+  sub-links='{ "Médias sociaux": "https://www.canada.ca/fr/sociaux.html", "Applications mobiles": "https://www.canada.ca/fr/mobile.html", "À propos de Canada.ca": "https://www.canada.ca/fr/gouvernement/a-propos.html", "Avis": "https://www.canada.ca/fr/transparence/avis.html", "Confidentialité": "https://www.canada.ca/fr/transparence/confidentialite.html" }'
+></gcds-footer>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script></body>
+
+</html>
+
+

@@ -1,0 +1,744 @@
+
+
+<!DOCTYPE html>
+<html class="no-js" lang="fr" dir="ltr">
+
+	
+<head>
+	<meta charset="utf-8">
+
+	<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+	
+	<title>Le modèle de feuille de route pour la correction des problèmes d’accessibilité- Boîte à outils de l&#39;accessibilité numérique</title>
+	<meta content="width=device-width,initial-scale=1" name="viewport">
+	<meta name="description" content="Le présent modèle de feuille de route pour la correction des problèmes d’accessibilité est conçu principalement pour être utilisé dans le cadre des approvisionnements ou de projets où la conformité de l’accessibilité doit être atteinte au fil du temps. Ce modèle présente les renseignements essentiels que le gouvernement du Canada s’attendrait de retrouver dans une feuille de route pour la correction des problèmes d’accessibilité afin de comprendre et de traiter les lacunes énumérées dans un rapport de conformité de l’accessibilité (RCA).">
+
+	
+
+	<meta name="source-file" content="./src/pages/fr/procurement/instructions-pour-le-modele-de-feuille-de-route-pour-la-correction-des-problemes-daccessibilite.md">
+
+
+	
+	
+	
+	
+		
+	
+		<link rel="alternate" hreflang="en" href="/gc-da11yn.github.io/en/accessibility-remediation-roadmap-template/index.html" />
+	
+
+
+	<link href="https://www.canada.ca/etc/designs/canada/wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+
+	<!-- GC Design System CSS Shortcuts -->
+	<link
+	  rel="stylesheet"
+	  href="https://cdn.design-system.canada.ca/@gcds-core/css-shortcuts@1.2.0/dist/gcds-css-shortcuts.min.css"
+	/>
+
+	<!-- GC Design System -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.design-system.canada.ca/@gcds-core/components@1.6.0/dist/gcds/gcds.css"
+    />
+
+	<!-- Site styles: after GCDS so they can build on it -->
+	<link rel="stylesheet" href="/gc-da11yn.github.io/css/da11yn.css"><script>
+      (function () {
+        var key = "basicHtml";
+        var match = location.search.match(/[?&]wbdisable=(true|false)/);
+        var basic = !!match && match[1] === "true";
+        try {
+          if (match) {
+            if (basic) { localStorage.setItem(key, "1"); } else { localStorage.removeItem(key); }
+          }
+          basic = localStorage.getItem(key) === "1";
+        } catch (e) {}
+        document.documentElement.classList.add(basic ? "basic-html" : "standard-html");
+        if (!basic) {
+          var gcds = document.createElement("script");
+          gcds.type = "module";
+          gcds.src = "https://cdn.design-system.canada.ca/@gcds-core/components@1.6.0/dist/gcds/gcds.esm.js";
+          document.head.appendChild(gcds);
+        }
+      })();
+    </script>
+
+	<!-- Meta tags -->
+
+	<meta name="author" content="Gouvernement du Canada" />
+	<meta name="dcterms.title" content="Le modèle de feuille de route pour la correction des problèmes d’accessibilité" />
+	<meta name="dcterms.description" content="Le présent modèle de feuille de route pour la correction des problèmes d’accessibilité est conçu principalement pour être utilisé dans le cadre des approvisionnements ou de projets où la conformité de l’accessibilité doit être atteinte au fil du temps. Ce modèle présente les renseignements essentiels que le gouvernement du Canada s’attendrait de retrouver dans une feuille de route pour la correction des problèmes d’accessibilité afin de comprendre et de traiter les lacunes énumérées dans un rapport de conformité de l’accessibilité (RCA)." />
+	<meta name="dcterms.creator" content="Gouvernement du Canada">
+	<meta name="dcterms.language" content="fr" />
+	<meta name="dcterms.created" content="2023-08-01">
+	<meta name="dcterms.modified" content="2026-10-09" >
+	<meta name="dcterms.subject" content="Accessibilité numérique au gouvernement du Canada;Approvisionnement; " />
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SM9MSHWDVN"></script>
+	<script>
+		(function (w) {
+			"use strict";
+			if (w.location.hostname === "a11y.canada.ca") {
+				w.dataLayer = w.dataLayer || [];
+				w.gtag = function () {
+					w.dataLayer.push(arguments);
+				};
+				w.gtag('js', new Date());
+				w.gtag('config', 'G-SM9MSHWDVN');
+			}
+		})(window);
+	</script>
+</head>
+
+
+	<body vocab="http://schema.org/" typeof="WebPage">
+
+		
+
+<header>
+	<gcds-header lang="fr" lang-href="" skip-to-href="#main">
+				<nav slot="skip-to-nav" label="Passer au">
+			<a href="#main">Passer au contenu principal</a>
+			<a href="#footer">Passer à « Au sujet du gouvernement »</a>
+			<a class="skip-to-basic" href="?wbdisable=true">Passer à la version HTML simplifiée</a>
+			<a class="skip-to-standard" href="?wbdisable=false">Passer à la version standard</a>
+		</nav>
+
+	    
+
+
+
+
+	
+
+
+  <gcds-lang-toggle slot="toggle" href="/gc-da11yn.github.io/en/accessibility-remediation-roadmap-template/">
+  </gcds-lang-toggle>
+
+
+
+		<gcds-search search-id="search" slot="search" action="https://canada.ca/fr/sr/srb.html"
+			method="get"
+		 	action=""
+		 	name="cse-search-box"
+		 	data-placeholder-long="Rechercher dans Canada.ca"
+		 	data-placeholder-short="Rechercher dans Canada.ca"
+		 	placeholder="Rechercher dans Canada.ca">
+        </gcds-search>
+        <gcds-topic-menu slot="menu"></gcds-topic-menu>
+
+        
+
+<gcds-breadcrumbs slot="breadcrumb">
+		<!-- First breadcrumb: Canada.ca - already set by default on GcdsHeader -->
+		<!-- Second breadcrumb: Locale-based home link -->
+		
+		
+			<gcds-breadcrumbs-item href="/gc-da11yn.github.io/fr/">Boîte à outils de l&#39;accessibilité numérique</gcds-breadcrumbs-item>
+		
+
+		<!-- Additional breadcrumbs based on tags and subjects -->
+		
+			 
+
+			<!-- Special handling for role-based pages -->
+			
+				<!-- Existing breadcrumbs logic for non-role pages -->
+				<!-- Breadcrumbs based on 'subject' -->
+				
+					
+						<gcds-breadcrumbs-item href="/gc-da11yn.github.io/fr/accessibilite-numerique-au-gouvernement-du-canada">
+							Accessibilité numérique au gouvernement du Canada
+						</gcds-breadcrumbs-item>
+						
+					
+				
+
+				<!-- Breadcrumbs based on 'tags' -->
+				
+					
+						
+							<gcds-breadcrumbs-item href="/gc-da11yn.github.io/fr/approvisionnement">
+								Approvisionnement
+							</gcds-breadcrumbs-item>
+							
+						
+					
+				
+			
+		
+      </gcds-breadcrumbs>
+
+
+	</gcds-header>
+</header>
+
+
+
+		<main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement" id="main">
+
+		
+			<gcds-container layout="full" class="banner">
+			  <gcds-container layout="page" padding="200">
+				<gcds-grid columns="1fr" columns-desktop="4fr 1fr" class="py-150">
+				  <div class="banner__box">
+					<h1 class="mt-0 mb-300 text-light" property="name">Le modèle de feuille de route pour la correction des problèmes d’accessibilité
+					</h1>
+					
+					<p>Le présent modèle de feuille de route pour la correction des problèmes d’accessibilité est conçu principalement pour être utilisé dans le cadre des approvisionnements ou de projets où la conformité de l’accessibilité doit être atteinte au fil du temps. Ce modèle présente les renseignements essentiels que le gouvernement du Canada s’attendrait de retrouver dans une feuille de route pour la correction des problèmes d’accessibilité afin de comprendre et de traiter les lacunes énumérées dans un rapport de conformité de l’accessibilité (RCA).</p>
+					</div>
+				</gcds-grid>
+			  </gcds-container>
+			</gcds-container>
+
+			
+
+
+
+
+<gcds-container layout="page" padding="300">
+				
+
+				
+				
+
+<div class="container-sm d-flex align-items-center gap-300 bg-light p-300 mb-400">
+	<img src="/gc-da11yn.github.io/img/doc.png" alt="" width="58" height="68">
+	<p class="mb-0">
+		<a href="/gc-da11yn.github.io/docs/procurement-modele-de-feuille-de-route-pour-la-correction.docx" download="le-modele-de-feuille-de-route-pour-la-correction-des-problemes-daccessibilite">Le modèle de feuille de route pour la correction des problèmes d’accessibilité</a>
+		<span class="d-block font-size-text-small">
+			(<i class="fas fa-file-word me-50" aria-hidden="true"></i><span class="visibility-sr-only">Document Microsoft Word</span>
+			78
+			<abbr title="kilo-octet">ko</abbr>)
+		</span>
+	</p>
+</div>
+
+				
+
+				
+				
+<aside>
+	<h2>Sur cette page</h2>
+	<ul class="list-disc ps-500">
+		
+		
+		
+		
+	<li><a href="#objectif-du-modele-de-feuille-de-route-pour-la-correction-des-problemes-daccessibilite">Objectif du modèle de feuille de route pour la correction des problèmes d’accessibilité</a>
+		
+		
+	
+		
+		
+	
+	  <ul class="list-circle ps-500">
+		
+		
+		<li><a href="#remarques-importantes">Remarques importantes</a></li>
+		
+		
+		
+		
+		</ul>
+	</li>
+	<li><a href="#comment-utiliser-le-modele-de-feuille-de-route-pour-la-correction-des-problemes-daccessibilite">Comment utiliser le modèle de feuille de route pour la correction des problèmes d’accessibilité</a>
+		
+		
+	
+		
+		
+		</li>
+	<li><a href="#reportez-vous-a-lannexe-1-exemple-de-tableau-details-de-la-feuille-de-route-pour-la-correction-des-problemes-daccessibilite">Reportez-vous à l’Annexe 1 - Exemple de tableau « Détails de la feuille de route pour la correction des problèmes d’accessibilité »</a>
+		
+		
+	
+		
+		
+		</li>
+	<li><a href="#dernieres-etapes-de-rappel-liste-de-verification-rapide">Dernières étapes de rappel (liste de vérification rapide)</a>
+		
+		
+	
+		
+		
+		</li>
+	<li><a href="#feuille-de-route-pour-la-correction-des-problemes-daccessibilite-feuille-de-route-mesure-a-prendre-nom-et-version-du-bien-ou-du-service-mesure-a-prendre-nom-de-lentreprise">Feuille de route pour la correction des problèmes d’accessibilité (feuille de route) [Mesure à prendre – Nom et version du bien ou du service] – [Mesure à prendre – Nom de l’entreprise].</a>
+		
+		
+	
+		
+		
+	
+	  <ul class="list-circle ps-500">
+		
+		
+		<li><a href="#calendrier-de-la-feuille-de-route">Calendrier de la feuille de route</a></li>
+		
+		
+		
+		
+	
+		<li><a href="#description-du-bien-service">Description du bien / service</a></li>
+		
+		
+		
+		
+	
+		<li><a href="#coordonnees">Coordonnées</a></li>
+		
+		
+		
+		
+	
+		<li><a href="#norme-daccessibilite-cible">Norme d’accessibilité cible</a></li>
+		
+		
+		
+		
+	
+		<li><a href="#apercu-de-la-conformite-de-laccessibilite-du-bien-service">Aperçu de la conformité de l’accessibilité du bien / service</a></li>
+		
+		
+		
+		
+	
+		<li><a href="#plan-dinclusion-de-laccessibilite">Plan d’inclusion de l’accessibilité</a></li>
+		
+		
+		
+		
+	
+		<li><a href="#limites-techniques-connues">Limites techniques connues</a></li>
+		
+		
+		
+		
+	
+		<li><a href="#details-des-problemes-daccessibilite">Détails des problèmes d’accessibilité</a></li>
+		
+		
+		
+		
+	
+		<li><a href="#details-de-la-feuille-de-route-pour-la-correction-des-problemes-daccessibilite">Détails de la feuille de route pour la correction des problèmes d’accessibilité</a></li>
+		
+		
+		
+		
+	
+		<li><a href="#approbations-et-signatures">Approbations et signatures</a></li>
+		
+		
+		
+		
+		</ul>
+	</li>
+	<li><a href="#annexe-1-exemple-de-tableau-details-de-la-feuille-de-route-pour-la-correction-des-problemes-daccessibilite">Annexe 1 – Exemple de tableau « Détails de la feuille de route pour la correction des problèmes d’accessibilité »</a>
+		
+		
+	
+		
+		
+	
+	  <ul class="list-circle ps-500">
+		
+		
+		<li><a href="#notes">Notes</a></li>
+		</ul>
+		</li>
+		
+		
+		</ul>
+		</li>
+		</ul>
+</aside>
+
+
+				
+
+				<div class="page-content">
+				<h2 id="objectif-du-modele-de-feuille-de-route-pour-la-correction-des-problemes-daccessibilite" tabindex="-1">Objectif du modèle de feuille de route pour la correction des problèmes d’accessibilité</h2>
+<p>Ce modèle de feuille de route pour la correction des problèmes d’accessibilité (feuille de route) a été élaboré par SPC pour corriger les lacunes connues en matière d’accessibilité des technologies de l’information et des communications (TIC). Les responsables techniques / propriétaires fonctionnels du gouvernement du Canada peuvent utiliser ce modèle tel quel, le modifier ou décider de ne pas l’utiliser.</p>
+<p>Ce modèle présente les renseignements essentiels que le gouvernement du Canada s’attendrait à retrouver dans une feuille de route pour la correction des problèmes d’accessibilité afin de comprendre et de traiter les lacunes énumérées dans un rapport de conformité de l’accessibilité (RCA). Il sert de guide pour comprendre ce qui suit :</p>
+<ul>
+<li>les problèmes d’accessibilité actuels;</li>
+<li>les calendriers et les plans de résolution de ces problèmes.</li>
+</ul>
+<p>Ce modèle de feuille de route pour la correction des problèmes d’accessibilité est conçu principalement pour être utilisé dans le cadre des approvisionnements ou de projets où la conformité de l’accessibilité est requise. Utilisez le modèle pour remplir toutes les sections nécessaires, en ajoutant au besoin des détails supplémentaires ou des sections pertinentes à la feuille de route pour la correction des problèmes d’accessibilité.</p>
+<h3 id="remarques-importantes" tabindex="-1">Remarques importantes</h3>
+<ul>
+<li>Test de conformité : Avant de créer une feuille de route pour la correction des problèmes d’accessibilité, le bien ou le service doit faire l’objet d’un test de conformité à la norme d’accessibilité cible afin de déceler les domaines de non-conformité. Les résultats sont consignés dans le rapport de conformité de l’accessibilité.</li>
+<li>Exigences de conformité : L’exigence de conformité à la norme d’accessibilité cible et le niveau de détail de la feuille de route pour la correction des problèmes d’accessibilité seront décrits dans la demande de soumissions et/ou le contrat.</li>
+<li>Format accessible : Le rapport de conformité de l’accessibilité et la feuille de route pour la correction des problèmes d’accessibilité doivent être créés dans un format accessible.</li>
+<li>Obligations contractuelles : Si ce modèle est utilisé pour répondre à des exigences contractuelles, assurez-vous qu’il est adapté pour fournir tous les renseignements requis conformément aux conditions du contrat.</li>
+</ul>
+<h2 id="comment-utiliser-le-modele-de-feuille-de-route-pour-la-correction-des-problemes-daccessibilite" tabindex="-1">Comment utiliser le modèle de feuille de route pour la correction des problèmes d’accessibilité</h2>
+<p>Instructions incorporées</p>
+<ul>
+<li>Plutôt que de fournir des instructions détaillées ici, des conseils ont été intégrés directement dans le modèle. Les instructions incorporées sont marquées de [mesure à prendre – crochets].</li>
+<li>Suivez ces instructions pour remplir chaque section de la feuille de route pour la correction des problèmes d’accessibilité.</li>
+<li>Retirez les [instructions] une fois la section remplie.</li>
+</ul>
+<h2 id="reportez-vous-a-lannexe-1-exemple-de-tableau-details-de-la-feuille-de-route-pour-la-correction-des-problemes-daccessibilite" tabindex="-1">Reportez-vous à l’Annexe 1 - Exemple de tableau « Détails de la feuille de route pour la correction des problèmes d’accessibilité »</h2>
+<p>Reportez-vous à l’exemple fourni <a href="#annexe-1-exemple-de-tableau-details-de-la-feuille-de-route-pour-la-correction-des-problemes-daccessibilite">Annexe 1 – Exemple de tableau « Détails de la feuille de route pour la correction des problèmes d’accessibilité »</a> pour des conseils sur la façon de structurer et de présenter les problèmes d’accessibilité connus.</p>
+<h2 id="dernieres-etapes-de-rappel-liste-de-verification-rapide" tabindex="-1">Dernières étapes de rappel (liste de vérification rapide)</h2>
+<ol>
+<li>Remplir le RCA – Déterminez toutes les lacunes en matière d’accessibilité par le biais d’un test de conformité.</li>
+<li>Utiliser ce modèle – Remplissez la feuille de route pour les corrections des problèmes d’accessibilité avec les détails du rapport de conformité de l’accessibilité.</li>
+<li>Personnaliser selon les besoins – Ajoutez ou ajustez des sections pour répondre à des exigences contractuelles ou organisationnelles précises.</li>
+<li>Finaliser la feuille de route pour la correction des problèmes d’accessibilité – Remplacez tous les textes des espaces réservés marqués « Mesure à prendre » et assurez-vous de l’exactitude de tous les renseignements inscrits.</li>
+<li>Rendre accessible – Veillez à ce que cette feuille de route pour la correction des problèmes d’accessibilité et le rapport de conformité de l’accessibilité qui l’accompagne soient fournis dans un format accessible pour tous les intervenants.</li>
+<li>Approbations et signatures – Soumettez pour examen et obtenez les signatures de tous les intervenants.</li>
+</ol>
+<p>[Mesure à prendre : Supprimez la section des instructions pour le modèle de feuille de route pour la correction des problèmes d’accessibilité, y compris la présente ligne, une fois que votre document est rempli].</p>
+<h2 id="feuille-de-route-pour-la-correction-des-problemes-daccessibilite-feuille-de-route-mesure-a-prendre-nom-et-version-du-bien-ou-du-service-mesure-a-prendre-nom-de-lentreprise" tabindex="-1">Feuille de route pour la correction des problèmes d’accessibilité (feuille de route) [Mesure à prendre – Nom et version du bien ou du service] – [Mesure à prendre – Nom de l’entreprise].</h2>
+<h3 id="calendrier-de-la-feuille-de-route" tabindex="-1">Calendrier de la feuille de route</h3>
+<p>Date de la feuille de route – [Mesure à prendre – Saisissez la date de création de la feuille de route, p. ex. le 1<sup>er</sup> juillet 2024].</p>
+<p>Délai de correction – [Mesure à prendre – Saisissez la date à laquelle la pleine conformité de l’accessibilité est attendue, p. ex. en juillet 2026].</p>
+<h3 id="description-du-bien-service" tabindex="-1">Description du bien / service</h3>
+<p>[Mesure à prendre – Fournissez une brève description du bien ou du service. Si des parties du bien ou du service sont exclues de cette feuille de route, veuillez les indiquer et fournir une justification].</p>
+<h3 id="coordonnees" tabindex="-1">Coordonnées</h3>
+<p>[Mesure à prendre – Incluez les coordonnées (nom, courriel et numéro de téléphone) de la personne qui peut parler du contenu de la feuille de route. L’idéal est d’indiquer son nom et son adresse électronique. S’il n’est pas possible d’indiquer une personne en particulier, fournissez une adresse électronique générique contrôlée par quelqu’un qui peut répondre aux questions relatives à cette feuille de route].</p>
+<p>Nom :</p>
+<p>Titre :</p>
+<p>Courriel :</p>
+<p>Numéro de téléphone :</p>
+<h3 id="norme-daccessibilite-cible" tabindex="-1">Norme d’accessibilité cible</h3>
+<p>À partir de janvier 2025, le gouvernement du Canada met en œuvre la <a href="https://accessibilite.canada.ca/en-301-549-exigences-daccessibilite-pour-les-produits-et-services-tic">norme CAN/ASC – EN 301 549:2024</a> / <a href="https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf">EN 301 549 V3.2.1 (2021-03)<small> (<abbr title="Portable Document Format">PDF</abbr>, 2.3 <abbr title="Megabite">MB</abbr>), (en anglais seulement)</small></a>.</p>
+<p>La <a href="https://accessibilite.canada.ca/en-301-549-exigences-daccessibilite-pour-les-produits-et-services-tic">norme CAN/ASC – EN 301 549:2024</a> est l’adoption par Normes d’accessibilité Canada de la norme <a href="https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf">EN 301 549 – V3.2.1 (2021-03)<small> (<abbr title="Portable Document Format">PDF</abbr>, 2.3 <abbr title="Megabite">MB</abbr>), (en anglais seulement)</small></a> comme norme nationale du Canada et est identique à la version officielle publiée par l’Institut Européen de Normalisation des Télécommunications (ETSI). La norme sur les exigences d’accessibilité CAN/ASC – EN 301 549:2024 est disponible en format HTML en français et en anglais.</p>
+<p>Ce modèle peut être utilisé pour des versions ultérieures de la norme EN 301 549 et/ou d’autres normes d’accessibilité des TIC. Le gouvernement du Canada indiquera la norme d’accessibilité des TIC applicable pour laquelle la conformité est demandée.</p>
+<h3 id="apercu-de-la-conformite-de-laccessibilite-du-bien-service" tabindex="-1">Aperçu de la conformité de l’accessibilité du bien / service</h3>
+<p>[Mesure à prendre – Fournissez un bref résumé de l’état actuel de l’accessibilité du bien ou du service. Indiquez s’il existe des groupes d’utilisateurs connus pour lesquels il peut exister des obstacles, par exemple les utilisateurs de lecteurs d’écran.]</p>
+<h3 id="plan-dinclusion-de-laccessibilite" tabindex="-1">Plan d’inclusion de l’accessibilité</h3>
+<p>[Mesure à prendre – Décrivez l’approche adoptée par l’organisation pour améliorer l’accessibilité du bien ou du service. En règle générale, cela devrait inclure :</p>
+<ul>
+<li>des plans pour des tests d’accessibilité effectués périodiquement;</li>
+<li>l’intégration de l’accessibilité dans la conception et le développement de toute nouvelle caractéristique d’un bien ou d’un service;</li>
+<li>l’intégration de tests d’accessibilité dans les processus de développement;</li>
+<li>toute initiative visant à tester avec des utilisateurs ou à faciliter la collecte de rétroaction spécifique sur l’accessibilité auprès des utilisateurs finaux;</li>
+<li>une description de la façon dont les mesures d’adaptation et les solutions de rechange seront fournis aux utilisateurs jusqu’à ce que la correction soit terminée.</li>
+</ul>
+<p>L’objectif de cette section est de communiquer clairement les stratégies visant à assurer la conformité du bien ou du service de manière continue.]</p>
+<h3 id="limites-techniques-connues" tabindex="-1">Limites techniques connues</h3>
+<p>[Mesure à prendre – Le cas échéant, indiquez les principales limites techniques de la mise en œuvre des solutions actuelles, telles que les cadres, les plateformes, les intégrations ou les technologies qui peuvent empêcher la solution actuelle de se conformer pleinement à la norme d’accessibilité cible. Veuillez également fournir, le cas échéant, des plans pour remédier à ces limites.]</p>
+<h4 id="notes" tabindex="-1">Notes</h4>
+<p>[Mesure à prendre – Ajoutez toute autre note ou tout autre commentaire dont le lecteur (le responsable fonctionnel de produit du GC) devrait avoir connaissance. Par exemple :</p>
+<ul>
+<li>les options de mise à niveau logicielle qui résoudraient les problèmes d’accessibilité;</li>
+<li>les plans de sous-traitance des audits en matière d’accessibilité et les mesures correctives.]</li>
+</ul>
+<h3 id="details-des-problemes-daccessibilite" tabindex="-1">Détails des problèmes d’accessibilité</h3>
+<h4 id="definition-de-letat-des-problemes" tabindex="-1">Définition de l’état des problèmes</h4>
+<table>
+<thead>
+<tr>
+<th>État</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ouvert</td>
+<td>Le travail visant à résoudre ce problème n’est pas encore commencé.</td>
+</tr>
+<tr>
+<td>Résolu</td>
+<td>Le problème a été résolu avec succès.</td>
+</tr>
+<tr>
+<td>En cours</td>
+<td>Le travail est commencé, mais n’est pas encore terminé.</td>
+</tr>
+<tr>
+<td>Ne sera pas résolu</td>
+<td>Le problème ne sera pas résolu; une justification doit être fournie dans la colonne Remarques et explications du tableau <a href="#details-de-la-feuille-de-route-pour-la-correction-des-problemes-daccessibilite">« Détails de la feuille de route pour la correction des problèmes d’accessibilité »</a>.</td>
+</tr>
+<tr>
+<td>Bloqué</td>
+<td>La correction du problème est retardée par des dépendances; expliquez pourquoi dans la colonne Remarques et explications du tableau <a href="#details-de-la-feuille-de-route-pour-la-correction-des-problemes-daccessibilite">« Détails de la feuille de route pour la correction des problèmes d’accessibilité »</a>.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="definitions-des-priorites" tabindex="-1">Définitions des priorités</h4>
+<p>[Mesure à prendre – Si cette feuille de route doit fournir des priorités pour déterminer les délais d’exécution des mesures correctives, il convient d’utiliser la définition ci-dessous comme point de départ et de l’adapter au besoin. Si la feuille de route n’utilise pas un niveau de priorité pour définir les délais, il est possible de supprimer cette colonne du tableau « Détails de la feuille de route pour la correction des problèmes d’accessibilité ».]</p>
+<table>
+<thead>
+<tr>
+<th>Priorité</th>
+<th>Description</th>
+<th>Délai de correction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Critique</td>
+<td>Ce problème d’accessibilité se traduit par un contenu inaccessible ou des obstacles importants pour les personnes en situation de handicap. Tant qu’une solution n’aura pas été mise en œuvre, le contenu sera totalement inaccessible. Nécessite une correction immédiate.</td>
+<td>[Mesure à prendre – La correction devrait être une priorité absolue.]</td>
+</tr>
+<tr>
+<td>Élevée</td>
+<td>Ce problème d’accessibilité crée de sérieux obstacles pour les personnes en situation de handicap. Tant qu’une solution n’aura pas été mise en œuvre, certains contenus resteront inaccessibles. Les utilisateurs utilisant des technologies d’assistance seront très frustrés lorsqu’ils tenteront d’accéder au contenu.</td>
+<td>[Mesure à prendre – La correction devrait être une priorité.]</td>
+</tr>
+<tr>
+<td>Modérée</td>
+<td>Ce problème d’accessibilité entraîne certains obstacles pour les personnes en situation de handicap, mais ne les empêche pas d’accéder aux fonctionnalités, éléments ou contenus fondamentaux. Ce problème doit être résolu avant que la solution puisse être considérée comme pleinement conforme.</td>
+<td>[Mesure à prendre – La correction devrait être une priorité raisonnable.]</td>
+</tr>
+<tr>
+<td>Faible</td>
+<td>Il s’agit d’un problème d’accessibilité qui a moins d’impact sur les utilisateurs qu’un problème modéré. Pour qu’une solution soit considérée comme totalement conforme, ce problème d’accessibilité doit être résolu, mais il peut être traité en dernier lieu.</td>
+<td>[Mesure à prendre – La correction devrait être la priorité la plus faible.]</td>
+</tr>
+</tbody>
+</table>
+<h4 id="problemes-connus" tabindex="-1">Problèmes connus</h4>
+<p>[Mesure à prendre – Veuillez inclure le plus de renseignements possible dans le tableau « Détails de la feuille de route » pour aider le lecteur à comprendre la nature de chaque problème connu et comment et quand il sera résolu. Vous pouvez également énumérer les problèmes/obstacles auxquels sont confrontés les utilisateurs qui ne sont pas liés à la conformité. Selon le nombre de problèmes que vous enregistrez, vous pouvez envisager de représenter ces données dans une feuille de calcul séparée, car il n’est pas rare que certains produits plus importants comportent des centaines, voire des milliers de problèmes connus.]</p>
+<h4 id="definitions-des-colonnes-du-tableau-details-de-la-feuille-de-route" tabindex="-1">Définitions des colonnes du tableau « Détails de la feuille de route »</h4>
+<ul>
+<li>Clause(s) connexe(s) non conforme(s) – Fournissez la clause connexe de la norme d’accessibilité cible.</li>
+<li>Titre du problème – Fournissez un titre court du problème.</li>
+<li>Description du problème – Fournissez des détails clairs concernant le problème d’accessibilité.</li>
+<li>Priorité de correction – Indiquez la priorité telle qu’elle est définie dans la section <a href="#definitions-des-priorites">Définitions des priorités</a>.</li>
+<li>Délais de correction – Indiquez la date prévue pour la résolution du problème.</li>
+<li>État – Indiquez l’état tel qu’il est défini dans la section <a href="#definition-de-letat-des-problemes">Définitions de l’état des problèmes</a>.</li>
+<li><strong>Remarques et explications – Indiquez tous les détails et renseignements applicables au problème répertorié. Saisissez</strong> la justification <strong>requise</strong> de tout problème dont l’état est « Ne sera pas résolu » ou « Bloqué ».</li>
+<li><strong>Solutions de rechange temporaires – Indiquez toute méthode dont vous avez connaissance pour aider les utilisateurs concernés à contourner temporairement le problème.</strong></li>
+</ul>
+<h3 id="details-de-la-feuille-de-route-pour-la-correction-des-problemes-daccessibilite" tabindex="-1">Détails de la feuille de route pour la correction des problèmes d’accessibilité</h3>
+<table>
+<thead>
+<tr>
+<th>Clause(s) connexe(s) non conforme(s)</th>
+<th>Titre du problème</th>
+<th>Description du problème</th>
+<th>Priorité de la correction</th>
+<th>Délai de correction</th>
+<th>État</th>
+<th>Remarques et explications</th>
+<th>Solutions de rechange temporaires</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>Consultez l’<a href="#annexe-1-exemple-de-tableau-details-de-la-feuille-de-route-pour-la-correction-des-problemes-daccessibilite">Annexe 1 – Exemple de tableau « Détails de la feuille de route pour la correction des problèmes d’accessibilité »</a>.</p>
+<h3 id="approbations-et-signatures" tabindex="-1">Approbations et signatures</h3>
+<p>[Mesure à prendre – Remplissez le tableau comme il convient pour officialiser l’engagement envers la feuille de route et garantir la responsabilité. Ajoutez une note rapide concernant les obligations contractuelles. Exemple de clause contractuelle :</p>
+<p>Le fournisseur accepte de corriger toutes les lacunes en matière d’accessibilité des TIC décrites dans la présente feuille de route pour la correction des problèmes d’accessibilité, et ce, dans les délais prescrits. Le non-respect de ces délais peut entraîner des pénalités contractuelles ou des ajustements jugés nécessaires par le responsable fonctionnel de produit du GC. Des mises à jour régulières de l’état doivent être fournies, et le fournisseur veillera à ce que toutes les mises à jour soient conformes à la norme d’accessibilité cible.]</p>
+<table>
+<thead>
+<tr>
+<th>Nom de l’intervenant</th>
+<th>Rôle</th>
+<th>Signature numérique</th>
+<th>Date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[Nom]</td>
+<td>Responsable fonctionnel de produit du GC</td>
+<td>&nbsp;</td>
+<td>[Mois JJ, AAAA]</td>
+</tr>
+<tr>
+<td>[Nom]</td>
+<td>Autorité contractante du GC</td>
+<td>&nbsp;</td>
+<td>[Mois JJ, AAAA]</td>
+</tr>
+<tr>
+<td>[Nom]</td>
+<td>Représentant du fournisseur</td>
+<td>&nbsp;</td>
+<td>[Mois JJ, AAAA]</td>
+</tr>
+<tr>
+<td>[Nom]</td>
+<td>Auditeur d’accessibilité du fournisseur</td>
+<td>&nbsp;</td>
+<td>[Mois JJ, AAAA]</td>
+</tr>
+</tbody>
+</table>
+<h2 id="annexe-1-exemple-de-tableau-details-de-la-feuille-de-route-pour-la-correction-des-problemes-daccessibilite" tabindex="-1">Annexe 1 – Exemple de tableau « Détails de la feuille de route pour la correction des problèmes d’accessibilité »</h2>
+<p>[Mesure à prendre – Annexe 1 – Exemple de tableau « Détails de la feuille de route pour la correction des problèmes d’accessibilité » – (à supprimer avant de publier votre modèle)</p>
+<h3 id="notes-1" tabindex="-1">Notes</h3>
+<ul>
+<li>L’exemple de tableau « Détails de la feuille de route pour la correction des problèmes d’accessibilité » a été rempli au préalable avec trois exemples de problèmes qui doivent être supprimés lorsque vous fournissez votre feuille de route.</li>
+<li>EN indique la clause EN 301 549 - V3.2.1 (2021-03). Il est recommandé de la relier à la clause appropriée de la norme. Les créateurs de la feuille de route peuvent utiliser soit la référence à la clause EN 301 549 - V3.2.1 (2021-03) (p. ex. EN 9.1.4.3 Contraste (Minimum)), soit la référence équivalente à la clause CAN/ASC - EN 301 549:2024 (p. ex. CAN/ASC 9.1.4.3 Contraste (Minimum)).</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><span id="_Annex_1_–" class="anchor"></span>Clause(s) connexe(s) non conforme(s)</th>
+<th>Titre du problème</th>
+<th>Description du problème</th>
+<th>Priorité de la correction</th>
+<th>Délai de correction</th>
+<th>État</th>
+<th>Remarques et explications</th>
+<th>Solutions de rechange temporaires</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf#page=46">EN 9.1.4.3 Contraste (Minimum)<small> (<abbr title="Portable Document Format">PDF</abbr>, 2.3 <abbr title="Megabite">MB</abbr>), (en anglais seulement)</small></a></td>
+<td>Le menu principal manque de contraste.</td>
+<td>Les étiquettes dans le menu principal ne présentent pas un rapport de contraste de 4,5:1.</td>
+<td>Faible</td>
+<td>T4 AF2025-2026</td>
+<td>Ouvert</td>
+<td>Les étiquettes de texte ont un rapport de contraste de 3,1:1. Une nouvelle couleur d’arrière-plan sera sélectionnée pour résoudre ce problème.</td>
+<td>Un schéma à contraste élevé peut être utilisé. Les instructions seront fournies aux utilisateurs.</td>
+</tr>
+<tr>
+<td><a href="https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf#page=47">EN 9.2.1.1 Clavier<small> (<abbr title="Portable Document Format">PDF</abbr>, 2.3 <abbr title="Megabite">MB</abbr>), (en anglais seulement)</small></a></td>
+<td>Le menu principal n’est pas accessible par le clavier.</td>
+<td>Le menu principal de la page n’est pas focalisable à l’aide d’un clavier.</td>
+<td>Élevée</td>
+<td>T1 AF2025-2026</td>
+<td>Ouvert</td>
+<td>Le menu principal n’est actuellement accessible qu’à l’aide de la souris. Il ne reçoit pas le focus clavier.</td>
+<td>Des liens directs vers chaque page du menu principal seront fournis à tous les utilisateurs.</td>
+</tr>
+<tr>
+<td><a href="https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf#page=47">EN 9.2.1.1 Clavier<small> (<abbr title="Portable Document Format">PDF</abbr>, 2.3 <abbr title="Megabite">MB</abbr>), (en anglais seulement)</small></a></td>
+<td>La zone de liste déroulante n’est pas accessible au clavier.</td>
+<td>Les 23 zones de liste déroulante ne sont pas accessibles au clavier et ne peuvent pas être consultées par les utilisateurs n’ayant accès qu’au clavier.</td>
+<td>Élevée</td>
+<td>T1 AF2025-2026</td>
+<td>En cours</td>
+<td>Il s’agit d’un problème prioritaire qui sera traité le plus rapidement possible. Lorsqu’il sera résolu, il permettra de résoudre le problème des 23 zones de liste déroulante qui ne satisfont pas à ce critère.</td>
+<td>Pas de solution de rechange connue.</td>
+</tr>
+</tbody>
+</table>
+<p>[Fin de l’exemple.]</p>
+
+				</div>
+				
+			</gcds-container>
+
+			
+<gcds-container tag="section" layout="page" class="pagedetails">
+  <h2 class="visibility-sr-only">Détails de la page</h2>
+  <gcds-date-modified>2026-10-09</gcds-date-modified>
+</gcds-container>
+
+
+		
+		</main>
+
+		
+
+<aside>
+  
+<gcds-container layout="page" padding="300" class="page-list-link">
+  <h3 class="mt-0 mb-200">
+    Vous ne trouvez toujours pas ce dont vous avez besoin?
+  </h3>
+  <span>
+    <gcds-icon name="search" margin-right="100"></gcds-icon>
+    Consultez notre
+    <a href="/gc-da11yn.github.io/fr/liste-des-pages/">liste complète des pages</a>.
+  </span>
+</gcds-container>
+
+
+ <gcds-container layout="page" padding="300" class="contribute">
+   <gcds-grid columns="1fr" columns-tablet="5fr 7fr" gap="300">
+     <div>
+       <h2 class="mt-0 mb-0 text-light">
+         <i class="fab fa-github fa-fw" aria-hidden="true"></i>
+         Contribuez à ce projet
+       </h2>
+       <p class="contribute-subtitle">sur Github.com</p>
+     </div>
+
+     <div>
+		<ul class="contribute-links d-flex flex-wrap gap-300 list-none p-0 mt-0 mb-200">
+         <li class="d-flex align-items-center gap-100">
+           <i class="fas fa-code fa-fw" aria-hidden="true"></i>
+           <a class="link-light" href="https://github.com/gc-da11yn/gc-da11yn.github.io">Code source</a>
+         </li>
+         <li class="d-flex align-items-center gap-100">
+           <gcds-icon name="exclamation-circle"></gcds-icon>
+           <a class="link-light" href="https://github.com/gc-da11yn/gc-da11yn.github.io/issues/">Problèmes</a>
+         </li>
+         <li class="d-flex align-items-center gap-100">
+           <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+           <a class="link-light" href="https://github.com/gc-da11yn/gc-da11yn.github.io/discussions">Discussions</a>
+         </li>
+       </ul>
+       <span>
+         <gcds-icon name="email" margin-right="100"></gcds-icon>
+         <a href="mailto:digitala11ytoolkit-boitedoutila11enumerique@ssc-spc.gc.ca?subject=Contribuer%20%C3%A0%20la%20Bo%C3%AEte%20%C3%A0%20outils%20de%20l&#39;accessibilit%C3%A9%20num%C3%A9rique">Contactez la Boîte à outils de l&#39;accessibilité numérique par courriel</a>
+       </span>
+     </div>
+   </gcds-grid>
+
+   
+ </gcds-container>
+</aside>
+
+
+		<gcds-footer
+  id="footer"
+  display="full"
+  lang="fr"
+  sub-links='{ "Médias sociaux": "https://www.canada.ca/fr/sociaux.html", "Applications mobiles": "https://www.canada.ca/fr/mobile.html", "À propos de Canada.ca": "https://www.canada.ca/fr/gouvernement/a-propos.html", "Avis": "https://www.canada.ca/fr/transparence/avis.html", "Confidentialité": "https://www.canada.ca/fr/transparence/confidentialite.html" }'
+></gcds-footer>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script></body>
+
+</html>
+
+

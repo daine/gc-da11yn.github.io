@@ -1,0 +1,568 @@
+
+
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+
+	
+<head>
+	<meta charset="utf-8">
+
+	<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+	
+	<title>Accessible PowerPoint presentations in Office 2016- Digital Accessibility Toolkit</title>
+	<meta content="width=device-width,initial-scale=1" name="viewport">
+	<meta name="description" content="Accessible practices for Microsoft PowerPoint 2016 document creation.">
+
+	
+
+	<meta name="source-file" content="./src/pages/en/ms-office/2016/accessible-powerpoint-presentations-in-office-2016.md">
+
+
+	
+	
+	
+	
+		
+	
+		<link rel="alternate" hreflang="fr" href="/gc-da11yn.github.io/fr/presentations-powerpoint-accessibles-dans-office-2016/index.html" />
+	
+
+
+	<link href="https://www.canada.ca/etc/designs/canada/wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+
+	<!-- GC Design System CSS Shortcuts -->
+	<link
+	  rel="stylesheet"
+	  href="https://cdn.design-system.canada.ca/@gcds-core/css-shortcuts@1.2.0/dist/gcds-css-shortcuts.min.css"
+	/>
+
+	<!-- GC Design System -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.design-system.canada.ca/@gcds-core/components@1.6.0/dist/gcds/gcds.css"
+    />
+
+	<!-- Site styles: after GCDS so they can build on it -->
+	<link rel="stylesheet" href="/gc-da11yn.github.io/css/da11yn.css"><script>
+      (function () {
+        var key = "basicHtml";
+        var match = location.search.match(/[?&]wbdisable=(true|false)/);
+        var basic = !!match && match[1] === "true";
+        try {
+          if (match) {
+            if (basic) { localStorage.setItem(key, "1"); } else { localStorage.removeItem(key); }
+          }
+          basic = localStorage.getItem(key) === "1";
+        } catch (e) {}
+        document.documentElement.classList.add(basic ? "basic-html" : "standard-html");
+        if (!basic) {
+          var gcds = document.createElement("script");
+          gcds.type = "module";
+          gcds.src = "https://cdn.design-system.canada.ca/@gcds-core/components@1.6.0/dist/gcds/gcds.esm.js";
+          document.head.appendChild(gcds);
+        }
+      })();
+    </script>
+
+	<!-- Meta tags -->
+
+	<meta name="author" content="Government of Canada" />
+	<meta name="dcterms.title" content="Accessible PowerPoint presentations in Office 2016" />
+	<meta name="dcterms.description" content="Accessible practices for Microsoft PowerPoint 2016 document creation." />
+	<meta name="dcterms.creator" content="Government of Canada">
+	<meta name="dcterms.language" content="en" />
+	<meta name="dcterms.created" content="2023-08-01">
+	<meta name="dcterms.modified" content="2026-10-09" >
+	<meta name="dcterms.subject" content="How-tos;Create document; How to create accessible documents in Office 2016; " />
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SM9MSHWDVN"></script>
+	<script>
+		(function (w) {
+			"use strict";
+			if (w.location.hostname === "a11y.canada.ca") {
+				w.dataLayer = w.dataLayer || [];
+				w.gtag = function () {
+					w.dataLayer.push(arguments);
+				};
+				w.gtag('js', new Date());
+				w.gtag('config', 'G-SM9MSHWDVN');
+			}
+		})(window);
+	</script>
+</head>
+
+
+	<body vocab="http://schema.org/" typeof="WebPage">
+
+		
+
+<header>
+	<gcds-header lang="en" lang-href="" skip-to-href="#main">
+				<nav slot="skip-to-nav" label="Skip to">
+			<a href="#main">Skip to main content</a>
+			<a href="#footer">Skip to &quot;About government&quot;</a>
+			<a class="skip-to-basic" href="?wbdisable=true">Switch to basic HTML version</a>
+			<a class="skip-to-standard" href="?wbdisable=false">Switch to standard version</a>
+		</nav>
+
+	    
+
+
+
+
+	
+
+
+  <gcds-lang-toggle slot="toggle" href="/gc-da11yn.github.io/fr/presentations-powerpoint-accessibles-dans-office-2016/">
+  </gcds-lang-toggle>
+
+
+
+		<gcds-search search-id="search" slot="search" action="https://canada.ca/en/sr/srb.html"
+			method="get"
+		 	action=""
+		 	name="cse-search-box"
+		 	data-placeholder-long="Canada.ca"
+		 	data-placeholder-short="Canada.ca"
+		 	placeholder="Canada.ca">
+        </gcds-search>
+        <gcds-topic-menu slot="menu"></gcds-topic-menu>
+
+        
+
+<gcds-breadcrumbs slot="breadcrumb">
+		<!-- First breadcrumb: Canada.ca - already set by default on GcdsHeader -->
+		<!-- Second breadcrumb: Locale-based home link -->
+		
+		
+			<gcds-breadcrumbs-item href="/gc-da11yn.github.io/en/">Digital Accessibility Toolkit</gcds-breadcrumbs-item>
+		
+
+		<!-- Additional breadcrumbs based on tags and subjects -->
+		
+			 
+
+			<!-- Special handling for role-based pages -->
+			
+				<!-- Existing breadcrumbs logic for non-role pages -->
+				<!-- Breadcrumbs based on 'subject' -->
+				
+					
+						<gcds-breadcrumbs-item href="/gc-da11yn.github.io/en/how-tos">
+							How-tos
+						</gcds-breadcrumbs-item>
+						
+					
+				
+
+				<!-- Breadcrumbs based on 'tags' -->
+				
+					
+						
+							<gcds-breadcrumbs-item href="/gc-da11yn.github.io/en/create-document">
+								Create document
+							</gcds-breadcrumbs-item>
+							
+						
+					
+						
+							<gcds-breadcrumbs-item href="/gc-da11yn.github.io/en/how-to-create-accessible-documents-in-office-2016">
+								How to create accessible documents in Office 2016
+							</gcds-breadcrumbs-item>
+							
+						
+					
+				
+			
+		
+      </gcds-breadcrumbs>
+
+
+	</gcds-header>
+</header>
+
+
+
+		<main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement" id="main">
+
+		
+			<gcds-container layout="full" class="banner">
+			  <gcds-container layout="page" padding="200">
+				<gcds-grid columns="1fr" columns-desktop="4fr 1fr" class="py-150">
+				  <div class="banner__box">
+					<h1 class="mt-0 mb-300 text-light" property="name">Accessible PowerPoint presentations in Office 2016
+					</h1>
+					
+					<p>Accessible practices for Microsoft PowerPoint 2016 document creation.</p>
+					</div>
+				</gcds-grid>
+			  </gcds-container>
+			</gcds-container>
+
+			
+
+
+
+
+<gcds-container layout="page" padding="300">
+				
+				
+    
+    
+    
+
+
+
+    
+    
+    
+
+
+
+
+    
+    
+    
+        
+    
+    <nav aria-label="How to create accessible documents in Office 2016" class="mt-400 mb-400">
+        <ul class="office-toc d-grid sm:grid-cols-2 lg:grid-cols-3 gap-200 list-none ps-0 mb-0">
+            <li><a class="office-toc__item" href="/gc-da11yn.github.io/en/how-to-create-accessible-documents-in-office-2016/">How to create accessible documents <small class="d-block">in Office 2016</small></a></li>
+            
+                
+                <li><a class="office-toc__item" href="/gc-da11yn.github.io/en/accessible-excel-workbooks-in-office-2016/">
+                    <i class="fas fa-lg fa-file-excel me-50" aria-hidden="true"></i>
+                    Accessible Excel workbooks  <small class="d-block">in Office 2016</small></a></li>
+            
+                
+                <li><a class="office-toc__item" href="/gc-da11yn.github.io/en/accessible-pdf-documents-in-office-2016/">
+                    <i class="fas fa-lg fa-file-pdf me-50" aria-hidden="true"></i>
+                    Accessible PDF documents  <small class="d-block">in Office 2016</small></a></li>
+            
+                
+                <li><span class="office-toc__item" aria-current="page">
+                    <i class="fas fa-lg fa-file-powerpoint me-50" aria-hidden="true"></i>
+                    Accessible PowerPoint presentations  <small class="d-block">in Office 2016</small></span></li>
+            
+                
+                <li><a class="office-toc__item" href="/gc-da11yn.github.io/en/accessible-visio-drawings-in-office-2016/">
+                    <i class="fas fa-lg fa-project-diagram me-50" aria-hidden="true"></i>
+                    Accessible Visio drawings  <small class="d-block">in Office 2016</small></a></li>
+            
+                
+                <li><a class="office-toc__item" href="/gc-da11yn.github.io/en/accessible-word-documents-in-office-2016/">
+                    <i class="fas fa-lg fa-file-word me-50" aria-hidden="true"></i>
+                    Accessible Word documents  <small class="d-block">in Office 2016</small></a></li>
+            
+        </ul>
+    </nav>
+
+    <div class="bg-light p-300">
+        
+        
+        <p class="mb-0">Looking for the Microsoft 365 version? Try <a href="/gc-da11yn.github.io/en/accessible-powerpoint-presentations-in-microsoft-365/">Accessible PowerPoint presentations <small><strong> in Microsoft 365</strong></small></a></p>
+    </div>
+
+
+
+				
+	
+	
+
+
+
+				
+
+				
+
+				
+
+				<div class="page-content">
+				<h2 id="accessibility-checker" tabindex="-1">Accessibility Checker</h2>
+<p>The Microsoft Office suite (Word, Excel, Power Point) provides a built-in accessibility validator. The checker does not identify all issues but looks for things such as missing alternative text, duplicate slide titles and potential reading order issues.</p>
+<div class="container-md">
+<img src="/gc-da11yn.github.io/img/en/office2016/powerpoint-01.jpg" alt="Screenshot of Check for Issues menu" />
+</div>
+<p>How to use the Accessibility Checker:</p>
+<ol>
+<li>On the <strong>File</strong> Tab &gt; <strong>Info</strong> &gt; <strong>Check for Issues</strong> &gt; <strong>Check Accessibility</strong></li>
+<li>Review the results in the <strong>Accessibility Checker</strong> pane</li>
+<li>Address the listed issues. Helpful information to understand and fix the different issues is provided at the bottom of the pane</li>
+</ol>
+<h2 id="powerpoint-structure" tabindex="-1">PowerPoint structure</h2>
+<h3 id="design-themes" tabindex="-1">Design themes</h3>
+<p>The slide theme or template has a large effect on accessibility. The <strong>Design</strong> tab contains many built-in <strong>Themes</strong> and colour <strong>Variants</strong> that can be used to change the look of a presentation. PowerPoint also offers the ability to create custom themes.</p>
+<p>Choose themes that meet colour contrast requirements and that have simple backgrounds making them easier to read. If the presentation will be viewed on a projector, the contrast and readability may need to be even more pronounced than on a computer monitor.</p>
+<h3 id="slide-title" tabindex="-1">Slide title</h3>
+<p>Give every slide a unique title. People who have vision loss or learning / cognitive disabilities rely on slide titles to navigate. For example, by skimming or using a screen reader, they can quickly scan through a list of slide titles and go right to the slide they want.</p>
+<ol>
+<li>To restore all placeholders for the selected slide, on the <strong>Home</strong> tab, in the <strong>Slides</strong> group, select <strong>Reset</strong></li>
+<li>On the slide, type a unique and descriptive title</li>
+</ol>
+<p>To make a title invisible on the slide, but still voiced by screen readers:</p>
+<ol>
+<li>The <strong>Home</strong> tab, in the <strong>Drawing</strong> group, select <strong>Arrange</strong></li>
+<li>In the <strong>Arrange</strong> menu, select <strong>Selection Pane</strong></li>
+<li>In the <strong>Selection</strong> pane, locate the <strong>Title</strong> text box, and then activate the eye icon next to it</li>
+</ol>
+<h3 id="text-structure" tabindex="-1">Text structure</h3>
+<h4 id="text-formatting" tabindex="-1">Text formatting</h4>
+<p>Ensure that the type is large enough to read easily. If your presentation will be viewed via projector, the type should be larger than on printed handouts.</p>
+<p>Recommended formatting to improve legibility:</p>
+<ul>
+<li>30-point type</li>
+<li>Sans-serif fonts, such as Arial, Helvetica, Verdana, Calibri, or Century Gothic</li>
+</ul>
+<p>Three to seven bullet points per slide is a good rule of thumb.</p>
+<p>Avoid using all capitals or excessive italics or underline.</p>
+<p>Ensure there are blank spaces between sentences or paragraphs.</p>
+<h4 id="headings" tabindex="-1">Headings</h4>
+<p>Ensure headings and labels are descriptive and unique. Section headings facilitate navigation and comprehension of presentations. To evaluate headings:</p>
+<ul>
+<li>Determine if headings and labels are provided</li>
+<li>Are the headings descriptive?</li>
+<li>Are the headings and labels unique?</li>
+<li>Are the headings provided using titles and sub-title placeholders?</li>
+</ul>
+<p>To verify that headings and labels have been properly structured, navigate on the <strong>Home</strong> tab to <strong>Slides</strong>, select <strong>Slide Layout</strong>. Verify that the slide layout matches the layout on the current slide.</p>
+<h3 id="reading-order" tabindex="-1">Reading order</h3>
+<p>By default, a screen reader will read the slide title first, followed by other content in elements defined in the slide layout. Then it will read any additional content on the side in the order it was added to the slide. If you add content with this principle in mind, it should be presented to screen reader users in a logical order.</p>
+<p>Use the <strong>Selection Pane</strong> to set the order in which the screen readers read the slide contents. The <strong>Selection Pane</strong> lists the objects on the slide in bottom to top order in the Office 2013 version of PowerPoint and top to bottom in the Office 2016 version of PowerPoint. When the screen reader reads this slide, it reads the objects in the reverse order listed in the <strong>Selection Pane</strong>. The pane will show every object on the slide. Highlighting an object in the pane will also highlight it in the slide.</p>
+<ol>
+<li>On the <strong>Home</strong> tab, in the <strong>Drawing</strong> group, select <strong>Arrange</strong></li>
+<li>In the <strong>Arrange</strong> menu, select <strong>Selection Pane</strong></li>
+<li>In the <strong>Selection Pane</strong>, to change the reading order, do one of the following:
+<ol>
+<li>Drag and drop items to the new location</li>
+<li>Select the item and then select the Up arrow button (Bring Forward) or Down arrow button (Send Backward)</li>
+</ol>
+</li>
+</ol>
+<h3 id="tables" tabindex="-1">Tables</h3>
+<p>PowerPoint allows you to identify a single row of column headers and a single column of row headers.</p>
+<p>Most screen readers do not identify table headers in PowerPoint, but we still recommend going through this process. It is important to identify headers visually. These headers will be maintained when saving to PDF.</p>
+<p>To identify table headers:</p>
+<ol>
+<li>Focus the table by clicking inside or tabbing to the content. The Table Tools options should appear and the <strong>Design</strong> tab should be open</li>
+<li>If the top row of the table contains headers for each column (most tables do), make sure the <strong>Header Row</strong> checkbox is checked</li>
+<li>If the first column of the table contains headers for each row, make sure the <strong>First Column</strong> checkbox is checked</li>
+<li>In the Table Styles section, select a style where the table headers are clearly identified visually. Make sure the style has good contrast</li>
+</ol>
+<h2 id="visuals-and-alternative-text-alt-text" tabindex="-1">Visuals and alternative text (“alt text”)</h2>
+<p>Use alt text to describe pictures, images, graphics, graphs, tables, and flowcharts, so that a screen reader can access them.</p>
+<p>Alt text should always communicate the purpose of visual images accurately and succinctly. In general, it is a short description of the image that answers the question “What information is this image conveying?”. A longer description may be needed for complex diagrams and images. General guidelines for creating alt text include:</p>
+<ul>
+<li>Don’t repeat the text of an adjacent caption. Screen readers read both the caption and the alt text, so avoid having the same details in both.</li>
+<li>Use punctuation for full sentences</li>
+</ul>
+<h3 id="images" tabindex="-1">Images</h3>
+<p>PowerPoint presentations usually include images. Images need equivalent alternative text. To add <strong>alt text</strong> to an image:</p>
+<ol>
+<li>Open the context menu for the image by right-clicking or pressing the application key.</li>
+<li>Choose <strong>Format Picture</strong></li>
+<li>In the <strong>Format Picture</strong> sidebar, activate the <strong>Size &amp; Properties</strong> icon and expand <strong>Alt Text</strong></li>
+<li>Enter a title in the <strong>Title</strong> box. Note: This box should only be filled in if you are entering a detailed or long explanation in the Description box</li>
+<li>Enter an appropriate alternative text in the in the <strong>Description</strong> box</li>
+<li>Activate the <strong>Close</strong> button</li>
+</ol>
+<div class="container-md">
+<img src="/gc-da11yn.github.io/img/en/office2016/powerpoint-02.jpg" alt="Screenshot of Format Picture tool">
+</div>
+<p>Tips and Guidelines:</p>
+<ul>
+<li>Don’t begin with the words “Image of” at the start of the alt text. Screen readers tell the user that there is an image and then read the alt text.</li>
+<li>Do begin with “Screenshot of…” if the image is a screenshot</li>
+<li>An image requires no alternative text if it is purely decorative. Set the alt text to “decorative” (no quotes).</li>
+</ul>
+<h3 id="smartart-graphics-charts-and-diagrams" tabindex="-1">SmartArt graphics (charts and diagrams)</h3>
+<p>Ensure complex images and charts provide long descriptions. Complex images include schematics, plans, diagrams or any other image that conveys a large amount of information. This is necessary as users who cannot see the complex image will not be able to sufficiently determine its value/purpose.</p>
+<p>To add a long description to a diagram or chart:</p>
+<ol>
+<li>Open the context menu for the chart/diagram and activate <strong>Format Chart Area</strong></li>
+<li>The <strong>Format Chart Area</strong> sidebar will appear</li>
+<li>Activate <strong>Layout and Properties</strong></li>
+<li>Provide a meaningful long description
+<ol>
+<li>Describe the title of the chart</li>
+<li>The role it plays in the document</li>
+<li>The relationship of elements in the correct order</li>
+</ol>
+</li>
+<li>Activate the <strong>Close</strong> Button</li>
+</ol>
+<p>Ensure that colour is not being used as the only way information is being conveyed in any graphics.</p>
+<h3 id="video-and-audio" tabindex="-1">Video and audio</h3>
+<p>PowerPoint 2016 supports the playback of video with multiple audio tracks. It also supports closed captions and subtitles that are embedded in video files.</p>
+<p>Supported video formats for captions and subtitles vary depending on the operating system that you’re using. Each operating system has settings to adjust how the closed captions or subtitles are displayed. Embedded audio also requires a transcript. Closed captions typically also describe audio cues such as music or sound effects that occur off-screen.</p>
+<p>Video description means audio-narrated descriptions of a video’s key visual elements. These descriptions are inserted into natural pauses in the program’s dialogue. Video description makes video more accessible to individuals who are blind or visually impaired. Subtitles typically contain a transcription (or translation) of the dialogue.</p>
+<p>If you embed video, make sure that the player controls — start, pause and stop — are accessible using the keyboard.</p>
+<h2 id="additional-features" tabindex="-1">Additional features</h2>
+<h3 id="transitions-and-animations" tabindex="-1">Transitions and animations</h3>
+<p>It is best practice to keep any transitions and animations simple and brief. Complex or automatic transitions and animations can be distracting or add a layer of further comprehension that is unnecessary.</p>
+<p>Limiting the use of transitions and animation to one per slide will help to improve the usability of your presentation for screen reader users. If you must use Animations in your PowerPoint presentations, they should be made accessible.</p>
+<p>In addition, you should carefully consider your use of decorative animations. Constant motion on the screen may cause a screen reader to refresh frequently, thus making the presentation more difficult to use. Keeping animations to a minimum or eliminating them altogether will increase the accessibility of your content.</p>
+<h3 id="grouping-elements" tabindex="-1">Grouping elements</h3>
+<p>Grouping visual elements such as images, shapes, or SmartArt should generally be avoided as it changes the information that will be read by screen readers.</p>
+<p>However, if it is more meaningful to group elements that have a relationship, there are techniques to do so. When using the Group feature to combine visual elements, ensure that sufficient alt text is used to indicate any conveyed information to the user. Correspondingly, if the grouped elements are purely decorative, indicate this in your alt text by marking it as such.</p>
+<ol>
+<li>Select the visual elements you want to group together while holding down <strong>CTRL</strong></li>
+<li>Open the context menu and activate <strong>Group</strong></li>
+</ol>
+<p>Alternatively, you can do one of the following after selecting the element you wish to group:</p>
+<ol>
+<li>To group shapes and other objects, on the <strong>Drawing Tools Format</strong> tab, activate <strong>Group &gt; Group</strong></li>
+<li>To group pictures, on the <strong>Picture Tools Format</strong> tab, activate <strong>Group &gt; Group</strong></li>
+</ol>
+<div class="container-md">
+<img src="/gc-da11yn.github.io/img/en/office2016/powerpoint-03.jpg" alt="Screenshot of Group menu">
+</div>
+<h2 id="additional-resources" tabindex="-1">Additional resources</h2>
+<ul>
+<li><a href="https://webaim.org/techniques/powerpoint/">Web AIM: Creating Accessible PowerPoint Presentations</a></li>
+<li><a href="https://support.office.com/en-us/article/make-your-powerpoint-presentations-accessible-6f7772b2-2f33-4bd2-8ca7-dae3b2b3ef25">Microsoft: How to Make Your PowerPoint Presentation Accessible</a></li>
+<li><a href="https://www.queensu.ca/accessibility/how-info/accessible-documents/accessible-powerpoint-presentations-checklist">Queen’s University: Accessible PowerPoints Checklists</a></li>
+</ul>
+
+				</div>
+				
+				
+    
+    
+    
+
+
+
+    
+    
+    
+
+
+
+
+    
+    
+    
+        
+    
+    <nav aria-label="How to create accessible documents in Office 2016" class="mt-400 mb-400">
+        <ul class="office-toc d-grid sm:grid-cols-2 lg:grid-cols-3 gap-200 list-none ps-0 mb-0">
+            <li><a class="office-toc__item" href="/gc-da11yn.github.io/en/how-to-create-accessible-documents-in-office-2016/">How to create accessible documents <small class="d-block">in Office 2016</small></a></li>
+            
+                
+                <li><a class="office-toc__item" href="/gc-da11yn.github.io/en/accessible-excel-workbooks-in-office-2016/">
+                    <i class="fas fa-lg fa-file-excel me-50" aria-hidden="true"></i>
+                    Accessible Excel workbooks  <small class="d-block">in Office 2016</small></a></li>
+            
+                
+                <li><a class="office-toc__item" href="/gc-da11yn.github.io/en/accessible-pdf-documents-in-office-2016/">
+                    <i class="fas fa-lg fa-file-pdf me-50" aria-hidden="true"></i>
+                    Accessible PDF documents  <small class="d-block">in Office 2016</small></a></li>
+            
+                
+                <li><span class="office-toc__item" aria-current="page">
+                    <i class="fas fa-lg fa-file-powerpoint me-50" aria-hidden="true"></i>
+                    Accessible PowerPoint presentations  <small class="d-block">in Office 2016</small></span></li>
+            
+                
+                <li><a class="office-toc__item" href="/gc-da11yn.github.io/en/accessible-visio-drawings-in-office-2016/">
+                    <i class="fas fa-lg fa-project-diagram me-50" aria-hidden="true"></i>
+                    Accessible Visio drawings  <small class="d-block">in Office 2016</small></a></li>
+            
+                
+                <li><a class="office-toc__item" href="/gc-da11yn.github.io/en/accessible-word-documents-in-office-2016/">
+                    <i class="fas fa-lg fa-file-word me-50" aria-hidden="true"></i>
+                    Accessible Word documents  <small class="d-block">in Office 2016</small></a></li>
+            
+        </ul>
+    </nav>
+
+    <div class="bg-light p-300">
+        
+        
+        <p class="mb-0">Looking for the Microsoft 365 version? Try <a href="/gc-da11yn.github.io/en/accessible-powerpoint-presentations-in-microsoft-365/">Accessible PowerPoint presentations <small><strong> in Microsoft 365</strong></small></a></p>
+    </div>
+
+
+
+				
+			</gcds-container>
+
+			
+<gcds-container tag="section" layout="page" class="pagedetails">
+  <h2 class="visibility-sr-only">Page details</h2>
+  <gcds-date-modified>2026-10-09</gcds-date-modified>
+</gcds-container>
+
+
+		
+		</main>
+
+		
+
+<aside>
+  
+<gcds-container layout="page" padding="300" class="page-list-link">
+  <h3 class="mt-0 mb-200">
+    Still can&#39;t find what you need?
+  </h3>
+  <span>
+    <gcds-icon name="search" margin-right="100"></gcds-icon>
+    See our
+    <a href="/gc-da11yn.github.io/en/page-list/">complete list of pages</a>.
+  </span>
+</gcds-container>
+
+
+ <gcds-container layout="page" padding="300" class="contribute">
+   <gcds-grid columns="1fr" columns-tablet="5fr 7fr" gap="300">
+     <div>
+       <h2 class="mt-0 mb-0 text-light">
+         <i class="fab fa-github fa-fw" aria-hidden="true"></i>
+         Contribute to this project
+       </h2>
+       <p class="contribute-subtitle">on Github.com</p>
+     </div>
+
+     <div>
+		<ul class="contribute-links d-flex flex-wrap gap-300 list-none p-0 mt-0 mb-200">
+         <li class="d-flex align-items-center gap-100">
+           <i class="fas fa-code fa-fw" aria-hidden="true"></i>
+           <a class="link-light" href="https://github.com/gc-da11yn/gc-da11yn.github.io">Source code</a>
+         </li>
+         <li class="d-flex align-items-center gap-100">
+           <gcds-icon name="exclamation-circle"></gcds-icon>
+           <a class="link-light" href="https://github.com/gc-da11yn/gc-da11yn.github.io/issues/">Issues</a>
+         </li>
+         <li class="d-flex align-items-center gap-100">
+           <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+           <a class="link-light" href="https://github.com/gc-da11yn/gc-da11yn.github.io/discussions">Discussions</a>
+         </li>
+       </ul>
+       <span>
+         <gcds-icon name="email" margin-right="100"></gcds-icon>
+         <a href="mailto:digitala11ytoolkit-boitedoutila11enumerique@ssc-spc.gc.ca?subject=Contribute%20to%20the%20Digital%20Accessibility%20Toolkit">Reach the Digital Accessibility Toolkit by email</a>
+       </span>
+     </div>
+   </gcds-grid>
+
+   
+ </gcds-container>
+</aside>
+
+
+		<gcds-footer
+  id="footer"
+  display="full"
+  lang="en"
+  sub-links='{ "Social media": "https://www.canada.ca/en/social.html", "Mobile applications": "https://www.canada.ca/en/mobile.html", "About Canada.ca": "https://www.canada.ca/en/government/about.html", "Terms and conditions": "https://www.canada.ca/en/transparency/terms.html", "Privacy": "https://www.canada.ca/en/transparency/privacy.html" }'
+></gcds-footer>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script></body>
+
+</html>
+
+

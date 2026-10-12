@@ -1,0 +1,497 @@
+
+
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+
+	
+<head>
+	<meta charset="utf-8">
+
+	<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+	
+	<title>Accessible Excel workbooks in Microsoft 365- Digital Accessibility Toolkit</title>
+	<meta content="width=device-width,initial-scale=1" name="viewport">
+	<meta name="description" content="Accessible practices for Microsoft Excel document creation.">
+
+	
+
+	<meta name="source-file" content="./src/pages/en/ms-office/365/accessible-excel-workbooks-in-microsoft-365.md">
+
+
+	
+	
+	
+	
+		
+	
+		<link rel="alternate" hreflang="fr" href="/gc-da11yn.github.io/fr/classeurs-excel-accessibles-dans-microsoft-365/index.html" />
+	
+
+
+	<link href="https://www.canada.ca/etc/designs/canada/wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+
+	<!-- GC Design System CSS Shortcuts -->
+	<link
+	  rel="stylesheet"
+	  href="https://cdn.design-system.canada.ca/@gcds-core/css-shortcuts@1.2.0/dist/gcds-css-shortcuts.min.css"
+	/>
+
+	<!-- GC Design System -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.design-system.canada.ca/@gcds-core/components@1.6.0/dist/gcds/gcds.css"
+    />
+
+	<!-- Site styles: after GCDS so they can build on it -->
+	<link rel="stylesheet" href="/gc-da11yn.github.io/css/da11yn.css"><script>
+      (function () {
+        var key = "basicHtml";
+        var match = location.search.match(/[?&]wbdisable=(true|false)/);
+        var basic = !!match && match[1] === "true";
+        try {
+          if (match) {
+            if (basic) { localStorage.setItem(key, "1"); } else { localStorage.removeItem(key); }
+          }
+          basic = localStorage.getItem(key) === "1";
+        } catch (e) {}
+        document.documentElement.classList.add(basic ? "basic-html" : "standard-html");
+        if (!basic) {
+          var gcds = document.createElement("script");
+          gcds.type = "module";
+          gcds.src = "https://cdn.design-system.canada.ca/@gcds-core/components@1.6.0/dist/gcds/gcds.esm.js";
+          document.head.appendChild(gcds);
+        }
+      })();
+    </script>
+
+	<!-- Meta tags -->
+
+	<meta name="author" content="Government of Canada" />
+	<meta name="dcterms.title" content="Accessible Excel workbooks in Microsoft 365" />
+	<meta name="dcterms.description" content="Accessible practices for Microsoft Excel document creation." />
+	<meta name="dcterms.creator" content="Government of Canada">
+	<meta name="dcterms.language" content="en" />
+	<meta name="dcterms.created" content="2023-08-01">
+	<meta name="dcterms.modified" content="2026-10-09" >
+	<meta name="dcterms.subject" content="How-tos;Create document; How to create accessible documents in Microsoft 365; " />
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SM9MSHWDVN"></script>
+	<script>
+		(function (w) {
+			"use strict";
+			if (w.location.hostname === "a11y.canada.ca") {
+				w.dataLayer = w.dataLayer || [];
+				w.gtag = function () {
+					w.dataLayer.push(arguments);
+				};
+				w.gtag('js', new Date());
+				w.gtag('config', 'G-SM9MSHWDVN');
+			}
+		})(window);
+	</script>
+</head>
+
+
+	<body vocab="http://schema.org/" typeof="WebPage">
+
+		
+
+<header>
+	<gcds-header lang="en" lang-href="" skip-to-href="#main">
+				<nav slot="skip-to-nav" label="Skip to">
+			<a href="#main">Skip to main content</a>
+			<a href="#footer">Skip to &quot;About government&quot;</a>
+			<a class="skip-to-basic" href="?wbdisable=true">Switch to basic HTML version</a>
+			<a class="skip-to-standard" href="?wbdisable=false">Switch to standard version</a>
+		</nav>
+
+	    
+
+
+
+
+	
+
+
+  <gcds-lang-toggle slot="toggle" href="/gc-da11yn.github.io/fr/classeurs-excel-accessibles-dans-microsoft-365/">
+  </gcds-lang-toggle>
+
+
+
+		<gcds-search search-id="search" slot="search" action="https://canada.ca/en/sr/srb.html"
+			method="get"
+		 	action=""
+		 	name="cse-search-box"
+		 	data-placeholder-long="Canada.ca"
+		 	data-placeholder-short="Canada.ca"
+		 	placeholder="Canada.ca">
+        </gcds-search>
+        <gcds-topic-menu slot="menu"></gcds-topic-menu>
+
+        
+
+<gcds-breadcrumbs slot="breadcrumb">
+		<!-- First breadcrumb: Canada.ca - already set by default on GcdsHeader -->
+		<!-- Second breadcrumb: Locale-based home link -->
+		
+		
+			<gcds-breadcrumbs-item href="/gc-da11yn.github.io/en/">Digital Accessibility Toolkit</gcds-breadcrumbs-item>
+		
+
+		<!-- Additional breadcrumbs based on tags and subjects -->
+		
+			 
+
+			<!-- Special handling for role-based pages -->
+			
+				<!-- Existing breadcrumbs logic for non-role pages -->
+				<!-- Breadcrumbs based on 'subject' -->
+				
+					
+						<gcds-breadcrumbs-item href="/gc-da11yn.github.io/en/how-tos">
+							How-tos
+						</gcds-breadcrumbs-item>
+						
+					
+				
+
+				<!-- Breadcrumbs based on 'tags' -->
+				
+					
+						
+							<gcds-breadcrumbs-item href="/gc-da11yn.github.io/en/create-document">
+								Create document
+							</gcds-breadcrumbs-item>
+							
+						
+					
+						
+							<gcds-breadcrumbs-item href="/gc-da11yn.github.io/en/how-to-create-accessible-documents-in-microsoft-365">
+								How to create accessible documents in Microsoft 365
+							</gcds-breadcrumbs-item>
+							
+						
+					
+				
+			
+		
+      </gcds-breadcrumbs>
+
+
+	</gcds-header>
+</header>
+
+
+
+		<main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement" id="main">
+
+		
+			<gcds-container layout="full" class="banner">
+			  <gcds-container layout="page" padding="200">
+				<gcds-grid columns="1fr" columns-desktop="4fr 1fr" class="py-150">
+				  <div class="banner__box">
+					<h1 class="mt-0 mb-300 text-light" property="name">Accessible Excel workbooks in Microsoft 365
+					</h1>
+					
+					<p>Accessible practices for Microsoft Excel document creation.</p>
+					</div>
+				</gcds-grid>
+			  </gcds-container>
+			</gcds-container>
+
+			
+
+
+
+
+<gcds-container layout="page" padding="300">
+				
+				
+    
+    
+    
+
+
+
+
+    
+    
+    
+
+
+
+    
+    
+    
+        
+    
+    <nav aria-label="How to create accessible documents in Microsoft 365" class="mt-400 mb-400">
+        <ul class="office-toc d-grid sm:grid-cols-2 lg:grid-cols-3 gap-200 list-none ps-0 mb-0">
+            <li><a class="office-toc__item" href="/gc-da11yn.github.io/en/how-to-create-accessible-documents-in-microsoft-365/">How to create accessible documents <small class="d-block">in Microsoft 365</small></a></li>
+            
+                
+                <li><span class="office-toc__item" aria-current="page">
+                    <i class="fas fa-lg fa-file-excel me-50" aria-hidden="true"></i>
+                    Accessible Excel workbooks  <small class="d-block">in Microsoft 365</small></span></li>
+            
+                
+                <li><a class="office-toc__item" href="/gc-da11yn.github.io/en/accessible-pdf-documents-in-microsoft-365/">
+                    <i class="fas fa-lg fa-file-pdf me-50" aria-hidden="true"></i>
+                    Accessible PDF documents  <small class="d-block">in Microsoft 365</small></a></li>
+            
+                
+                <li><a class="office-toc__item" href="/gc-da11yn.github.io/en/accessible-powerpoint-presentations-in-microsoft-365/">
+                    <i class="fas fa-lg fa-file-powerpoint me-50" aria-hidden="true"></i>
+                    Accessible PowerPoint presentations  <small class="d-block">in Microsoft 365</small></a></li>
+            
+                
+                <li><a class="office-toc__item" href="/gc-da11yn.github.io/en/accessible-visio-drawings-in-microsoft-365/">
+                    <i class="fas fa-lg fa-project-diagram me-50" aria-hidden="true"></i>
+                    Accessible Visio drawings  <small class="d-block">in Microsoft 365</small></a></li>
+            
+                
+                <li><a class="office-toc__item" href="/gc-da11yn.github.io/en/accessible-word-documents-in-microsoft-365/">
+                    <i class="fas fa-lg fa-file-word me-50" aria-hidden="true"></i>
+                    Accessible Word documents  <small class="d-block">in Microsoft 365</small></a></li>
+            
+        </ul>
+    </nav>
+
+    <div class="bg-light p-300">
+        
+        
+        <p class="mb-0">Looking for the Office 2016 version? Try <a href="/gc-da11yn.github.io/en/accessible-excel-workbooks-in-office-2016/">Accessible Excel workbooks <small><strong> in Office 2016</strong></small></a></p>
+    </div>
+
+
+
+				
+	
+	
+
+
+
+
+<gcds-notice notice-role="info" notice-title-tag="h3" notice-title="Product name change">
+	<p><a href="https://support.microsoft.com/en-us/office/office-is-now-microsoft-365-22eac811-08d6-4df3-92dd-77f193e354a5">Office is now Microsoft 365</a>.</p>
+</gcds-notice>
+
+
+
+
+				
+
+				
+
+				
+
+				<div class="page-content">
+				<h2 id="accessibility-checker" tabindex="-1">Accessibility Checker</h2>
+<p>Microsoft Office (Word, Excel, Power Point) provides a built-in accessibility validator. The checker does not identify all issues, but looks for things such as: missing alternative text, duplicate slide titles, and potential reading order issues.</p>
+<p>How to use the Accessibility Checker:</p>
+<ol>
+<li>Activate the <strong>File</strong> Tab &gt; <strong>Info</strong> &gt; <strong>Check for Issues</strong> &gt; <strong>Check Accessibility</strong></li>
+<li>Review the results in the <strong>Accessibility Checker</strong> pane</li>
+<li>Address the listed issues. Helpful information to understand and fix the different issues is provided at the bottom of the pane</li>
+</ol>
+<div class="container-md">
+<img src="/gc-da11yn.github.io/img/en/office365/excel-365-001.jpg" alt="Screenshot of Check for Issues menu">
+</div>
+<p>The <strong>Accessibility Checker</strong> is also located on the Ribbon under the <strong>Review</strong> tab &gt; <strong>Check Accessibility</strong>. Activate the “Keep accessibility checker running while I work” check box in the checker pane to keep track of accessibility issues in real time.</p>
+<h2 id="tables" tabindex="-1">Tables</h2>
+<p>Avoid using complex table structures in all documents. If tables include nested tables, merged cells, split cells and/or blank rows / columns, they become difficult for screen readers to navigate. When using a table, design it to be as simple as possible. Assign meaningful names to the headers and rows to facilitate user navigation.</p>
+<h2 id="sheet-tabs" tabindex="-1">Sheet tabs</h2>
+<p>Give all sheet tabs in your document unique and meaningful names. Ensure that the name given to each tab accurately describes the contents found on the worksheet. This will make it easier to navigate through the workbook. It is best to remove all blank sheets from your document.</p>
+<h2 id="fonts" tabindex="-1">Fonts</h2>
+<p>Choose fonts and styles that are easy to read.</p>
+<ul>
+<li>Use sans-serif fonts with sufficient spacing between letters
+<ul>
+<li>Ex. Arial, Verdana, Century Gothic</li>
+</ul>
+</li>
+<li>Use fonts 11-14 points in size</li>
+</ul>
+<h3 id="use-of-colour" tabindex="-1">Use of colour</h3>
+<p>Use a <a href="https://webaim.org/resources/contrastchecker/">contrast checking tool</a> to check the contrast of the text (foreground) relative to the background. For most text, the contrast ratio must be 4.5:1. For large, bold text (14 point bold, or 18 point regular), this requirement is relaxed to 3:1. Since it is extremely likely that the sheet will be viewed at low zoom (so as to see more of it), all text should meet 4.5:1 minimum. The WCAG AAA requirement is 7:1 – aim for this.</p>
+<p><strong>Do not</strong> use colour alone to convey meaning or emphasis in a word, cell or block of text. Patterns may be added to colour for those who are colour blind. Mandatory fields should be identified with an asterisk * and the word “required” rather than being labelled in red.</p>
+<h2 id="non-text-elements" tabindex="-1">Non-text elements</h2>
+<h3 id="alternative-text" tabindex="-1">Alternative text</h3>
+<p>Visual elements such as photos, screenshots, icons, videos and 3D models should all include alternative text. Alt text allows people who cannot see the image understand the message and what is important. A good alt text should be concise and to the point. It should not be more than a sentence or two and should include the important information the image conveys. When creating an alt text, do not begin with “this is an image of”. Do begin with “Screenshot of” for screenshots.</p>
+<p>To assign alternative text to images:</p>
+<ol>
+<li>Select the image</li>
+<li>Open the <strong>Format</strong> tab in the ribbon</li>
+<li>Activate the <strong>Alt text</strong> tool</li>
+<li>If an image conveys no meaningful information (i.e., it is decorative or redundant), check “Mark as decorative”</li>
+<li>If the image is meaningful, convey in words the meaning, function, or purpose communicated by the image</li>
+<li>Activate the <strong>Close</strong> button</li>
+</ol>
+<div class="container-md">
+<img src="/gc-da11yn.github.io/img/en/office365/excel-365-002.jpg" alt="Screenshot of Format Picture sidebar" />
+</div>
+<h3 id="charts-and-diagrams" tabindex="-1">Charts and diagrams</h3>
+<p>Ensure complex images and charts provide long descriptions. Complex images include: schematics, plans, diagrams, or any other image that conveys a large amount of information. This is necessary as users who cannot see the complex image will not be able to sufficiently determine its value/purpose.</p>
+<p>To add a long description to diagrams and chart, first add concise alt text (e.g. the chart title) as described above. Then, include a longer text alternative below the chart.</p>
+<p>See <a href="https://www.w3.org/WAI/tutorials/images/complex/">Complex Images</a> for more recommendations.</p>
+<h2 id="links" tabindex="-1">Links</h2>
+<p>People who use screen readers sometimes scan a list of links; therefore, ensure link text is meaningful within the context of the document. Link text should accurately reflect the target and purpose of the link. If link text is not provided, users will need to follow the link to determine its purpose, which can present difficulties for users of adaptive technology. An example of appropriate link text would be including the full title of the destination rather than linking to the text “Click Here”.</p>
+<p>To add hyperlinks with meaningful text:</p>
+<ol>
+<li>Type or paste a web address in your document and press space bar or “Enter” to convert into a hyperlink</li>
+<li>Select the link and open the context menu</li>
+<li>Activate <strong>Hyperlink</strong></li>
+<li>Edit the <strong>Text to Display field with meaningful text</strong>.</li>
+</ol>
+<div class="container-md">
+<img src="/gc-da11yn.github.io/img/en/office365/excel-365-003.jpg" alt="Screenshot of Insert Hyperlink dialog" />
+</div>
+<h2 id="additional-resources" tabindex="-1">Additional resources</h2>
+<ul>
+<li><a href="https://support.office.com/en-us/article/make-your-excel-documents-accessible-to-people-with-disabilities-6cc05fc5-1314-48b5-8eb3-683e49b3e593">Microsoft: Make your Excel documents accessible to people with disabilities</a></li>
+<li><a href="https://support.office.com/en-us/article/accessibility-support-for-excel-0976b140-7033-4e2d-8887-187280701bf8">Microsoft: Accessibility support for people who use a screen reader program</a></li>
+</ul>
+
+				</div>
+				
+				
+    
+    
+    
+
+
+
+
+    
+    
+    
+
+
+
+    
+    
+    
+        
+    
+    <nav aria-label="How to create accessible documents in Microsoft 365" class="mt-400 mb-400">
+        <ul class="office-toc d-grid sm:grid-cols-2 lg:grid-cols-3 gap-200 list-none ps-0 mb-0">
+            <li><a class="office-toc__item" href="/gc-da11yn.github.io/en/how-to-create-accessible-documents-in-microsoft-365/">How to create accessible documents <small class="d-block">in Microsoft 365</small></a></li>
+            
+                
+                <li><span class="office-toc__item" aria-current="page">
+                    <i class="fas fa-lg fa-file-excel me-50" aria-hidden="true"></i>
+                    Accessible Excel workbooks  <small class="d-block">in Microsoft 365</small></span></li>
+            
+                
+                <li><a class="office-toc__item" href="/gc-da11yn.github.io/en/accessible-pdf-documents-in-microsoft-365/">
+                    <i class="fas fa-lg fa-file-pdf me-50" aria-hidden="true"></i>
+                    Accessible PDF documents  <small class="d-block">in Microsoft 365</small></a></li>
+            
+                
+                <li><a class="office-toc__item" href="/gc-da11yn.github.io/en/accessible-powerpoint-presentations-in-microsoft-365/">
+                    <i class="fas fa-lg fa-file-powerpoint me-50" aria-hidden="true"></i>
+                    Accessible PowerPoint presentations  <small class="d-block">in Microsoft 365</small></a></li>
+            
+                
+                <li><a class="office-toc__item" href="/gc-da11yn.github.io/en/accessible-visio-drawings-in-microsoft-365/">
+                    <i class="fas fa-lg fa-project-diagram me-50" aria-hidden="true"></i>
+                    Accessible Visio drawings  <small class="d-block">in Microsoft 365</small></a></li>
+            
+                
+                <li><a class="office-toc__item" href="/gc-da11yn.github.io/en/accessible-word-documents-in-microsoft-365/">
+                    <i class="fas fa-lg fa-file-word me-50" aria-hidden="true"></i>
+                    Accessible Word documents  <small class="d-block">in Microsoft 365</small></a></li>
+            
+        </ul>
+    </nav>
+
+    <div class="bg-light p-300">
+        
+        
+        <p class="mb-0">Looking for the Office 2016 version? Try <a href="/gc-da11yn.github.io/en/accessible-excel-workbooks-in-office-2016/">Accessible Excel workbooks <small><strong> in Office 2016</strong></small></a></p>
+    </div>
+
+
+
+				
+			</gcds-container>
+
+			
+<gcds-container tag="section" layout="page" class="pagedetails">
+  <h2 class="visibility-sr-only">Page details</h2>
+  <gcds-date-modified>2026-10-09</gcds-date-modified>
+</gcds-container>
+
+
+		
+		</main>
+
+		
+
+<aside>
+  
+<gcds-container layout="page" padding="300" class="page-list-link">
+  <h3 class="mt-0 mb-200">
+    Still can&#39;t find what you need?
+  </h3>
+  <span>
+    <gcds-icon name="search" margin-right="100"></gcds-icon>
+    See our
+    <a href="/gc-da11yn.github.io/en/page-list/">complete list of pages</a>.
+  </span>
+</gcds-container>
+
+
+ <gcds-container layout="page" padding="300" class="contribute">
+   <gcds-grid columns="1fr" columns-tablet="5fr 7fr" gap="300">
+     <div>
+       <h2 class="mt-0 mb-0 text-light">
+         <i class="fab fa-github fa-fw" aria-hidden="true"></i>
+         Contribute to this project
+       </h2>
+       <p class="contribute-subtitle">on Github.com</p>
+     </div>
+
+     <div>
+		<ul class="contribute-links d-flex flex-wrap gap-300 list-none p-0 mt-0 mb-200">
+         <li class="d-flex align-items-center gap-100">
+           <i class="fas fa-code fa-fw" aria-hidden="true"></i>
+           <a class="link-light" href="https://github.com/gc-da11yn/gc-da11yn.github.io">Source code</a>
+         </li>
+         <li class="d-flex align-items-center gap-100">
+           <gcds-icon name="exclamation-circle"></gcds-icon>
+           <a class="link-light" href="https://github.com/gc-da11yn/gc-da11yn.github.io/issues/">Issues</a>
+         </li>
+         <li class="d-flex align-items-center gap-100">
+           <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+           <a class="link-light" href="https://github.com/gc-da11yn/gc-da11yn.github.io/discussions">Discussions</a>
+         </li>
+       </ul>
+       <span>
+         <gcds-icon name="email" margin-right="100"></gcds-icon>
+         <a href="mailto:digitala11ytoolkit-boitedoutila11enumerique@ssc-spc.gc.ca?subject=Contribute%20to%20the%20Digital%20Accessibility%20Toolkit">Reach the Digital Accessibility Toolkit by email</a>
+       </span>
+     </div>
+   </gcds-grid>
+
+   
+ </gcds-container>
+</aside>
+
+
+		<gcds-footer
+  id="footer"
+  display="full"
+  lang="en"
+  sub-links='{ "Social media": "https://www.canada.ca/en/social.html", "Mobile applications": "https://www.canada.ca/en/mobile.html", "About Canada.ca": "https://www.canada.ca/en/government/about.html", "Terms and conditions": "https://www.canada.ca/en/transparency/terms.html", "Privacy": "https://www.canada.ca/en/transparency/privacy.html" }'
+></gcds-footer>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script></body>
+
+</html>
+
+

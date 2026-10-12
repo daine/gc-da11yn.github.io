@@ -1,0 +1,894 @@
+
+
+<!DOCTYPE html>
+<html class="no-js" lang="fr" dir="ltr">
+
+	
+<head>
+	<meta charset="utf-8">
+
+	<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+	
+	<title>Guide pour l’inclusion de l’accessibilité dans l’approvisionnement lié aux technologies de l’information et des communications (TIC)- Boîte à outils de l&#39;accessibilité numérique</title>
+	<meta content="width=device-width,initial-scale=1" name="viewport">
+	<meta name="description" content="Le gouvernement du Canada (GC) recommande que la norme EN 301 549 (CAN/ASC - EN 301 549:2024 Exigences d’accessibilité pour les produits et services TIC (EN 301 549:2021, IDT)), qui comprend les Règles pour l’accessibilité des contenus Web (WCAG), soit utilisée pour inclure les exigences d&#39;accessibilité des technologies de l&#39;information et de la communication (TIC) dans les approvisionnements qui comportent des éléments de TIC. Le Guide pour l’inclusion de l’accessibilité dans l’approvisionnement lié aux technologies de l’information et des communications (TIC) fournit aux ministères, aux agences et aux fournisseurs du gouvernement du Canada des étapes pratiques et des ressources pour comprendre et inclure la norme EN 301 549 dans les exigences d&#39;approvisionnement. L&#39;application de la norme EN 301 549 est conforme aux objectifs de la Loi canadienne sur l’accessibilité et favorise un environnement numérique sans obstacle.">
+
+	
+
+	<meta name="source-file" content="./src/pages/fr/guide-pour-linclusion-de-laccessibilit-dans-lapprovisionnement-lie-aux-technologies-de-linformation-et-des-communications-tic.md">
+
+
+	
+	
+	
+	
+		
+	
+		<link rel="alternate" hreflang="en" href="/gc-da11yn.github.io/en/guide-for-including-accessibility-in-information-and-communication-technology-ict-related-procurement/index.html" />
+	
+
+
+	<link href="https://www.canada.ca/etc/designs/canada/wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+
+	<!-- GC Design System CSS Shortcuts -->
+	<link
+	  rel="stylesheet"
+	  href="https://cdn.design-system.canada.ca/@gcds-core/css-shortcuts@1.2.0/dist/gcds-css-shortcuts.min.css"
+	/>
+
+	<!-- GC Design System -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.design-system.canada.ca/@gcds-core/components@1.6.0/dist/gcds/gcds.css"
+    />
+
+	<!-- Site styles: after GCDS so they can build on it -->
+	<link rel="stylesheet" href="/gc-da11yn.github.io/css/da11yn.css"><script>
+      (function () {
+        var key = "basicHtml";
+        var match = location.search.match(/[?&]wbdisable=(true|false)/);
+        var basic = !!match && match[1] === "true";
+        try {
+          if (match) {
+            if (basic) { localStorage.setItem(key, "1"); } else { localStorage.removeItem(key); }
+          }
+          basic = localStorage.getItem(key) === "1";
+        } catch (e) {}
+        document.documentElement.classList.add(basic ? "basic-html" : "standard-html");
+        if (!basic) {
+          var gcds = document.createElement("script");
+          gcds.type = "module";
+          gcds.src = "https://cdn.design-system.canada.ca/@gcds-core/components@1.6.0/dist/gcds/gcds.esm.js";
+          document.head.appendChild(gcds);
+        }
+      })();
+    </script>
+
+	<!-- Meta tags -->
+
+	<meta name="author" content="Gouvernement du Canada" />
+	<meta name="dcterms.title" content="Guide pour l’inclusion de l’accessibilité dans l’approvisionnement lié aux technologies de l’information et des communications (TIC)" />
+	<meta name="dcterms.description" content="Le gouvernement du Canada (GC) recommande que la norme EN 301 549 (CAN/ASC - EN 301 549:2024 Exigences d’accessibilité pour les produits et services TIC (EN 301 549:2021, IDT)), qui comprend les Règles pour l’accessibilité des contenus Web (WCAG), soit utilisée pour inclure les exigences d&#39;accessibilité des technologies de l&#39;information et de la communication (TIC) dans les approvisionnements qui comportent des éléments de TIC. Le Guide pour l’inclusion de l’accessibilité dans l’approvisionnement lié aux technologies de l’information et des communications (TIC) fournit aux ministères, aux agences et aux fournisseurs du gouvernement du Canada des étapes pratiques et des ressources pour comprendre et inclure la norme EN 301 549 dans les exigences d&#39;approvisionnement. L&#39;application de la norme EN 301 549 est conforme aux objectifs de la Loi canadienne sur l’accessibilité et favorise un environnement numérique sans obstacle." />
+	<meta name="dcterms.creator" content="Gouvernement du Canada">
+	<meta name="dcterms.language" content="fr" />
+	<meta name="dcterms.created" content="2023-08-01">
+	<meta name="dcterms.modified" content="2026-10-09" >
+	<meta name="dcterms.subject" content="Accessibilité numérique au gouvernement du Canada;Approvisionnement; " />
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SM9MSHWDVN"></script>
+	<script>
+		(function (w) {
+			"use strict";
+			if (w.location.hostname === "a11y.canada.ca") {
+				w.dataLayer = w.dataLayer || [];
+				w.gtag = function () {
+					w.dataLayer.push(arguments);
+				};
+				w.gtag('js', new Date());
+				w.gtag('config', 'G-SM9MSHWDVN');
+			}
+		})(window);
+	</script>
+</head>
+
+
+	<body vocab="http://schema.org/" typeof="WebPage">
+
+		
+
+<header>
+	<gcds-header lang="fr" lang-href="" skip-to-href="#main">
+				<nav slot="skip-to-nav" label="Passer au">
+			<a href="#main">Passer au contenu principal</a>
+			<a href="#footer">Passer à « Au sujet du gouvernement »</a>
+			<a class="skip-to-basic" href="?wbdisable=true">Passer à la version HTML simplifiée</a>
+			<a class="skip-to-standard" href="?wbdisable=false">Passer à la version standard</a>
+		</nav>
+
+	    
+
+
+
+
+	
+
+
+  <gcds-lang-toggle slot="toggle" href="/gc-da11yn.github.io/en/guide-for-including-accessibility-in-information-and-communication-technology-ict-related-procurement/">
+  </gcds-lang-toggle>
+
+
+
+		<gcds-search search-id="search" slot="search" action="https://canada.ca/fr/sr/srb.html"
+			method="get"
+		 	action=""
+		 	name="cse-search-box"
+		 	data-placeholder-long="Rechercher dans Canada.ca"
+		 	data-placeholder-short="Rechercher dans Canada.ca"
+		 	placeholder="Rechercher dans Canada.ca">
+        </gcds-search>
+        <gcds-topic-menu slot="menu"></gcds-topic-menu>
+
+        
+
+<gcds-breadcrumbs slot="breadcrumb">
+		<!-- First breadcrumb: Canada.ca - already set by default on GcdsHeader -->
+		<!-- Second breadcrumb: Locale-based home link -->
+		
+		
+			<gcds-breadcrumbs-item href="/gc-da11yn.github.io/fr/">Boîte à outils de l&#39;accessibilité numérique</gcds-breadcrumbs-item>
+		
+
+		<!-- Additional breadcrumbs based on tags and subjects -->
+		
+			 
+
+			<!-- Special handling for role-based pages -->
+			
+				<!-- Existing breadcrumbs logic for non-role pages -->
+				<!-- Breadcrumbs based on 'subject' -->
+				
+					
+						<gcds-breadcrumbs-item href="/gc-da11yn.github.io/fr/accessibilite-numerique-au-gouvernement-du-canada">
+							Accessibilité numérique au gouvernement du Canada
+						</gcds-breadcrumbs-item>
+						
+					
+				
+
+				<!-- Breadcrumbs based on 'tags' -->
+				
+					
+						
+							<gcds-breadcrumbs-item href="/gc-da11yn.github.io/fr/approvisionnement">
+								Approvisionnement
+							</gcds-breadcrumbs-item>
+							
+						
+					
+				
+			
+		
+      </gcds-breadcrumbs>
+
+
+	</gcds-header>
+</header>
+
+
+
+		<main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement" id="main">
+
+		
+			<gcds-container layout="full" class="banner">
+			  <gcds-container layout="page" padding="200">
+				<gcds-grid columns="1fr" columns-desktop="4fr 1fr" class="py-150">
+				  <div class="banner__box">
+					<h1 class="mt-0 mb-300 text-light" property="name">Guide pour l’inclusion de l’accessibilité dans l’approvisionnement lié aux technologies de l’information et des communications (TIC)
+					</h1>
+					
+					<p>Le gouvernement du Canada (GC) recommande que la norme EN 301 549 (CAN/ASC - EN 301 549:2024 Exigences d’accessibilité pour les produits et services TIC (EN 301 549:2021, IDT)), qui comprend les Règles pour l’accessibilité des contenus Web (WCAG), soit utilisée pour inclure les exigences d'accessibilité des technologies de l'information et de la communication (TIC) dans les approvisionnements qui comportent des éléments de TIC. Le Guide pour l’inclusion de l’accessibilité dans l’approvisionnement lié aux technologies de l’information et des communications (TIC) fournit aux ministères, aux agences et aux fournisseurs du gouvernement du Canada des étapes pratiques et des ressources pour comprendre et inclure la norme EN 301 549 dans les exigences d'approvisionnement. L'application de la norme EN 301 549 est conforme aux objectifs de la Loi canadienne sur l’accessibilité et favorise un environnement numérique sans obstacle.</p>
+					</div>
+				</gcds-grid>
+			  </gcds-container>
+			</gcds-container>
+
+			
+
+
+
+
+<gcds-container layout="page" padding="300">
+	<gcds-notice notice-role="warning" notice-title-tag="h2" notice-title="Informations importantes" class="mt-400">
+		<ul class="list-disc ps-500 mb-0">
+			
+			
+			
+			<li>Les liens qui ne fonctionnent que derrière le pare-feu du gouvernement du Canada sont marqués avec <i class="fas fa-external-link-square-alt" aria-hidden="true"> <span class="ms-50">icône </span></i><span class="visibility-sr-only">lien interne</span></li>
+			
+		</ul>
+	</gcds-notice>
+</gcds-container>
+
+<gcds-container layout="page" padding="300">
+				
+
+				
+				
+
+<div class="container-sm d-flex align-items-center gap-300 bg-light p-300 mb-400">
+	<img src="/gc-da11yn.github.io/img/doc.png" alt="" width="58" height="68">
+	<p class="mb-0">
+		<a href="/gc-da11yn.github.io/docs/ProcurementGuideFR.docx" download="guide-pour-linclusion-de-laccessibilite-dans-lapprovisionnement-lie-aux-technologies-de-linformation-et-des-communications-tic">Guide pour l’inclusion de l’accessibilité dans l’approvisionnement lié aux technologies de l’information et des communications (TIC)</a>
+		<span class="d-block font-size-text-small">
+			(<i class="fas fa-file-word me-50" aria-hidden="true"></i><span class="visibility-sr-only">Document Microsoft Word</span>
+			79
+			<abbr title="kilo-octet">ko</abbr>)
+		</span>
+	</p>
+</div>
+
+				
+
+				
+				
+<aside>
+	<h2>Sur cette page</h2>
+	<ul class="list-disc ps-500">
+		
+		
+		
+		
+	<li><a href="#propos-du-guide">À propos du Guide</a>
+		
+		
+	
+		
+		
+		</li>
+	<li><a href="#auditoire">Auditoire</a>
+		
+		
+	
+		
+		
+		</li>
+	<li><a href="#contexte">Contexte</a>
+		
+		
+	
+		
+		
+		</li>
+	<li><a href="#propos-de-la-norme-en-301-549">À propos de la norme EN 301 549</a>
+		
+		
+	
+		
+		
+	
+	  <ul class="list-circle ps-500">
+		
+		
+		<li><a href="#normes-daccessibilite-canada-adopte-la-norme-the-en-301-549">Normes d’accessibilité Canada adopte la norme the EN 301 549</a></li>
+		
+		
+		
+		
+	
+		<li><a href="#integrez-la-plus-recente-version-de-la-norme-en-301-549-en-tant-que-pratique-exemplaire">Intégrez la plus récente version de la norme EN 301 549 en tant que pratique exemplaire</a></li>
+		
+		
+		
+		
+	
+		<li><a href="#roles-et-responsabilites">Rôles et responsabilités</a></li>
+		
+		
+		
+		
+	
+		<li><a href="#ministeres-et-organismes">Ministères et organismes</a></li>
+		
+		
+		
+		
+		</ul>
+	</li>
+	<li><a href="#le-resume-du-processus-doit-inclure-les-exigences-daccessibilite-dans-les-approvisionnements-lies-aux-tic">Le résumé du processus doit inclure les exigences d’accessibilité dans les approvisionnements liés aux TIC</a>
+		
+		
+	
+		
+		
+	
+	  <ul class="list-circle ps-500">
+		
+		
+		<li><a href="#on-encourage-fortement-les-proprietaires-fonctionnels-a">On encourage fortement les propriétaires fonctionnels à :</a></li>
+		
+		
+		
+		
+	
+		<li><a href="#on-encourage-fortement-les-autorites-contractantes-a">On encourage fortement les autorités contractantes à :</a></li>
+		
+		
+		
+		
+	
+		<li><a href="#justification-des-decisions-relatives-a-laccessibilite">Justification des décisions relatives à l’accessibilité</a></li>
+		
+		
+		
+		
+		</ul>
+	</li>
+	<li><a href="#informer-la-communaute-de-fournisseurs">Informer la communauté de fournisseurs</a>
+		
+		
+	
+		
+		
+		</li>
+	<li><a href="#ou-trouver-de-laide-et-des-ressources">Où trouver de l’aide et des ressources</a>
+		
+		
+	
+		
+		
+	
+	  <ul class="list-circle ps-500">
+		
+		
+		<li><a href="#outils-et-ressources-pour-le-gc">Outils et ressources pour le GC :</a></li>
+		
+		
+		
+		
+	
+		<li><a href="#outils-et-ressources-pour-le-gc-et-a-lexterne">Outils et ressources pour le GC et à l’externe :</a></li>
+		
+		
+		
+		
+	
+		<li><a href="#services-partages-canada">Services partagés Canada</a></li>
+		
+		
+		
+		
+	
+		<li><a href="#services-publics-et-approvisionnement-canada-spac">Services publics et Approvisionnement Canada (SPAC)</a></li>
+		
+		
+		
+		
+		</ul>
+	</li>
+	<li><a href="#demandes-de-renseignements-et-commentaires-au-sujet-du-present-guide">Demandes de renseignements et commentaires au sujet du présent Guide</a>
+		
+		
+	
+		
+		
+		</li>
+	<li><a href="#references">Références</a>
+		
+		
+	
+		
+		
+	
+	  <ul class="list-circle ps-500">
+		
+		
+		<li><a href="#normes-et-specifications-externes-connexes">Normes et spécifications externes connexes</a></li>
+		
+		
+		
+		
+		</ul>
+	</li>
+	<li><a href="#definitions">Définitions</a>
+		
+		
+	
+		
+		
+		</li>
+	<li><a href="#quels-renseignements-un-rapport-de-conformite-de-laccessibilite-rca-devrait-il-contenir">Quels renseignements un rapport de conformité de l’accessibilité (RCA) devrait-il contenir?</a>
+		
+		</li>
+	
+		
+		
+		</ul>
+</aside>
+
+
+				
+
+				<div class="page-content">
+				<h2 id="propos-du-guide" tabindex="-1">À propos du Guide</h2>
+<p>Le présent Guide a été rédigé pour les ministères, organismes et organisations du gouvernement du Canada (GC). Il explique comment se conformer au Règlement canadien sur l’accessibilité en vertu de la <a href="https://www.parl.ca/documentviewer/fr/42-1/projet-loi/C-81/sanction-royal"><em>Loi canadienne sur l’accessibilité</em></a> et appliquer la Direction relative à l’accessibilité des technologies de l’information et des communications dans les approvisionnements concurrentiels et non concurrentiels liés aux technologies de l’information et des communications (TIC). Même si la plupart des exigences du Règlement canadien sur l’accessibilité (DORS/2025-255) ne sont pas encore en vigueur, vous devez en tenir compte pendant la phase de planification de l’approvisionnement.</p>
+<p>Dans le présent Guide, on entend par « approvisionnement lié aux TIC » tout bien ou service qui comprend une composante TIC. En voici quelques exemples :</p>
+<ul>
+<li>les solutions et l’équipement des technologies de l’information (TI) qui sont accessibles à l’interne ou au public;</li>
+<li>les documents (contenu électronique ou documents non destinés au Web) tels que :
+<ul>
+<li>les manuels d’instruction ou techniques pour un bien ou un service;</li>
+<li>le matériel de formation;</li>
+<li>les présentations;</li>
+<li>les rapports;</li>
+<li>les courriels;</li>
+</ul>
+</li>
+<li>les services de soutien;</li>
+<li>le service d’assistance.</li>
+</ul>
+<p>Le présent Guide vous explique en détail les étapes de la prise en compte de l’accessibilité lors de l’élaboration des exigences pour vos approvisionnements liés aux TIC. Il contient également des renseignements utiles sur les lignes directrices et les normes pertinentes en matière de TIC.</p>
+<h2 id="auditoire" tabindex="-1">Auditoire</h2>
+<p>Le présent Guide s’adresse aux ministères, organismes et organisations du GC, énumérés aux annexes I, I.1 et II de la <em><a href="https://laws-lois.justice.gc.ca/fra/lois/f-11/">Loi sur la gestion des finances publiques</a></em>.</p>
+<p>Il aidera :</p>
+<ul>
+<li>les propriétaires fonctionnels (le responsable technique ou le client) et les autorités contractantes au sein des ministères, organismes et organisations du GC;</li>
+<li>les fournisseurs qui veulent en savoir plus sur les exigences d’accessibilité des TIC au sein des approvisionnements du GC.</li>
+</ul>
+<h2 id="contexte" tabindex="-1">Contexte</h2>
+<p>La <a href="https://www.parl.ca/documentviewer/fr/42-1/projet-loi/C-81/sanction-royal"><em>Loi canadienne sur l’accessibilité</em></a> (LCA) a été adoptée en 2019 pour faire du Canada un pays exempt d’obstacles d’ici 2040. Elle exige que les entités relevant de la compétence fédérale reconnaissent, éliminent et préviennent les obstacles à l’accessibilité dans sept domaines prioritaires, dont les TIC et l’approvisionnement.</p>
+<p>La LCA exige également que les organisations publient des plans d’accessibilité et des rapports d’étape annuels. Vous trouverez les plans ministériels sur l’accessibilité à <a href="https://www.canada.ca/fr/gouvernement/fonctionpublique/mieux-etre-inclusion-diversite-fonction-publique/diversite-equite-matiere-emploi/accessibilite-fonction-publique.html">Accessibilité au sein de la fonction publique – Canada.ca</a>.</p>
+<p>La <a href="https://www.canada.ca/fr/gouvernement/fonctionpublique/mieux-etre-inclusion-diversite-fonction-publique/diversite-equite-matiere-emploi/accessibilite-fonction-publique/strategie-accessibilite-fonction-publique-tdm.html">Stratégie sur l’accessibilité au sein de la fonction publique du Canada</a> :</p>
+<ul>
+<li>définit la manière dont le GC fera progresser l’accessibilité pour tous les Canadiens par le biais de ses politiques, programmes et services;</li>
+<li>désigne SPC comme responsable de l’élaboration du cadre sur la manière d’intégrer les exigences d’accessibilité dans les approvisionnements liés aux TIC.</li>
+</ul>
+<p>La <a href="https://www.canada.ca/fr/gouvernement/systeme/gouvernement-numerique/politiques-normes/annonces-politique-services-numerique/orientations-relatives-accessibilite-technologies-information-communications-vers-mise-en-oeuvre-reglementaire.html">Direction relative à l’accessibilité des technologies de l’information et des communications</a> :</p>
+<ul>
+<li>encourage fortement les ministères, les organismes et les organisations à s’inspirer de la norme « <a href="https://accessibilite.canada.ca/en-301-549-exigences-daccessibilite-pour-les-produits-et-services-tic">CAN/ASC – EN 301 549:2024 Exigences d’accessibilité pour les produits et services TIC (EN 301 549:2021, IDT)</a> » (norme CAN/ASC) lorsqu’ils acquièrent ou développent des TIC internes et publiques;</li>
+<li>fournit un contexte supplémentaire pour expliquer pourquoi l’accessibilité est importante pour le GC.</li>
+</ul>
+<div class="bg-light p-200">
+<p><strong>Remarque :</strong> La norme CAN/ASC est une copie de la norme EN 301 549 v.3.2.1 (2021-03) <a href="https://www.etsi.org/deliver/etsi_en/301500_301599/301549/02.01.02_60/en_301549v020102p.pdf">Norme européenne harmonisée – Exigences en matière d’accessibilité applicables aux produits et services liés aux TIC<small> (en anglais seulement)</small></a>.</p>
+</div>
+<h2 id="propos-de-la-norme-en-301-549" tabindex="-1">À propos de la norme EN 301 549</h2>
+<p>Bien que le présent Guide fasse référence à la « norme EN 301 549 (2021) », son nom au complet est « <a href="https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf">EN 301 549 V3.2.1 (2021-03) Norme européenne harmonisée – Exigences en matière d’accessibilité applicables aux produits et services liés aux TIC<small> (en anglais seulement)</small></a> ». La norme EN 301 549 est mise à jour de temps à autres et toute référence à celle-ci dans le présent document se rapporte à la version la plus récente. La norme EN 301 549 (2021) définit les exigences d’accessibilité pour les produits et services TIC.</p>
+<p>La norme EN 301 549 (2021) s’applique à presque chaque approvisionnement en TIC, tel que les suivants :</p>
+<ul>
+<li>les logiciels, y compris les applications mobiles;</li>
+<li>les sites Web/pages Web (sites Web externes et sites Web internes du GC);</li>
+<li>les panneaux d’administration;</li>
+<li>les appareils mobiles;</li>
+<li>le matériel, y compris les ordinateurs portables;</li>
+<li>les imprimantes;</li>
+<li>les guichets d’information et machines de transaction;</li>
+<li>les documents (contenu électronique ou documents non destinés au Web), y compris :</li>
+<li>les manuels d’instruction ou techniques pour un bien ou un service;
+<ul>
+<li>le matériel de formation;</li>
+<li>les présentations;</li>
+<li>les rapports;</li>
+<li>les courriels.</li>
+</ul>
+</li>
+<li>le soutien des TIC, y compris :
+<ul>
+<li>les services d’assistance;</li>
+<li>le soutien du service à la clientèle.</li>
+</ul>
+</li>
+<li>les produits de télécommunications, y compris les conférences audio/Web;</li>
+<li>les séances de clavardage en groupe;</li>
+<li>les vidéos;</li>
+<li>les services de technologie de l’information.</li>
+</ul>
+<p>Si le propriétaire fonctionnel n’est pas sûr qu’il s’agisse d’une TIC, il devrait se demander :</p>
+<ul>
+<li>Est-ce numérique?</li>
+<li>Quelqu’un interagit-il avec?</li>
+</ul>
+<p>Si la réponse à ces <strong>deux</strong> questions est « oui », la norme EN 301 549 (2021) s’applique alors probablement à l’approvisionnement.</p>
+<p>Le <strong>type</strong> et la <strong>fonctionnalité</strong> des biens ou services TIC achetés par le GC déterminent la méthode de fourniture et les exigences d’accessibilité que vous devrez inclure dans la demande de soumissions, y compris la grille d’évaluation. Cela s’applique également à l’achat d’un bien ou d’un service qui n’est pas en soi une TIC, mais que les TIC prendront en charge.</p>
+<h3 id="normes-daccessibilite-canada-adopte-la-norme-the-en-301-549" tabindex="-1">Normes d’accessibilité Canada adopte la norme the EN 301 549</h3>
+<p><a href="https://accessibilite.canada.ca/en-301-549-exigences-daccessibilite-pour-les-produits-et-services-tic-resume?utm_campaign=PANTHEON_STRIPPED&amp;utm_id=PANTHEON_STRIPPED&amp;utm_medium=PANTHEON_STRIPPED&amp;utm_source=PANTHEON_STRIPPED">Normes d’accessibilité Canada</a> a adopté la norme « CAN/ASC – EN 301 549:2024 Exigences d’accessibilité pour les produits et services TIC (EN 301 549:2021, IDT) en tant que norme nationale du Canada publiée. En tant que norme officielle du gouvernement du Canada, elle est approuvée pour être utilisée dans tout le pays.  » Cette norme n’est pas encore obligatoire pour le GC.</p>
+<h3 id="integrez-la-plus-recente-version-de-la-norme-en-301-549-en-tant-que-pratique-exemplaire" tabindex="-1">Intégrez la plus récente version de la norme EN 301 549 en tant que pratique exemplaire</h3>
+<p>Nous recommandons également aux propriétaires fonctionnels d’inclure toutes les exigences d’accessibilité des TIC pertinentes de la plus récente version de la norme EN 301 549 dans les approvisionnements liés aux TIC. Cela comprend la création ou le renouvellement des offres à commandes et les commandes subséquentes, la création ou le renouvellement des arrangements en matière d’approvisionnement et les contrats, les contrats et les autorisation de tâches. L’inclusion des exigences d’accessibilité des TIC permet de s’assurer que :</p>
+<ul>
+<li>l’approvisionnement est rentable en évitant :
+<ul>
+<li>d’engager des coûts supplémentaires pour corriger les TIC parce que l’accessibilité des TIC n’a pas été prise en compte dans l’approvisionnement initial; ou</li>
+<li>de se réapprovisionner en solution accessible.</li>
+</ul>
+</li>
+<li>les biens et services ont une conception inclusive et sont accessibles par défaut.</li>
+</ul>
+<p>Consultez Où trouver de l’aide et des ressources pour de l’aide.</p>
+<h3 id="roles-et-responsabilites" tabindex="-1">Rôles et responsabilités</h3>
+<p>Consultez la <a href="https://www.tbs-sct.canada.ca/pol/doc-fra.aspx?id=32692">Directive sur la gestion de l’approvisionnement – Canada.ca</a> pour en savoir plus sur les rôles et responsabilités du propriétaire fonctionnel (responsables techniques ou clients) et de l’autorité contractante.</p>
+<h3 id="ministeres-et-organismes" tabindex="-1">Ministères et organismes</h3>
+<p>Pour tous les approvisionnements liés aux TIC qui :</p>
+<ul>
+<li>ne comprennent pas d’exigences d’accessibilité; ou</li>
+<li>comprennent une approche par étapes vers la conformité de l’accessibilité des TIC (c.-à-d. un plan de correction ou une feuille de route),</li>
+</ul>
+<p>les ministères et organismes sont fortement encouragés à obtenir l’approbation de la justification auprès d’une autorité compétente (p. ex., la haute direction, l’article 32, etc.).</p>
+<h2 id="le-resume-du-processus-doit-inclure-les-exigences-daccessibilite-dans-les-approvisionnements-lies-aux-tic" tabindex="-1">Le résumé du processus doit inclure les exigences d’accessibilité dans les approvisionnements liés aux TIC</h2>
+<h3 id="on-encourage-fortement-les-proprietaires-fonctionnels-a" tabindex="-1">On encourage fortement les propriétaires fonctionnels à :</h3>
+<ul>
+<li>comprendre les composantes TIC de l’exigence et les exigences d’accessibilité de la plus récente version de la norme EN 301 549 qui s’appliquent à l’approvisionnement;</li>
+<li>inclure les exigences d’accessibilité des TIC dans les exigences techniques pour établir ou renouveler une méthode d’approvisionnement commune telle que les offres à commandes (OC) et les arrangement en matière d’approvisionnement (AMA);
+<ul>
+<li>cela permettra au ministère ou à l’organisme qui passe une commande subséquente ou un contrat d’intégrer des exigences d’accessibilité précises de la plus récente version de la norme EN 301 549.</li>
+</ul>
+</li>
+<li>élaborer un budget pour inclure des tests de conformité de l’accessibilité, des tests auprès des utilisateurs finals et d’autres exigences de validation (le cas échéant) dans leur plan de projet;</li>
+<li>déterminer comment évaluer la conformité aux exigences d’accessibilité pendant toute la durée du contrat;</li>
+<li>déterminer les délais de mise au point, de mise à l’essai et de mise en production d’une solution de TIC, y compris les dispositions relatives aux solutions de rechange temporaires pour aborder les obstacles à l’accessibilité avant que les TIC ne répondent pleinement aux exigences d’accessibilité;</li>
+<li>comprendre la maturité du marché pour procurer des TIC accessibles :
+<ul>
+<li>à la clôture des soumissions, ou</li>
+<li>dans le délai précisé dans l’approvisionnement.</li>
+</ul>
+</li>
+<li>organiser des journées de l’industrie à un stade précoce de la procédure d’approvisionnement lié aux TIC afin de permettre aux fournisseurs de poser des questions au sujet :
+<ul>
+<li>des exigences d’accessibilité des TIC;</li>
+<li>d’autres exigences clés.</li>
+</ul>
+</li>
+<li>exiger que tous les fournisseurs des TIC présentent, dans un format accessible, un rapport de conformité de l’accessibilité (RCA), de préférence en utilisant le modèle volontaire d’accessibilité des produits (<a href="https://www.itic.org/policy/accessibility/vpat">VPAT<sup>®</sup><small> (en anglais seulement)</small></a>) ou un format comparable.</li>
+</ul>
+<div class="bg-light p-200">
+<p><strong>Remarque :</strong> Lorsque la seule composante TIC est des documents non destinés au Web (p. ex., Word, PowerPoint, PDF, etc.), il n’est pas exigé de demander un RCA. Pour de plus amples renseignements sur le RCA, veuillez consulter Quels renseignements le rapport de conformité de l’accessibilité (RCA) devrait-il contenir?</p>
+</div>
+<p><strong>Clarifications concernant la personne qui fournit le RCA et le moment de le fournir :</strong></p>
+<ul>
+<li>Lorsqu’un contrat est passé pour une <strong>solution commerciale sur étagère (COTS)</strong>, le fournisseur du fabricant d’équipement d’origine (FEO) doit fournir le RCA avec la soumission, et le fournisseur retenu doit fournir une feuille de route et accepter de corriger la solution au cours d’une certaine période.</li>
+<li>Lorsqu’un contrat est passé pour une <strong>solution de TIC personnalisée</strong>, le fournisseur du FEO doit fournir le RCA tel qu’il est décrit dans le contrat et veiller à ce que la solution de TIC soit fournie conformément aux exigences en matière de TIC.</li>
+<li>Lorsqu’un contrat est passé avec un <strong>intégrateur</strong>, celui-ci doit :
+<ul>
+<li>mettre en œuvre la solution pour se conformer à la norme EN 301 549, dans la mesure où la plate-forme du FEO le permet, en utilisant et en activant les fonctions d’accessibilité fournies par le FEO ou par le biais de mises en œuvre personnalisées, le cas échéant;</li>
+<li>entretenir de bonnes relations de travail avec le FEO;</li>
+<li>collaborer avec le FEO pour aborder les problèmes d’accessibilité.</li>
+</ul>
+</li>
+<li>exiger que les fournisseurs des TIC fassent préparer le RCA soit par :
+<ul>
+<li>un tiers se spécialisant dans les tests de conformité de l’accessibilité des TIC (de préférence);</li>
+<li>les spécialistes en accessibilité internes du fournisseur.</li>
+</ul>
+</li>
+<li>préciser quelles normes d’accessibilité des TIC seront acceptées dans le cadre du rapport de conformité de l’accessibilité (RCA);
+<ul>
+<li>lorsque le ou les fournisseurs retenus ont soumis un RCA qui consigne les résultats des tests par rapport à une autre norme d’accessibilité des TIC, le ou les fournisseurs retenus doivent fournir, avant une date ferme, un RCA dans un format accessible qui montre les tests par rapport à la norme EN 301 549 (2021).</li>
+</ul>
+</li>
+<li>inclure un libellé indiquant que le Canada comprend qu’il est peu probable que les fournisseurs soient en mesure de se conformer entièrement à la norme EN 301 549 (2021) au moment de la clôture des soumissions, mais qu’au moment de l’attribution du contrat, la soumission retenue devra démontrer comment la conformité totale sera atteinte. Lors de l’attribution du contrat, le fournisseur retenu devra :
+<ul>
+<li>soumettre une feuille de route détaillée dans un format accessible lorsque la solution de TIC proposée n’est pas entièrement conforme à la norme EN 301 549 (2021) comme spécifié par le propriétaire fonctionnel. Dans ce cas, le contrat devrait contenir une date ferme à laquelle le fournisseur de la solution de TIC doit fournir la feuille de route. La feuille de route devrait comprendre :
+<ul>
+<li>des précisions sur la manière dont le ou les fournisseurs retenus de la solution de TIC corrigeront leur solution de TIC pour se conformer à la norme EN 301 549 (2021) dans le délai défini dans le contrat;</li>
+<li>suffisamment de détails pour surveiller les progrès et la livraison de la solution de TIC.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>s’assurer que le processus comprend les exigences suivantes :
+<ul>
+<li>des tests de conformité de l’accessibilité effectués comme suit :
+<ul>
+<li>pour évaluer la conformité de l’accessibilité à la norme EN 301 549 (2021) durant la phase d’évaluation des soumissions;</li>
+<li>comme il convient, à des intervalles prédéterminés durant toute la durée du contrat.</li>
+</ul>
+</li>
+<li>des tests d’utilisateur auprès des personnes en situation de handicap effectués comme suit :
+<ul>
+<li>durant la phase d’évaluation des soumissions;</li>
+<li>comme il convient, à des intervalles prédéterminés durant toute la durée du contrat.</li>
+</ul>
+</li>
+<li>un mécanisme de rétroaction pour aborder les plaintes des utilisateurs et les problèmes d’accessibilité qui :
+<ul>
+<li>sont connus avant l’attribution du contrat;</li>
+<li>surviennent durant l’administration du contrat.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>examiner et comprendre les déclarations du fournisseur dans son RCA sur la manière dont sa solution de TIC est conforme aux sections pertinentes de la norme EN 301 549;</li>
+<li>effectuer l’évaluation technique.</li>
+</ul>
+<h3 id="on-encourage-fortement-les-autorites-contractantes-a" tabindex="-1">On encourage fortement les autorités contractantes à :</h3>
+<ul>
+  <li>discuter avec les propriétaires fonctionnels de la nécessité d’un engagement industriel avant d’entamer un processus d’approvisionnement lié aux TIC (p. ex., une demande d’information accompagnée d’un projet d’énoncé des travaux). Ce travail peut aider à évaluer la capacité du marché à livrer une solution de TIC entièrement accessible au moment de l’attribution du contrat ou si une approche progressive est nécessaire;</li>
+  <li>veiller à ce que la demande de soumissions et le contrat subséquent contiennent un langage d’accessibilité et des exigences en matière de TIC ayant force exécutoire;</li>
+  <li>s’assurer que la demande de soumissions et le contrat subséquent incluent les exigences du propriétaire fonctionnel en matière de TIC qui peuvent être générées à partir du générateur (prototype) d’exigences en matière de technologies de l’information et des communications (TIC) de SPC pour la norme EN 301 549. <a href="https://2021-prod.ict-cio.ssc-spc.cloud-nuage.canada.ca/fr">L’outil de SPC génère actuellement les exigences de la norme EN 301 549 (2021)</a>.
+    <div class="bg-light p-200 mt-200">
+      <p><strong>Remarque :</strong> Les autorités contractantes peuvent également fournir un lien hypertexte vers&nbsp;:</p>
+        <ul>
+          <li><a href="/gc-da11yn.github.io/fr/exigences-en-matiere-de-technologies-de-linformation-et-des-communications-tic-accessibles/">les exigences d’accessibilité des technologies de l’information et des communications (TIC)</a></li>
+          <li><a href="https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf">pdf de la norme EN 301 549 V3.2.1</a> <small>(en anglais seulement)</small></li>
+          <li><a href="https://accessibilite.canada.ca/en-301-549-exigences-daccessibilite-pour-les-produits-et-services-tic">CAN/ASC – EN 301 549:2024 Exigences d’accessibilité pour les produits et services TIC (EN 301 549:2021, IDT)</a></li>
+        </ul>
+      <p><strong>Remarque :</strong> Un nouvel outil de SPC qui générera les exigences de la mise à jour attendue de la norme EN 301 549 devrait être publié en 2026-2027.</p>
+    </div>
+  </li>
+  <li>s’assurer que les exigences d’accessibilité des TIC figurent dans les exigences techniques lors de l’établissement ou du renouvellement d’une méthode d’approvisionnement commune, par exemple les offres à commandes et les arrangement en matière d'approvisionnement (AMA). Ainsi, les utilisateurs identifiés ont la capacité d’intégrer les exigences d’accessibilité de la norme EN 301 549 (2021) dans les futurs contrats ou commandes subséquentes;</li>
+  <li>veiller à ce que le propriétaire fonctionnel exige que le ou les fournisseurs retenus :
+    <ul>
+      <li>fournissent, avant une date ferme, un RCA dans un format accessible qui montre les résultats des tests par rapport à la bonne norme d’accessibilité comme il est précisé dans le contrat;</li>
+      <li>fournissent une feuille de route détaillée dans un format accessible lorsque la solution de TIC proposée n’est pas entièrement conforme à la norme EN 301 549 (2021) au moment de l’attribution du contrat. Dans ce cas, le contrat devrait contenir une date ferme à laquelle le fournisseur de la solution de TIC doit fournir la feuille de route. La feuille de route devrait comprendre :
+        <ol>
+          <li>des précisions sur la manière dont le ou les fournisseurs retenus de la solution de TIC corrigeront leur solution de TIC pour se conformer à la norme EN 301 549 (2021) dans le délai précisé dans le contrat;</li>
+          <li>suffisamment de détails pour surveiller les progrès et la livraison de la solution de TIC.</li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+  <li>surveiller, de concert avec le propriétaire fonctionnel, les problèmes de rendement de l’entrepreneur. Cela comprend les problèmes concernant le respect des engagements envers l’accessibilité des TIC. Ces renseignements aideront à sélectionner les mesures appropriées pour aborder les problèmes documentés.</li>
+</ul>
+<h3 id="justification-des-decisions-relatives-a-laccessibilite" tabindex="-1">Justification des décisions relatives à l’accessibilité</h3>
+<p>Dans la mesure du possible, les exigences d’accessibilité des TIC devraient être incluses dans tous les approvisionnements liés aux TIC. Le propriétaire fonctionnel ne devrait envisager d’adopter une approche progressive que lorsqu’il n’est pas possible de proposer une solution de TIC entièrement conforme au moment de la clôture des soumissions.</p>
+<p>Conformément à la Directive sur la gestion de l’approvisionnement, le propriétaire fonctionnel doit fournir une justification écrite lorsqu’il n’inclut pas les exigences d’accessibilité dans l’approvisionnement. Cette justification devrait clairement expliquer les raisons et doit être conservée dans le dossier d’achat.</p>
+<p>Consultez Où trouver de l’aide et des ressources pour savoir :</p>
+<ul>
+<li>quand l’accessibilité ne s’applique peut-être pas;</li>
+<li>quand utiliser une approche progressive.</li>
+</ul>
+<h2 id="informer-la-communaute-de-fournisseurs" tabindex="-1">Informer la communauté de fournisseurs</h2>
+<p>Les fournisseurs devraient s’attendre à ce que les approvisionnements liés aux TIC incluent les clauses d’accessibilité pertinentes de la norme EN 301 549 (2021), conformément au <a href="https://gazette.gc.ca/rp-pr/p2/2025/2025-12-17/html/sor-dors255-fra.html">Règlement modifiant le Règlement canadien sur l’accessibilité et à la Direction relative à l’accessibilité des technologies de l’information et des communications</a>.</p>
+<p>Les fournisseurs peuvent également consulter :</p>
+<ul>
+<li>les <a href="https://www.canada.ca/fr/emploi-developpement-social/programmes/directives-reglements-canadien-accessibilite/categorie-technologies-numeriques.html">Lignes directrices sur la règlementation sur l’accessibilité des technologies numériques – Canada.ca</a>;</li>
+<li>la <a href="/gc-da11yn.github.io/fr/index.html">Boîte à outils de l’accessibilité numérique</a>. Cette ressource accessible au public a été créée par des fonctionnaires fédéraux et comprend :
+<ul>
+<li>des ressources pour en savoir plus sur la norme EN 301 549 (2021);</li>
+<li>des guides et des outils pour renforcer la capacité de créer du contenu et des solutions numériques accessibles.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Rappel :</strong> Les fournisseurs doivent adresser leurs questions au sujet des approvisionnements actifs à l’autorité contractante désignée dans les documents d’invitation à soumissionner.</p>
+<h2 id="ou-trouver-de-laide-et-des-ressources" tabindex="-1">Où trouver de l’aide et des ressources</h2>
+<h3 id="outils-et-ressources-pour-le-gc" tabindex="-1">Outils et ressources pour le GC :</h3>
+<ul>
+<li>Renseignements mis uniquement à la disposition du GC :
+<ul>
+<li>la Boîte à outils pour l’approvisionnement en TIC accessibles de SPC disponible à <a href="https://www.gcpedia.gc.ca/wiki/Procurement/_Approvisionnement?setlang=en&amp;uselang=en"><span class="fas fa-external-link-square-alt ms-50 me-50" aria-hidden="true"></span><span class="visibility-sr-only"> Lien interne</span>Approvisionnement – GCpedia</a>.</li>
+</ul>
+</li>
+</ul>
+<h3 id="outils-et-ressources-pour-le-gc-et-a-lexterne" tabindex="-1">Outils et ressources pour le GC et à l’externe :</h3>
+<ul>
+<li>Les renseignements accessibles au public comprennent :
+<ul>
+<li>les <a href="https://www.canada.ca/fr/emploi-developpement-social/programmes/directives-reglements-canadien-accessibilite/categorie-technologies-numeriques.html">Lignes directrices sur la règlementation sur l’accessibilité des technologies numériques – Canada.ca</a>;</li>
+<li>la <a href="/gc-da11yn.github.io/fr/accessibilite-numerique-au-gouvernement-du-canada/index.html">Boîte à outils de l’accessibilité numérique</a> – un site Web externe pour :
+<ul>
+<li><a href="https://2021-prod.ict-cio.ssc-spc.cloud-nuage.canada.ca/fr">générer les exigences de la norme EN 301 549 (2021)</a> qui sont pertinentes pour l’approvisionnement;</li>
+<li>accéder au <a href="/gc-da11yn.github.io/fr/procurement/instructions-pour-le-modele-de-feuille-de-route-pour-la-correction-des-problemes-daccessibilite/">modèle de feuille de route pour la correction des problèmes d’accessibilité</a>;</li>
+<li>accéder au <a href="/gc-da11yn.github.io/fr/resume-technique-de-la-norme-en-301-549-v321-2021/">résumé technique de la norme EN 301 549 v3.2.1 (2021)</a>;</li>
+<li><a href="/gc-da11yn.github.io/fr/exigences-en-matiere-de-technologies-de-linformation-et-des-communications-tic-accessibles/">examiner toutes les exigences pertinentes d’accessibilité des TIC de la norme EN 501 349 (2021)</a> (2021) pour les produits et services TIC;</li>
+<li>faire référence à d’autres orientations en matière d’accessibilité, notamment en ce qui concerne l’accessibilité des documents.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Programme d’accessibilité, d’adaptation et de technologie informatique adaptée de SPC</strong> – approvisionnements de SPC ou d’un autre ministère ou organisme gouvernemental. Contact : AAACT / AATIA (SSC/SPC) <a href="mailto:aaact-aatia@ssc-spc.gc.ca">aaact-aatia@ssc-spc.gc.ca</a>. AATIA peut vous aider à intégrer la norme EN 301 549 dans les approvisionnements liés aux TIC.</li>
+</ul>
+<h3 id="services-partages-canada" tabindex="-1">Services partagés Canada</h3>
+<ul>
+<li>Les autorités contractantes de SPC peuvent s’adresser à l’équipe de l’<strong>Approvisionnement social, politique et gouvernance (ASPG)</strong> pour toute question d’approvisionnement. Contact : SPPG/ASPG (SSC/SPC) <a href="mailto:eitpsocialprocurement-approvisionnementsocialatie@ssc-spc.gc.ca">eitpsocialprocurement-approvisionnementsocialatie@ssc-spc.gc.ca</a>.</li>
+</ul>
+<h3 id="services-publics-et-approvisionnement-canada-spac" tabindex="-1">Services publics et Approvisionnement Canada (SPAC)</h3>
+<ul>
+<li>Les autorités contractantes de SPAC peuvent s’adresser au <strong>Centre de ressources pour l’approvisionnement accessible</strong> (CRAA). Contact : PA CRA Accessible / AP Accessible PRC (TPSGC/PWGSC) <a href="mailto:TPSGC.PACRAAccessible-APAccessiblePRC.PWGSC@tpsgc-pwgsc.gc.ca">TPSGC.PACRAAccessible-APAccessiblePRC.PWGSC@tpsgc-pwgsc.gc.ca</a>.</li>
+</ul>
+<h2 id="demandes-de-renseignements-et-commentaires-au-sujet-du-present-guide" tabindex="-1">Demandes de renseignements et commentaires au sujet du présent Guide</h2>
+<p>Pour toute demande de renseignement ou tout commentaire au sujet du présent Guide :</p>
+<p><strong>Site Web :</strong> <a href="https://www.canada.ca/fr/services-partages/organisation/programme-aatia.html">Accessibilité, adaptation et technologie informatique adaptée (AATIA) - Canada.ca</a></p>
+<p><strong>Courriel :</strong> <a href="mailto:aaact-aatia@ssc-spc.gc.ca">aaact-aatia@ssc-spc.gc.ca</a></p>
+<p><strong>Numéro sans frais :</strong> 1-866-442-2228</p>
+<h2 id="references" tabindex="-1">Références</h2>
+<h3 id="normes-et-specifications-externes-connexes" tabindex="-1">Normes et spécifications externes connexes</h3>
+<h4 id="hyperliens-externes-de-spc" tabindex="-1">Hyperliens externes de SPC</h4>
+<ul>
+<li><a href="/gc-da11yn.github.io/fr/exigences-en-matiere-de-technologies-de-linformation-et-des-communications-tic-accessibles/">Exigences d’accessibilité des TIC de SPC (fondées sur la norme EN 301 549 (2021))</a></li>
+</ul>
+<h4 id="autres-hyperliens-sur-laccessibilite-internationale" tabindex="-1">Autres hyperliens sur l’accessibilité internationale</h4>
+<ul>
+<li><a href="https://www.etsi.org/deliver/etsi_en/301500_301599/301549/02.01.02_60/en_301549v020102p.pdf">EN 301 549 V3.2.1 (2021-03) Norme européenne harmonisée – Exigences en matière d’accessibilité applicables aux produits et services liés aux TIC<small> (en anglais seulement)</small></a></li>
+<li><a href="https://www.un.org/development/desa/disabilities/convention-on-the-rights-of-persons-with-disabilities.html">Convention relative aux droits des personnes en situation de handicap des Nations Unies<small> (en anglais seulement)</small></a></li>
+</ul>
+<h4 id="gouvernement-du-canada" tabindex="-1">Gouvernement du Canada</h4>
+<h5 id="legislation" tabindex="-1">Législation</h5>
+<ul>
+<li><a href="https://www.laws-lois.justice.gc.ca/fra/lois/a-0.6/page-1.html"><em>Loi canadienne sur l’accessibilité (justice.gc.ca)</em></a></li>
+<li><a href="https://laws-lois.justice.gc.ca/fra/const/page-12.html">Charte canadienne des droits et libertés</a></li>
+<li><a href="https://laws-lois.justice.gc.ca/fra/lois/h-6/"><em>Loi canadienne sur les droits de la personne</em></a></li>
+<li><a href="https://laws-lois.justice.gc.ca/fra/lois/f-11/"><em>Loi sur la gestion des finances publiques</em></a></li>
+</ul>
+<h5 id="reglement" tabindex="-1">Règlement</h5>
+<ul>
+<li><a href="https://laws-lois.justice.gc.ca/fra/reglements/DORS-2021-241/TexteComplet.html">Règlement canadien sur l’accessibilité (DORS/2021/241)</a></li>
+</ul>
+<h5 id="instruments-de-politique-connexes" tabindex="-1">Instruments de politique connexes</h5>
+<ul>
+<li><a href="https://www.tbs-sct.canada.ca/pol/doc-fra.aspx?id=32603">Politique sur les services et le numérique</a></li>
+<li><a href="https://www.tbs-sct.canada.ca/pol/doc-fra.aspx?id=32601">Directive sur les services et le numérique</a></li>
+<li><a href="https://www.tbs-sct.canada.ca/pol/doc-fra.aspx?id=32593">Politique sur la planification et la gestion des investissements</a></li>
+<li><a href="https://www.tbs-sct.canada.ca/pol/doc-fra.aspx?id=30683">Politique sur les communications et l’image de marque</a></li>
+<li><a href="https://www.tbs-sct.canada.ca/pol/doc-fra.aspx?id=25049">Code de valeurs et d’éthique du secteur public</a></li>
+<li><a href="https://www.tbs-sct.canada.ca/pol/doc-fra.aspx?id=32692">Directive sur la gestion de l’approvisionnement</a></li>
+<li><a href="https://achatsetventes.gc.ca/politiques-et-lignes-directrices/le-guide-des-ccua-est-sur-achatscanada">Clauses et conditions uniformisées d’achat</a></li>
+</ul>
+<h5 id="orientation" tabindex="-1">Orientation</h5>
+<ul>
+<li><a href="https://www.canada.ca/fr/emploi-developpement-social/programmes/canada-accessible/sommaire-reglements-loi/modification.html">Résumé des modifications apportées au Règlement canadien sur l’accessibilité concernant l’accessibilité numérique – Canada.ca</a></li>
+<li><a href="https://www.canada.ca/fr/emploi-developpement-social/programmes/directives-reglements-canadien-accessibilite/technologies-numeriques-phase-1.html">Aperçu des lignes directrices des modifications règlementaires : Technologies numériques - Phase 1 – Canada.ca</a></li>
+<li><a href="https://www.canada.ca/fr/gouvernement/systeme/gouvernement-numerique/politiques-normes/annonces-politique-services-numerique/orientations-relatives-accessibilite-technologies-information-communications-vers-mise-en-oeuvre-reglementaire.html">Direction relative à l’accessibilité des technologies de l’information et des communications</a></li>
+<li><a href="https://www.canada.ca/fr/gouvernement/fonctionpublique/mieux-etre-inclusion-diversite-fonction-publique/diversite-equite-matiere-emploi/accessibilite-fonction-publique/strategie-accessibilite-fonction-publique-tdm.html">Rien sans nous : Stratégie sur l’accessibilité au sein de la fonction publique du Canada</a></li>
+<li><a href="https://www.canada.ca/fr/gouvernement/systeme/gouvernement-numerique/normes-numeriques-gouvernement-canada.html">Directives sur les normes relatives au numérique du gouvernement du Canada</a></li>
+</ul>
+<h2 id="definitions" tabindex="-1">Définitions</h2>
+<p>En plus des définitions ci-dessous, vous trouverez des définitions utiles à la compréhension du présent guide à l’annexe C de la <a href="https://www.tbs-sct.canada.ca/pol/doc-fra.aspx?id=32593">Politique sur la planification et la gestion des investissements</a>.</p>
+<dl>
+  <dt>Accessibilité</dt>
+  <dd>
+    <blockquote>
+      <p>signifie « degré selon lequel des produits, des systèmes, des services, des environnements et des installations peuvent être utilisés par des personnes issues d’une population ayant le plus large éventail possible de besoins, de caractéristiques et de capacités dans des contextes d’utilisation identifiés (de l’ISO 9241-11:2018 [i.15]).
+    </blockquote>
+    <div class="bg-light p-200">
+      <p><strong>Remarque 1 :</strong> Le contexte d’utilisation comprend l’utilisation directe et l’utilisation assistée par des technologies d’assistance.</p>
+      <p><strong>Remarque 2 :</strong> Le contexte dans lequel la TIC est utilisée peut affecter son accessibilité générale. Ce contexte pourrait inclure d’autres produits et services avec lesquels la TIC peut interagir.»<sup id="fn1-rf"><a href="#fn1"><span class="visibility-sr-only">Note de bas de page </span>1</a></sup>.</p>
+    </div>
+  </dd>
+  <dt>Rapports de conformité de l’accessibilité ou RCA</dt>
+  <dd>rapport non expurgé produit par un tiers ou par le spécialiste de l’accessibilité du fournisseur, qui est fondé sur le Modèle volontaire d’accessibilité des produits (VPAT<sup>®</sup>) ou un format comparable, et détaille les résultats des tests de la solution de TIC par rapport aux articles de la norme d’accessibilité indiquée dans les documents de demande de soumissions ou, si aucune norme d’accessibilité n’est précisée, de la norme EN 301 549<sup id="fn2-rf"><a href="#fn2"><span class="visibility-sr-only">Note de bas de page </span>2</a></sup>.</dd>
+  <dt>Tests de conformité de l’accessibilité</dt>
+  <dd>signifie evaluation d’un produit ou d’un service par rapport aux exigences d’une norme, d’une ligne directrice ou d’une spécification donnée.</dd>
+  <dt>Utilisateur final</dt>
+  <dd>signifie le dernier utilisateur d’un produit fini (bien ou service)<sup id="fn3-rf"><a href="#fn3"><span class="visibility-sr-only">Note de bas de page </span>3</a></sup>.</dd>
+  <dt>Utilisabilité / tests d’utilisateur / tests d’utilisateur inclusifs à l’égard des personnes en situation de handicap</dt>
+  <dd>
+    <p>signifie le processus qui consiste à effectuer des tests d’utilisabilité auprès des personnes en situation de handicap. Cette étape est une partie importante du processus de conception de l’expérience utilisateur. Elle permet de s’assurer qu’un produit ou un système </p>:
+    <ul>
+      <li>est accessible et facile à utiliser pour tous les utilisateurs, y compris les personnes en situation de handicap;</li>
+      <li>est conçu pour être inclusif et n’exclut pas, sans faire exprès, les personnes en situation de handicap.</li>
+    </ul>
+    <p>Dans ces tests, il est important de :</p>
+    <ul>
+      <li>recruter des participants présentant une grande variété de handicaps, telles que des handicaps visuels, auditifs, moteurs et cognitifs;</li>
+      <li>veiller à ce que l’environnement et le matériel de test soient accessibles. Cela comprend les logiciels, le matériel et toute technologie d’assistance dont les participants en situation de handicap peuvent avoir besoin.</li>
+    </ul>
+    <p>Les perspectives fournies par les tests d’utilisateurs inclusifs à l’égard des personnes en situation de handicap peuvent montrer aux concepteurs et aux développeurs les aspects de leur produit ou système qui peuvent être difficiles à utiliser ou inaccessibles. Ils peuvent alors utiliser ces renseignements pour le rendre inclusif et accessible à tous les utilisateurs.</p>
+  </dd>
+  <dt>Technologie de l’information et des communications (TIC)</dt>
+  <dd>
+    signifie la « technologie, équipement ou encore système ou sous-système d’équipement interconnecté dont la principale fonction est la création, la conversion, la duplication, l’acquisition automatique, le stockage, l’analyse, l’évaluation, la manipulation, la gestion, le déplacement, le contrôle, l’affichage, la commutation, l’échange, la transmission, la réception ou la diffusion de données ou d’informations. »
+    <div class="bg-light p-200">
+      <strong>NOTE :</strong> Des exemples de TIC sont les pages Web, le contenu électronique, les produits de télécommunication, les ordinateurs et équipements auxiliaires, les logiciels, y compris les applications mobiles, les guichets d’information et machines de transaction, les vidéos, les services informatiques et les machines bureautiques multifonctions qui photocopient, numérisent et télécopient des documents.<sup id="fn4-rf"><a href="#fn4"><span class="visibility-sr-only">Note de bas de page </span>4</a></sup>
+    </div>
+  </dd>
+</dl>
+<h2 id="quels-renseignements-un-rapport-de-conformite-de-laccessibilite-rca-devrait-il-contenir" tabindex="-1">Quels renseignements un rapport de conformité de l’accessibilité (RCA) devrait-il contenir?</h2>
+<p>Nous recommandons aux fournisseurs d’utiliser le modèle industriel créé par l’Information Technology Industry Council (ITI). Le « Voluntary Product Accessibility Template » (modèle volontaire d’accessibilité des produits) et le « VPAT » sont des marques de service déposées de l’Information Technology Industry Council (ITI). Pour de plus amples renseignements, veuillez consulter le <a href="https://www.itic.org/policy/accessibility">site Web de l’ITI<small> (en anglais seulement)</small></a>.</p>
+<p>Voici certains des renseignements qui devraient être inclus lors de l’utilisation d’un support de remplacement. Cette liste n’est pas exhaustive et ne devrait pas être considérée comme la seule source d’information à fournir dans un bon RCA. Le RCA devrait :</p>
+<ul>
+<li>être dans un format accessible;</li>
+<li>déclarer la conformité à la norme d’accessibilité des TIC ou à la ligne directrice précisée dans la demande de soumissions;</li>
+<li>indiquer clairement quand le rapport a été créé;</li>
+<li>fournir les coordonnées de la personne qui a créé le rapport;</li>
+<li>indiquer ce qui a été testé, y compris la version du produit, confirmer que la solution complète a été testée ou révéler quelle méthodologie d’échantillonnage a été utilisée pour déterminer la taille de l’échantillon;</li>
+<li>expliquer le type de tests et d’outils utilisés pour tester par rapport à la norme ou à la ligne directrice sur l’accessibilité des TIC;</li>
+<li>fournir une liste de l’ensemble des exigences de la norme ou des lignes directrices, consigner le niveau de conformité approprié pour chaque élément, en expliquant où se trouvent les non-conformités;</li>
+<li>fournir tout renseignement supplémentaire nécessaire pour donner un contexte et permettre au RCA de communiquer clairement son niveau de conformité.</li>
+</ul>
+<p>Si les utilisateurs n’utilisent pas le modèle de l’industrie, nous vous recommandons de faire des recherches supplémentaires pour comprendre ce qui constitue un RCA de bonne qualité et quels renseignements vous devez fournir au sujet de la conformité de votre solution en matière d’accessibilité.</p>
+<aside role="note">
+	<h2 id="fn">Notes de bas de page</h2>
+	<dl>
+		<dt>Note de bas de page 1</dt>
+		<dd id="fn1">
+			<p>Copié de la norme EN 301 549 V3.2.1 (2021-03), 3 Définition des termes, symboles et abréviations, page 15</p>
+			<p><a href="#fn1-rf"><span class="visibility-sr-only">Retour à la référence de la note de bas de page </span>1</a></p>
+		</dd>
+		<dt>Note de bas de page 2</dt>
+		<dd id="fn2">
+			<p>Copié du site Web de l’Information Technology Industry Council (ITI) <a href="https://www.i<small> (en anglais seulement)</small>tic.org/policy/accessibility/vpat">VPAT<sup>®</sup> – Information Technology Industry Council (itic.org)</a>.</p>
+			<p><a href="#fn2-rf"><span class="visibility-sr-only">Retour à la <span>première</span> référence de la note de bas de page </span>2</a></p>
+		</dd>
+		<dt>Note de bas de page 3</dt>
+		<dd id="fn3">
+			<p>Traduction en français de la <a href="https://www.merriam-webster.com/dictionary/end%20user">définition en anglais d’utilisateur final dans le Merriam-Webster<small> (en anglais seulement)</small></a>.</p>
+			<p><a href="#fn3-rf"><span class="visibility-sr-only">Retour à la référence de la note de bas de page </span>3</a></p>
+		</dd>
+		<dt>Note de bas de page 4</dt>
+		<dd id="fn4">
+			<p>Copié de la norme EN 301 549 V3.2.1 (2021-03), 3 Définition des termes, symboles et abréviations, page 17</p>
+			<p><a href="#fn4-rf"><span class="visibility-sr-only">Retour à la <span>première</span> référence de la note de bas de page </span>4</a></p>
+		</dd>
+	</dl>
+</aside>
+
+				</div>
+				
+			</gcds-container>
+
+			
+<gcds-container tag="section" layout="page" class="pagedetails">
+  <h2 class="visibility-sr-only">Détails de la page</h2>
+  <gcds-date-modified>2026-10-09</gcds-date-modified>
+</gcds-container>
+
+
+		
+		</main>
+
+		
+
+<aside>
+  
+<gcds-container layout="page" padding="300" class="page-list-link">
+  <h3 class="mt-0 mb-200">
+    Vous ne trouvez toujours pas ce dont vous avez besoin?
+  </h3>
+  <span>
+    <gcds-icon name="search" margin-right="100"></gcds-icon>
+    Consultez notre
+    <a href="/gc-da11yn.github.io/fr/liste-des-pages/">liste complète des pages</a>.
+  </span>
+</gcds-container>
+
+
+ <gcds-container layout="page" padding="300" class="contribute">
+   <gcds-grid columns="1fr" columns-tablet="5fr 7fr" gap="300">
+     <div>
+       <h2 class="mt-0 mb-0 text-light">
+         <i class="fab fa-github fa-fw" aria-hidden="true"></i>
+         Contribuez à ce projet
+       </h2>
+       <p class="contribute-subtitle">sur Github.com</p>
+     </div>
+
+     <div>
+		<ul class="contribute-links d-flex flex-wrap gap-300 list-none p-0 mt-0 mb-200">
+         <li class="d-flex align-items-center gap-100">
+           <i class="fas fa-code fa-fw" aria-hidden="true"></i>
+           <a class="link-light" href="https://github.com/gc-da11yn/gc-da11yn.github.io">Code source</a>
+         </li>
+         <li class="d-flex align-items-center gap-100">
+           <gcds-icon name="exclamation-circle"></gcds-icon>
+           <a class="link-light" href="https://github.com/gc-da11yn/gc-da11yn.github.io/issues/">Problèmes</a>
+         </li>
+         <li class="d-flex align-items-center gap-100">
+           <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+           <a class="link-light" href="https://github.com/gc-da11yn/gc-da11yn.github.io/discussions">Discussions</a>
+         </li>
+       </ul>
+       <span>
+         <gcds-icon name="email" margin-right="100"></gcds-icon>
+         <a href="mailto:digitala11ytoolkit-boitedoutila11enumerique@ssc-spc.gc.ca?subject=Contribuer%20%C3%A0%20la%20Bo%C3%AEte%20%C3%A0%20outils%20de%20l&#39;accessibilit%C3%A9%20num%C3%A9rique">Contactez la Boîte à outils de l&#39;accessibilité numérique par courriel</a>
+       </span>
+     </div>
+   </gcds-grid>
+
+   
+ </gcds-container>
+</aside>
+
+
+		<gcds-footer
+  id="footer"
+  display="full"
+  lang="fr"
+  sub-links='{ "Médias sociaux": "https://www.canada.ca/fr/sociaux.html", "Applications mobiles": "https://www.canada.ca/fr/mobile.html", "À propos de Canada.ca": "https://www.canada.ca/fr/gouvernement/a-propos.html", "Avis": "https://www.canada.ca/fr/transparence/avis.html", "Confidentialité": "https://www.canada.ca/fr/transparence/confidentialite.html" }'
+></gcds-footer>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script></body>
+
+</html>
+
+

@@ -1,0 +1,349 @@
+
+
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+
+	
+<head>
+	<meta charset="utf-8">
+
+	<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+		wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+	
+	<title>Transcript Guidelines- Digital Accessibility Toolkit</title>
+	<meta content="width=device-width,initial-scale=1" name="viewport">
+	<meta name="description" content="Guidelines on how to incorporate various aspects of audio and video into a transcript.">
+
+	
+
+	<meta name="source-file" content="./src/pages/en/transcript-guidelines.md">
+
+
+	
+	
+	
+	
+		
+	
+		<link rel="alternate" hreflang="fr" href="/gc-da11yn.github.io/fr/directives-pour-la-transcription/index.html" />
+	
+
+
+	<link href="https://www.canada.ca/etc/designs/canada/wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+
+	<!-- GC Design System CSS Shortcuts -->
+	<link
+	  rel="stylesheet"
+	  href="https://cdn.design-system.canada.ca/@gcds-core/css-shortcuts@1.2.0/dist/gcds-css-shortcuts.min.css"
+	/>
+
+	<!-- GC Design System -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.design-system.canada.ca/@gcds-core/components@1.6.0/dist/gcds/gcds.css"
+    />
+
+	<!-- Site styles: after GCDS so they can build on it -->
+	<link rel="stylesheet" href="/gc-da11yn.github.io/css/da11yn.css"><script>
+      (function () {
+        var key = "basicHtml";
+        var match = location.search.match(/[?&]wbdisable=(true|false)/);
+        var basic = !!match && match[1] === "true";
+        try {
+          if (match) {
+            if (basic) { localStorage.setItem(key, "1"); } else { localStorage.removeItem(key); }
+          }
+          basic = localStorage.getItem(key) === "1";
+        } catch (e) {}
+        document.documentElement.classList.add(basic ? "basic-html" : "standard-html");
+        if (!basic) {
+          var gcds = document.createElement("script");
+          gcds.type = "module";
+          gcds.src = "https://cdn.design-system.canada.ca/@gcds-core/components@1.6.0/dist/gcds/gcds.esm.js";
+          document.head.appendChild(gcds);
+        }
+      })();
+    </script>
+
+	<!-- Meta tags -->
+
+	<meta name="author" content="Government of Canada" />
+	<meta name="dcterms.title" content="Transcript Guidelines" />
+	<meta name="dcterms.description" content="Guidelines on how to incorporate various aspects of audio and video into a transcript." />
+	<meta name="dcterms.creator" content="Government of Canada">
+	<meta name="dcterms.language" content="en" />
+	<meta name="dcterms.created" content="2023-08-01">
+	<meta name="dcterms.modified" content="2025-09-19" >
+	<meta name="dcterms.subject" content="How-tos;Create web content; " />
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SM9MSHWDVN"></script>
+	<script>
+		(function (w) {
+			"use strict";
+			if (w.location.hostname === "a11y.canada.ca") {
+				w.dataLayer = w.dataLayer || [];
+				w.gtag = function () {
+					w.dataLayer.push(arguments);
+				};
+				w.gtag('js', new Date());
+				w.gtag('config', 'G-SM9MSHWDVN');
+			}
+		})(window);
+	</script>
+</head>
+
+
+	<body vocab="http://schema.org/" typeof="WebPage">
+
+		
+
+<header>
+	<gcds-header lang="en" lang-href="" skip-to-href="#main">
+				<nav slot="skip-to-nav" label="Skip to">
+			<a href="#main">Skip to main content</a>
+			<a href="#footer">Skip to &quot;About government&quot;</a>
+			<a class="skip-to-basic" href="?wbdisable=true">Switch to basic HTML version</a>
+			<a class="skip-to-standard" href="?wbdisable=false">Switch to standard version</a>
+		</nav>
+
+	    
+
+
+
+
+	
+
+
+  <gcds-lang-toggle slot="toggle" href="/gc-da11yn.github.io/fr/directives-pour-la-transcription/">
+  </gcds-lang-toggle>
+
+
+
+		<gcds-search search-id="search" slot="search" action="https://canada.ca/en/sr/srb.html"
+			method="get"
+		 	action=""
+		 	name="cse-search-box"
+		 	data-placeholder-long="Canada.ca"
+		 	data-placeholder-short="Canada.ca"
+		 	placeholder="Canada.ca">
+        </gcds-search>
+        <gcds-topic-menu slot="menu"></gcds-topic-menu>
+
+        
+
+<gcds-breadcrumbs slot="breadcrumb">
+		<!-- First breadcrumb: Canada.ca - already set by default on GcdsHeader -->
+		<!-- Second breadcrumb: Locale-based home link -->
+		
+		
+			<gcds-breadcrumbs-item href="/gc-da11yn.github.io/en/">Digital Accessibility Toolkit</gcds-breadcrumbs-item>
+		
+
+		<!-- Additional breadcrumbs based on tags and subjects -->
+		
+			 
+
+			<!-- Special handling for role-based pages -->
+			
+				<!-- Existing breadcrumbs logic for non-role pages -->
+				<!-- Breadcrumbs based on 'subject' -->
+				
+					
+						<gcds-breadcrumbs-item href="/gc-da11yn.github.io/en/how-tos">
+							How-tos
+						</gcds-breadcrumbs-item>
+						
+					
+				
+
+				<!-- Breadcrumbs based on 'tags' -->
+				
+					
+						
+							<gcds-breadcrumbs-item href="/gc-da11yn.github.io/en/create-web-content">
+								Create web content
+							</gcds-breadcrumbs-item>
+							
+						
+					
+				
+			
+		
+      </gcds-breadcrumbs>
+
+
+	</gcds-header>
+</header>
+
+
+
+		<main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement" id="main">
+
+		
+			<gcds-container layout="full" class="banner">
+			  <gcds-container layout="page" padding="200">
+				<gcds-grid columns="1fr" columns-desktop="4fr 1fr" class="py-150">
+				  <div class="banner__box">
+					<h1 class="mt-0 mb-300 text-light" property="name">Transcript Guidelines
+					</h1>
+					
+					<p>Guidelines on how to incorporate various aspects of audio and video into a transcript.</p>
+					</div>
+				</gcds-grid>
+			  </gcds-container>
+			</gcds-container>
+
+			
+
+
+
+
+<gcds-container layout="page" padding="300">
+				
+
+				
+
+				
+
+				<div class="page-content">
+				<h2 id="guidelines-checklists-and-samples" tabindex="-1">Guidelines, Checklists, and Samples</h2>
+<p>This section contains the guidelines, checklists and examples for each of the factors, transcripts, captions, audio description and keyboard accessibility.</p>
+<p><a href="https://webaim.org/techniques/captions/">WebAIM: Caption vs transcript vs audio description</a></p>
+<h2 id="transcript-guidelines-how-to" tabindex="-1">Transcript Guidelines (how to)</h2>
+<p>Guidelines on how to incorporate various aspects of audio and video into a transcript.</p>
+<h3 id="multiple-speakers" tabindex="-1">Multiple speakers</h3>
+<p>It’s best to use the speakers’ full name the first time, and then only their first names. Every time there is a change in speaker, the speaker’s name needs to be added to the transcript.</p>
+<ul>
+<li>Male Voice:
+<ul>
+<li>John Smith</li>
+<li>(then) John</li>
+</ul>
+</li>
+<li>Female Voice:</li>
+<li>Interviewer:</li>
+<li>Respondent:</li>
+<li>Narrator:</li>
+<li>Facilitator: (For focus groups):</li>
+</ul>
+<h3 id="important-sounds-actions-description" tabindex="-1">Important sounds, actions, description</h3>
+<p>Use brackets [ ] for:</p>
+<ul>
+<li>Relevant information about the speech</li>
+</ul>
+<p><strong>Joe</strong> [shouted]<strong>:</strong> I hate this mug!</p>
+<ul>
+<li>Relevant non-speech audio (sound, action and description)</li>
+</ul>
+<p>[Music]</p>
+<p>[Mug shattering on the floor]</p>
+<h3 id="text-on-screen" tabindex="-1">Text on screen</h3>
+<p>For text that is shown in the video, it needs to be included in the transcript.</p>
+<p><strong>Exception:</strong> if the speaker speaks all that is written in the video then we do not need to add what was written a second time to the transcript. Adding the redundant text would add extra words, interrupt the flow of the content, and make it confusing to the user.</p>
+<ul>
+<li>Add headings and links where it will make the transcript more usable. If the text on the screen is a considered a heading (sub-title) then structure the text as a heading within the transcript, based on the layout of the web page (h2, h3, etc.)</li>
+<li>When announcing text which appears on the screen, use brackets and the leading text “text on screen”.
+<ul>
+<li>[Text on screen: Gina Wilson, former Deputy Minister for Women and Gender Equality]</li>
+</ul>
+</li>
+<li>Text in a list in the video needs to be styled as a list in the transcript unless it is omitted for redundancy reasons.</li>
+</ul>
+<h3 id="headings" tabindex="-1">Headings</h3>
+<p>Use headings to make the transcript clearer and more usable. If you create your transcript in a Word document, then keep the headings logical. The person who codes the headings will apply the correct headings based on the layout of the document and the structure of the web page.</p>
+<p><img src="/gc-da11yn.github.io/img/en/transcript-guidelines-1.png" alt="Screenshot of the Styles panel in Word with Headings 2, 3, 4, 5 and 6 highlighted." loading="lazy"></p>
+<h3 id="links" tabindex="-1">Links</h3>
+<p>If a link is mentioned in the video or is in the text, then it needs to be a usable link in the transcript. The link should not display the actual URL, but the link should display a more descriptive text.</p>
+<h3 id="references" tabindex="-1">References</h3>
+<p>If there is a reference (citation) we need to add a leading word “source:” to provide context.</p>
+<h3 id="dashes-vs-to" tabindex="-1">Dashes vs to</h3>
+<p>When writing text, the concept of “to something” should be written as “to” and not with a dash (–).</p>
+<dl>
+<dt>Correct:</dt>
+<dl>April 5 to April 10</dl>
+<dt>Incorrect:</dt>
+<dl>April 5 – April 10</dl>
+</dl>
+
+				</div>
+				
+			</gcds-container>
+
+			
+<gcds-container tag="section" layout="page" class="pagedetails">
+  <h2 class="visibility-sr-only">Page details</h2>
+  <gcds-date-modified>2025-09-19</gcds-date-modified>
+</gcds-container>
+
+
+		
+		</main>
+
+		
+
+<aside>
+  
+<gcds-container layout="page" padding="300" class="page-list-link">
+  <h3 class="mt-0 mb-200">
+    Still can&#39;t find what you need?
+  </h3>
+  <span>
+    <gcds-icon name="search" margin-right="100"></gcds-icon>
+    See our
+    <a href="/gc-da11yn.github.io/en/page-list/">complete list of pages</a>.
+  </span>
+</gcds-container>
+
+
+ <gcds-container layout="page" padding="300" class="contribute">
+   <gcds-grid columns="1fr" columns-tablet="5fr 7fr" gap="300">
+     <div>
+       <h2 class="mt-0 mb-0 text-light">
+         <i class="fab fa-github fa-fw" aria-hidden="true"></i>
+         Contribute to this project
+       </h2>
+       <p class="contribute-subtitle">on Github.com</p>
+     </div>
+
+     <div>
+		<ul class="contribute-links d-flex flex-wrap gap-300 list-none p-0 mt-0 mb-200">
+         <li class="d-flex align-items-center gap-100">
+           <i class="fas fa-code fa-fw" aria-hidden="true"></i>
+           <a class="link-light" href="https://github.com/gc-da11yn/gc-da11yn.github.io">Source code</a>
+         </li>
+         <li class="d-flex align-items-center gap-100">
+           <gcds-icon name="exclamation-circle"></gcds-icon>
+           <a class="link-light" href="https://github.com/gc-da11yn/gc-da11yn.github.io/issues/">Issues</a>
+         </li>
+         <li class="d-flex align-items-center gap-100">
+           <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+           <a class="link-light" href="https://github.com/gc-da11yn/gc-da11yn.github.io/discussions">Discussions</a>
+         </li>
+       </ul>
+       <span>
+         <gcds-icon name="email" margin-right="100"></gcds-icon>
+         <a href="mailto:digitala11ytoolkit-boitedoutila11enumerique@ssc-spc.gc.ca?subject=Contribute%20to%20the%20Digital%20Accessibility%20Toolkit">Reach the Digital Accessibility Toolkit by email</a>
+       </span>
+     </div>
+   </gcds-grid>
+
+   
+ </gcds-container>
+</aside>
+
+
+		<gcds-footer
+  id="footer"
+  display="full"
+  lang="en"
+  sub-links='{ "Social media": "https://www.canada.ca/en/social.html", "Mobile applications": "https://www.canada.ca/en/mobile.html", "About Canada.ca": "https://www.canada.ca/en/government/about.html", "Terms and conditions": "https://www.canada.ca/en/transparency/terms.html", "Privacy": "https://www.canada.ca/en/transparency/privacy.html" }'
+></gcds-footer>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script></body>
+
+</html>
+
+
