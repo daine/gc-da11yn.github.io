@@ -1057,11 +1057,6 @@
 	</url>
 	
 	<url>
-		<loc>https://a11y.canada.ca/gc-da11yn.github.io/404.html</loc>
-		<lastmod>2026-10-09</lastmod>
-	</url>
-	
-	<url>
 		<loc>https://a11y.canada.ca/gc-da11yn.github.io/en/about-us/</loc>
 		<lastmod>2026-10-09</lastmod>
 	</url>
@@ -1664,5 +1659,10 @@
 	<url>
 		<loc>https://a11y.canada.ca/gc-da11yn.github.io/fr/pages-a-reviser/</loc>
 		<lastmod>2026-10-10</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://a11y.canada.ca/gc-da11yn.github.io/404.html</loc>
+		<lastmod>2026-10-15</lastmod>
 	</url>
 </urlset>
