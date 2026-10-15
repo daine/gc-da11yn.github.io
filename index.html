@@ -100,8 +100,8 @@
 			</div>
 		</main><script>
 			(function () {
-				var imgs = document.querySelectorAll("#bg img");
-				var pick = Math.floor(Math.random() * imgs.length);
+				const imgs = document.querySelectorAll("#bg img");
+				const pick = Math.floor(Math.random() * imgs.length);
 				imgs[0].classList.add("hide");
 				imgs[pick].classList.remove("hide");
 			})();
