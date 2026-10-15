@@ -1032,11 +1032,6 @@
 	</url>
 	
 	<url>
-		<loc>https://a11y.canada.ca/gc-da11yn.github.io/</loc>
-		<lastmod>2026-10-07</lastmod>
-	</url>
-	
-	<url>
 		<loc>https://a11y.canada.ca/gc-da11yn.github.io/en/page-list/</loc>
 		<lastmod>2026-10-08</lastmod>
 	</url>
@@ -1663,6 +1658,11 @@
 	
 	<url>
 		<loc>https://a11y.canada.ca/gc-da11yn.github.io/404.html</loc>
+		<lastmod>2026-10-15</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://a11y.canada.ca/gc-da11yn.github.io/</loc>
 		<lastmod>2026-10-15</lastmod>
 	</url>
 </urlset>
