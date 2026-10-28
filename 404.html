@@ -28,58 +28,59 @@
 		<link rel="stylesheet" href="/gc-da11yn.github.io/css/da11yn.css" />
 	</head>
 
-	<body>
-		<header>
-			<gcds-container layout="page" class="px-300 pt-300" tag="div">
+	<body class="m-0 d-flex flex-col error-body">
+		<header class="pt-400 pb-0">
+			<gcds-container layout="page" tag="div">
 				<gcds-signature type="signature" variant="colour" has-link="true" lang="en"></gcds-signature>
 			</gcds-container>
 		</header>
 
-		<main>
-			<gcds-container layout="page" class="px-300" tag="div">
+		<main class="py-400">
+			<gcds-container layout="page" tag="div">
 				<h1 class="visibility-sr-only">Page not found (404) / <span lang='fr'>Page non trouvée (404)</span></h1>
 
-				<gcds-grid columns="1fr" columns-desktop="1fr 1fr" gap="500">
+				<gcds-grid columns="1fr" columns-desktop="1fr 1fr" gap="450" gap-desktop="600" tag="div">
 
-					<section id="english"><p class="lg:d-none mt-300 mb-0" lang="fr"><a href="#francais">Aller à la version française</a></p>
-						<h2 class="font-size-h1 mt-300 mb-300">Page not found</h2>
-						<p class="error-tag mb-300">404 error</p>
-						<p class="mb-300">The page you’re looking for may have been moved or deleted. Check that the web address (URL) is spelled correctly. Do not include special characters or spaces in the URL.</p>
-						<p class="mb-200">You may be looking for:</p>
-						<ul class="list-disc ps-500 mb-400">
-							<li class="mb-100"><a href="https://www.canada.ca/en.html">Canada.ca home page</a></li>
-							<li class="mb-100"><a href="https://www.canada.ca/en/services.html">Government of Canada services</a></li>
-							<li class="mb-100"><a href="https://www.canada.ca/en/contact.html">Contact the Government of Canada</a></li>
-							<li class="mb-100"><a href="/gc-da11yn.github.io/en/">Digital Accessibility Toolkit (<abbr>DAT</abbr>) home page</a></li>
-							<li class="mb-100"><a href="/gc-da11yn.github.io/en/page-list/">List of all our pages</a></li>
-							<li class="mb-100"><a href="/gc-da11yn.github.io/en/contact-us/">Contact the Digital Accessibility Toolkit</a></li>
+					<section id="english">
+						<a class="d-inline-block mb-300 lg:d-none" href="#francais" lang="fr">Aller à la version française</a>
+						<h2 class="mt-0">Page not found</h2>
+						<p class="error-tag">404 error</p>
+						<p>The page you’re looking for may have been moved or deleted. Check that the web address (URL) is spelled correctly. Do not include special characters or spaces in the URL.</p>
+						<p>You may be looking for:</p>
+						<ul class="list-disc mb-400">
+							<li class="mb-150"><a href="https://www.canada.ca/en.html">Canada.ca home page</a></li>
+							<li class="mb-150"><a href="https://www.canada.ca/en/services.html">Government of Canada services</a></li>
+							<li class="mb-150"><a href="https://www.canada.ca/en/contact.html">Contact the Government of Canada</a></li>
+							<li class="mb-150"><a href="/gc-da11yn.github.io/en/">Digital Accessibility Toolkit (<abbr>DAT</abbr>) home page</a></li>
+							<li class="mb-150"><a href="/gc-da11yn.github.io/en/page-list/">List of all our pages</a></li>
+							<li class="mb-150"><a href="/gc-da11yn.github.io/en/contact-us/">Contact the Digital Accessibility Toolkit</a></li>
 						</ul>
-						<gcds-search class="d-block container-xs" search-id="search-en" lang="en" action="https://www.canada.ca/en/sr/srb.html" placeholder="Canada.ca"></gcds-search>
+						<gcds-search search-id="search-en" lang="en" action="https://www.canada.ca/en/sr/srb.html" placeholder="Canada.ca"></gcds-search>
 					</section>
 
 					<section id="francais" lang="fr">
-						<p class="lg:d-none mt-300 mb-0" lang="en"><a href="#english">Go to the English version</a></p>
-						<h2 class="font-size-h1 mt-300 mb-300">Page non trouvée</h2>
-						<p class="error-tag mb-300">Erreur 404</p>
-						<p class="mb-300">La page que vous souhaitez consulter a peut-être été déplacée ou supprimée. Assurez-vous que l’adresse Web (URL) est exacte. N’incluez pas de caractères spéciaux ni d’espaces dans l’URL.</p>
-						<p class="mb-200">Vous cherchez peut-être l’une des pages suivantes :</p>
-						<ul class="list-disc ps-500 mb-400">
-							<li class="mb-100"><a href="https://www.canada.ca/fr.html">Page d’accueil de Canada.ca</a></li>
-							<li class="mb-100"><a href="https://www.canada.ca/fr/services.html">Services du gouvernement du Canada</a></li>
-							<li class="mb-100"><a href="https://www.canada.ca/fr/contact.html">Coordonnées du gouvernement du Canada</a></li>
-							<li class="mb-100"><a href="/gc-da11yn.github.io/fr/">Page d’accueil de la Boîte à outils de l’accessibilité numérique</a></li>
-							<li class="mb-100"><a href="/gc-da11yn.github.io/fr/liste-des-pages/">Liste de toutes nos pages</a></li>
-							<li class="mb-100"><a href="/gc-da11yn.github.io/fr/contactez-nous/">Contacter la Boîte à outils de l’accessibilité numérique</a></li>
+						<a class="d-inline-block mb-300 lg:d-none" href="#english" lang="en">Go to the English version</a>
+						<h2 class="mt-0">Page non trouvée</h2>
+						<p class="error-tag">Erreur 404</p>
+						<p>La page que vous souhaitez consulter a peut-être été déplacée ou supprimée. Assurez-vous que l’adresse Web (URL) est exacte. N’incluez pas de caractères spéciaux ni d’espaces dans l’URL.</p>
+						<p>Vous cherchez peut-être l’une des pages suivantes :</p>
+						<ul class="list-disc mb-400">
+							<li class="mb-150"><a href="https://www.canada.ca/fr.html">Page d’accueil de Canada.ca</a></li>
+							<li class="mb-150"><a href="https://www.canada.ca/fr/services.html">Services du gouvernement du Canada</a></li>
+							<li class="mb-150"><a href="https://www.canada.ca/fr/contact.html">Coordonnées du gouvernement du Canada</a></li>
+							<li class="mb-150"><a href="/gc-da11yn.github.io/fr/">Page d’accueil de la Boîte à outils de l’accessibilité numérique</a></li>
+							<li class="mb-150"><a href="/gc-da11yn.github.io/fr/liste-des-pages/">Liste de toutes nos pages</a></li>
+							<li class="mb-150"><a href="/gc-da11yn.github.io/fr/contactez-nous/">Contacter la Boîte à outils de l’accessibilité numérique</a></li>
 						</ul>
-						<gcds-search class="d-block container-xs" search-id="search-fr" lang="fr" action="https://www.canada.ca/fr/sr/srb.html" placeholder="Canada.ca"></gcds-search>
+						<gcds-search search-id="search-fr" lang="fr" action="https://www.canada.ca/fr/sr/srb.html" placeholder="Canada.ca"></gcds-search>
 					</section>
 
 				</gcds-grid>
 			</gcds-container>
 		</main>
 
-		<footer>
-			<gcds-container layout="page" class="px-300 pt-300" tag="div">
+		<footer class="mt-auto pt-400 pb-600">
+			<gcds-container layout="page" tag="div">
 				<div class="d-flex justify-content-end">
 					<gcds-signature type="wordmark" variant="colour" lang="en"></gcds-signature>
 				</div>
