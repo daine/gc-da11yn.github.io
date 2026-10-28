@@ -280,6 +280,11 @@ p {
 }
 
 /* 404 page: "404 error" tag */
+// 404: full-height page so the wordmark footer sits at the bottom
+.error-body {
+	min-block-size: 100dvh;
+}
+
 .error-tag {
 	display: inline-block;
 	padding-block: var(--gcds-spacing-50);
