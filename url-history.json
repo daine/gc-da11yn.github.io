@@ -1,0 +1,2825 @@
+{
+  "version": 1,
+  "revision": "0bfc9d777c3317c09f933a5701b67af33363e6ac",
+  "pages": [
+    {
+      "source": "src/main/en/about-us/index.njk",
+      "locale": "en",
+      "url": "/en/about-us/",
+      "title": "About Us- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/about-us/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/en/about-us/website-usage-analytics/2024.njk",
+      "locale": "en",
+      "url": "/en/website-usage-analytics-2024/",
+      "title": "Website usage analytics - 2024- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/website-usage-analytics-2024/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/en/about-us/website-usage-analytics/data.njk",
+      "locale": "en",
+      "url": "/en/website-usage-analytics-data-view/",
+      "title": "Website usage analytics - Data view- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/website-usage-analytics-data-view/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/en/about-us/website-usage-analytics/index.njk",
+      "locale": "en",
+      "url": "/en/website-usage-analytics/",
+      "title": "Website usage analytics- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/website-usage-analytics/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/en/accessibility-fundamentals/global-accessibility-standards.njk",
+      "locale": "en",
+      "url": "/en/global-accessibility-standards/",
+      "title": "Global Accessibility Standards- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/global-accessibility-standards/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/en/accessibility-fundamentals/index.njk",
+      "locale": "en",
+      "url": "/en/accessibility-fundamentals/",
+      "title": "Accessibility Fundamentals- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/accessibility-fundamentals/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/en/accessibility-fundamentals/most-common-types-of-disability.njk",
+      "locale": "en",
+      "url": "/en/most-common-types-of-disability/",
+      "title": "Most Common Types of Disability- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/most-common-types-of-disability/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/en/accessibility-in-the-government-of-canada/accessibility-standards.njk",
+      "locale": "en",
+      "url": "/en/accessibility-standards/",
+      "title": "Accessibility standards- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/accessibility-standards/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/en/accessibility-in-the-government-of-canada/community-directory.njk",
+      "locale": "en",
+      "url": "/en/community-directory/",
+      "title": "Community Directory- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/community-directory/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/en/accessibility-in-the-government-of-canada/index.njk",
+      "locale": "en",
+      "url": "/en/digital-accessibility-in-the-government-of-canada/",
+      "title": "Digital accessibility in the Government of Canada- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/digital-accessibility-in-the-government-of-canada/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/en/accessibility-in-the-government-of-canada/procurement.njk",
+      "locale": "en",
+      "url": "/en/procurement/",
+      "title": "Procurement- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/procurement/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/en/how-tos/accessible-virtual-events.njk",
+      "locale": "en",
+      "url": "/en/accessible-virtual-events/",
+      "title": "Accessible virtual events- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/accessible-virtual-events/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/en/how-tos/create-document.njk",
+      "locale": "en",
+      "url": "/en/create-document/",
+      "title": "Create document- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/create-document/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/en/how-tos/create-forms.njk",
+      "locale": "en",
+      "url": "/en/create-forms/",
+      "title": "Create forms- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/create-forms/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/en/how-tos/create-web-content.njk",
+      "locale": "en",
+      "url": "/en/create-web-content/",
+      "title": "Create web content- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/create-web-content/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/en/how-tos/design-a-course.njk",
+      "locale": "en",
+      "url": "/en/design-a-course/",
+      "title": "Design a course- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/design-a-course/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/en/how-tos/designing-accessible-services.njk",
+      "locale": "en",
+      "url": "/en/designing-accessible-services/",
+      "title": "Designing accessible services- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/designing-accessible-services/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/en/how-tos/index.njk",
+      "locale": "en",
+      "url": "/en/how-tos/",
+      "title": "How-tos- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/how-tos/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/en/how-tos/microsoft-office/how-to-create-accessible-documents-in-microsoft-365.njk",
+      "locale": "en",
+      "url": "/en/how-to-create-accessible-documents-in-microsoft-365/",
+      "title": "How to create accessible documents in Microsoft 365- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/how-to-create-accessible-documents-in-microsoft-365/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/en/how-tos/microsoft-office/how-to-create-accessible-documents-in-office-2016.njk",
+      "locale": "en",
+      "url": "/en/how-to-create-accessible-documents-in-office-2016/",
+      "title": "How to create accessible documents in Office 2016- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/how-to-create-accessible-documents-in-office-2016/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/en/how-tos/ms-office-tip-sheets.njk",
+      "locale": "en",
+      "url": "/en/tip-sheets-for-microsoft-office/",
+      "title": "Tip sheets for Microsoft office- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/tip-sheets-for-microsoft-office/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/en/how-tos/test-your-products.njk",
+      "locale": "en",
+      "url": "/en/test-your-products/",
+      "title": "Test your products- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/test-your-products/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/en/index.njk",
+      "locale": "en",
+      "url": "/en/",
+      "title": "Digital Accessibility Toolkit",
+      "urls": [
+        "/en/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/en/page-list-table.njk",
+      "locale": "en",
+      "url": "/en/site-page-inventory/",
+      "title": "Site page inventory- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/page-list-table/",
+        "/en/site-page-inventory/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/en/page-list.njk",
+      "locale": "en",
+      "url": "/en/page-list/",
+      "title": "Page list- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/page-list/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/en/pages-to-review.njk",
+      "locale": "en",
+      "url": "/en/pages-to-review/",
+      "title": "Pages to review- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/pages-to-review/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/en/resources-and-tools/additional-resources.njk",
+      "locale": "en",
+      "url": "/en/additional-resources/",
+      "title": "Additional Resources- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/additional-resources/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/en/resources-and-tools/index.njk",
+      "locale": "en",
+      "url": "/en/resources-and-tools/",
+      "title": "Resources and Tools- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/resources-and-tools/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/en/resources-and-tools/resources.njk",
+      "locale": "en",
+      "url": "/en/resources/",
+      "title": "Resources- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/resources/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/en/resources-and-tools/tools.njk",
+      "locale": "en",
+      "url": "/en/tools/",
+      "title": "Tools- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/tools/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/en/roles/index.njk",
+      "locale": "en",
+      "url": "/en/roles/",
+      "title": "Accessibility in your role- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/roles/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/fr/a-propos-de-nous/analytique-de-lutilisation-du-site-web/2024.njk",
+      "locale": "fr",
+      "url": "/fr/analytique-de-lutilisation-du-site-web-2024/",
+      "title": "Analytique de l'utilisation du site web - 2024- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/analytique-de-lutilisation-du-site-web-2024/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/fr/a-propos-de-nous/analytique-de-lutilisation-du-site-web/data.njk",
+      "locale": "fr",
+      "url": "/fr/analytique-de-lutilisation-du-site-web-visualisation-des-donnees/",
+      "title": "Analytique de l'utilisation du site web - Visualisation des données- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/analytique-de-lutilisation-du-site-web-visualisation-des-donnees/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/fr/a-propos-de-nous/analytique-de-lutilisation-du-site-web/index.njk",
+      "locale": "fr",
+      "url": "/fr/analytique-de-lutilisation-du-site-web/",
+      "title": "Analytique de l’utilisation du site Web- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/analytique-de-lutilisation-du-site-web/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/fr/a-propos-de-nous/index.njk",
+      "locale": "fr",
+      "url": "/fr/a-propos-de-nous/",
+      "title": "À propos de nous- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/a-propos-de-nous/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/fr/accessibilite-au-gouvernement-du-canada/approvisionnement.njk",
+      "locale": "fr",
+      "url": "/fr/approvisionnement/",
+      "title": "Approvisionnement- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/approvisionnement/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/fr/accessibilite-au-gouvernement-du-canada/index.njk",
+      "locale": "fr",
+      "url": "/fr/accessibilite-numerique-au-gouvernement-du-canada/",
+      "title": "Accessibilité numérique au gouvernement du Canada- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/accessibilite-numerique-au-gouvernement-du-canada/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/fr/accessibilite-au-gouvernement-du-canada/normes-daccessibilite.njk",
+      "locale": "fr",
+      "url": "/fr/normes-daccessibilite/",
+      "title": "Normes d'accessibilité- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/normes-daccessibilite/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/fr/accessibilite-au-gouvernement-du-canada/repertoire-de-la-communaute.njk",
+      "locale": "fr",
+      "url": "/fr/repertoire-de-la-communaute/",
+      "title": "Répertoire de la communauté- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/repertoire-de-la-communaute/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/fr/comment-faire/concevoir-un-cours.njk",
+      "locale": "fr",
+      "url": "/fr/concevoir-un-cours/",
+      "title": "Concevoir un cours- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/concevoir-un-cours/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/fr/comment-faire/creer-du-contenu-web.njk",
+      "locale": "fr",
+      "url": "/fr/creer-du-contenu-web/",
+      "title": "Créer du contenu Web- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/creer-du-contenu-web/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/fr/comment-faire/creer-un-document.njk",
+      "locale": "fr",
+      "url": "/fr/creer-un-document/",
+      "title": "Créer un document- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/creer-un-document/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/fr/comment-faire/creer-un-formulaire.njk",
+      "locale": "fr",
+      "url": "/fr/creer-un-formulaire/",
+      "title": "Créer un formulaire- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/creer-un-formulaire/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/fr/comment-faire/evenements-virtuels-accessibles.njk",
+      "locale": "fr",
+      "url": "/fr/evenements-virtuels-accessibles/",
+      "title": "Événements virtuels accessibles- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/evenements-virtuels-accessibles/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/fr/comment-faire/fiches-conseils-ms-office.njk",
+      "locale": "fr",
+      "url": "/fr/fiches-de-conseils-pour-microsoft-office/",
+      "title": "Fiches de conseils pour Microsoft Office- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/fiches-de-conseils-pour-microsoft-office/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/fr/comment-faire/index.njk",
+      "locale": "fr",
+      "url": "/fr/comment-faire/",
+      "title": "Comment faire- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/comment-faire/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/fr/comment-faire/microsoft-office/comment-creer-des-documents-accessibles-dans-microsoft-365.njk",
+      "locale": "fr",
+      "url": "/fr/comment-creer-des-documents-accessibles-dans-microsoft-365/",
+      "title": "Comment créer des documents accessibles dans Microsoft 365- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/comment-creer-des-documents-accessibles-dans-microsoft-365/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/fr/comment-faire/microsoft-office/comment-creer-des-documents-accessibles-dans-office-2016.njk",
+      "locale": "fr",
+      "url": "/fr/comment-creer-des-documents-accessibles-dans-office-2016/",
+      "title": "Comment créer des documents accessibles dans Office 2016- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/comment-creer-des-documents-accessibles-dans-office-2016/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/fr/comment-faire/principes-de-conception-pour-des-services-accessibles.njk",
+      "locale": "fr",
+      "url": "/fr/principes-de-conception-pour-des-services-accessibles/",
+      "title": "Principes de conception pour des services accessibles- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/principes-de-conception-pour-des-services-accessibles/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/fr/comment-faire/testez-vos-produits.njk",
+      "locale": "fr",
+      "url": "/fr/testez-vos-produits/",
+      "title": "Testez vos produits- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/testez-vos-produits/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/fr/index.njk",
+      "locale": "fr",
+      "url": "/fr/",
+      "title": "Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/fr/liste-des-pages-tableau.njk",
+      "locale": "fr",
+      "url": "/fr/liste-des-pages-tableau/",
+      "title": "Liste des pages tableau- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/liste-des-pages-tableau/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/fr/liste-des-pages.njk",
+      "locale": "fr",
+      "url": "/fr/liste-des-pages/",
+      "title": "Liste des pages- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/liste-des-pages/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/fr/pages-a-reviser.njk",
+      "locale": "fr",
+      "url": "/fr/pages-a-reviser/",
+      "title": "Pages à réviser- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/pages-a-reviser/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/fr/principes-de-base-de-laccessibilite/index.njk",
+      "locale": "fr",
+      "url": "/fr/principes-de-base-de-laccessibilite/",
+      "title": "Principes de base de l’accessibilité- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/principes-de-base-de-laccessibilite/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/fr/principes-de-base-de-laccessibilite/normes-daccessibilite-mondiales.njk",
+      "locale": "fr",
+      "url": "/fr/normes-daccessibilite-mondiales/",
+      "title": "Normes d’accessibilité mondiales- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/normes-daccessibilite-mondiales/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/fr/principes-de-base-de-laccessibilite/types-de-handicap-les-plus-courants.njk",
+      "locale": "fr",
+      "url": "/fr/types-de-handicap-les-plus-courants/",
+      "title": "Types de handicap les plus courants- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/types-de-handicap-les-plus-courants/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/fr/ressources-et-outils/index.njk",
+      "locale": "fr",
+      "url": "/fr/ressources-et-outils/",
+      "title": "Ressources et outils- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/ressources-et-outils/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/fr/ressources-et-outils/outils.njk",
+      "locale": "fr",
+      "url": "/fr/outils/",
+      "title": "Outils- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/outils/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/fr/ressources-et-outils/ressources-additionnelles.njk",
+      "locale": "fr",
+      "url": "/fr/ressources-additionnelles/",
+      "title": "Ressources additionnelles- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/ressources-additionnelles/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/fr/ressources-et-outils/ressources.njk",
+      "locale": "fr",
+      "url": "/fr/ressources/",
+      "title": "Ressources- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/ressources/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/main/fr/roles/index.njk",
+      "locale": "fr",
+      "url": "/fr/roles/",
+      "title": "L’accessibilité dans votre rôle- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/roles/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/accessibility-testing-101.md",
+      "locale": "en",
+      "url": "/en/accessibility-testing-101/",
+      "title": "Accessibility Testing 101- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/accessibility-testing-101/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/additional-resources-on-accessible-meetings-and-events.md",
+      "locale": "en",
+      "url": "/en/additional-resources-on-accessible-meetings-and-events/",
+      "title": "Additional resources on accessible meetings and events- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/additional-resources-on-accessible-meetings-and-events/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/alternative-text-and-long-description-best-practices.md",
+      "locale": "en",
+      "url": "/en/alternative-text-and-long-description-best-practices/",
+      "title": "Alternative text and long description – Best practices- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/alternative-text-and-long-description-best-practices/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/archived-pages/mapping-between-revised-section-508-and-en-301-549-2014-2018-2019-and-2021.md",
+      "locale": "en",
+      "url": "/en/mapping-between-revised-section-508-and-en-301-549-2014-2018-2019-and-2021/",
+      "title": "Archived page: Mapping between Revised Section 508 and EN 301 549 (2014, 2018, 2019 and 2021)- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/mapping-between-revised-section-508-and-en-301-549-2014-2018-2019-and-2021/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/audio-description-guidelines.md",
+      "locale": "en",
+      "url": "/en/audio-description-guidelines/",
+      "title": "Audio Description Guidelines- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/audio-description-guidelines/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/auditory-disabilities.md",
+      "locale": "en",
+      "url": "/en/auditory-disabilities/",
+      "title": "Auditory Disabilities- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/auditory-disabilities/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/best-practices-for-accessible-virtual-events.md",
+      "locale": "en",
+      "url": "/en/best-practices-for-accessible-virtual-events/",
+      "title": "Best practices for accessible virtual events- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/best-practices-for-accessible-virtual-events/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/canada-school-of-public-service-csps.md",
+      "locale": "en",
+      "url": "/en/canada-school-of-public-service-csps/",
+      "title": "Canada School of Public Service (CSPS)- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/canada-school-of-public-service-csps/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/captioning-checklist.md",
+      "locale": "en",
+      "url": "/en/captioning-checklist/",
+      "title": "Captioning Checklist- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/captioning-checklist/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/cognitive-disabilities.md",
+      "locale": "en",
+      "url": "/en/cognitive-disabilities/",
+      "title": "Cognitive Disabilities- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/cognitive-disabilities/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/design-accessible-services/designing-for-users-of-screen-readers.md",
+      "locale": "en",
+      "url": "/en/designing-for-users-of-screen-readers/",
+      "title": "Designing for users of screen readers- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/designing-for-users-of-screen-readers/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/design-accessible-services/designing-for-users-on-the-autism-spectrum.md",
+      "locale": "en",
+      "url": "/en/designing-for-users-on-the-autism-spectrum/",
+      "title": "Designing for users on the autism spectrum- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/designing-for-users-on-the-autism-spectrum/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/design-accessible-services/designing-for-users-who-are-deaf-or-hard-of-hearing.md",
+      "locale": "en",
+      "url": "/en/designing-for-users-who-are-deaf-or-hard-of-hearing/",
+      "title": "Designing for users who are deaf or hard of hearing- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/designing-for-users-who-are-deaf-or-hard-of-hearing/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/design-accessible-services/designing-for-users-with-cognitive-disabilities.md",
+      "locale": "en",
+      "url": "/en/designing-for-users-with-cognitive-disabilities/",
+      "title": "Designing for users with cognitive disabilities- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/designing-for-users-with-cognitive-disabilities/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/design-accessible-services/designing-for-users-with-low-vision.md",
+      "locale": "en",
+      "url": "/en/designing-for-users-with-low-vision/",
+      "title": "Designing for users with low vision- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/designing-for-users-with-low-vision/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/design-accessible-services/designing-for-users-with-physical-or-motor-disabilities.md",
+      "locale": "en",
+      "url": "/en/designing-for-users-with-physical-or-motor-disabilities/",
+      "title": "Designing for users with physical or motor disabilities- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/designing-for-users-with-physical-or-motor-disabilities/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/designing-accessible-images.md",
+      "locale": "en",
+      "url": "/en/designing-accessible-images/",
+      "title": "Designing accessible images- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/designing-accessible-images/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/dos-and-donts-for-developing-online-courses.md",
+      "locale": "en",
+      "url": "/en/dos-and-donts-for-developing-online-courses/",
+      "title": "Do’s and Don’ts for developing online courses- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/dos-and-donts-for-developing-online-courses/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/employment-and-social-development-canada-esdc.md",
+      "locale": "en",
+      "url": "/en/employment-and-social-development-canada-esdc/",
+      "title": "Employment and Social Development Canada (ESDC)- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/employment-and-social-development-canada-esdc/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/find-out-how-to-make-accessible-digital-forms.md",
+      "locale": "en",
+      "url": "/en/find-out-how-to-make-accessible-digital-forms/",
+      "title": "Find out how to make accessible digital forms- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/find-out-how-to-make-accessible-digital-forms/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/guide-for-including-accessibility-in-information-and-communication-technology-ict-related-procurement.md",
+      "locale": "en",
+      "url": "/en/guide-for-including-accessibility-in-information-and-communication-technology-ict-related-procurement/",
+      "title": "Guide for Including Accessibility in Information and Communication Technology (ICT) Related Procurement- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/guide-for-including-accessibility-in-information-and-communication-technology-ict-related-procurement/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/information-and-communication-technology-ict-accessibility-requirements.md",
+      "locale": "en",
+      "url": "/en/information-and-communication-technology-ict-accessibility-requirements/",
+      "title": "Information and Communication Technology (ICT) Accessibility Requirements- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/information-and-communication-technology-ict-accessibility-requirements/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/introduction-to-accessibility-requirements-for-audio-video.md",
+      "locale": "en",
+      "url": "/en/introduction-to-accessibility-requirements-for-audio-video/",
+      "title": "Introduction to accessibility requirements for audio-video- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/introduction-to-accessibility-requirements-for-audio-video/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/language-of-audiovideo-content.md",
+      "locale": "en",
+      "url": "/en/language-of-audiovideo-content/",
+      "title": "Language of Audio/Video Content- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/language-of-audiovideo-content/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/learning-and-development.md",
+      "locale": "en",
+      "url": "/en/learning-and-development/",
+      "title": "Learning and Development- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/learning-and-development/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/live-broadcast.md",
+      "locale": "en",
+      "url": "/en/live-broadcast/",
+      "title": "Live Broadcast- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/live-broadcast/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/making-accessible-emails.md",
+      "locale": "en",
+      "url": "/en/making-accessible-emails/",
+      "title": "Making Accessible Emails- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/making-accessible-emails/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/microsoft-document-compliance-checklist.md",
+      "locale": "en",
+      "url": "/en/microsoft-document-compliance-checklist/",
+      "title": "Microsoft document compliance checklist- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/microsoft-document-compliance-checklist/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/mobility-flexibility-and-body-structure-disabilities.md",
+      "locale": "en",
+      "url": "/en/mobility-flexibility-and-body-structure-disabilities/",
+      "title": "Mobility, Flexibility, and Body Structure Disabilities- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/mobility-flexibility-and-body-structure-disabilities/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/ms-office-tip-sheets/tip-sheet-microsoft-powerpoint-Presentation.md",
+      "locale": "en",
+      "url": "/en/tip-sheet-for-microsoft-powerpoint-presentation/",
+      "title": "Tip sheet for Microsoft PowerPoint Presentation- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/tip-sheet-for-microsoft-powerpoint-presentation/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/ms-office-tip-sheets/tip-sheet-microsoft-word.md",
+      "locale": "en",
+      "url": "/en/tip-sheet-for-microsoft-word/",
+      "title": "Tip sheet for Microsoft Word- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/tip-sheet-for-microsoft-word/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/ms-office-tip-sheets/tip-sheet-outlook.md",
+      "locale": "en",
+      "url": "/en/tip-sheet-for-microsoft-outlook/",
+      "title": "Tip sheet for Microsoft Outlook- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/tip-sheet-for-microsoft-outlook/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/ms-office/2016/accessible-excel-workbooks-in-office-2016.md",
+      "locale": "en",
+      "url": "/en/accessible-excel-workbooks-in-office-2016/",
+      "title": "Accessible Excel workbooks in Office 2016- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/accessible-excel-workbooks-in-office-2016/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/ms-office/2016/accessible-pdf-documents-in-office-2016.md",
+      "locale": "en",
+      "url": "/en/accessible-pdf-documents-in-office-2016/",
+      "title": "Accessible PDF documents in Office 2016- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/accessible-pdf-documents-in-office-2016/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/ms-office/2016/accessible-powerpoint-presentations-in-office-2016.md",
+      "locale": "en",
+      "url": "/en/accessible-powerpoint-presentations-in-office-2016/",
+      "title": "Accessible PowerPoint presentations in Office 2016- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/accessible-powerpoint-presentations-in-office-2016/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/ms-office/2016/accessible-visio-drawings-in-office-2016.md",
+      "locale": "en",
+      "url": "/en/accessible-visio-drawings-in-office-2016/",
+      "title": "Accessible Visio drawings in Office 2016- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/accessible-visio-drawings-in-office-2016/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/ms-office/2016/accessible-word-documents-in-office-2016.md",
+      "locale": "en",
+      "url": "/en/accessible-word-documents-in-office-2016/",
+      "title": "Accessible Word documents in Office 2016- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/accessible-word-documents-in-office-2016/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/ms-office/365/accessible-excel-workbooks-in-microsoft-365.md",
+      "locale": "en",
+      "url": "/en/accessible-excel-workbooks-in-microsoft-365/",
+      "title": "Accessible Excel workbooks in Microsoft 365- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/accessible-excel-workbooks-in-microsoft-365/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/ms-office/365/accessible-pdf-documents-in-microsoft-365.md",
+      "locale": "en",
+      "url": "/en/accessible-pdf-documents-in-microsoft-365/",
+      "title": "Accessible PDF documents in Microsoft 365- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/accessible-pdf-documents-in-microsoft-365/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/ms-office/365/accessible-powerpoint-presentations-in-microsoft-365.md",
+      "locale": "en",
+      "url": "/en/accessible-powerpoint-presentations-in-microsoft-365/",
+      "title": "Accessible PowerPoint presentations in Microsoft 365- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/accessible-powerpoint-presentations-in-microsoft-365/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/ms-office/365/accessible-visio-drawings-in-microsoft-365.md",
+      "locale": "en",
+      "url": "/en/accessible-visio-drawings-in-microsoft-365/",
+      "title": "Accessible Visio drawings in Microsoft 365- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/accessible-visio-drawings-in-microsoft-365/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/ms-office/365/accessible-word-documents-in-microsoft-365.md",
+      "locale": "en",
+      "url": "/en/accessible-word-documents-in-microsoft-365/",
+      "title": "Accessible Word documents in Microsoft 365- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/accessible-word-documents-in-microsoft-365/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/page-moved-or-deleted.md",
+      "locale": "en",
+      "url": "/en/page-moved-or-deleted/",
+      "title": "Page moved or deleted- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/page-moved-or-deleted/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/pdf-accessibility-checklist.md",
+      "locale": "en",
+      "url": "/en/pdf-accessibility-checklist/",
+      "title": "PDF accessibility checklist- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/pdf-accessibility-checklist/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/personas-with-disabilities-for-inclusive-user-experience-ux-design.md",
+      "locale": "en",
+      "url": "/en/personas-with-disabilities-for-inclusive-user-experience-ux-design/",
+      "title": "Personas with Disabilities for inclusive user experience (UX) design- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/personas-with-disabilities-for-inclusive-user-experience-ux-design/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/procurement/accessibility-remediation-roadmap-template-instructions.md",
+      "locale": "en",
+      "url": "/en/accessibility-remediation-roadmap-template/",
+      "title": "Accessibility Remediation Roadmap template- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/accessibility-remediation-roadmap-template/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/recordings.md",
+      "locale": "en",
+      "url": "/en/recordings/",
+      "title": "Recordings- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/recordings/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/statistics-canada-statcan.md",
+      "locale": "en",
+      "url": "/en/statistics-canada-statcan/",
+      "title": "Statistics Canada (StatCan)- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/statistics-canada-statcan/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/targeted-engagement-draft-standard-on-information-and-communication-technology-ict-accessibility.md",
+      "locale": "en",
+      "url": "/en/targeted-engagement-draft-standard-on-information-and-communication-technology-ict-accessibility/",
+      "title": "Targeted Engagement: draft Standard on Information and Communication Technology (ICT) Accessibility- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/targeted-engagement-draft-standard-on-information-and-communication-technology-ict-accessibility/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/technical-summary-of-the-en-301-549-v321-2021.md",
+      "locale": "en",
+      "url": "/en/technical-summary-of-the-en-301-549-v321-2021/",
+      "title": "Technical Summary of the EN 301 549 v3.2.1 (2021)- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/technical-summary-of-the-en-301-549-v321-2021/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/the-structure-of-web-content-accessibility-guidelines-wcag-21.md",
+      "locale": "en",
+      "url": "/en/the-structure-of-web-content-accessibility-guidelines-wcag-21/",
+      "title": "The structure of Web Content Accessibility Guidelines (WCAG) 2.1- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/the-structure-of-web-content-accessibility-guidelines-wcag-21/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/tips-for-creating-online-courses.md",
+      "locale": "en",
+      "url": "/en/tips-for-creating-online-courses/",
+      "title": "Tips for creating online courses- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/tips-for-creating-online-courses/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/transcript-checklist.md",
+      "locale": "en",
+      "url": "/en/transcript-checklist/",
+      "title": "Transcript Checklist- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/transcript-checklist/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/transcript-guidelines.md",
+      "locale": "en",
+      "url": "/en/transcript-guidelines/",
+      "title": "Transcript Guidelines- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/transcript-guidelines/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/universal-design-for-learning-udl.md",
+      "locale": "en",
+      "url": "/en/universal-design-for-learning-udl/",
+      "title": "Universal Design for Learning (UDL)- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/universal-design-for-learning-udl/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/useful-links.md",
+      "locale": "en",
+      "url": "/en/useful-links/",
+      "title": "Useful Links- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/useful-links/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/virtual-meeting-platforms-and-accessibility-features.md",
+      "locale": "en",
+      "url": "/en/virtual-meeting-platforms-and-accessibility-features/",
+      "title": "Virtual Meeting Platforms and Accessibility Features- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/virtual-meeting-platforms-and-accessibility-features/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/visual-impairments.md",
+      "locale": "en",
+      "url": "/en/visual-impairments/",
+      "title": "Visual Impairments- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/visual-impairments/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/web-accessibility-checklist.md",
+      "locale": "en",
+      "url": "/en/web-accessibility-checklist/",
+      "title": "Web Accessibility Checklist- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/web-accessibility-checklist/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/en/what-we-heard-report-standard-on-information-and-communication-technology-accessibility-sicta.md",
+      "locale": "en",
+      "url": "/en/what-we-heard-report-standard-on-information-and-communication-technology-accessibility-sicta/",
+      "title": "What we heard report: Standard on Information and Communication Technology Accessibility (SICTA)- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/what-we-heard-report-standard-on-information-and-communication-technology-accessibility-sicta/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/a-faire-et-a-ne-pas-faire-pour-developper-des-cours-en-ligne.md",
+      "locale": "fr",
+      "url": "/fr/a-faire-et-a-ne-pas-faire-pour-developper-des-cours-en-ligne/",
+      "title": "À faire et à ne pas faire pour développer des cours en ligne- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/a-faire-et-a-ne-pas-faire-pour-developper-des-cours-en-ligne/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/ameliorer-laccessibilite-des-formulaires.md",
+      "locale": "fr",
+      "url": "/fr/ameliorer-laccessibilite-des-formulaires/",
+      "title": "Améliorer l’accessibilité des formulaires- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/ameliorer-laccessibilite-des-formulaires/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/apprentissage-et-perfectionnement.md",
+      "locale": "fr",
+      "url": "/fr/apprentissage-et-perfectionnement/",
+      "title": "Apprentissage et perfectionnement- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/apprentissage-et-perfectionnement/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/archived-pages/mise-en-correspondance-entre-larticle-508-revise-revised-section-508-et-la-norme-en-301-549-2014-2018-2019-et-2021.md",
+      "locale": "fr",
+      "url": "/fr/mise-en-correspondance-entre-larticle-508-revise-revised-section-508-et-la-norme-en-301-549-2014-2018-2019-et-2021/",
+      "title": "Page archivée : Mise en correspondance entre l’article 508 révisé (Revised Section 508) et la norme EN 301 549 (2014, 2018, 2019 et 2021)- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/mise-en-correspondance-entre-larticle-508-revise-revised-section-508-et-la-norme-en-301-549-2014-2018-2019-et-2021/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/bonnes-pratiques-pour-les-evenements-virtuels-accessibles.md",
+      "locale": "fr",
+      "url": "/fr/bonnes-pratiques-pour-les-evenements-virtuels-accessibles/",
+      "title": "Bonnes pratiques pour les événements virtuels accessibles- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/bonnes-pratiques-pour-les-evenements-virtuels-accessibles/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/conception-universelle-pour-lapprentissage-cua.md",
+      "locale": "fr",
+      "url": "/fr/conception-universelle-pour-lapprentissage-cua/",
+      "title": "Conception universelle pour l’apprentissage (CUA)- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/conception-universelle-pour-lapprentissage-cua/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/concevoir-des-images-accessibles.md",
+      "locale": "fr",
+      "url": "/fr/concevoir-des-images-accessibles/",
+      "title": "Concevoir des images accessibles- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/concevoir-des-images-accessibles/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/conseils-pour-la-conception-de-cours-en-ligne.md",
+      "locale": "fr",
+      "url": "/fr/conseils-pour-la-conception-de-cours-en-ligne/",
+      "title": "Conseils pour la conception de cours en ligne- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/conseils-pour-la-conception-de-cours-en-ligne/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/deficiences-auditives.md",
+      "locale": "fr",
+      "url": "/fr/deficiences-auditives/",
+      "title": "Déficiences auditives- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/deficiences-auditives/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/deficiences-visuelles.md",
+      "locale": "fr",
+      "url": "/fr/deficiences-visuelles/",
+      "title": "Déficiences visuelles- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/deficiences-visuelles/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/diffusions-en-direct.md",
+      "locale": "fr",
+      "url": "/fr/diffusions-en-direct/",
+      "title": "Diffusions en direct- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/diffusions-en-direct/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/directives-pour-la-description-sonore.md",
+      "locale": "fr",
+      "url": "/fr/directives-pour-la-description-sonore/",
+      "title": "Directives pour la description sonore- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/directives-pour-la-description-sonore/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/directives-pour-la-transcription.md",
+      "locale": "fr",
+      "url": "/fr/directives-pour-la-transcription/",
+      "title": "Directives pour la transcription- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/directives-pour-la-transcription/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/ecole-de-la-fonction-publique-du-canada-efpc.md",
+      "locale": "fr",
+      "url": "/fr/ecole-de-la-fonction-publique-du-canada-efpc/",
+      "title": "École de la fonction publique du Canada (EFPC)- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/ecole-de-la-fonction-publique-du-canada-efpc/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/emploi-et-developpement-social-canada-edsc.md",
+      "locale": "fr",
+      "url": "/fr/emploi-et-developpement-social-canada-edsc/",
+      "title": "Emploi et Développement social Canada (EDSC)- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/emploi-et-developpement-social-canada-edsc/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/enregistrements.md",
+      "locale": "fr",
+      "url": "/fr/enregistrements/",
+      "title": "Enregistrements- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/enregistrements/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/exigences-en-matiere-de-technologies-de-linformation-et-des-communications-tic-accessibles.md",
+      "locale": "fr",
+      "url": "/fr/exigences-en-matiere-de-technologies-de-linformation-et-des-communications-tic-accessibles/",
+      "title": "Exigences en matière de technologies de l’information et des communications (TIC) accessibles- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/exigences-en-matiere-de-technologies-de-linformation-et-des-communications-tic-accessibles/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/fiches-conseils-ms-office/fiche-de-conseils-microsoft-word.md",
+      "locale": "fr",
+      "url": "/fr/feuille-de-conseils-pour-microsoft-word/",
+      "title": "Feuille de conseils pour Microsoft Word- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/feuille-de-conseils-pour-microsoft-word/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/fiches-conseils-ms-office/fiche-de-conseils-outlook.md",
+      "locale": "fr",
+      "url": "/fr/feuille-de-conseils-pour-microsoft-outlook/",
+      "title": "Feuille de conseils pour Microsoft Outlook- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/feuille-de-conseils-pour-microsoft-outlook/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/fiches-conseils-ms-office/fiche-de-conseils-presentation-powerpoint-de-microsoft.md",
+      "locale": "fr",
+      "url": "/fr/feuille-de-conseils-pour-la-presentation-microsoft-powerpoint/",
+      "title": "Feuille de conseils pour la présentation Microsoft PowerPoint- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/feuille-de-conseils-pour-la-presentation-microsoft-powerpoint/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/guide-pour-linclusion-de-laccessibilit-dans-lapprovisionnement-lie-aux-technologies-de-linformation-et-des-communications-tic.md",
+      "locale": "fr",
+      "url": "/fr/guide-pour-linclusion-de-laccessibilite-dans-lapprovisionnement-lie-aux-technologies-de-linformation-et-des-communications-tic/",
+      "title": "Guide pour l’inclusion de l’accessibilité dans l’approvisionnement lié aux technologies de l’information et des communications (TIC)- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/guide-pour-linclusion-de-laccessibilite-dans-lapprovisionnement-lie-aux-technologies-de-linformation-et-des-communications-tic/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/handicaps-cognitifs.md",
+      "locale": "fr",
+      "url": "/fr/handicaps-cognitifs/",
+      "title": "Handicaps cognitifs- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/handicaps-cognitifs/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/handicaps-de-mobilite-de-flexibilite-et-de-structure-corporelle.md",
+      "locale": "fr",
+      "url": "/fr/handicaps-de-mobilite-de-flexibilite-et-de-structure-corporelle/",
+      "title": "Handicaps de mobilité, de flexibilité et de structure corporelle- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/handicaps-de-mobilite-de-flexibilite-et-de-structure-corporelle/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/introduction-aux-exigences-daccessibilite-pour-laudio-video.md",
+      "locale": "fr",
+      "url": "/fr/introduction-aux-exigences-daccessibilite-pour-laudio-video/",
+      "title": "Introduction aux exigences d’accessibilité pour l’audio-vidéo- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/introduction-aux-exigences-daccessibilite-pour-laudio-video/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/la-structure-des-regles-pour-l-accessibilite-des-contenus-web-wcag-2-1.md",
+      "locale": "fr",
+      "url": "/fr/la-structure-des-regles-pour-laccessibilite-des-contenus-web-wcag-21/",
+      "title": "La structure des règles pour l'accessibilité des contenus web (WCAG) 2.1- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/la-structure-des-regles-pour-laccessibilite-des-contenus-web-wcag-21/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/langue-du-contenu-audiovideo.md",
+      "locale": "fr",
+      "url": "/fr/langue-du-contenu-audiovideo/",
+      "title": "Langue du contenu audio/vidéo- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/langue-du-contenu-audiovideo/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/liens-utiles.md",
+      "locale": "fr",
+      "url": "/fr/liens-utiles/",
+      "title": "Liens utiles- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/liens-utiles/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/liste-de-controle-des-transcriptions.md",
+      "locale": "fr",
+      "url": "/fr/liste-de-controle-des-transcriptions/",
+      "title": "Liste de contrôle des transcriptions- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/liste-de-controle-des-transcriptions/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/liste-de-controle-pour-le-sous-titrage.md",
+      "locale": "fr",
+      "url": "/fr/liste-de-controle-pour-le-sous-titrage/",
+      "title": "Liste de contrôle pour le sous-titrage- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/liste-de-controle-pour-le-sous-titrage/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/liste-de-verification-de-la-conformite-des-documents-microsoft.md",
+      "locale": "fr",
+      "url": "/fr/liste-de-verification-de-la-conformite-des-documents-microsoft/",
+      "title": "Liste de vérification de la conformité des documents Microsoft- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/liste-de-verification-de-la-conformite-des-documents-microsoft/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/liste-de-verification-de-laccessibilite-des-documents-pdf.md",
+      "locale": "fr",
+      "url": "/fr/liste-de-verification-de-laccessibilite-des-documents-pdf/",
+      "title": "Liste de vérification de l’accessibilité des documents PDF- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/liste-de-verification-de-laccessibilite-des-documents-pdf/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/liste-de-verification-pour-laccessibilite-web.md",
+      "locale": "fr",
+      "url": "/fr/liste-de-verification-pour-laccessibilite-web/",
+      "title": "Liste de vérification pour l'accessibilité Web- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/liste-de-verification-pour-laccessibilite-web/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/ms-office/2016/classeurs-excel-accessibles-dans-office-2016.md",
+      "locale": "fr",
+      "url": "/fr/classeurs-excel-accessibles-dans-office-2016/",
+      "title": "Classeurs Excel accessibles dans Office 2016- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/classeurs-excel-accessibles-dans-office-2016/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/ms-office/2016/dessins-visio-accessibles-dans-office-2016.md",
+      "locale": "fr",
+      "url": "/fr/dessins-visio-accessibles-dans-office-2016/",
+      "title": "Dessins Visio accessibles dans Office 2016- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/dessins-visio-accessibles-dans-office-2016/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/ms-office/2016/documents-pdf-accessibles-dans-office-2016.md",
+      "locale": "fr",
+      "url": "/fr/documents-pdf-accessibles-dans-office-2016/",
+      "title": "Documents PDF accessibles dans Office 2016- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/documents-pdf-accessibles-dans-office-2016/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/ms-office/2016/documents-word-accessibles-dans-office-2016.md",
+      "locale": "fr",
+      "url": "/fr/documents-word-accessibles-dans-office-2016/",
+      "title": "Documents Word accessibles dans Office 2016- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/documents-word-accessibles-dans-office-2016/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/ms-office/2016/presentations-powerpoint-accessibles-dans-office-2016.md",
+      "locale": "fr",
+      "url": "/fr/presentations-powerpoint-accessibles-dans-office-2016/",
+      "title": "Présentations PowerPoint accessibles dans Office 2016- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/presentations-powerpoint-accessibles-dans-office-2016/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/ms-office/365/classeurs-excel-accessibles-dans-microsoft-365.md",
+      "locale": "fr",
+      "url": "/fr/classeurs-excel-accessibles-dans-microsoft-365/",
+      "title": "Classeurs Excel accessibles dans Microsoft 365- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/classeurs-excel-accessibles-dans-microsoft-365/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/ms-office/365/dessins-visio-accessibles-dans-microsoft-365.md",
+      "locale": "fr",
+      "url": "/fr/dessins-visio-accessibles-dans-microsoft-365/",
+      "title": "Dessins Visio accessibles dans Microsoft 365- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/dessins-visio-accessibles-dans-microsoft-365/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/ms-office/365/documents-pdf-accessibles-dans-microsoft-365.md",
+      "locale": "fr",
+      "url": "/fr/documents-pdf-accessibles-dans-microsoft-365/",
+      "title": "Documents PDF accessibles dans Microsoft 365- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/documents-pdf-accessibles-dans-microsoft-365/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/ms-office/365/documents-word-accessibles-dans-microsoft-365.md",
+      "locale": "fr",
+      "url": "/fr/documents-word-accessibles-dans-microsoft-365/",
+      "title": "Documents Word accessibles dans Microsoft 365- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/documents-word-accessibles-dans-microsoft-365/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/ms-office/365/presentations-powerpoint-accessibles-dans-microsoft-365.md",
+      "locale": "fr",
+      "url": "/fr/presentations-powerpoint-accessibles-dans-microsoft-365/",
+      "title": "Présentations PowerPoint accessibles dans Microsoft 365- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/presentations-powerpoint-accessibles-dans-microsoft-365/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/page-deplacee-ou-supprimee.md",
+      "locale": "fr",
+      "url": "/fr/page-deplacee-ou-supprimee/",
+      "title": "Page déplacée ou supprimée- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/page-deplacee-ou-supprimee/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/personas-handicapes-pour-la-conception-dune-experience-utilisateur-inclusive-eu.md",
+      "locale": "fr",
+      "url": "/fr/personas-handicapes-pour-la-conception-dune-experience-utilisateur-inclusive-eu/",
+      "title": "Personas handicapés pour la conception d'une expérience utilisateur inclusive (EU)- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/personas-handicapes-pour-la-conception-dune-experience-utilisateur-inclusive-eu/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/plateformes-de-reunions-virtuelles-et-fonctionnalites.md",
+      "locale": "fr",
+      "url": "/fr/plateformes-de-reunions-virtuelles-et-fonctionnalites/",
+      "title": "Plateformes de réunions virtuelles et fonctionnalités- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/plateformes-de-reunions-virtuelles-et-fonctionnalites/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/principes-de-conception-pour-des-services-accessibles/concevoir-pour-les-utilisateurs-avec-un-handicap-physique-ou-moteur.md",
+      "locale": "fr",
+      "url": "/fr/concevoir-pour-les-utilisateurs-avec-un-handicap-physique-ou-moteur/",
+      "title": "Concevoir pour les utilisateurs avec un handicap physique ou moteur- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/concevoir-pour-les-utilisateurs-avec-un-handicap-physique-ou-moteur/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/principes-de-conception-pour-des-services-accessibles/concevoir-pour-les-utilisateurs-dans-le-spectre-de-lautisme.md",
+      "locale": "fr",
+      "url": "/fr/concevoir-pour-les-utilisateurs-dans-le-spectre-de-lautisme/",
+      "title": "Concevoir pour les utilisateurs dans le spectre de l'autisme- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/concevoir-pour-les-utilisateurs-dans-le-spectre-de-lautisme/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/principes-de-conception-pour-des-services-accessibles/concevoir-pour-les-utilisateurs-de-revues-decran.md",
+      "locale": "fr",
+      "url": "/fr/concevoir-pour-les-utilisateurs-de-revues-decran/",
+      "title": "Concevoir pour les utilisateurs de revues d’écran- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/concevoir-pour-les-utilisateurs-de-revues-decran/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/principes-de-conception-pour-des-services-accessibles/concevoir-pour-les-utilisateurs-malvoyants.md",
+      "locale": "fr",
+      "url": "/fr/concevoir-pour-les-utilisateurs-malvoyants/",
+      "title": "Concevoir pour les utilisateurs malvoyants- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/concevoir-pour-les-utilisateurs-malvoyants/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/principes-de-conception-pour-des-services-accessibles/concevoir-pour-les-utilisateurs-sourds-ou-malentendants.md",
+      "locale": "fr",
+      "url": "/fr/concevoir-pour-les-utilisateurs-sourds-ou-malentendants/",
+      "title": "Concevoir pour les utilisateurs sourds ou malentendants- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/concevoir-pour-les-utilisateurs-sourds-ou-malentendants/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/principes-de-conception-pour-des-services-accessibles/principes-de-conception-pour-les-utilisateurs-avec-handicap-cognitif.md",
+      "locale": "fr",
+      "url": "/fr/principes-de-conception-pour-les-utilisateurs-avec-handicap-cognitif/",
+      "title": "Principes de conception pour les utilisateurs avec handicap cognitif- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/principes-de-conception-pour-les-utilisateurs-avec-handicap-cognitif/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/procurement/instructions-pour-le-modele-de-feuille-de-route-pour-la-correction-des-problemes-daccessibilite.md",
+      "locale": "fr",
+      "url": "/fr/le-modele-de-feuille-de-route-pour-la-correction-des-problemes-daccessibilite/",
+      "title": "Le modèle de feuille de route pour la correction des problèmes d’accessibilité- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/le-modele-de-feuille-de-route-pour-la-correction-des-problemes-daccessibilite/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/rapport-sur-ce-que-nous-avons-entendu-norme-daccessibilite-des-technologies-de-linformation-et-des-communications-natic.md",
+      "locale": "fr",
+      "url": "/fr/rapport-sur-ce-que-nous-avons-entendu-norme-daccessibilite-des-technologies-de-linformation-et-des-communications-natic/",
+      "title": "Rapport sur ce que nous avons entendu : Norme d’accessibilité des technologies de l’information et des communications (NATIC)- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/rapport-sur-ce-que-nous-avons-entendu-norme-daccessibilite-des-technologies-de-linformation-et-des-communications-natic/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/rendre-vos-courriels-accessibles.md",
+      "locale": "fr",
+      "url": "/fr/rendre-vos-courriels-accessibles/",
+      "title": "Rendre vos courriels accessibles- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/rendre-vos-courriels-accessibles/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/ressources-additionnelles-sur-les-reunions-et-evenements-accessibles.md",
+      "locale": "fr",
+      "url": "/fr/ressources-additionnelles-sur-les-reunions-et-evenements-accessibles/",
+      "title": "Ressources additionnelles sur les réunions et événements accessibles- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/ressources-additionnelles-sur-les-reunions-et-evenements-accessibles/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/resume-technique-de-la-norme-en-301-549-v321-2021.md",
+      "locale": "fr",
+      "url": "/fr/resume-technique-de-la-norme-en-301-549-v321-2021/",
+      "title": "Résumé technique de la norme EN 301 549 v3.2.1 (2021)- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/resume-technique-de-la-norme-en-301-549-v321-2021/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/seance-de-mobilisation-ciblee-lebauche-de-la-norme-daccessibilite-des-technologies-de-linformation-et-des-communications-tic.md",
+      "locale": "fr",
+      "url": "/fr/seance-de-mobilisation-ciblee-lebauche-de-la-norme-daccessibilite-des-technologies-de-linformation-et-des-communications-tic/",
+      "title": "Séance de mobilisation ciblée : L’ébauche de la Norme d’accessibilité des technologies de l’information et des communications (TIC)- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/seance-de-mobilisation-ciblee-lebauche-de-la-norme-daccessibilite-des-technologies-de-linformation-et-des-communications-tic/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/statistique-canada-statcan.md",
+      "locale": "fr",
+      "url": "/fr/statistique-canada-statcan/",
+      "title": "Statistique Canada (StatCan)- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/statistique-canada-statcan/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/test-daccessibilite-101.md",
+      "locale": "fr",
+      "url": "/fr/test-daccessibilite-101/",
+      "title": "Test d’accessibilité 101- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/test-daccessibilite-101/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/fr/texte-alternatif-et-description-longue-bonnes-pratiques.md",
+      "locale": "fr",
+      "url": "/fr/texte-alternatif-et-description-longue-bonnes-pratiques/",
+      "title": "Texte alternatif et description longue - Bonnes pratiques- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/texte-alternatif-et-description-longue-bonnes-pratiques/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/subjects/aboutUs/en/contact-us.md",
+      "locale": "en",
+      "url": "/en/contact-us/",
+      "title": "Contact us- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/contact-us/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/subjects/aboutUs/en/digital-accessibility-toolkit-project.md",
+      "locale": "en",
+      "url": "/en/digital-accessibility-toolkit-project/",
+      "title": "Digital Accessibility Toolkit project- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/digital-accessibility-toolkit-project/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/subjects/aboutUs/en/research-on-our-target-audience.md",
+      "locale": "en",
+      "url": "/en/research-on-our-target-audience/",
+      "title": "Research on our target audience- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/research-on-our-target-audience/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/subjects/aboutUs/en/terms-of-reference.md",
+      "locale": "en",
+      "url": "/en/terms-of-reference/",
+      "title": "Terms of Reference- Digital Accessibility Toolkit",
+      "urls": [
+        "/en/terms-of-reference/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/subjects/aboutUs/fr/contact-us.md",
+      "locale": "fr",
+      "url": "/fr/contactez-nous/",
+      "title": "Contactez-nous- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/contactez-nous/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/subjects/aboutUs/fr/digital-accessibility-toolkit-project.md",
+      "locale": "fr",
+      "url": "/fr/projet-de-la-boite-a-outils-de-laccessibilite-numerique/",
+      "title": "Projet de la Boîte à outils de l'accessibilité numérique- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/projet-de-la-boite-a-outils-de-laccessibilite-numerique/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/subjects/aboutUs/fr/research-on-our-target-audience.md",
+      "locale": "fr",
+      "url": "/fr/recherche-sur-notre-audience/",
+      "title": "Recherche sur notre audience- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/recherche-sur-notre-audience/"
+      ],
+      "previousSources": []
+    },
+    {
+      "source": "src/pages/subjects/aboutUs/fr/terms-of-reference.md",
+      "locale": "fr",
+      "url": "/fr/mandats/",
+      "title": "Mandats- Boîte à outils de l'accessibilité numérique",
+      "urls": [
+        "/fr/mandats/"
+      ],
+      "previousSources": []
+    }
+  ],
+  "artifacts": [
+    {
+      "file": "en/site-page-inventory/index.html",
+      "hash": "7263599cfd66e723d9a7053309fa08c158cd800dd2bca78a3ebef391173f669d"
+    },
+    {
+      "file": "en/pages-to-review/index.html",
+      "hash": "933908455b251cb2e7d15a5e7df187a5e2b69334e9627ae27e1a151c7968cc0b"
+    },
+    {
+      "file": "en/page-list/index.html",
+      "hash": "80053fc196a3506bdc688c65aaa795bc65de35f435bc64d00e25786f7732a703"
+    },
+    {
+      "file": "en/roles/administration/index.html",
+      "hash": "cbf7aa75b1eb20d854b861e7d93d669607449b1c7cefbf9bc07bcd0e3e09b3b7"
+    },
+    {
+      "file": "en/roles/author/index.html",
+      "hash": "259d8bb2679d6a7d837875021d3cf133234c4eed97e351f259e517556f64b052"
+    },
+    {
+      "file": "en/roles/business/index.html",
+      "hash": "6317690b7d4cf83f4879835d783bb6d059cb90dd5d3bb70a06633557083b60c0"
+    },
+    {
+      "file": "en/roles/design/index.html",
+      "hash": "1a06fc7cd83b8768f0b10b34c1348e5b4e0052d9522dc8866ce8e177d6b9e8d6"
+    },
+    {
+      "file": "en/roles/development/index.html",
+      "hash": "e7e4c046ded128750f5b28030c57d118472506af02c94b0acfdb35dbe869a540"
+    },
+    {
+      "file": "en/roles/testing/index.html",
+      "hash": "0b4acd54f41bba02d411f930d8dae2f85c4ac78d14d8e5724b100b16262f9d07"
+    },
+    {
+      "file": "fr/liste-des-pages/index.html",
+      "hash": "02622f9b7d033888abbee297f3d5ac8f39017958fe257387c1f852a9232d127b"
+    },
+    {
+      "file": "fr/liste-des-pages-tableau/index.html",
+      "hash": "d007cdcfa789167cbc04d3150133e0317753370b1cdeff6df932046019d7fd65"
+    },
+    {
+      "file": "en/roles/backEndDev/index.html",
+      "hash": "02e8b9c8974a2d649abfe5ada918008cfa1e9f68f1af717e969b686a3a625825"
+    },
+    {
+      "file": "en/roles/businessAnalysis/index.html",
+      "hash": "60a41a00231b056ecc9614cfdcc562e8a9eae73367ee978df596e0b3107aba3c"
+    },
+    {
+      "file": "en/roles/contentAuthoring/index.html",
+      "hash": "f11fa333477d2359fc0b62b08ab2ecc5dc0da20c903f32a1fb0571344aa0979e"
+    },
+    {
+      "file": "en/roles/contentPublishing/index.html",
+      "hash": "8d50fd83b307471684f79ff6436063b4d5d18d097caa105fa0f07855d7e4f42f"
+    },
+    {
+      "file": "en/roles/frontEndDev/index.html",
+      "hash": "7f28fb63bffef2ba585e10b8fa983bf3232720f2a6102105aa9a37e1fdf063b2"
+    },
+    {
+      "file": "en/roles/governance/index.html",
+      "hash": "b1c18a101a67d4a71d8393e6cf277b4becbd7555bcf1f492fb67d3a428ab3e20"
+    },
+    {
+      "file": "en/roles/productOwnership/index.html",
+      "hash": "565af00ecc1c5245694742401485f36397c729e211053f524c57951925c3554f"
+    },
+    {
+      "file": "en/roles/projectManagement/index.html",
+      "hash": "2d53337509285610f8bf49d744198ffdc72d4665efb34505b0d374c77272266a"
+    },
+    {
+      "file": "en/roles/qaAutomated/index.html",
+      "hash": "91395b312697444887dfef71bf3edc6c2259cc002320f4735b384e296e95b9db"
+    },
+    {
+      "file": "en/roles/qaManual/index.html",
+      "hash": "ca5712002692b123bb11319b84f5435b247896602603deec0989ecb3542884f7"
+    },
+    {
+      "file": "en/roles/uxDesign/index.html",
+      "hash": "9e7eecb65156fd956746b3646b239460614c79e8e7b45370fbe1029b4dede4f0"
+    },
+    {
+      "file": "en/roles/uxResearch/index.html",
+      "hash": "9738b3b8d52663765bc9864645fe92e1d4fe0faa666f174f375769c235f35376"
+    },
+    {
+      "file": "en/roles/visualDesign/index.html",
+      "hash": "afd05a7115894535e475b2c9d339065637486a334c16d1a8da63edf24d46dd47"
+    },
+    {
+      "file": "fr/pages-a-reviser/index.html",
+      "hash": "d419712db60473d228c593015f5262d928143c11379fe8ba671a050390c65865"
+    },
+    {
+      "file": "fr/roles/backEndDev/index.html",
+      "hash": "11943e0cddf8e0fc52443a11d5ec06a200f6c7152ab3ef590b6767bf55012190"
+    },
+    {
+      "file": "fr/roles/businessAnalysis/index.html",
+      "hash": "a5b15fac6ae818b11c41b3fd5bb08e5462119e758f506000b9cc714f124ee2c8"
+    },
+    {
+      "file": "fr/roles/contentAuthoring/index.html",
+      "hash": "6380307f5b9cd5ae36703c2fa8a516917ba022ff1e467917b84fe5b6c8b75fe4"
+    },
+    {
+      "file": "fr/roles/contentPublishing/index.html",
+      "hash": "88c1200ed886b7fc97b7832b26e65410bd68feac47f1a2cfc3d048303d708110"
+    },
+    {
+      "file": "fr/roles/frontEndDev/index.html",
+      "hash": "189266a5e78de530eb52460315ab6f8e4db089d6f027e562c975a415d142fefa"
+    },
+    {
+      "file": "fr/roles/governance/index.html",
+      "hash": "019eaee9c389c5b01ad6bb86441380403a5be50109bc088c97d6b548538bdf02"
+    },
+    {
+      "file": "fr/roles/productOwnership/index.html",
+      "hash": "579d1fc3da75fbdee954031a3b34b25573b2c851a964c01469eca58cfb7e6139"
+    },
+    {
+      "file": "fr/roles/projectManagement/index.html",
+      "hash": "5f1d1857207a13cf55aea1ba78df5517b8ad92239586109a9d3ebbc98a679898"
+    },
+    {
+      "file": "fr/roles/qaAutomated/index.html",
+      "hash": "e33877f94424514b00ed4fb4ee45f9b9dd875d6ceb7f733ba3c36ec4663770f9"
+    },
+    {
+      "file": "fr/roles/qaManual/index.html",
+      "hash": "641b4d9694fc98fff699c29f74c304d3852a00deae90e936a126f56922e53842"
+    },
+    {
+      "file": "fr/roles/uxDesign/index.html",
+      "hash": "6f96351268c1bbef21401b22c7ce24d4d1b7959e722bfe8c0861cebdfeccfdc2"
+    },
+    {
+      "file": "fr/roles/uxResearch/index.html",
+      "hash": "f6f6cca66bdbda81dbf62407c49a2e41f2cbf4ef19b37dd3279f218552d1255a"
+    },
+    {
+      "file": "fr/roles/visualDesign/index.html",
+      "hash": "8d5ae3d94e5d3731f4da160f0eabb6e1592bc381f216ab70f771083b9536f238"
+    },
+    {
+      "file": "fr/roles/administration/index.html",
+      "hash": "e2a7f09f7ca6a11fe4d7604628f37383d694dae05b5c4dac9746c718ac16664e"
+    },
+    {
+      "file": "fr/roles/author/index.html",
+      "hash": "b7ffda5750015d1604ddb9b8d14477a23d46312f120604d25ee6328bfe6afeaf"
+    },
+    {
+      "file": "fr/roles/business/index.html",
+      "hash": "603e4debb59f97bf607b4fcf211273fb561a09e8f877a86e735ccd2082b02acd"
+    },
+    {
+      "file": "fr/roles/design/index.html",
+      "hash": "6d6e39434498d473a8b780f11fb42375884cf0a0cf59a531d6f61ba2d57cbda5"
+    },
+    {
+      "file": "fr/roles/development/index.html",
+      "hash": "6ef2e83fae4d8045a12a2d730451d165228b0ff46bb2b8e51e52682cc7e34b16"
+    },
+    {
+      "file": "fr/roles/testing/index.html",
+      "hash": "23df99d091c720b1b24141e6f7bc0a2c631448c6e890d197e8a54ba7acbfbac0"
+    },
+    {
+      "file": "en/audio-description-guidelines/index.html",
+      "hash": "1e59c88e585443ebecf245de8e9c8f1401b274b2ca676dcabbd051187860a241"
+    },
+    {
+      "file": "en/additional-resources-on-accessible-meetings-and-events/index.html",
+      "hash": "e742ad4b1d4bd1dbb335bad85b663263c74814c74859f10e8f7d9011df97cfcc"
+    },
+    {
+      "file": "en/accessibility-testing-101/index.html",
+      "hash": "24f1ebb4e73ca4106b327be494b63680af1a9055a971be59d6b4df7825d98034"
+    },
+    {
+      "file": "en/auditory-disabilities/index.html",
+      "hash": "54f049ef8d5d2b93d05a282f0c6cd765c0511ff49bbda834ce75f41bbefe3318"
+    },
+    {
+      "file": "en/alternative-text-and-long-description-best-practices/index.html",
+      "hash": "b5ed3eab6250f8e338604637c3392b62d3ca7a68d22829b0349f1e6306c69295"
+    },
+    {
+      "file": "en/best-practices-for-accessible-virtual-events/index.html",
+      "hash": "bd5cb1ebe011487681fcd6fe6902d5bacbf4b2d735a441755f18a2a5d530862b"
+    },
+    {
+      "file": "en/canada-school-of-public-service-csps/index.html",
+      "hash": "d7a997ce1e763cb74660efe7a5e865ba3088e7385bd44c65594ade59fc081359"
+    },
+    {
+      "file": "en/captioning-checklist/index.html",
+      "hash": "3b9784c675b6b54e6a81c67e15219452f767d3d153616cb1d1ec796779bf37ce"
+    },
+    {
+      "file": "en/cognitive-disabilities/index.html",
+      "hash": "84db726f560e00e79a8fecb3f9f813a5dffd659ab644bad98850659f8cb7be13"
+    },
+    {
+      "file": "en/dos-and-donts-for-developing-online-courses/index.html",
+      "hash": "bf9c59929833d277e7d873d5cfddd67bfcbab5ef1003ad274f47af5f6b04739f"
+    },
+    {
+      "file": "en/employment-and-social-development-canada-esdc/index.html",
+      "hash": "73a89c4d442a0d63ede9554f8b81306c8e34de7d629ac9809667156c4a0c56a9"
+    },
+    {
+      "file": "en/find-out-how-to-make-accessible-digital-forms/index.html",
+      "hash": "753172d4cdde101891a6b7e4adf39d6512d6c7d6fbfc6ec6098add0076f4bdaf"
+    },
+    {
+      "file": "en/designing-accessible-images/index.html",
+      "hash": "8a71ca7419d4baaece1da7439cf89466b7328806ddafabe8234f0428d32ebd46"
+    },
+    {
+      "file": "en/guide-for-including-accessibility-in-information-and-communication-technology-ict-related-procurement/index.html",
+      "hash": "ea5ce2378d0b9a88babeede6044455a7b0a22b7c0ae7fa63519d64fad9384de8"
+    },
+    {
+      "file": "en/language-of-audiovideo-content/index.html",
+      "hash": "56d9e6c27423407317d1732a328789fbadc0bb07d367737fbc793831cd3a8fa8"
+    },
+    {
+      "file": "en/introduction-to-accessibility-requirements-for-audio-video/index.html",
+      "hash": "fc0756da37e8b7c6f9db77df5291d4da8cec78c9e3516c3c515dccb4e1736a7c"
+    },
+    {
+      "file": "en/live-broadcast/index.html",
+      "hash": "e20249478c20d75363fa1619a793b5337e316275a69b042d30172e9f4fb0e554"
+    },
+    {
+      "file": "en/learning-and-development/index.html",
+      "hash": "9a039a19139bf2c5dc395fabe2bf37c4b111935bd5ae56244457340185ef7601"
+    },
+    {
+      "file": "en/mobility-flexibility-and-body-structure-disabilities/index.html",
+      "hash": "371ac09989c4bf6c70fdfdeef7370fe42379f894aa60e6ab51b329655132187a"
+    },
+    {
+      "file": "en/making-accessible-emails/index.html",
+      "hash": "b269e1d4bcea016a3e0bdc5c69b580bfbd9ec55d549efa8fd3df2d2a3656b710"
+    },
+    {
+      "file": "en/microsoft-document-compliance-checklist/index.html",
+      "hash": "b208ef70f833b80cd4e487150eb13185d97c52c9e5e638f4a06e5c906848aa0b"
+    },
+    {
+      "file": "en/pdf-accessibility-checklist/index.html",
+      "hash": "1934870f77b98d9166e2e780cd4291f3adc87b9ba1b3d55be61e15a7042f5fb8"
+    },
+    {
+      "file": "en/page-moved-or-deleted/index.html",
+      "hash": "f1e99735cf2c30739e49fd898a035a6f122d3959beeae8df3cd0eca5d8d19d73"
+    },
+    {
+      "file": "en/recordings/index.html",
+      "hash": "dccded2e6f420cc50142bddbefecf7479be3704e44acbece3445f9bd4569706f"
+    },
+    {
+      "file": "en/personas-with-disabilities-for-inclusive-user-experience-ux-design/index.html",
+      "hash": "959b2b59929c7d0825299c3832e0dfe9cdad6d4e4685ae4bbdf54fa54b3a199f"
+    },
+    {
+      "file": "en/statistics-canada-statcan/index.html",
+      "hash": "22455fd189ba7be79512a2c9f31d3a01bcebeaf899e9ce66e357f2b0264434d5"
+    },
+    {
+      "file": "en/targeted-engagement-draft-standard-on-information-and-communication-technology-ict-accessibility/index.html",
+      "hash": "41fa8e8957ce1bf6d69ea8b289ab7a194aa19c4c8f57e56f2159cc94c1ea871e"
+    },
+    {
+      "file": "en/technical-summary-of-the-en-301-549-v321-2021/index.html",
+      "hash": "649c33321d18c9480ee60fe17f4412d84d12b53d026e174cab00367666a38894"
+    },
+    {
+      "file": "en/tips-for-creating-online-courses/index.html",
+      "hash": "6c9576bff717e5c08391b4067e71e738bfa97d47db4362dd2ed9d0d007036bee"
+    },
+    {
+      "file": "en/the-structure-of-web-content-accessibility-guidelines-wcag-21/index.html",
+      "hash": "50ad69d540661d45a2ab31cb3436cc2bc497e825964a1a1266ed269d3b411600"
+    },
+    {
+      "file": "en/transcript-checklist/index.html",
+      "hash": "990956bb85c189ec5592f39aea710a349eeab2d1b44b83053bf1809595916abc"
+    },
+    {
+      "file": "en/transcript-guidelines/index.html",
+      "hash": "eddea5e52c5c9b426d3a0cdaed5a8ce04737635a5e44dd1670fdfb8e64dcfd1a"
+    },
+    {
+      "file": "en/virtual-meeting-platforms-and-accessibility-features/index.html",
+      "hash": "8433f06a4c6b64b961f0f5c0f593b910cba8acfb60e854be458b0bfedff98dd3"
+    },
+    {
+      "file": "en/universal-design-for-learning-udl/index.html",
+      "hash": "96845a97f1b12e22725bb1d3617e762a4dde559c0f7310ca7ed58ec32934dffa"
+    },
+    {
+      "file": "en/what-we-heard-report-standard-on-information-and-communication-technology-accessibility-sicta/index.html",
+      "hash": "81b3e443aec0e7f1be184357e9007d6d35ca5ab7a688770db8bc94300d0ecf27"
+    },
+    {
+      "file": "en/web-accessibility-checklist/index.html",
+      "hash": "8fcc8ff982204a324b8d155aae9baf744d82072c2823622d6e93a61aad1c3937"
+    },
+    {
+      "file": "en/visual-impairments/index.html",
+      "hash": "0f593566965cd7db66abc0ca27425361fc8a7c36c7525521142bb649d2526d2f"
+    },
+    {
+      "file": "en/useful-links/index.html",
+      "hash": "e67ac83d263acf02e40e4ed8ba80e16ebf12126101b97e8f1dcdce2bd6b85246"
+    },
+    {
+      "file": "fr/apprentissage-et-perfectionnement/index.html",
+      "hash": "088b4614dbb3410840fafebd3032a08b3cf29c9a6040cb811d3dd772037e8072"
+    },
+    {
+      "file": "fr/a-faire-et-a-ne-pas-faire-pour-developper-des-cours-en-ligne/index.html",
+      "hash": "03187dd8b7bf4bcb059851014ffc2eb05ac32af3a6369bfbb228dc146fec81d8"
+    },
+    {
+      "file": "fr/ameliorer-laccessibilite-des-formulaires/index.html",
+      "hash": "cadf5b70e1412c91c860de520f75898014a2d869a61ee0395ab734ab0323a7bb"
+    },
+    {
+      "file": "fr/conception-universelle-pour-lapprentissage-cua/index.html",
+      "hash": "8a02d1a4acb057aa694c1f9881e564ac4f3bcb690ced859d24217465235d6d67"
+    },
+    {
+      "file": "fr/bonnes-pratiques-pour-les-evenements-virtuels-accessibles/index.html",
+      "hash": "7c604e480f003ce317cfd489b24d70f22f97e3f77edd653fb90ad56ad2f0bff0"
+    },
+    {
+      "file": "fr/conseils-pour-la-conception-de-cours-en-ligne/index.html",
+      "hash": "4ffb997bc7da1f45658681b53b8a0b6e2f23ca3da048a29a7d07a178e2e1fd00"
+    },
+    {
+      "file": "fr/deficiences-auditives/index.html",
+      "hash": "60b95840125262591904684716012a956486b9c2fa5649f9d965713ed90e66a7"
+    },
+    {
+      "file": "fr/diffusions-en-direct/index.html",
+      "hash": "987558e92e58e01cf0d578fd7e461d1cc1813dadfda80c69cb51068c045fbecc"
+    },
+    {
+      "file": "fr/deficiences-visuelles/index.html",
+      "hash": "dfae80fd5f62103d5d2ee517faae3750a6865293e4b3c348ed51f3f950a60ea6"
+    },
+    {
+      "file": "fr/concevoir-des-images-accessibles/index.html",
+      "hash": "0f963016085d6459f81b498d8b4a8b42f5d778ea031ec6c1a8a25e77c06fef6c"
+    },
+    {
+      "file": "fr/directives-pour-la-description-sonore/index.html",
+      "hash": "d6cf30a1f0e10f1b6578e6c9856bc8cc61de604aee06d5237edad00f14493ab5"
+    },
+    {
+      "file": "fr/directives-pour-la-transcription/index.html",
+      "hash": "8aa529a183d991a494c96d70235e051e5aa80fbed9b4a0a9ddb2b5d61c0048e2"
+    },
+    {
+      "file": "fr/emploi-et-developpement-social-canada-edsc/index.html",
+      "hash": "6feafa4475741956c80ed6f30488cead0554219ff7422700c2427c34cf3ed5c8"
+    },
+    {
+      "file": "fr/ecole-de-la-fonction-publique-du-canada-efpc/index.html",
+      "hash": "5d0ecfc06de5222bafa4ac7dd0f2239e43c81ccbfc771135ca9e313b000971cb"
+    },
+    {
+      "file": "fr/enregistrements/index.html",
+      "hash": "6cfdfb6e2a69d7c9756eab2dd5bfa71f6da7b0e06a3092a96ee294d546e6167b"
+    },
+    {
+      "file": "fr/handicaps-de-mobilite-de-flexibilite-et-de-structure-corporelle/index.html",
+      "hash": "eb5c171b418cf606ba7fdd3455059fa8bd1368e4085732d40b0d2ae56e5015bd"
+    },
+    {
+      "file": "fr/la-structure-des-regles-pour-laccessibilite-des-contenus-web-wcag-21/index.html",
+      "hash": "6ae986f3f5b123b6c12c1f9063c5731af9fd9764acffe563cb705e8e7d104675"
+    },
+    {
+      "file": "fr/guide-pour-linclusion-de-laccessibilite-dans-lapprovisionnement-lie-aux-technologies-de-linformation-et-des-communications-tic/index.html",
+      "hash": "80ed553878f3eb69285e905bf11383b471e404d2212767abac9e995020e687dc"
+    },
+    {
+      "file": "fr/introduction-aux-exigences-daccessibilite-pour-laudio-video/index.html",
+      "hash": "eaf9971e87ee533046e5a41c4c9acac0062992a5184cd672b69e7a073470072c"
+    },
+    {
+      "file": "fr/liste-de-controle-pour-le-sous-titrage/index.html",
+      "hash": "803edcdad33cadb89589aae21fd4f727569432ecc45578ea54cec8529d987519"
+    },
+    {
+      "file": "fr/handicaps-cognitifs/index.html",
+      "hash": "dc3a1fe317ba190a4a0e31dc2809b18a3b77ba88404873694d0d149eac02ea00"
+    },
+    {
+      "file": "fr/liens-utiles/index.html",
+      "hash": "005ecfe4efcf480598c62ca491f0f5a2c8c0ffef36f74497bbc8d69bf25cbaa6"
+    },
+    {
+      "file": "fr/langue-du-contenu-audiovideo/index.html",
+      "hash": "470d5ba959f5f045c55688da93c09de6c236d2e07af587079f6d2fdc031381e2"
+    },
+    {
+      "file": "fr/liste-de-controle-des-transcriptions/index.html",
+      "hash": "572e761e08530ad0bec76606976c9634be7643798bb227e51f8aa36cc439b52b"
+    },
+    {
+      "file": "fr/page-deplacee-ou-supprimee/index.html",
+      "hash": "5b2392af72894fbde36904f7eae3a25cf21a3f2a27ccf47113f1b91bdb6d361b"
+    },
+    {
+      "file": "fr/liste-de-verification-de-la-conformite-des-documents-microsoft/index.html",
+      "hash": "ca15882bfc5d01f0cecee0923a5eeaaa874f2a42a465d6d5ebba10e68e095258"
+    },
+    {
+      "file": "fr/liste-de-verification-de-laccessibilite-des-documents-pdf/index.html",
+      "hash": "0e266009d68ffa10a07ab8b48ed7a18dd6ab401f72a7817a77219d9d8c051d83"
+    },
+    {
+      "file": "fr/liste-de-verification-pour-laccessibilite-web/index.html",
+      "hash": "c301a912cef70d88e02cffc344c2f80e4f5a83b9c58eeac9626c9a85ad3276e9"
+    },
+    {
+      "file": "fr/rapport-sur-ce-que-nous-avons-entendu-norme-daccessibilite-des-technologies-de-linformation-et-des-communications-natic/index.html",
+      "hash": "56a22a75784bab82e5fb4fc9c7c4d70219dabdff1e7384c0647a2710e159d125"
+    },
+    {
+      "file": "fr/rendre-vos-courriels-accessibles/index.html",
+      "hash": "a0920d72e8e142690600196a37f7fbda15ca03e088069c8ada49d5d812c8fa30"
+    },
+    {
+      "file": "fr/ressources-additionnelles-sur-les-reunions-et-evenements-accessibles/index.html",
+      "hash": "8f5091b4b374f4d75ec4e53c4f4e22faebdddd3bd7ca869d430e6c488fab169c"
+    },
+    {
+      "file": "fr/statistique-canada-statcan/index.html",
+      "hash": "f67a1b69659921fc561cd29df313ce0c2d232018447d15177b31144ce1f6bbd8"
+    },
+    {
+      "file": "fr/plateformes-de-reunions-virtuelles-et-fonctionnalites/index.html",
+      "hash": "8c24764024fe9cac0a115934d6cdb1a4dd9437931adf2899a83b89395fd3e821"
+    },
+    {
+      "file": "fr/resume-technique-de-la-norme-en-301-549-v321-2021/index.html",
+      "hash": "d3fdb2e9f75d84147f388bedb065ae57295f93b605fe4fda2f09f777f56770a3"
+    },
+    {
+      "file": "fr/seance-de-mobilisation-ciblee-lebauche-de-la-norme-daccessibilite-des-technologies-de-linformation-et-des-communications-tic/index.html",
+      "hash": "fa340b65a89a052de53b53977541dc69dbb348640dcf9ff3b16ee4671269c043"
+    },
+    {
+      "file": "fr/test-daccessibilite-101/index.html",
+      "hash": "882fc1fa254cc14ebd460a5ab7dc91ba67d2d14cedd8db8bd04dada347361ed0"
+    },
+    {
+      "file": "en/accessibility-fundamentals/index.html",
+      "hash": "50eaabe1a54fbcc95c3597b6b0b49bdd486a839f47336b04c0941ff85adbbbdc"
+    },
+    {
+      "file": "fr/personas-handicapes-pour-la-conception-dune-experience-utilisateur-inclusive-eu/index.html",
+      "hash": "edc69f54e53ff250fd76a61a63686ff7faa55a61068f1ad5e9b224323bd24336"
+    },
+    {
+      "file": "en/global-accessibility-standards/index.html",
+      "hash": "8af9458e9c649aeb4a078ff05a0c6137450839a5dce6acb868bce03271edba04"
+    },
+    {
+      "file": "fr/texte-alternatif-et-description-longue-bonnes-pratiques/index.html",
+      "hash": "aac9ab506a169c77a5e4e9cdabd3bbcdf78d2291e08fb5218a352ebfb960abdb"
+    },
+    {
+      "file": "en/about-us/index.html",
+      "hash": "1745e55ebbe0bd775daa03ce46a23028824bd4c561a8ac671ae3fd0858be3d17"
+    },
+    {
+      "file": "en/accessibility-standards/index.html",
+      "hash": "402bda47f7990aac514a41514b136275a5fd9eeac4e107c9d83d4a8d3492717a"
+    },
+    {
+      "file": "en/most-common-types-of-disability/index.html",
+      "hash": "b5e518c892c78a5d8dd3e19926a25ea5ffcbbea668b231df015532c6bc48858d"
+    },
+    {
+      "file": "en/procurement/index.html",
+      "hash": "43199e5862fc257b90a3d1db44ce2cf0efaa55cb3e5908b8d84f0e77c9777841"
+    },
+    {
+      "file": "en/community-directory/index.html",
+      "hash": "95312218ba300216cc4d4d27b0fdbcce790ea93e198592fb02a7f2044e6cacb9"
+    },
+    {
+      "file": "en/accessible-virtual-events/index.html",
+      "hash": "30297030ee086bee59535e67dddac693d665d3a8aa6d9377e3c97562dfbc2b52"
+    },
+    {
+      "file": "en/digital-accessibility-in-the-government-of-canada/index.html",
+      "hash": "50e5c1881347aff6d8787afddf4dcd2cf0d7153a5144851eef347bcbd7fb9f2f"
+    },
+    {
+      "file": "en/create-web-content/index.html",
+      "hash": "5d8f50d660bdbf7d965b103810055c52f2fb516d17c3d259f3c09f91419d5274"
+    },
+    {
+      "file": "en/create-document/index.html",
+      "hash": "a8f495a16fce906f5e7e3287e3c0ad936a29f69da2a29d9c9c4218df89bc6efe"
+    },
+    {
+      "file": "en/create-forms/index.html",
+      "hash": "c545a9842bacb53a7d757f41726bfc460637e0397e365202664e7bbeadb69ee4"
+    },
+    {
+      "file": "en/how-tos/index.html",
+      "hash": "75608ad376ccf359fb915c10141cf09f12b17dcc6aed33ed2c6bf3df92dacbfa"
+    },
+    {
+      "file": "en/tip-sheets-for-microsoft-office/index.html",
+      "hash": "1f984fe6533839973432129281237b68f6afbaf0bb0a107baf5577284260a816"
+    },
+    {
+      "file": "en/design-a-course/index.html",
+      "hash": "d32678a057bbaf403f224af610af5337a8873a58c3ca1c4cd716edc90bc11dfa"
+    },
+    {
+      "file": "en/test-your-products/index.html",
+      "hash": "22e19907cd19e3a1a1f3a6bd7429d5e8cb06d0c6030d805b0ce6e0e3f3d18400"
+    },
+    {
+      "file": "en/designing-accessible-services/index.html",
+      "hash": "37ad6d3d3d754b064250dc6bddd3d4bc61ec86ae6010e5b5c1c6e68de96e4ff8"
+    },
+    {
+      "file": "en/additional-resources/index.html",
+      "hash": "01c8a2e0839a9a858ee776714aa032bfc997d99451638436175fb52d63a93206"
+    },
+    {
+      "file": "en/resources-and-tools/index.html",
+      "hash": "ed4605aebefd8e119747b2aac5ec670bb709dc6fc39e4f8815753b3d16091215"
+    },
+    {
+      "file": "fr/a-propos-de-nous/index.html",
+      "hash": "62bfd3fdc593ab3016a24b6377e9259817be5a13bbf99c16462e65fe83f0a559"
+    },
+    {
+      "file": "en/resources/index.html",
+      "hash": "bf52d33a74a01201d5dc418f4897c7e3b60e720769fd5b78530521a2fb4f16e3"
+    },
+    {
+      "file": "en/tools/index.html",
+      "hash": "1b33ef2842123d38291b726703c4cd7c522de9924ac77acc07fa63551f5d5125"
+    },
+    {
+      "file": "en/roles/index.html",
+      "hash": "6fd1b76e7e5a0f9f86b926883f234fdba1080a58380af4cc084eb82b0ac5e950"
+    },
+    {
+      "file": "fr/approvisionnement/index.html",
+      "hash": "b13ef5cb700297c6494c959905bb0f98e0721a6d890d5d54c0f1f390aba952e0"
+    },
+    {
+      "file": "fr/normes-daccessibilite/index.html",
+      "hash": "7e5d58b5c4278a355e2d60930ac8415b968d0c58cf7d291d4337c7ff44ac299e"
+    },
+    {
+      "file": "fr/repertoire-de-la-communaute/index.html",
+      "hash": "2e09c74eb10113571db7e88d88a94a0e2ea49d1b85211ca068056c396fab3dab"
+    },
+    {
+      "file": "fr/creer-du-contenu-web/index.html",
+      "hash": "b03331d58764594f77fb11ecc991ee1b2f34077da34f99ac66d12e79b3e9d21d"
+    },
+    {
+      "file": "fr/accessibilite-numerique-au-gouvernement-du-canada/index.html",
+      "hash": "4b38e4f036bf984bf748b8bea91dd369bd67890868f9c16d722ab929f894bf06"
+    },
+    {
+      "file": "fr/creer-un-formulaire/index.html",
+      "hash": "87c163878022c9e3b61d8190c12f630b8e3fa0b78e84946c82ddb94d03b23902"
+    },
+    {
+      "file": "fr/concevoir-un-cours/index.html",
+      "hash": "f3ade966fb60c055aaabb5135a6c1f2a11981513dcaab5a1ca6ddf2f99d370cb"
+    },
+    {
+      "file": "fr/creer-un-document/index.html",
+      "hash": "1bb4ee3d07e35ffdb5f57c438cbf0866bfb66ca0f7cc6a0074162b0872675e02"
+    },
+    {
+      "file": "fr/evenements-virtuels-accessibles/index.html",
+      "hash": "e374cfc2cad4247fcafcd3dd8c75a1d56cd612b00a5fcded67ac911719874424"
+    },
+    {
+      "file": "fr/fiches-de-conseils-pour-microsoft-office/index.html",
+      "hash": "7bba4dbe84b3518d43772c8200f223cf2b8dbf856c6c9381e96969627f31b6b4"
+    },
+    {
+      "file": "fr/comment-faire/index.html",
+      "hash": "e01f601b40508a63ffc6183e0823e0bb6a8c5e963203098d090f3772a413c0d4"
+    },
+    {
+      "file": "fr/principes-de-conception-pour-des-services-accessibles/index.html",
+      "hash": "b78bd6c79c4af7cb8835e39c73d9cee43f44883b6d7eb2b6497b969f32a9ff90"
+    },
+    {
+      "file": "fr/principes-de-base-de-laccessibilite/index.html",
+      "hash": "8e898a139606f651162e192e7e24429e6ad30691c71d97817281b9e99dc9e55e"
+    },
+    {
+      "file": "fr/testez-vos-produits/index.html",
+      "hash": "234b1002a687cb21f3e569683922c0637c70cc51051f5fdae2caf0bf07569dee"
+    },
+    {
+      "file": "fr/types-de-handicap-les-plus-courants/index.html",
+      "hash": "83aaff9dc751abca3a4106d3795ee31a62f3792d0acffc6ba49535866bf4653b"
+    },
+    {
+      "file": "fr/ressources-et-outils/index.html",
+      "hash": "7d8606b8f55b49647f7368581c44c6ca721fc326ea6b4b28d2ebb8b212543f44"
+    },
+    {
+      "file": "fr/normes-daccessibilite-mondiales/index.html",
+      "hash": "e05896a9ff3979041b6aa75bcd08d356d0b3ce17c5c2ebe008948d24379ce25c"
+    },
+    {
+      "file": "fr/outils/index.html",
+      "hash": "862a4f1183f1c7d65e21d15dc2e30fc1cf35430033540a21d76614f91141f1ed"
+    },
+    {
+      "file": "fr/ressources-additionnelles/index.html",
+      "hash": "ab4a305664822534c338f33e62b876a66ff284bd06245cb425c240cb0255b006"
+    },
+    {
+      "file": "fr/ressources/index.html",
+      "hash": "4f89101ed488dfd095ae43b0abceae7f89165bf53a344d13358f94567ecd0f8c"
+    },
+    {
+      "file": "en/mapping-between-revised-section-508-and-en-301-549-2014-2018-2019-and-2021/index.html",
+      "hash": "d9ab944b4c2e4a988096e46f7bc095d5f4a5fb4bca425281717017bbf9e170e8"
+    },
+    {
+      "file": "en/designing-for-users-on-the-autism-spectrum/index.html",
+      "hash": "fb3daba2817aa40e205a059f8117c890e85cc900ccbc4ad34315396793e4ab22"
+    },
+    {
+      "file": "en/designing-for-users-of-screen-readers/index.html",
+      "hash": "1b0f9997853864dce21514b2646b38deb0761f700df0dc24da277e2f07d78862"
+    },
+    {
+      "file": "fr/roles/index.html",
+      "hash": "cc99d13b0639d72daa1fe6786455f4cb50fc30bcb3e0cc2373443d72e86de7a0"
+    },
+    {
+      "file": "en/designing-for-users-with-cognitive-disabilities/index.html",
+      "hash": "cf7e3fc8552c012332567f9956e1ec28f7f581363b3310075fc7d9c694ed9393"
+    },
+    {
+      "file": "en/designing-for-users-with-physical-or-motor-disabilities/index.html",
+      "hash": "6b5600f0b3cedc16824df85cadbbfdd1f643aad4cc991c32f03e8956cb9a5532"
+    },
+    {
+      "file": "en/designing-for-users-who-are-deaf-or-hard-of-hearing/index.html",
+      "hash": "545a084e3ab2814d6365d504939ad14d27fceee4d4b2afd0377715658275db05"
+    },
+    {
+      "file": "en/designing-for-users-with-low-vision/index.html",
+      "hash": "05638efde64ebc4040a85487b8b3eb89f84c7006e2107adba0e629af14ac7b7b"
+    },
+    {
+      "file": "en/accessibility-remediation-roadmap-template/index.html",
+      "hash": "e926089ef5619e49378d2523cda6fdf84e28d0b21edf6330a9a32432256f05b4"
+    },
+    {
+      "file": "fr/mise-en-correspondance-entre-larticle-508-revise-revised-section-508-et-la-norme-en-301-549-2014-2018-2019-et-2021/index.html",
+      "hash": "e18d0e58d1808b9de165ad45645401d5a7e0d27a44e194144c60fe3d847f3d05"
+    },
+    {
+      "file": "fr/concevoir-pour-les-utilisateurs-avec-un-handicap-physique-ou-moteur/index.html",
+      "hash": "ab6d0816a38a4cba924ddd1f318e3b4f1663812a89c154f72918660ff6022c0f"
+    },
+    {
+      "file": "fr/concevoir-pour-les-utilisateurs-de-revues-decran/index.html",
+      "hash": "a731f3c00513613dba94a58c65138f87ea95af2d9736741d46807c75d516efe1"
+    },
+    {
+      "file": "fr/concevoir-pour-les-utilisateurs-dans-le-spectre-de-lautisme/index.html",
+      "hash": "9a9a6693c2d009f74d6d902a9235f6eb841581d5661cddca6b542ec88425720f"
+    },
+    {
+      "file": "fr/concevoir-pour-les-utilisateurs-sourds-ou-malentendants/index.html",
+      "hash": "5d5d12e36ed5cf207a3d752a10f2a75b72e9940277e3ce935427d69d3dba991d"
+    },
+    {
+      "file": "fr/concevoir-pour-les-utilisateurs-malvoyants/index.html",
+      "hash": "a10eb5e4c2ea7e88d201cf2f9b7f25db42898c56c2461bce6f6de925e3ec3382"
+    },
+    {
+      "file": "en/website-usage-analytics/index.html",
+      "hash": "1e000c48a06e2aa18b48fb1f219e3cd1d1de5e688b8f2d37fe3e19cc9dbee727"
+    },
+    {
+      "file": "en/website-usage-analytics-2024/index.html",
+      "hash": "a521d8af95f831959b367fe7b9dc13ecf3001fe896313c2f57419740c17ab789"
+    },
+    {
+      "file": "en/website-usage-analytics-data-view/index.html",
+      "hash": "a164c28e901b3efd5cb11fb434e71f3b69327f39f4f081bdaa4b53556d7b7cc1"
+    },
+    {
+      "file": "fr/principes-de-conception-pour-les-utilisateurs-avec-handicap-cognitif/index.html",
+      "hash": "77d78d4bc6481a02c0604bb9427ba777dbf799894b8d34d3ad4e512acbe897ee"
+    },
+    {
+      "file": "fr/analytique-de-lutilisation-du-site-web-2024/index.html",
+      "hash": "2dfc0ec63fba3945a6fd1aa83df870401d7bd168dbf7201bdece8846e8821bca"
+    },
+    {
+      "file": "fr/analytique-de-lutilisation-du-site-web/index.html",
+      "hash": "c0efb572767506e19b0a49850a353eabc6ad49bfd7e92804262f7968d2baa763"
+    },
+    {
+      "file": "fr/analytique-de-lutilisation-du-site-web-visualisation-des-donnees/index.html",
+      "hash": "5cf8c54a37e0d1c2c3573a156ad3aa6f031b7b2d01c9ed6e429a83394dafae24"
+    },
+    {
+      "file": "en/contact-us/index.html",
+      "hash": "045f7de52ad47d09c70f36232666f06bc74baa6466cc60fb96fe657205c0c33c"
+    },
+    {
+      "file": "en/digital-accessibility-toolkit-project/index.html",
+      "hash": "c350d7775160433d10a8f5aa08f671f684d81ec9bb47e735714c11c327eb985a"
+    },
+    {
+      "file": "fr/le-modele-de-feuille-de-route-pour-la-correction-des-problemes-daccessibilite/index.html",
+      "hash": "b67f6af570f15b7d8cea10e76ded42cd78800890135704a478c1c5e5de70c2d6"
+    },
+    {
+      "file": "en/terms-of-reference/index.html",
+      "hash": "2dbc7e8827b58640bb22313f6b1695332e68f35d82a5e631b9d1223d717aabef"
+    },
+    {
+      "file": "en/research-on-our-target-audience/index.html",
+      "hash": "1e8c8feacafee9ebd57774a2ab85c255c26211689015d9552c098f46c9ed9c66"
+    },
+    {
+      "file": "fr/projet-de-la-boite-a-outils-de-laccessibilite-numerique/index.html",
+      "hash": "57bd83b7544423c88e1e5453fb2fda75eefb804452961d66ec753e90d4d0aaea"
+    },
+    {
+      "file": "fr/mandats/index.html",
+      "hash": "ace5cb8df5f5208333f1c7cd8fdb91e3efa06141a1dd240237419b4c4b5d3a66"
+    },
+    {
+      "file": "fr/recherche-sur-notre-audience/index.html",
+      "hash": "415b6d882c37b1722ca365054a7079dd4b5b35db012cd623a048c76818883958"
+    },
+    {
+      "file": "en/tip-sheet-for-microsoft-word/index.html",
+      "hash": "64a86088463a6df86511ae0c0a8f3431cc10d89d9a1a5a8569ea48710c7d3417"
+    },
+    {
+      "file": "en/tip-sheet-for-microsoft-powerpoint-presentation/index.html",
+      "hash": "c656fe1105fcb15c820b80e64aecd135c95553df9060fbaad9660fe4a0955e2a"
+    },
+    {
+      "file": "fr/feuille-de-conseils-pour-microsoft-outlook/index.html",
+      "hash": "881640aebf030e863dea588e4e884c35eed800148b34c79ce29cdc1459e4fcd5"
+    },
+    {
+      "file": "fr/feuille-de-conseils-pour-microsoft-word/index.html",
+      "hash": "54c0481db93fa3a7e766f39fda862e3e130120a8617194198c60c13af3b139b1"
+    },
+    {
+      "file": "en/tip-sheet-for-microsoft-outlook/index.html",
+      "hash": "a0aacdf40950ab3f4578df279e51f6f3df265245435ba2bc2584df8e5e1128d2"
+    },
+    {
+      "file": "fr/feuille-de-conseils-pour-la-presentation-microsoft-powerpoint/index.html",
+      "hash": "b340e31d74a435bffb8d77b5eb1bca95f0a766a0546d3be8839ff23763673881"
+    },
+    {
+      "file": "en/how-to-create-accessible-documents-in-office-2016/index.html",
+      "hash": "2876b0fb08bba5bf85820f5379522828aa8620738d3d980b22ac2bdc387d3b5c"
+    },
+    {
+      "file": "en/how-to-create-accessible-documents-in-microsoft-365/index.html",
+      "hash": "cd02fcb1f09045767d9c06ccf09886fb0069a327a166c5f7bff0c5d63faa5f98"
+    },
+    {
+      "file": "en/accessible-pdf-documents-in-office-2016/index.html",
+      "hash": "49799cd6cb49a1142a741ade6ef70a380cad13745ec9a481bdd81fc0690d8325"
+    },
+    {
+      "file": "fr/comment-creer-des-documents-accessibles-dans-office-2016/index.html",
+      "hash": "453e729355125377c11f74ca1e74088e6986f7de159c029d3ac9cf4c2304c5c4"
+    },
+    {
+      "file": "fr/comment-creer-des-documents-accessibles-dans-microsoft-365/index.html",
+      "hash": "2fa4593ab8b76458df93c54f111aac4de4b76c6f3e97cb82c7878e5eef9035c1"
+    },
+    {
+      "file": "en/accessible-powerpoint-presentations-in-office-2016/index.html",
+      "hash": "bcd6afa5d7ad67edc83ddd2a71cc423f60c86cc17444a493a2fc6c7e04f6c105"
+    },
+    {
+      "file": "en/accessible-visio-drawings-in-office-2016/index.html",
+      "hash": "23e0d1b59103bcc292998ff98024e76defd450339a56bd73314fe2e0a4cb026d"
+    },
+    {
+      "file": "en/accessible-excel-workbooks-in-office-2016/index.html",
+      "hash": "8770607f2a975189ea618bfe588e8028baf8efdca32d1e68f900c7caa121b727"
+    },
+    {
+      "file": "en/accessible-word-documents-in-office-2016/index.html",
+      "hash": "1117988a6917b22a178a20d8944f966564d9f5036d4d46d0ddb4dca53a3aa62b"
+    },
+    {
+      "file": "en/accessible-excel-workbooks-in-microsoft-365/index.html",
+      "hash": "34e56016d8c433c229d82e24cda88d434054f8a877f8258b1e7963a88d2bfe8d"
+    },
+    {
+      "file": "en/accessible-word-documents-in-microsoft-365/index.html",
+      "hash": "ca4600b384bf38152707ab3364e1e87539efe15ea9c27a6ecbdb6331eded4a50"
+    },
+    {
+      "file": "en/accessible-pdf-documents-in-microsoft-365/index.html",
+      "hash": "91f6d4a5833e16e1fe22ebc0c61f8991a5a03ed0188780cae13db18e84bc9321"
+    },
+    {
+      "file": "en/accessible-powerpoint-presentations-in-microsoft-365/index.html",
+      "hash": "21a29e2139a3bc319783a1e7f2629f06eca9e5207e5b814b33e7559bba0cf33a"
+    },
+    {
+      "file": "fr/classeurs-excel-accessibles-dans-office-2016/index.html",
+      "hash": "6799c18179554cd30a18b5f4a8b6ceaec12a7e18923195a458487aa5b0614046"
+    },
+    {
+      "file": "en/accessible-visio-drawings-in-microsoft-365/index.html",
+      "hash": "e5ae439f25cbef4c59fab1b2f15cb6897c6fbe58a54afa4a71f27f25c9e444e9"
+    },
+    {
+      "file": "fr/documents-pdf-accessibles-dans-office-2016/index.html",
+      "hash": "5b5dc0b3173811bf9b7f459887824f4bd0bb406f6f656811bd8b00b1a7fd978e"
+    },
+    {
+      "file": "fr/dessins-visio-accessibles-dans-office-2016/index.html",
+      "hash": "36648f274d1ef43335130f58e8e993c2e8fd8e3c43a7dc6c46b65a4fee92d571"
+    },
+    {
+      "file": "fr/classeurs-excel-accessibles-dans-microsoft-365/index.html",
+      "hash": "e9a3d938d7b651842f4d4572a03483582f06450a3d24d855dbd510beae361e6d"
+    },
+    {
+      "file": "fr/documents-word-accessibles-dans-office-2016/index.html",
+      "hash": "50c243a359d39416aa91f426eb8c6751acb3e88cc6746dfed330311d0a0d693f"
+    },
+    {
+      "file": "fr/presentations-powerpoint-accessibles-dans-office-2016/index.html",
+      "hash": "cc17824b33c123efa5840d7c62fdb46da940a435c0b4704f8d277a21bb565787"
+    },
+    {
+      "file": "fr/dessins-visio-accessibles-dans-microsoft-365/index.html",
+      "hash": "512c68ffad06743c23cf56552a4d6cccf3ef9cbaae952739f4ead64b302c5c60"
+    },
+    {
+      "file": "fr/documents-pdf-accessibles-dans-microsoft-365/index.html",
+      "hash": "dd052f8e2bc517811704df7f23829fbbd985f5312f1bf54373baa466da275185"
+    },
+    {
+      "file": "fr/documents-word-accessibles-dans-microsoft-365/index.html",
+      "hash": "7b7c4edfe49a9f96f86dc8e68502d1fbd2c7c65e2b75a815cb7331013edadd8e"
+    },
+    {
+      "file": "fr/contactez-nous/index.html",
+      "hash": "073011f878ca34a52b9089ef949ad00ff1ab9ba23e473534e29929dfef82d4ad"
+    },
+    {
+      "file": "fr/presentations-powerpoint-accessibles-dans-microsoft-365/index.html",
+      "hash": "d9716b08274889e747d252b539e454ea647fff9bcedd5165136984f05f42b9c9"
+    },
+    {
+      "file": "en/information-and-communication-technology-ict-accessibility-requirements/index.html",
+      "hash": "612e6567e23317e68bb7fb222d250e85bbdbf77d7c915b50ac2a32f5ec108e4b"
+    },
+    {
+      "file": "fr/exigences-en-matiere-de-technologies-de-linformation-et-des-communications-tic-accessibles/index.html",
+      "hash": "e4da6661d0a29b2f2b047b01c61efc4071007dfeb0878048dae423cba2f1e6c4"
+    },
+    {
+      "file": "en/index.html",
+      "hash": "be020808dfcd1abfcb85f96acb906b6b12c299295d70e709ff492a2dd20ad0c3"
+    },
+    {
+      "file": "fr/index.html",
+      "hash": "9a814fe3e0baf54919e7819d4e34f9ba80c420356fc7a8aeb19d6c284e2273a5"
+    },
+    {
+      "file": "en/page-list-table/index.html",
+      "hash": "6fd5689d292f9c89eaab9a1f4b351ab9e476ce73a4d8f546f951c69a5dc2f3c2"
+    }
+  ]
+}

@@ -128,16 +128,6 @@
 	
 	<url>
 		<loc>https://a11y.canada.ca/gc-da11yn.github.io.</loc>
-		<lastmod>2025-06-06</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://a11y.canada.ca/gc-da11yn.github.io.</loc>
-		<lastmod>2025-06-06</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://a11y.canada.ca/gc-da11yn.github.io.</loc>
 		<lastmod>2025-08-15</lastmod>
 	</url>
 	
@@ -277,11 +267,6 @@
 	</url>
 	
 	<url>
-		<loc>https://a11y.canada.ca/gc-da11yn.github.io/en/visual-impairments/</loc>
-		<lastmod>2025-09-19</lastmod>
-	</url>
-	
-	<url>
 		<loc>https://a11y.canada.ca/gc-da11yn.github.io/en/what-we-heard-report-standard-on-information-and-communication-technology-accessibility-sicta/</loc>
 		<lastmod>2025-09-19</lastmod>
 	</url>
@@ -298,11 +283,6 @@
 	
 	<url>
 		<loc>https://a11y.canada.ca/gc-da11yn.github.io/fr/deficiences-auditives/</loc>
-		<lastmod>2025-09-19</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://a11y.canada.ca/gc-da11yn.github.io/fr/deficiences-visuelles/</loc>
 		<lastmod>2025-09-19</lastmod>
 	</url>
 	
@@ -1042,16 +1022,6 @@
 	</url>
 	
 	<url>
-		<loc>https://a11y.canada.ca/gc-da11yn.github.io/en/page-list-table/</loc>
-		<lastmod>2026-10-08</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://a11y.canada.ca/gc-da11yn.github.io/fr/liste-des-pages-tableau/</loc>
-		<lastmod>2026-10-08</lastmod>
-	</url>
-	
-	<url>
 		<loc>https://a11y.canada.ca/gc-da11yn.github.io/en/about-us/</loc>
 		<lastmod>2026-10-09</lastmod>
 	</url>
@@ -1098,11 +1068,6 @@
 	
 	<url>
 		<loc>https://a11y.canada.ca/gc-da11yn.github.io/en/digital-accessibility-in-the-government-of-canada/</loc>
-		<lastmod>2026-10-09</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://a11y.canada.ca/gc-da11yn.github.io/en/procurement/</loc>
 		<lastmod>2026-10-09</lastmod>
 	</url>
 	
@@ -1193,11 +1158,6 @@
 	
 	<url>
 		<loc>https://a11y.canada.ca/gc-da11yn.github.io/fr/a-propos-de-nous/</loc>
-		<lastmod>2026-10-09</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://a11y.canada.ca/gc-da11yn.github.io/fr/approvisionnement/</loc>
 		<lastmod>2026-10-09</lastmod>
 	</url>
 	
@@ -1367,16 +1327,6 @@
 	</url>
 	
 	<url>
-		<loc>https://a11y.canada.ca/gc-da11yn.github.io/en/guide-for-including-accessibility-in-information-and-communication-technology-ict-related-procurement/</loc>
-		<lastmod>2026-10-09</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://a11y.canada.ca/gc-da11yn.github.io/en/information-and-communication-technology-ict-accessibility-requirements/</loc>
-		<lastmod>2026-10-09</lastmod>
-	</url>
-	
-	<url>
 		<loc>https://a11y.canada.ca/gc-da11yn.github.io/en/language-of-audiovideo-content/</loc>
 		<lastmod>2026-10-09</lastmod>
 	</url>
@@ -1442,11 +1392,6 @@
 	</url>
 	
 	<url>
-		<loc>https://a11y.canada.ca/gc-da11yn.github.io/en/accessibility-remediation-roadmap-template/</loc>
-		<lastmod>2026-10-09</lastmod>
-	</url>
-	
-	<url>
 		<loc>https://a11y.canada.ca/gc-da11yn.github.io/en/statistics-canada-statcan/</loc>
 		<lastmod>2026-10-09</lastmod>
 	</url>
@@ -1493,11 +1438,6 @@
 	
 	<url>
 		<loc>https://a11y.canada.ca/gc-da11yn.github.io/fr/emploi-et-developpement-social-canada-edsc/</loc>
-		<lastmod>2026-10-09</lastmod>
-	</url>
-	
-	<url>
-		<loc>https://a11y.canada.ca/gc-da11yn.github.io/fr/exigences-en-matiere-de-technologies-de-linformation-et-des-communications-tic-accessibles/</loc>
 		<lastmod>2026-10-09</lastmod>
 	</url>
 	
@@ -1602,11 +1542,6 @@
 	</url>
 	
 	<url>
-		<loc>https://a11y.canada.ca/gc-da11yn.github.io/fr/le-modele-de-feuille-de-route-pour-la-correction-des-problemes-daccessibilite/</loc>
-		<lastmod>2026-10-09</lastmod>
-	</url>
-	
-	<url>
 		<loc>https://a11y.canada.ca/gc-da11yn.github.io/fr/ressources-additionnelles-sur-les-reunions-et-evenements-accessibles/</loc>
 		<lastmod>2026-10-09</lastmod>
 	</url>
@@ -1662,7 +1597,82 @@
 	</url>
 	
 	<url>
+		<loc>https://a11y.canada.ca/gc-da11yn.github.io.</loc>
+		<lastmod>2026-10-16</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://a11y.canada.ca/gc-da11yn.github.io.</loc>
+		<lastmod>2026-10-16</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://a11y.canada.ca/gc-da11yn.github.io.</loc>
+		<lastmod>2026-10-16</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://a11y.canada.ca/gc-da11yn.github.io.</loc>
+		<lastmod>2026-10-16</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://a11y.canada.ca/gc-da11yn.github.io/en/visual-impairments/</loc>
+		<lastmod>2026-10-19</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://a11y.canada.ca/gc-da11yn.github.io/fr/deficiences-visuelles/</loc>
+		<lastmod>2026-10-19</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://a11y.canada.ca/gc-da11yn.github.io/404.html</loc>
 		<lastmod>2026-10-28</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://a11y.canada.ca/gc-da11yn.github.io/en/procurement/</loc>
+		<lastmod>2026-10-29</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://a11y.canada.ca/gc-da11yn.github.io/en/site-page-inventory/</loc>
+		<lastmod>2026-10-29</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://a11y.canada.ca/gc-da11yn.github.io/fr/approvisionnement/</loc>
+		<lastmod>2026-10-29</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://a11y.canada.ca/gc-da11yn.github.io/fr/liste-des-pages-tableau/</loc>
+		<lastmod>2026-10-29</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://a11y.canada.ca/gc-da11yn.github.io/en/guide-for-including-accessibility-in-information-and-communication-technology-ict-related-procurement/</loc>
+		<lastmod>2026-10-29</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://a11y.canada.ca/gc-da11yn.github.io/en/information-and-communication-technology-ict-accessibility-requirements/</loc>
+		<lastmod>2026-10-29</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://a11y.canada.ca/gc-da11yn.github.io/en/accessibility-remediation-roadmap-template/</loc>
+		<lastmod>2026-10-29</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://a11y.canada.ca/gc-da11yn.github.io/fr/exigences-en-matiere-de-technologies-de-linformation-et-des-communications-tic-accessibles/</loc>
+		<lastmod>2026-10-29</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://a11y.canada.ca/gc-da11yn.github.io/fr/le-modele-de-feuille-de-route-pour-la-correction-des-problemes-daccessibilite/</loc>
+		<lastmod>2026-10-29</lastmod>
 	</url>
 </urlset>
